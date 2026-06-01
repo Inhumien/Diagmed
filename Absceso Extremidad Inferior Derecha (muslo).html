@@ -1,1 +1,398 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICA8dGl0bGU+QWJzY2VzbyBFeHRyZW1pZGFkIEluZmVyaW9yIERlcmVjaGEgKG11c2xvKTwvdGl0bGU+CiAgPHN0eWxlPgogICAgYm9keSB7IGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUknLCBUYWhvbWEsIEdlbmV2YSwgVmVyZGFuYSwgc2Fucy1zZXJpZjsKICAgICAgICAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjNjY3ZWVhIDAlLCAjNzY0YmEyIDEwMCUpOwogICAgICAgICAgIHBhZGRpbmc6IDIwcHg7IG1pbi1oZWlnaHQ6IDEwMHZoOyBtYXJnaW46IDA7IH0KICAgIC5jb250YWluZXIgeyBtYXgtd2lkdGg6IDkwMHB4OyBtYXJnaW46IDAgYXV0bzsgYmFja2dyb3VuZDogd2hpdGU7CiAgICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMjBweDsgcGFkZGluZzogMzBweDsKICAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAwIDIwcHggNjBweCByZ2JhKDAsMCwwLDAuMyk7IH0KICAgIGgxIHsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzJkMzc0ODsgbWFyZ2luLWJvdHRvbTogMTBweDsKICAgICAgICAgIGZvbnQtc2l6ZTogMjRweDsgZm9udC13ZWlnaHQ6IDcwMDsgfQogICAgaDIgeyBjb2xvcjogIzJkMzc0ODsgZm9udC1zaXplOiAxOHB4OyBtYXJnaW4tdG9wOiAyMHB4OyB9CiAgICBoMyB7IGNvbG9yOiAjNGE1NTY4OyBmb250LXNpemU6IDE1cHg7IG1hcmdpbi10b3A6IDE1cHg7IH0KICAgIHAgIHsgY29sb3I6ICM0YTU1Njg7IGxpbmUtaGVpZ2h0OiAxLjY7IG1hcmdpbjogNnB4IDA7IH0KICAgIGxpIHsgY29sb3I6ICM0YTU1Njg7IGxpbmUtaGVpZ2h0OiAxLjY7IG1hcmdpbjogNHB4IDA7IH0KICAgIHVsIHsgbWFyZ2luLWxlZnQ6IDIwcHg7IH0KICAgIC5hcnJvdyB7IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiAyNHB4OyBjb2xvcjogIzRhNTU2ODsKICAgICAgICAgICAgICBtYXJnaW46IDhweCAwOyBmb250LXdlaWdodDogYm9sZDsgfQogICAgc3Ryb25nIHsgY29sb3I6ICMyZDM3NDg7IH0KICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5PgogIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICA8aDM+RGlhZ3JhbWEgZGUgRmx1am86IEFic2Nlc28gTXVzbG8gRGVyZWNobzwvaDM+Cjxicj4KPHA+RGlhZ3JhbWEgZGUgRmx1am86IEFic2Nlc28gTXVzbG8gRGVyZWNobzwvcD4KPGJyPgo8cD4qIHsqPC9wPgo8YnI+CjxwPm1hcmdpbjogMDs8L3A+Cjxicj4KPHA+cGFkZGluZzogMDs8L3A+Cjxicj4KPHA+Ym94LXNpemluZzogYm9yZGVyLWJveDs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD5ib2R5IHs8L3A+Cjxicj4KPHA+Zm9udC1mYW1pbHk6ICYjeDI3O1NlZ29lIFVJJiN4Mjc7LCBUYWhvbWEsIEdlbmV2YSwgVmVyZGFuYSwgc2Fucy1zZXJpZjs8L3A+Cjxicj4KPHA+YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzY2N2VlYSAwJSwgIzc2NGJhMiAxMDAlKTs8L3A+Cjxicj4KPHA+cGFkZGluZzogMjBweDs8L3A+Cjxicj4KPHA+bWluLWhlaWdodDogMTAwdmg7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmNvbnRhaW5lciB7PC9wPgo8YnI+CjxwPm1heC13aWR0aDogOTAwcHg7PC9wPgo8YnI+CjxwPm1hcmdpbjogMCBhdXRvOzwvcD4KPGJyPgo8cD5iYWNrZ3JvdW5kOiB3aGl0ZTs8L3A+Cjxicj4KPHA+Ym9yZGVyLXJhZGl1czogMjBweDs8L3A+Cjxicj4KPHA+cGFkZGluZzogMzBweDs8L3A+Cjxicj4KPHA+Ym94LXNoYWRvdzogMCAyMHB4IDYwcHggcmdiYSgwLDAsMCwwLjMpOzwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxwPmgxIHs8L3A+Cjxicj4KPHA+dGV4dC1hbGlnbjogY2VudGVyOzwvcD4KPGJyPgo8cD5jb2xvcjogIzJkMzc0ODs8L3A+Cjxicj4KPHA+bWFyZ2luLWJvdHRvbTogMTBweDs8L3A+Cjxicj4KPHA+Zm9udC1zaXplOiAyOHB4OzwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxwPi5zdWJ0aXRsZSB7PC9wPgo8YnI+CjxwPnRleHQtYWxpZ246IGNlbnRlcjs8L3A+Cjxicj4KPHA+Y29sb3I6ICM3MTgwOTY7PC9wPgo8YnI+CjxwPm1hcmdpbi1ib3R0b206IDMwcHg7PC9wPgo8YnI+CjxwPmZvbnQtc2l6ZTogMTRweDs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD4uZmxvd2NoYXJ0IHs8L3A+Cjxicj4KPHA+ZGlzcGxheTogZmxleDs8L3A+Cjxicj4KPHA+ZmxleC1kaXJlY3Rpb246IGNvbHVtbjs8L3A+Cjxicj4KPHA+Z2FwOiAxNXB4OzwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxwPi5ib3ggezwvcD4KPGJyPgo8cD5wYWRkaW5nOiAyMHB4OzwvcD4KPGJyPgo8cD5ib3JkZXItcmFkaXVzOiAxMnB4OzwvcD4KPGJyPgo8cD5ib3gtc2hhZG93OiAwIDRweCA2cHggcmdiYSgwLDAsMCwwLjEpOzwvcD4KPGJyPgo8cD5wb3NpdGlvbjogcmVsYXRpdmU7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmJveDo6YWZ0ZXIgezwvcD4KPGJyPgo8cD5jb250ZW50OiAmI3gyNzvihpMmI3gyNzs7PC9wPgo8YnI+CjxwPnBvc2l0aW9uOiBhYnNvbHV0ZTs8L3A+Cjxicj4KPHA+Ym90dG9tOiAtMjVweDs8L3A+Cjxicj4KPHA+bGVmdDogNTAlOzwvcD4KPGJyPgo8cD50cmFuc2Zvcm06IHRyYW5zbGF0ZVgoLTUwJSk7PC9wPgo8YnI+CjxwPmZvbnQtc2l6ZTogMjRweDs8L3A+Cjxicj4KPHA+Y29sb3I6ICM0YTU1Njg7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmJveDpsYXN0LWNoaWxkOjphZnRlciB7PC9wPgo8YnI+CjxwPmRpc3BsYXk6IG5vbmU7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LnN0YXJ0IHs8L3A+Cjxicj4KPHA+YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzY2N2VlYSAwJSwgIzc2NGJhMiAxMDAlKTs8L3A+Cjxicj4KPHA+Y29sb3I6IHdoaXRlOzwvcD4KPGJyPgo8cD50ZXh0LWFsaWduOiBjZW50ZXI7PC9wPgo8YnI+CjxwPmZvbnQtd2VpZ2h0OiBib2xkOzwvcD4KPGJyPgo8cD5mb250LXNpemU6IDE4cHg7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmV2YWx1YXRpb24gezwvcD4KPGJyPgo8cD5iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZjA5M2ZiIDAlLCAjZjU1NzZjIDEwMCUpOzwvcD4KPGJyPgo8cD5jb2xvcjogd2hpdGU7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmRlY2lzaW9uIHs8L3A+Cjxicj4KPHA+YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzRmYWNmZSAwJSwgIzAwZjJmZSAxMDAlKTs8L3A+Cjxicj4KPHA+Y29sb3I6IHdoaXRlOzwvcD4KPGJyPgo8cD5ib3JkZXItbGVmdDogNnB4IHNvbGlkICMwMDc3YjY7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmFjdGlvbiB7PC9wPgo8YnI+CjxwPmJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICM0M2U5N2IgMCUsICMzOGY5ZDcgMTAwJSk7PC9wPgo8YnI+CjxwPmNvbG9yOiAjMWEyMDJjOzwvcD4KPGJyPgo8cD5ib3JkZXItbGVmdDogNnB4IHNvbGlkICMwNTk2Njk7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+Lndhcm5pbmcgezwvcD4KPGJyPgo8cD5iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZmE3MDlhIDAlLCAjZmVlMTQwIDEwMCUpOzwvcD4KPGJyPgo8cD5jb2xvcjogIzFhMjAyYzs8L3A+Cjxicj4KPHA+Ym9yZGVyLWxlZnQ6IDZweCBzb2xpZCAjZGMyNjI2OzwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxwPi5mb2xsb3d1cCB7PC9wPgo8YnI+CjxwPmJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICNhOGVkZWEgMCUsICNmZWQ2ZTMgMTAwJSk7PC9wPgo8YnI+CjxwPmNvbG9yOiAjMWEyMDJjOzwvcD4KPGJyPgo8cD5ib3JkZXItbGVmdDogNnB4IHNvbGlkICM3YzNhZWQ7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmJveC10aXRsZSB7PC9wPgo8YnI+CjxwPmZvbnQtd2VpZ2h0OiBib2xkOzwvcD4KPGJyPgo8cD5tYXJnaW4tYm90dG9tOiAxMHB4OzwvcD4KPGJyPgo8cD5mb250LXNpemU6IDE2cHg7PC9wPgo8YnI+CjxwPnRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7PC9wPgo8YnI+CjxwPmxldHRlci1zcGFjaW5nOiAwLjVweDs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD4uYm94LWNvbnRlbnQgezwvcD4KPGJyPgo8cD5mb250LXNpemU6IDE0cHg7PC9wPgo8YnI+CjxwPmxpbmUtaGVpZ2h0OiAxLjY7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmJveC1jb250ZW50IHVsIHs8L3A+Cjxicj4KPHA+bWFyZ2luLWxlZnQ6IDIwcHg7PC9wPgo8YnI+CjxwPm1hcmdpbi10b3A6IDhweDs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD4uYm94LWNvbnRlbnQgbGkgezwvcD4KPGJyPgo8cD5tYXJnaW4tYm90dG9tOiA1cHg7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmhpZ2hsaWdodCB7PC9wPgo8YnI+CjxwPmJhY2tncm91bmQ6IHJnYmEoMjU1LDI1NSwyNTUsMC4zKTs8L3A+Cjxicj4KPHA+cGFkZGluZzogMnB4IDZweDs8L3A+Cjxicj4KPHA+Ym9yZGVyLXJhZGl1czogNHB4OzwvcD4KPGJyPgo8cD5mb250LXdlaWdodDogYm9sZDs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD4uc3BsaXQtYm94IHs8L3A+Cjxicj4KPHA+ZGlzcGxheTogZ3JpZDs8L3A+Cjxicj4KPHA+Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyOzwvcD4KPGJyPgo8cD5nYXA6IDE1cHg7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LnNwbGl0LWl0ZW0gezwvcD4KPGJyPgo8cD5wYWRkaW5nOiAxNXB4OzwvcD4KPGJyPgo8cD5ib3JkZXItcmFkaXVzOiA4cHg7PC9wPgo8YnI+CjxwPmJhY2tncm91bmQ6IHJnYmEoMjU1LDI1NSwyNTUsMC4yKTs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD5AbWVkaWEgcHJpbnQgezwvcD4KPGJyPgo8cD5ib2R5IHs8L3A+Cjxicj4KPHA+YmFja2dyb3VuZDogd2hpdGU7PC9wPgo8YnI+CjxwPnBhZGRpbmc6IDA7PC9wPgo8YnI+CjxwPn08L3A+Cjxicj4KPHA+LmNvbnRhaW5lciB7PC9wPgo8YnI+CjxwPmJveC1zaGFkb3c6IG5vbmU7PC9wPgo8YnI+CjxwPm1heC13aWR0aDogMTAwJTs8L3A+Cjxicj4KPHA+fTwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxwPi5ub3RlIHs8L3A+Cjxicj4KPHA+Zm9udC1zaXplOiAxMnB4OzwvcD4KPGJyPgo8cD5mb250LXN0eWxlOiBpdGFsaWM7PC9wPgo8YnI+CjxwPm1hcmdpbi10b3A6IDhweDs8L3A+Cjxicj4KPHA+b3BhY2l0eTogMC45OzwvcD4KPGJyPgo8cD59PC9wPgo8YnI+CjxoMT7wn5S0IEFCU0NFU08gTVVTTE8gREVSRUNITzwvaDE+Cjxicj4KPHA+QWxnb3JpdG1vIGRlIE1hbmVqbyBlbiBVcmdlbmNpYXM8L3A+Cjxicj4KPHA+U09TUEVDSEEgREUgQUJTQ0VTTyBNVVNMTyBERVJFQ0hPPC9wPgo8YnI+CjxwPjEuIEVWQUxVQUNJw5NOIElOSUNJQUw8L3A+Cjxicj4KPHA+PHN0cm9uZz5IaXN0b3JpYSBDbMOtbmljYTo8L3N0cm9uZz4gVHJhdW1hLCBpbnllY2Npw7NuLCBjb21vcmJpbGlkYWRlcywgaW5tdW5vc3VwcmVzacOzbjwvcD4KPGJyPgo8cD48c3Ryb25nPkV4YW1lbiBGw61zaWNvOjwvc3Ryb25nPjwvcD4KPGJyPgo8bGk+VHVtZWZhY2Npw7NuLCBlcml0ZW1hLCBjYWxvciwgZmx1Y3R1YWNpw7NuPC9saT4KPGxpPlRhbWHDsW8gYXByb3hpbWFkbyBkZWwgYWJzY2VzbzwvbGk+CjxsaT5TaWdub3MgZGUgZXh0ZW5zacOzbiBwcm9mdW5kYSBvIGZhc2NpdGlzIG5lY3JvdGl6YW50ZTwvbGk+Cjxicj4KPHA+PHN0cm9uZz5TaWdub3MgZGUgQWxhcm1hOjwvc3Ryb25nPiBDcmVwaXRhY2nDs24sIHBpZWwgdmlvbMOhY2VhLCBkb2xvciBkZXNwcm9wb3JjaW9uYWRvLCByw6FwaWRhIHByb2dyZXNpw7NuPC9wPgo8YnI+CjxwPjIuIFVMVFJBU09OSURPIFBPSU5ULU9GLUNBUkUgKHNpIGRpc3BvbmlibGUpPC9wPgo8YnI+CjxwPuKckyBDb25maXJtYSBwcmVzZW5jaWEgZGUgY29sZWNjacOzbiBsw61xdWlkYTwvcD4KPGJyPgo8cD7inJMgRGlmZXJlbmNpYSBhYnNjZXNvIHZzIGNlbHVsaXRpczwvcD4KPGJyPgo8cD7inJMgRXZhbMO6YSBwcm9mdW5kaWRhZCB5IGV4dGVuc2nDs248L3A+Cjxicj4KPHA+4pyTIElkZW50aWZpY2EgbXVsdGlsb2N1bGFjaW9uZXM8L3A+Cjxicj4KPHA+4pqg77iPIEVWQUxVQVIgU0VWRVJJREFEPC9wPgo8YnI+CjxwPjxzdHJvbmc+U0lHTk9TIERFIFNJUlM6PC9zdHJvbmc+PC9wPgo8YnI+CjxsaT5UwrAgJmd0OzM4wrBDIG8gOTAgbHBtPC9saT4KPGJyPgo8bGk+RlIgJmd0OzI0IHJwbTwvbGk+Cjxicj4KPGxpPkxldWNvY2l0b3MgJmd0OzEyLDAwMCBvPC9saT4KPGJyPgo8cD48c3Ryb25nPkNSSVRFUklPUyBIT1NQSVRBTElaQUNJw5NOOjwvc3Ryb25nPjwvcD4KPGJyPgo8bGk+SW5tdW5vc3VwcmVzacOzbiBzZXZlcmE8L2xpPgo8YnI+CjxsaT5BYnNjZXNvICZndDs1IGNtPC9saT4KPGJyPgo8bGk+SW5mZWNjacOzbiBwcm9mdW5kYS9uZWNyb3RpemFudGU8L2xpPgo8YnI+CjxsaT5GYWxsYSBhIEkmYW1wO0QgcHJldmlvPC9saT4KPGJyPgo8cD4zLiBJTkNJU0nDk04gWSBEUkVOQUpFIChJJmFtcDtEKTwvcD4KPGJyPgo8cD48c3Ryb25nPlByb2NlZGltaWVudG86PC9zdHJvbmc+PC9wPgo8YnI+CjxsaT5BbmVzdGVzaWEgbG9jYWwgYWRlY3VhZGE8L2xpPgo8bGk+SW5jaXNpw7NuIHN1ZmljaWVudGUgcGFyYSBkcmVuYWplIGNvbXBsZXRvPC9saT4KPGxpPkV4cGxvcmFjacOzbiBkaWdpdGFsIHBhcmEgcm9tcGVyIGxvY3VsYWNpb25lczwvbGk+CjxsaT5JcnJpZ2FjacOzbiBjb24gc29sdWNpw7NuIHNhbGluYTwvbGk+CjxsaT5OTyBlbXBhcXVldGFyIHNpIGFic2Nlc28gNSBjbTogY29uc2lkZXJhciBlbXBhcXVldGFtaWVudG8gbyBkcmVuYWplIHF1aXLDunJnaWNvPC9saT4KPGJyPgo8cD48c3Ryb25nPkN1bHRpdm86PC9zdHJvbmc+IFRvbWFyIG11ZXN0cmEgZGUgcHVzIHBhcmEgR3JhbSB5IGN1bHRpdm8gKGVzcGVjaWFsbWVudGUgc2kgU0lSUyBvIGlubXVub3N1cHJlc2nDs24pPC9wPgo8YnI+CjxwPjQuIEFOVElCSU9USUNPVEVSQVBJQTwvcD4KPGJyPgo8cD48c3Ryb25nPkluZGljYWNpb25lcyBwYXJhIEFUQiBwb3N0LUkmYW1wO0Q6PC9zdHJvbmc+PC9wPgo8YnI+CjxsaT5QcmVzZW5jaWEgZGUgU0lSUzwvbGk+CjxsaT5Jbm11bm9zdXByZXNpw7NuIHNldmVyYTwvbGk+CjxsaT5BYnNjZXNvcyBtw7psdGlwbGVzPC9saT4KPGxpPkNlbHVsaXRpcyBleHRlbnNhIGNpcmN1bmRhbnRlPC9saT4KPGxpPkZhbHRhIGRlIHJlc3B1ZXN0YSBhIEkmYW1wO0Qgc29sbzwvbGk+Cjxicj4KPHA+PHN0cm9uZz5BTUJVTEFUT1JJTzo8L3N0cm9uZz48L3A+Cjxicj4KPGxpPlRNUC1TTVggMTYwLzgwMCBtZyBWTyBjLzEyaDwvbGk+Cjxicj4KPGxpPkNsaW5kYW1pY2luYSAzMDAtNDUwIG1nIFZPIGMvOGg8L2xpPgo8YnI+CjxwPihDb2JlcnR1cmEgTVJTQSk8L3A+Cjxicj4KPHA+PHN0cm9uZz5IT1NQSVRBTElaQURPOjwvc3Ryb25nPjwvcD4KPGJyPgo8bGk+VmFuY29taWNpbmEgSVY8L2xpPgo8YnI+CjxsaT5MaW5lem9saWQgSVY8L2xpPgo8YnI+CjxwPihTaSBuZWNyb3RpemFudGU6ICsgQ2xpbmRhbWljaW5hICsgUGlwZXJhY2lsaW5hLVRhem9iYWN0YW0pPC9wPgo8YnI+CjxwPkR1cmFjacOzbjogNS03IGTDrWFzIChjYXNvcyBubyBjb21wbGljYWRvcykgfCA3LTE0IGTDrWFzIChjb21wbGljYWRvcyk8L3A+Cjxicj4KPHA+NS4gU0VHVUlNSUVOVE88L3A+Cjxicj4KPHA+PHN0cm9uZz5Db250cm9sIGVuIDQ4LTcyIGhvcmFzOjwvc3Ryb25nPjwvcD4KPGJyPgo8bGk+RXZhbHVhciBtZWpvcsOtYSBjbMOtbmljYTwvbGk+CjxsaT5DYW1iaW8gZGUgYXDDs3NpdG88L2xpPgo8bGk+UmV0aXJvIGRlIGVtcGFxdWV0YW1pZW50byAoc2kgYXBsaWNhYmxlKTwvbGk+CjxsaT5BanVzdGFyIEFUQiBzZWfDum4gY3VsdGl2bzwvbGk+Cjxicj4KPHA+PHN0cm9uZz5FZHVjYWNpw7NuIGFsIHBhY2llbnRlOjwvc3Ryb25nPiBTaWdub3MgZGUgYWxhcm1hIChmaWVicmUgcGVyc2lzdGVudGUsIGV4dGVuc2nDs24gZGVsIGVyaXRlbWEsIGRvbG9yIHNldmVybykg4oaSIHJlZ3Jlc2FyIGEgdXJnZW5jaWFzPC9wPgo8YnI+CjxwPvCfmqggREVSSVZBQ0nDk04gUVVJUsOaUkdJQ0EgVVJHRU5URSBzaTo8L3A+Cjxicj4KPGxpPlNvc3BlY2hhIGRlIGZhc2NpdGlzIG5lY3JvdGl6YW50ZSAoU2NvcmUgTkVDUk9TSVM6IFBBUyDiiaQxMjAgKyBMZXVjb2NpdG9zIOKJpTE1LDAwMCArIHBpZWwgdmlvbMOhY2VhKTwvbGk+CjxsaT5BYnNjZXNvIHByb2Z1bmRvIG8gZXh0ZW5zbyBxdWUgcmVxdWllcmUgZHJlbmFqZSBxdWlyw7pyZ2ljbzwvbGk+CjxsaT5Db21wcm9taXNvIHZhc2N1bGFyIG8gbmVydmlvc288L2xpPgo8bGk+U2Vwc2lzIHNldmVyYSBvIHNob2NrIHPDqXB0aWNvPC9saT4KICA8L2Rpdj4KPC9ib2R5Pgo8L2h0bWw+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absceso Extremidad Inferior Derecha (muslo)</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           padding: 20px; min-height: 100vh; margin: 0; }
+    .container { max-width: 900px; margin: 0 auto; background: white;
+                 border-radius: 20px; padding: 30px;
+                 box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    h1 { text-align: center; color: #2d3748; margin-bottom: 10px;
+          font-size: 24px; font-weight: 700; }
+    h2 { color: #2d3748; font-size: 18px; margin-top: 20px; }
+    h3 { color: #4a5568; font-size: 15px; margin-top: 15px; }
+    p  { color: #4a5568; line-height: 1.6; margin: 6px 0; }
+    li { color: #4a5568; line-height: 1.6; margin: 4px 0; }
+    ul { margin-left: 20px; }
+    .arrow { text-align: center; font-size: 24px; color: #4a5568;
+              margin: 8px 0; font-weight: bold; }
+    strong { color: #2d3748; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Diagrama de Flujo: Absceso Muslo Derecho</h3>
+<br>
+<p>Diagrama de Flujo: Absceso Muslo Derecho</p>
+<br>
+<p>* {*</p>
+<br>
+<p>margin: 0;</p>
+<br>
+<p>padding: 0;</p>
+<br>
+<p>box-sizing: border-box;</p>
+<br>
+<p>}</p>
+<br>
+<p>body {</p>
+<br>
+<p>font-family: &#x27;Segoe UI&#x27;, Tahoma, Geneva, Verdana, sans-serif;</p>
+<br>
+<p>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
+<br>
+<p>padding: 20px;</p>
+<br>
+<p>min-height: 100vh;</p>
+<br>
+<p>}</p>
+<br>
+<p>.container {</p>
+<br>
+<p>max-width: 900px;</p>
+<br>
+<p>margin: 0 auto;</p>
+<br>
+<p>background: white;</p>
+<br>
+<p>border-radius: 15px;</p>
+<br>
+<p>padding: 30px;</p>
+<br>
+<p>box-shadow: 0 20px 60px rgba(0,0,0,0.3);</p>
+<br>
+<p>}</p>
+<br>
+<p>h1 {</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>color: #2c3e50;</p>
+<br>
+<p>margin-bottom: 10px;</p>
+<br>
+<p>font-size: 26px;</p>
+<br>
+<p>font-weight: 700;</p>
+<br>
+<p>}</p>
+<br>
+<p>.subtitle {</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>color: #7f8c8d;</p>
+<br>
+<p>margin-bottom: 30px;</p>
+<br>
+<p>font-size: 14px;</p>
+<br>
+<p>}</p>
+<br>
+<p>.flowchart {</p>
+<br>
+<p>display: flex;</p>
+<br>
+<p>flex-direction: column;</p>
+<br>
+<p>gap: 15px;</p>
+<br>
+<p>}</p>
+<br>
+<p>.box {</p>
+<br>
+<p>padding: 18px 22px;</p>
+<br>
+<p>border-radius: 10px;</p>
+<br>
+<p>box-shadow: 0 4px 12px rgba(0,0,0,0.1);</p>
+<br>
+<p>position: relative;</p>
+<br>
+<p>transition: transform 0.2s;</p>
+<br>
+<p>}</p>
+<br>
+<p>.box:hover {</p>
+<br>
+<p>transform: translateY(-2px);</p>
+<br>
+<p>box-shadow: 0 6px 16px rgba(0,0,0,0.15);</p>
+<br>
+<p>}</p>
+<br>
+<p>.start {</p>
+<br>
+<p>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
+<br>
+<p>color: white;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>font-size: 18px;</p>
+<br>
+<p>}</p>
+<br>
+<p>.evaluation {</p>
+<br>
+<p>background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);</p>
+<br>
+<p>color: white;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>}</p>
+<br>
+<p>.decision {</p>
+<br>
+<p>background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);</p>
+<br>
+<p>color: white;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);</p>
+<br>
+<p>padding: 20px 40px;</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>}</p>
+<br>
+<p>.action {</p>
+<br>
+<p>background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);</p>
+<br>
+<p>color: #1a1a1a;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>border-left: 5px solid #00b894;</p>
+<br>
+<p>}</p>
+<br>
+<p>.warning {</p>
+<br>
+<p>background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);</p>
+<br>
+<p>color: #1a1a1a;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>border-left: 5px solid #d63031;</p>
+<br>
+<p>}</p>
+<br>
+<p>.treatment {</p>
+<br>
+<p>background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);</p>
+<br>
+<p>color: white;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>}</p>
+<br>
+<p>.arrow {</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>color: #667eea;</p>
+<br>
+<p>font-size: 24px;</p>
+<br>
+<p>font-weight: bold;</p>
+<br>
+<p>margin: -5px 0;</p>
+<br>
+<p>}</p>
+<br>
+<p>.split {</p>
+<br>
+<p>display: grid;</p>
+<br>
+<p>grid-template-columns: 1fr 1fr;</p>
+<br>
+<p>gap: 15px;</p>
+<br>
+<p>}</p>
+<br>
+<p>.label {</p>
+<br>
+<p>font-size: 12px;</p>
+<br>
+<p>font-weight: 600;</p>
+<br>
+<p>color: #2c3e50;</p>
+<br>
+<p>margin-bottom: 8px;</p>
+<br>
+<p>text-transform: uppercase;</p>
+<br>
+<p>letter-spacing: 0.5px;</p>
+<br>
+<p>}</p>
+<br>
+<p>.content {</p>
+<br>
+<p>font-size: 15px;</p>
+<br>
+<p>line-height: 1.5;</p>
+<br>
+<p>}</p>
+<br>
+<p>.highlight {</p>
+<br>
+<p>background: rgba(255,255,255,0.3);</p>
+<br>
+<p>padding: 2px 6px;</p>
+<br>
+<p>border-radius: 4px;</p>
+<br>
+<p>font-weight: 700;</p>
+<br>
+<p>}</p>
+<br>
+<p>ul {</p>
+<br>
+<p>margin-left: 20px;</p>
+<br>
+<p>margin-top: 8px;</p>
+<br>
+<p>}</p>
+<br>
+<p>li {</p>
+<br>
+<p>margin: 5px 0;</p>
+<br>
+<p>line-height: 1.4;</p>
+<br>
+<p>}</p>
+<br>
+<p>.footer {</p>
+<br>
+<p>margin-top: 25px;</p>
+<br>
+<p>padding-top: 20px;</p>
+<br>
+<p>border-top: 2px solid #ecf0f1;</p>
+<br>
+<p>font-size: 11px;</p>
+<br>
+<p>color: #7f8c8d;</p>
+<br>
+<p>text-align: center;</p>
+<br>
+<p>}</p>
+<br>
+<p>@media print {</p>
+<br>
+<p>body {</p>
+<br>
+<p>background: white;</p>
+<br>
+<p>padding: 0;</p>
+<br>
+<p>}</p>
+<br>
+<p>.container {</p>
+<br>
+<p>box-shadow: none;</p>
+<br>
+<p>max-width: 100%;</p>
+<br>
+<p>}</p>
+<br>
+<p>}</p>
+<br>
+<h1>🔴 ABSCESO MUSLO DERECHO</h1>
+<br>
+<p>Protocolo de Manejo en Urgencias</p>
+<br>
+<p>PACIENTE CON SOSPECHA DE ABSCESO EN MUSLO DERECHO</p>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>1. Evaluación Inicial</p>
+<br>
+<p><strong>Examen físico:</strong> Tumefacción, eritema, fluctuación, dolor</p>
+<br>
+<p><strong>Signos vitales:</strong> Temperatura, FC, FR, PA</p>
+<br>
+<p><strong>Ecografía POCUS:</strong> Confirmar colección líquida vs celulitis</p>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>¿SIGNOS DE ALARMA?</p>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>⚠️ SÍ - CRITERIOS GRAVES</p>
+<br>
+<li>SIRS (T &gt;38°C/90, FR &gt;24, Leucos &gt;12k/5cm o profundo</li>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>Manejo Hospitalario</p>
+<br>
+<p><strong>• Interconsulta Cirugía</strong></p>
+<br>
+<li>Antibióticos IV:</li>
+<br>
+<li>Vancomicina + Piperacilina/Tazobactam</li>
+<br>
+<li>O Linezolid + Carbapenem</li>
+<br>
+<li>Drenaje quirúrgico</li>
+<br>
+<li>Cultivo de pus</li>
+<br>
+<p>✓ NO - ABSCESO SIMPLE</p>
+<br>
+<li>Sin criterios de SIRS</li>
+<li>Paciente estable</li>
+<li>Inmunocompetente</li>
+<li>Absceso</li>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>Manejo Ambulatorio</p>
+<br>
+<p><strong>• Incisión y Drenaje</strong></p>
+<br>
+<li>Cultivo de pus (opcional)</li>
+<br>
+<li>Antibióticos VO:</li>
+<br>
+<li>TMP-SMX 160/800mg c/12h x 5-7d</li>
+<br>
+<li>O Clindamicina 300-450mg c/8h</li>
+<br>
+<li>Analgesia</li>
+<br>
+<li>Control en 48-72h</li>
+<br>
+<div class="arrow">↓</div>
+<br>
+<p>📋 Seguimiento</p>
+<br>
+<p><strong>Reevaluar en 48-72 horas:</strong></p>
+<br>
+<li>Mejoría de eritema y dolor</li>
+<br>
+<li>Ausencia de fiebre</li>
+<br>
+<li>Si no mejora: considerar resistencia antibiótica, colección residual, diagnóstico alternativo</li>
+<br>
+<p><strong>Basado en:</strong> IDSA Guidelines 2014 | American Family Physician 2026</p>
+<br>
+<p><strong>Abreviaturas:</strong> SIRS = Síndrome de Respuesta Inflamatoria Sistémica | TMP-SMX = Trimetoprim-Sulfametoxazol | POCUS = Point-of-Care Ultrasound</p>
+  </div>
+</body>
+</html>
