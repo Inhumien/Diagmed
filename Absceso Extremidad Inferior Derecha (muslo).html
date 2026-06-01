@@ -5,143 +5,107 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 <body>
-<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Diagrama de Flujo: Absceso Muslo</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; font-size: 24px; } .subtitle { text-align: center; color: #7f8c8d; margin-bottom: 30px; font-size: 14px; } .flow-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; margin: 15px 0; border-radius: 10px; text-align: center; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); } .decision-box { background: #f39c12; color: white; padding: 20px; margin: 15px 0; border-radius: 10px; text-align: center; font-weight: bold; position: relative; box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4); } .action-box { background: #27ae60; color: white; padding: 18px; margin: 15px 0; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4); } .warning-box { background: #e74c3c; color: white; padding: 18px; margin: 15px 0; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4); } .info-box { background: #3498db; color: white; padding: 15px; margin: 15px 0; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4); } .arrow { text-align: center; font-size: 30px; color: #667eea; margin: 5px 0; } .split-container { display: flex; gap: 20px; margin: 15px 0; } .split-box { flex: 1; } .label { background: #34495e; color: white; padding: 8px; border-radius: 5px; text-align: center; font-size: 13px; font-weight: bold; margin: 10px 0; } .highlight { background: #fff3cd; border-left: 4px solid #f39c12; padding: 12px; margin: 15px 0; border-radius: 5px; font-size: 13px; } .footer { margin-top: 30px; padding-top: 20px; border-top: 2px solid #ecf0f1; text-align: center; font-size: 11px; color: #7f8c8d; } ul { margin: 10px 0; padding-left: 20px; } li { margin: 5px 0; font-size: 14px; } </style> <div class="container">
+<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Diagrama de Flujo: Absceso Muslo</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2d3748; margin-bottom: 10px; font-size: 26px; font-weight: 700; } .subtitle { text-align: center; color: #718096; margin-bottom: 30px; font-size: 14px; } .flowchart { display: flex; flex-direction: column; gap: 15px; } .box { padding: 18px 22px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative; transition: transform 0.2s; } .box:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); } .start { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 600; text-align: center; font-size: 18px; } .evaluation { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; font-weight: 600; } .decision { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; font-weight: 600; clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%); padding: 20px 40px; text-align: center; } .action { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a202c; font-weight: 600; } .warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #1a202c; font-weight: 600; border-left: 5px solid #e53e3e; } .info { background: #edf2f7; color: #2d3748; font-size: 13px; border-left: 4px solid #4299e1; } .arrow { text-align: center; color: #4a5568; font-size: 24px; font-weight: bold; margin: -5px 0; } .split { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; } .label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; opacity: 0.9; } .content { font-size: 15px; line-height: 1.5; } .bullet { margin-left: 15px; margin-top: 8px; } .highlight { background: rgba(255,255,255,0.3); padding: 2px 6px; border-radius: 4px; font-weight: 700; } .footer { margin-top: 25px; padding-top: 20px; border-top: 2px solid #e2e8f0; font-size: 11px; color: #718096; text-align: center; } @media print { body { background: white; padding: 0; } .container { box-shadow: none; max-width: 100%; } } </style> <div class="container">
 🔴 ABSCESO EXTREMIDAD INFERIOR DERECHA (MUSLO)
-<div class="subtitle">Protocolo de Manejo en Urgencias</div> <div class="flow-box">
+<div class="subtitle">Protocolo de Manejo en Urgencias</div> <div class="flowchart"> <div class="box start">
 
-EVALUACIÓN INICIAL<br/>
+PACIENTE CON ABSCESO EN MUSLO DERECHO
 
-Historia + Examen Físico
+</div> <div class="arrow">↓</div> <div class="box evaluation"> <div class="label">1. EVALUACIÓN INICIAL</div> <div class="content">
 
-</div> <div class="arrow">↓</div> <div class="decision-box">
+• Signos vitales completos<br/>
 
-¿SOSPECHA DE ABSCESO?<br/>
+• Tamaño del absceso (medir en cm)<br/>
 
-<small style="font-weight: normal; font-size: 13px;">Masa fluctuante, eritema, dolor, calor local</small>
+• Signos de infección profunda/necrotizante<br/>
 
-</div> <div class="arrow">↓</div> <div class="info-box">
+• Factores de riesgo del paciente
 
-💡 Si duda clínica: Ultrasonido punto de atención<br/>
+</div> </div> <div class="arrow">↓</div> <div class="box decision">
 
-<small>• Absceso: colección hipoecogénica con refuerzo acústico posterior<br/>
+¿SIGNOS DE ALARMA?
 
-• Celulitis: engrosamiento dérmico sin colección</small>
+</div> <div class="arrow">↓</div> <div class="split"> <div> <div class="box warning"> <div class="label">⚠️ SÍ - CRITERIOS GRAVES</div> <div class="content">
 
-</div> <div class="arrow">↓</div> <div class="decision-box">
+• SIRS (T >38°C/<36°C, FC >90, FR >24, Leucos >12,000/<4,000)<br/>
 
-¿SIGNOS DE SEVERIDAD?
+• Hipotensión<br/>
 
-</div> <div class="highlight">
+• Piel violácea/crepitación<br/>
 
-⚠️ Criterios SIRS: Temp >38°C o <36°C, FC >90, FR >24, Leucocitos >12,000 o <4,000<br/>
+• Inmunosupresión severa<br/>
 
-🚨 Signos de alarma: Hipotensión, crepitación, piel violácea, dolor desproporcionado, progresión rápida
+• Absceso >5 cm
 
-</div> <div class="arrow">↓</div> <div class="split-container"> <div class="split-box"> <div class="label">SÍ - SEVERO</div> <div class="warning-box">
+</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">MANEJO HOSPITALARIO</div> <div class="content">
 
-HOSPITALIZACIÓN<br/><br/>
+✓ Interconsulta Cirugía<br/>
 
-• Antibióticos IV inmediatos<br/>
+✓ Antibióticos IV inmediatos<br/>
 
-• Vancomicina + Piperacilina/Tazobactam<br/>
+✓ Drenaje quirúrgico<br/>
 
-• Interconsulta Cirugía URGENTE<br/>
+✓ Cultivos + Gram<br/>
 
-• Considerar infección necrotizante
+✓ Ingreso hospitalario
 
-</div> </div> <div class="split-box"> <div class="label">NO - SIMPLE</div> <div class="action-box">
+</div> </div> </div> <div> <div class="box action"> <div class="label">✓ NO - ABSCESO SIMPLE</div> <div class="content">
 
-INCISIÓN Y DRENAJE<br/><br/>
+• Sin signos sistémicos<br/>
+
+• Paciente estable<br/>
+
+• Absceso ≤5 cm<br/>
+
+• Sin comorbilidades graves
+
+</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">TRATAMIENTO AMBULATORIO</div> <div class="content">
+
+<span class="highlight">INCISIÓN Y DRENAJE</span><br/>
 
 • Anestesia local<br/>
 
-• Incisión adecuada<br/>
+• Drenaje completo<br/>
 
-• Exploración digital<br/>
+• Cultivo (opcional)<br/>
 
-• Romper tabiques<br/>
+• Cubrir con gasa estéril<br/>
 
-• Irrigación abundante
+• NO empacar rutinariamente
 
-</div> </div> </div> <div class="arrow">↓</div> <div class="decision-box">
+</div> </div> </div> </div> <div class="arrow">↓</div> <div class="box info"> <div class="label">💊 ANTIBIÓTICOS POST-DRENAJE</div> <div class="content">
 
-¿REQUIERE ANTIBIÓTICOS ADYUVANTES?
-
-</div> <div class="highlight">
-
-Indicaciones para ATB:<br/>
-
-• Absceso >5 cm<br/>
-
-• SIRS presente<br/>
-
-• Inmunosupresión<br/>
+Indicaciones para ATB oral:<br/>
 
 • Abscesos múltiples<br/>
 
 • Celulitis extensa circundante<br/>
 
-• Falta de respuesta a drenaje solo
+• Edades extremas<br/>
 
-</div> <div class="arrow">↓</div> <div class="split-container"> <div class="split-box"> <div class="label">SÍ</div> <div class="action-box">
+• Comorbilidades (DM, inmunosupresión)<br/>
 
-ANTIBIÓTICOS VO<br/>
+• Falta de respuesta a drenaje solo<br/><br/>
 
-(Cobertura MRSA)<br/><br/>
+Opciones (cobertura MRSA):<br/>
 
-1ª línea:<br/>
+• TMP-SMX 160/800 mg VO c/12h × 5-7 días (1ª elección)<br/>
 
-TMP-SMX 160/800 mg c/12h<br/>
+• Clindamicina 300-450 mg VO c/8h × 5-7 días (más efectos GI)
 
-<small>o</small><br/>
+</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">📋 ALTA Y SEGUIMIENTO</div> <div class="content">
 
-Clindamicina 300-450 mg c/8h<br/><br/>
+✓ Control en 48-72 horas<br/>
 
-Duración: 5-7 días
+✓ Signos de alarma: fiebre, dolor creciente, eritema progresivo<br/>
 
-</div> </div> <div class="split-box"> <div class="label">NO</div> <div class="action-box">
+✓ Higiene de herida<br/>
 
-SOLO DRENAJE<br/><br/>
+✓ Analgesia (paracetamol/AINE)
 
-• Absceso simple <5 cm<br/>
+</div> </div> </div> <div class="footer">
 
-• Sin SIRS<br/>
-
-• Inmunocompetente<br/>
-
-• Drenaje completo exitoso
-
-</div> </div> </div> <div class="arrow">↓</div> <div class="info-box">
-
-📋 MANEJO POST-PROCEDIMIENTO<br/>
-
-• Cultivo de pus (opcional en casos típicos)<br/>
-
-• NO empaquetar si <5 cm<br/>
-
-• Apósito estéril simple<br/>
-
-• Analgesia (AINE/paracetamol)<br/>
-
-• Elevación de extremidad<br/>
-
-• Control en 48-72 horas
-
-</div> <div class="arrow">↓</div> <div class="flow-box">
-
-INSTRUCCIONES DE EGRESO<br/>
-
-<small style="font-weight: normal;">Signos de alarma + Seguimiento 48-72h</small>
-
-</div> <div class="highlight">
-
-🔴 REGRESAR SI: Fiebre persistente, dolor creciente, eritema progresivo, drenaje purulento abundante, síntomas sistémicos
-
-</div> <div class="footer">
-
-Basado en guías IDSA 2014 y evidencia actualizada 2026<br/>
-
-Para uso en urgencias - Orientación médica profesional
+Basado en guías IDSA 2014 y evidencia actualizada | Para uso clínico en urgencias | No sustituye juicio clínico
 
 </div> </div>
 </body>
