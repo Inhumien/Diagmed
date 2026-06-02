@@ -5,107 +5,93 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 <body>
-<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Diagrama de Flujo: Absceso Muslo</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2d3748; margin-bottom: 10px; font-size: 26px; font-weight: 700; } .subtitle { text-align: center; color: #718096; margin-bottom: 30px; font-size: 14px; } .flowchart { display: flex; flex-direction: column; gap: 15px; } .box { padding: 18px 22px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative; transition: transform 0.2s; } .box:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); } .start { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 600; text-align: center; font-size: 18px; } .evaluation { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; font-weight: 600; } .decision { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; font-weight: 600; clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%); padding: 20px 40px; text-align: center; } .action { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a202c; font-weight: 600; } .warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #1a202c; font-weight: 600; border-left: 5px solid #e53e3e; } .info { background: #edf2f7; color: #2d3748; font-size: 13px; border-left: 4px solid #4299e1; } .arrow { text-align: center; color: #4a5568; font-size: 24px; font-weight: bold; margin: -5px 0; } .split { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; } .label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; opacity: 0.9; } .content { font-size: 15px; line-height: 1.5; } .bullet { margin-left: 15px; margin-top: 8px; } .highlight { background: rgba(255,255,255,0.3); padding: 2px 6px; border-radius: 4px; font-weight: 700; } .footer { margin-top: 25px; padding-top: 20px; border-top: 2px solid #e2e8f0; font-size: 11px; color: #718096; text-align: center; } @media print { body { background: white; padding: 0; } .container { box-shadow: none; max-width: 100%; } } </style> <div class="container">
-🔴 ABSCESO EXTREMIDAD INFERIOR DERECHA (MUSLO)
-<div class="subtitle">Protocolo de Manejo en Urgencias</div> <div class="flowchart"> <div class="box start">
+<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Absceso de Muslo - Diagrama de Flujo</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2d3748; margin-bottom: 10px; font-size: 26px; } .subtitle { text-align: center; color: #718096; margin-bottom: 30px; font-size: 14px; } .flowchart { display: flex; flex-direction: column; gap: 15px; } .box { padding: 18px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: relative; } .box::after { content: '↓'; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #4a5568; } .box:last-child::after { display: none; } .start { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; font-weight: bold; font-size: 18px; } .evaluation { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; } .decision { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: #1a202c; border-left: 5px solid #2b6cb0; } .action { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a202c; border-left: 5px solid #2f855a; } .warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #1a202c; border-left: 5px solid #c53030; font-weight: bold; } .treatment { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #1a202c; border-left: 5px solid #805ad5; } .box-title { font-weight: bold; margin-bottom: 8px; font-size: 16px; } .box-content { font-size: 14px; line-height: 1.6; } ul { margin-left: 20px; margin-top: 5px; } li { margin-bottom: 4px; } .split-box { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; } .split-box .box::after { display: none; } .arrow-split { text-align: center; font-size: 24px; color: #4a5568; margin: -10px 0; } .legend { margin-top: 30px; padding: 15px; background: #f7fafc; border-radius: 8px; font-size: 12px; color: #4a5568; } .legend-title { font-weight: bold; margin-bottom: 8px; color: #2d3748; } strong { color: #2d3748; } </style> <div class="container">
+🔴 ABSCESO DE MUSLO (Extremidad Inferior Derecha)
+<div class="subtitle">Diagrama de Flujo para Urgencias - Basado en Guías IDSA</div> <div class="flowchart"> <div class="box start">
 
-PACIENTE CON ABSCESO EN MUSLO DERECHO
+SOSPECHA DE ABSCESO DE MUSLO
 
-</div> <div class="arrow">↓</div> <div class="box evaluation"> <div class="label">1. EVALUACIÓN INICIAL</div> <div class="content">
+</div> <div class="box evaluation"> <div class="box-title">1. EVALUACIÓN INICIAL</div> <div class="box-content">
 
-• Signos vitales completos<br/>
+Examen físico: Tumefacción, fluctuación, eritema, calor local<br/>
 
-• Tamaño del absceso (medir en cm)<br/>
+Signos de alarma: Piel violácea, crepitación, dolor desproporcionado<br/>
 
-• Signos de infección profunda/necrotizante<br/>
+Ecografía POCUS: Confirmar colección líquida vs celulitis
 
-• Factores de riesgo del paciente
+</div> </div> <div class="box warning"> <div class="box-title">⚠️ DESCARTAR INFECCIÓN NECROTIZANTE</div> <div class="box-content">
 
-</div> </div> <div class="arrow">↓</div> <div class="box decision">
+Score NECROSIS: PAS ≤120 + Leucocitos ≥15,000 + Piel violácea<br/>
 
-¿SIGNOS DE ALARMA?
+Si sospecha: Cirugía URGENTE + ATB IV amplio espectro (Vancomicina + Piperacilina/Tazobactam o Carbapenem + Clindamicina)
 
-</div> <div class="arrow">↓</div> <div class="split"> <div> <div class="box warning"> <div class="label">⚠️ SÍ - CRITERIOS GRAVES</div> <div class="content">
+</div> </div> <div class="box decision"> <div class="box-title">2. EVALUAR SEVERIDAD (Criterios SIRS)</div> <div class="box-content"> <ul> <li>Temperatura >38°C o <36°C</li> <li>FC >90 lpm</li> <li>FR >24 rpm</li> <li>Leucocitos >12,000 o <4,000/µL</li> </ul>
 
-• SIRS (T >38°C/<36°C, FC >90, FR >24, Leucos >12,000/<4,000)<br/>
+Otros factores: Inmunosupresión, diabetes, múltiples abscesos, absceso >5 cm
 
-• Hipotensión<br/>
+</div> </div> <div class="arrow-split">↙ ↓ ↘</div> <div class="split-box"> <div class="box action"> <div class="box-title">ABSCESO SIMPLE</div> <div class="box-content">
 
-• Piel violácea/crepitación<br/>
+Sin SIRS<br/>
 
-• Inmunosupresión severa<br/>
+Sin factores de riesgo<br/>
 
-• Absceso >5 cm
+Tamaño <5 cm
 
-</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">MANEJO HOSPITALARIO</div> <div class="content">
+</div> </div> <div class="box action"> <div class="box-title">ABSCESO COMPLICADO</div> <div class="box-content">
 
-✓ Interconsulta Cirugía<br/>
+Con SIRS<br/>
 
-✓ Antibióticos IV inmediatos<br/>
+Inmunosupresión<br/>
 
-✓ Drenaje quirúrgico<br/>
+Tamaño >5 cm<br/>
 
-✓ Cultivos + Gram<br/>
+Múltiples abscesos
 
-✓ Ingreso hospitalario
+</div> </div> </div> <div class="arrow-split">↓</div> <div class="box treatment"> <div class="box-title">3. TRATAMIENTO</div> <div class="box-content">
 
-</div> </div> </div> <div> <div class="box action"> <div class="label">✓ NO - ABSCESO SIMPLE</div> <div class="content">
+TODOS los abscesos:
 
-• Sin signos sistémicos<br/>
+<ul> <li><strong>Incisión y Drenaje</strong> (tratamiento principal)</li> <li>Cultivo de pus (Gram + cultivo)</li> <li>Sin empaquetamiento si <5 cm</li> <li>Considerar empaquetamiento/drenaje si >5 cm o consulta cirugía</li> </ul> </div> </div> <div class="split-box"> <div class="box treatment"> <div class="box-title">ABSCESO SIMPLE</div> <div class="box-content">
 
-• Paciente estable<br/>
+Antibióticos: Considerar (reduce recurrencia)<br/>
 
-• Absceso ≤5 cm<br/>
+VO:
 
-• Sin comorbilidades graves
+<ul> <li>TMP-SMX 160/800 mg c/12h</li> <li>Clindamicina 300-450 mg c/8h</li> </ul>
 
-</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">TRATAMIENTO AMBULATORIO</div> <div class="content">
+Duración: 5-7 días
 
-<span class="highlight">INCISIÓN Y DRENAJE</span><br/>
+</div> </div> <div class="box treatment"> <div class="box-title">ABSCESO COMPLICADO</div> <div class="box-content">
 
-• Anestesia local<br/>
+Antibióticos: OBLIGATORIO (cobertura MRSA)<br/>
 
-• Drenaje completo<br/>
+VO: TMP-SMX o Clindamicina<br/>
 
-• Cultivo (opcional)<br/>
+IV (si hospitalización):
 
-• Cubrir con gasa estéril<br/>
+<ul> <li>Vancomicina 15-20 mg/kg c/8-12h</li> <li>Linezolid 600 mg c/12h</li> </ul>
 
-• NO empacar rutinariamente
+Duración: 7-14 días
 
-</div> </div> </div> </div> <div class="arrow">↓</div> <div class="box info"> <div class="label">💊 ANTIBIÓTICOS POST-DRENAJE</div> <div class="content">
+</div> </div> </div> <div class="box action"> <div class="box-title">4. SEGUIMIENTO</div> <div class="box-content">
 
-Indicaciones para ATB oral:<br/>
+Reevaluación 48-72 horas: Mejoría clínica esperada<br/>
 
-• Abscesos múltiples<br/>
+Si no mejora: Considerar drenaje inadecuado, resistencia antibiótica, diagnóstico alternativo<br/>
 
-• Celulitis extensa circundante<br/>
+Educación: Higiene, signos de alarma, completar tratamiento
 
-• Edades extremas<br/>
+</div> </div> </div> <div class="legend"> <div class="legend-title">📋 NOTAS CLAVE:</div>
 
-• Comorbilidades (DM, inmunosupresión)<br/>
+• Drenaje es el tratamiento principal - antibióticos son adyuvantes<br/>
 
-• Falta de respuesta a drenaje solo<br/><br/>
+• POCUS ayuda a diferenciar absceso de celulitis (LR+ 8.6)<br/>
 
-Opciones (cobertura MRSA):<br/>
+• TMP-SMX tiene menos efectos GI que clindamicina<br/>
 
-• TMP-SMX 160/800 mg VO c/12h × 5-7 días (1ª elección)<br/>
+• Abscesos >5 cm pueden requerir evaluación quirúrgica<br/>
 
-• Clindamicina 300-450 mg VO c/8h × 5-7 días (más efectos GI)
-
-</div> </div> <div class="arrow">↓</div> <div class="box action"> <div class="label">📋 ALTA Y SEGUIMIENTO</div> <div class="content">
-
-✓ Control en 48-72 horas<br/>
-
-✓ Signos de alarma: fiebre, dolor creciente, eritema progresivo<br/>
-
-✓ Higiene de herida<br/>
-
-✓ Analgesia (paracetamol/AINE)
-
-</div> </div> </div> <div class="footer">
-
-Basado en guías IDSA 2014 y evidencia actualizada | Para uso clínico en urgencias | No sustituye juicio clínico
+• Siempre descartar infección necrotizante en presentaciones severas
 
 </div> </div>
 </body>
