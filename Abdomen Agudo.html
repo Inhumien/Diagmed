@@ -5,171 +5,149 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 <body>
-<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Abdomen Agudo - Algoritmo Diagnóstico</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; font-size: 28px; font-weight: 700; } .subtitle { text-align: center; color: #7f8c8d; margin-bottom: 30px; font-size: 14px; } .flowchart { display: flex; flex-direction: column; align-items: center; gap: 15px; } .box { padding: 15px 20px; border-radius: 10px; text-align: center; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; max-width: 600px; width: 100%; } .box:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); } .start { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 18px; font-weight: 700; } .critical { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 3px solid #c0392b; } .decision { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%); padding: 20px 40px; } .action { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #2c3e50; } .warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #2c3e50; border: 2px solid #e67e22; } .location { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #2c3e50; font-size: 14px; } .arrow { font-size: 24px; color: #3498db; font-weight: bold; } .split-container { display: flex; gap: 20px; justify-content: center; width: 100%; flex-wrap: wrap; } .split-box { flex: 1; min-width: 250px; max-width: 350px; } .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; width: 100%; margin-top: 10px; } .small-text { font-size: 13px; line-height: 1.4; } .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; font-weight: 700; } .footer { margin-top: 30px; padding-top: 20px; border-top: 2px solid #ecf0f1; text-align: center; color: #7f8c8d; font-size: 12px; } @media print { body { background: white; padding: 0; } .container { box-shadow: none; } } </style> <div class="container">
-🚨 ABDOMEN AGUDO - Algoritmo Diagnóstico
-<p class="subtitle">Guía rápida para evaluación en urgencias</p> <div class="flowchart"> <div class="box start">
+<meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Abdomen Agudo - Algoritmo de Urgencias</title> <style> <em> {</em> margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; } .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); } h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; font-size: 28px; font-weight: 700; } .subtitle { text-align: center; color: #7f8c8d; margin-bottom: 30px; font-size: 14px; } .flowchart { display: flex; flex-direction: column; gap: 15px; } .box { padding: 18px; border-radius: 10px; text-align: center; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; } .box:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); } .start { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 18px; } .critical { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border-left: 5px solid #c0392b; } .decision { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; position: relative; } .action { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #2c3e50; } .warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #2c3e50; border-left: 5px solid #e67e22; } .location { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #2c3e50; font-size: 14px; } .arrow { text-align: center; color: #3498db; font-size: 24px; font-weight: bold; } .split-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0; } .triple-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 15px 0; } .quad-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 15px 0; } .small-text { font-size: 13px; line-height: 1.4; } .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; font-weight: 700; } ul { text-align: left; margin: 8px 0; padding-left: 20px; } li { margin: 4px 0; font-size: 13px; } .footer { margin-top: 25px; padding-top: 20px; border-top: 2px solid #ecf0f1; text-align: center; color: #7f8c8d; font-size: 12px; } @media print { body { background: white; padding: 0; } .container { box-shadow: none; } } </style> <div class="container">
+🚨 ABDOMEN AGUDO - ALGORITMO DE URGENCIAS
+<p class="subtitle">Evaluación sistemática basada en evidencia</p> <div class="flowchart"> <div class="box start">
 
 PACIENTE CON DOLOR ABDOMINAL AGUDO
 
 </div> <div class="arrow">↓</div> <div class="box critical">
 
-EVALUACIÓN INMEDIATA<br/>
+EVALUACIÓN INICIAL RÁPIDA<br/>
 
-<span class="small-text">Signos vitales • ABC • Acceso venoso</span>
+<span class="small-text">Signos vitales • Aspecto general • ABC</span>
 
 </div> <div class="arrow">↓</div> <div class="box decision">
 
-¿Inestabilidad hemodinámica, peritonitis generalizada o dolor desproporcionado?
+¿INESTABILIDAD HEMODINÁMICA, PERITONITIS GENERALIZADA<br/>o DOLOR SÚBITO/EXCRUCIANTE?
 
-</div> <div class="arrow">↓</div> <div class="split-container"> <div class="split-box"> <div class="box critical">
+</div> <div class="split-container"> <div> <div class="box critical">
 
-SÍ → CÓDIGO ROJO<br/>
+SÍ → MANEJO URGENTE<br/>
 
-<span class="small-text">
-
-• Reanimación inmediata<br/>
-
-• Consulta cirugía URGENTE<br/>
-
-• Rx simple si peritonitis<br/>
-
-• TC abdomen con contraste IV<br/>
-
-• NO retrasar cirugía
-
-</span> </div> </div> <div class="split-box"> <div class="box action">
+<ul> <li>Reanimación con fluidos IV</li> <li>Hemocultivos + antibióticos</li> <li>Ecografía POCUS</li> <li><span class="highlight">CONSULTA CIRUGÍA INMEDIATA</span></li> </ul> </div> </div> <div> <div class="box action">
 
 NO → EVALUACIÓN SISTEMÁTICA<br/>
 
-<span class="small-text">
+<span class="small-text">Continuar algoritmo diagnóstico</span>
 
-Historia + Examen físico completo<br/>
+</div> </div> </div> <div class="arrow">↓</div> <div class="box action">
 
-Descartar causas extraabdominales
+HISTORIA CLÍNICA + EXAMEN FÍSICO COMPLETO<br/>
 
-</span> </div> </div> </div> <div class="arrow">↓</div> <div class="box action">
+<span class="small-text">Localización del dolor • Signos peritoneales • Examen pélvico (si aplica)</span>
 
-LABORATORIOS BÁSICOS<br/>
+</div> <div class="arrow">↓</div> <div class="box warning">
 
-<span class="small-text">
+LABORATORIOS INICIALES<br/>
 
-Hemograma • PCR • Función hepática • Creatinina • Glucosa<br/>
+<span class="small-text">Hemograma • Química • Lipasa • Prueba embarazo • Uroanálisis</span>
 
-Uroanálisis • Lipasa • <span class="highlight">β-hCG en mujeres edad fértil</span>
+</div> <div class="arrow">↓</div> <div class="box decision">
 
-</span> </div> <div class="arrow">↓</div> <div class="box warning">
+LOCALIZACIÓN DEL DOLOR
 
-LOCALIZACIÓN DEL DOLOR<br/>
+</div> <div class="quad-container"> <div class="box location">
 
-<span class="small-text">Guía la selección de imágenes</span>
-
-</div> <div class="arrow">↓</div> <div class="grid-container"> <div class="box location">
-
-CUADRANTE SUPERIOR DERECHO<br/>
+🔴 CUADRANTE SUPERIOR DERECHO<br/>
 
 <span class="small-text">
 
-1ª línea: Ecografía<br/>
+Dx principales: Colecistitis, hepatitis, úlcera péptica<br/>
 
-Dx: Colecistitis, colelitiasis<br/>
+Imagen 1ª línea: Ecografía abdominal<br/>
 
-Si (-): TC con contraste
+Alternativa: TC con contraste IV
 
 </span> </div> <div class="box location">
 
-EPIGASTRIO<br/>
+🟠 CUADRANTE SUPERIOR IZQUIERDO<br/>
 
 <span class="small-text">
 
-1ª línea: TC con contraste<br/>
+Dx principales: Gastritis, úlcera, pancreatitis, esplenomegalia<br/>
 
-Dx: Pancreatitis, úlcera perforada<br/>
+Imagen 1ª línea: TC con contraste IV<br/>
 
-Considerar: Rx tórax, ECG
+Considerar: Rx tórax (descartar neumonía)
 
 </span> </div> <div class="box location">
 
-CUADRANTE SUPERIOR IZQUIERDO<br/>
+🟡 CUADRANTE INFERIOR DERECHO<br/>
 
 <span class="small-text">
 
-1ª línea: TC con contraste<br/>
+Dx principales: Apendicitis, enfermedad inflamatoria pélvica, quiste ovárico<br/>
 
-Dx: Patología esplénica, gástrica<br/>
+Imagen 1ª línea: TC abdominopélvica con contraste IV<br/>
 
-Considerar: Rx tórax
+Alternativa: Ecografía (embarazo/niños)
 
 </span> </div> <div class="box location">
 
-CUADRANTE INFERIOR DERECHO<br/>
+🟢 CUADRANTE INFERIOR IZQUIERDO<br/>
 
 <span class="small-text">
 
-1ª línea: TC con contraste<br/>
+Dx principales: Diverticulitis, colitis, enfermedad inflamatoria pélvica<br/>
 
-Dx: Apendicitis<br/>
+Imagen 1ª línea: TC con contraste IV<br/>
 
-Alternativa: Ecografía (niños)
+Nota: Dx clínico aceptable si bajo riesgo
 
-</span> </div> <div class="box location">
+</span> </div> </div> <div class="box location">
 
-HIPOGASTRIO / PELVIS<br/>
-
-<span class="small-text">
-
-Mujeres: Ecografía transvaginal<br/>
-
-Dx: Embarazo ectópico, torsión anexial<br/>
-
-Hombres: TC con contraste
-
-</span> </div> <div class="box location">
-
-CUADRANTE INFERIOR IZQUIERDO<br/>
+🔵 DOLOR DIFUSO/EPIGÁSTRICO/PERIUMBILICAL<br/>
 
 <span class="small-text">
 
-1ª línea: TC con contraste<br/>
+Dx principales: Obstrucción intestinal, isquemia mesentérica, pancreatitis, AAA, gastroenteritis<br/>
 
-Dx: Diverticulitis<br/>
+Imagen 1ª línea: TC abdominopélvica con contraste IV • Considerar angio-TC si sospecha vascular
 
-Considerar: Uroanálisis
+</span> </div> <div class="arrow">↓</div> <div class="box decision">
 
-</span> </div> <div class="box location">
+INTERPRETACIÓN DE IMÁGENES + INTEGRACIÓN CLÍNICA
 
-DOLOR DIFUSO / GENERALIZADO<br/>
+</div> <div class="triple-container"> <div class="box critical">
+
+QUIRÚRGICO<br/>
+
+<span class="small-text">Consulta cirugía<br/>Preparación quirófano</span>
+
+</div> <div class="box action">
+
+MÉDICO<br/>
+
+<span class="small-text">Tratamiento específico<br/>Hospitalización/observación</span>
+
+</div> <div class="box warning">
+
+NO CONCLUYENTE<br/>
+
+<span class="small-text">Observación clínica<br/>Reevaluación seriada</span>
+
+</div> </div> <div class="box warning" style="margin-top: 20px;">
+
+⚠️ BANDERAS ROJAS - CONSULTA QUIRÚRGICA URGENTE<br/>
 
 <span class="small-text">
 
-1ª línea: TC abdomen-pelvis con contraste IV<br/>
+Signos de peritonitis • Inestabilidad hemodinámica • Aire libre en Rx • Sospecha de isquemia mesentérica •
 
-Dx: Obstrucción intestinal, isquemia mesentérica, perforación
-
-</span> </div> </div> <div class="arrow">↓</div> <div class="box warning">
-
-⚠️ BANDERAS ROJAS - CONSULTA CIRUGÍA<br/>
-
-<span class="small-text">
-
-Peritonitis • Obstrucción intestinal • Isquemia mesentérica<br/>
-
-Perforación visceral • Hemorragia intraabdominal • Apendicitis complicada
+Aneurisma aórtico roto • Embarazo ectópico roto • Obstrucción intestinal con estrangulación
 
 </span> </div> </div> <div class="footer">
 
-Notas importantes:<br/>
+Puntos clave: TC con contraste IV es el estándar de oro en adultos no embarazadas •
 
-• TC con contraste IV es el estándar de oro en abdomen agudo (sensibilidad >90%)<br/>
+Ecografía preferida en embarazo, niños y sospecha biliar •
 
-• Ecografía preferida en embarazo, niños y sospecha de patología biliar<br/>
+No retrasar consulta quirúrgica esperando imágenes en pacientes inestables •
 
-• No retrasar analgesia adecuada - no afecta precisión diagnóstica<br/>
+Analgesia adecuada no compromete el examen físico<br/>
 
-• Interpretación radiológica urgente reduce mortalidad (espera >2h aumenta riesgo)<br/>
-
-<br/>
-
-Basado en: AAFP Guidelines 2023, NEJM 2024, ACEP Clinical Policy 2023
+Basado en: NEJM 2024, American Family Physician 2023, ACEP Guidelines
 
 </div> </div>
 </body>
