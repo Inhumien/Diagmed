@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Manejo de Absceso Glúteo Izquierdo</title>
+<title>Diagrama de Flujo: Absceso Pancreático</title>
 <style>
 
         <em> {</em>
@@ -54,7 +54,11 @@ color: #2c3e50;
 
 margin-bottom: 10px;
 
-font-size: 24px;
+font-size: 26px;
+
+border-bottom: 4px solid #e74c3c;
+
+padding-bottom: 15px;
 
 }
 
@@ -66,7 +70,9 @@ color: #7f8c8d;
 
 margin-bottom: 30px;
 
-font-size: 14px;
+font-size: 13px;
+
+font-style: italic;
 
 }
 
@@ -76,179 +82,249 @@ display: flex;
 
 flex-direction: column;
 
-align-items: center;
-
 gap: 15px;
 
 }
 
 .box {
 
-padding: 20px;
+padding: 18px;
 
 border-radius: 10px;
-
-width: 100%;
-
-max-width: 700px;
 
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
 position: relative;
 
+transition: transform 0.2s;
+
+}
+
+.box:hover {
+
+transform: translateY(-2px);
+
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
 }
 
 .start {
 
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background: linear-gradient(135deg, #e74c3c, #c0392b);
 
 color: white;
 
 font-weight: bold;
 
 text-align: center;
-
-font-size: 18px;
-
-}
-
-.action {
-
-background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-
-color: white;
-
-font-weight: bold;
-
-}
-
-.decision {
-
-background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-
-color: white;
-
-font-weight: bold;
-
-clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-
-padding: 25px 40px;
-
-}
-
-.treatment {
-
-background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-
-color: #2c3e50;
-
-font-weight: bold;
-
-}
-
-.warning {
-
-background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-
-color: #2c3e50;
-
-font-weight: bold;
-
-border-left: 5px solid #e74c3c;
-
-}
-
-.arrow {
-
-width: 0;
-
-height: 0;
-
-border-left: 15px solid transparent;
-
-border-right: 15px solid transparent;
-
-border-top: 20px solid #95a5a6;
-
-margin: 5px auto;
-
-}
-
-.arrow-label {
-
-text-align: center;
-
-font-weight: bold;
-
-color: #2c3e50;
-
-margin: 5px 0;
-
-font-size: 14px;
-
-}
-
-.split {
-
-display: flex;
-
-gap: 20px;
-
-width: 100%;
-
-max-width: 700px;
-
-}
-
-.split .box {
-
-flex: 1;
-
-}
-
-.key-point {
-
-background: #ecf0f1;
-
-padding: 15px;
-
-border-radius: 8px;
-
-margin-top: 20px;
-
-border-left: 4px solid #3498db;
-
-}
-
-.key-point h3 {
-
-color: #2c3e50;
-
-margin-bottom: 10px;
 
 font-size: 16px;
 
 }
 
-.key-point ul {
+.diagnosis {
+
+background: linear-gradient(135deg, #3498db, #2980b9);
+
+color: white;
+
+border-left: 6px solid #1a5490;
+
+}
+
+.diagnosis-title {
+
+font-weight: bold;
+
+font-size: 15px;
+
+margin-bottom: 8px;
+
+}
+
+.diagnosis-content {
+
+font-size: 13px;
+
+line-height: 1.5;
+
+}
+
+.diagnosis-content ul {
 
 margin-left: 20px;
 
+margin-top: 5px;
+
+}
+
+.treatment {
+
+background: linear-gradient(135deg, #27ae60, #229954);
+
+color: white;
+
+border-left: 6px solid #1e8449;
+
+}
+
+.treatment-title {
+
+font-weight: bold;
+
+font-size: 15px;
+
+margin-bottom: 8px;
+
+}
+
+.treatment-content {
+
+font-size: 13px;
+
+line-height: 1.5;
+
+}
+
+.stepup {
+
+background: linear-gradient(135deg, #f39c12, #d68910);
+
+color: white;
+
+border-left: 6px solid #b9770e;
+
+}
+
+.stepup-title {
+
+font-weight: bold;
+
+font-size: 15px;
+
+margin-bottom: 10px;
+
+text-align: center;
+
+}
+
+.steps {
+
+display: flex;
+
+justify-content: space-around;
+
+gap: 10px;
+
+margin-top: 10px;
+
+}
+
+.step {
+
+flex: 1;
+
+background: rgba(255,255,255,0.2);
+
+padding: 12px;
+
+border-radius: 8px;
+
+text-align: center;
+
+font-size: 12px;
+
+border: 2px solid rgba(255,255,255,0.3);
+
+}
+
+.step-number {
+
+display: block;
+
+font-weight: bold;
+
+font-size: 18px;
+
+margin-bottom: 5px;
+
+}
+
+.warning {
+
+background: linear-gradient(135deg, #e67e22, #ca6f1e);
+
+color: white;
+
+border-left: 6px solid #a04000;
+
+font-size: 13px;
+
+}
+
+.warning-title {
+
+font-weight: bold;
+
+margin-bottom: 5px;
+
+}
+
+.arrow {
+
+text-align: center;
+
 color: #34495e;
 
-}
+font-size: 24px;
 
-.key-point li {
-
-margin: 5px 0;
-
-font-size: 14px;
+margin: -5px 0;
 
 }
 
-strong {
+.footer {
 
-color: #e74c3c;
+margin-top: 25px;
+
+padding-top: 15px;
+
+border-top: 2px solid #ecf0f1;
+
+font-size: 11px;
+
+color: #7f8c8d;
+
+text-align: center;
+
+}
+
+.highlight {
+
+background: rgba(255,255,255,0.3);
+
+padding: 2px 6px;
+
+border-radius: 3px;
+
+font-weight: bold;
+
+}
+
+@media print {
+
+body {
+
+background: white;
+
+padding: 0;
+
+}
+
+.container {
+
+box-shadow: none;
+
+}
 
 }
 
@@ -257,143 +333,171 @@ color: #e74c3c;
 <body>
 <div class="container">
 
-<h1>🏥 MANEJO DE ABSCESO GLÚTEO IZQUIERDO</h1>
+<h1>🔴 ABSCESO PANCREÁTICO / NECROSIS INFECTADA</h1>
 
-<p class="subtitle">Protocolo de Urgencias Basado en Evidencia</p>
+<div class="subtitle">Algoritmo de Manejo en Urgencias - Basado en AGA/ACR Guidelines</div>
 
 <div class="flowchart">
 
 <div class="box start">
 
-ABSCESO GLÚTEO IZQUIERDO CONFIRMADO
+⚠️ SOSPECHA DE NECROSIS PANCREÁTICA INFECTADA
 
 </div>
 
-<div class="arrow"/>
+<div class="arrow">▼</div>
 
-<div class="box action">
+<div class="box diagnosis">
 
-✓ EVALUACIÓN INICIAL<br/>
+<div class="diagnosis-title">📋 DIAGNÓSTICO CLÍNICO + IMAGEN</div>
 
-• Tamaño y profundidad<br/>
+<div class="diagnosis-content">
 
-• Signos de SIRS (fiebre, taquicardia, taquipnea)<br/>
-
-• Comorbilidades (diabetes, inmunosupresión)
-
-</div>
-
-<div class="arrow"/>
-
-<div class="box decision">
-
-¿CRITERIOS DE SEVERIDAD?<br/>
-
-SIRS • Hipotensión • Inmunosupresión<br/>
-
-Absceso >5cm • Múltiples abscesos
-
-</div>
-
-<div class="arrow-label">SÍ ➜</div>
-
-<div class="box warning">
-
-⚠️ MANEJO COMPLEJO<br/>
-
-• Considerar hospitalización<br/>
-
-• Antibióticos IV (vancomicina/linezolid)<br/>
-
-• Valoración quirúrgica<br/>
-
-• Cultivo obligatorio
-
-</div>
-
-<div class="arrow-label">NO ➜</div>
-
-<div class="box action">
-
-🔪 INCISIÓN Y DRENAJE (Tratamiento Principal)<br/>
-
-• Anestesia local/sedación según necesidad<br/>
-
-• Incisión adecuada (suficiente para drenaje completo)<br/>
-
-• Romper loculaciones con instrumento romo<br/>
-
-• <strong>NO empaquetar rutinariamente</strong> (aumenta dolor sin beneficio)
-
-</div>
-
-<div class="arrow"/>
-
-<div class="box treatment">
-
-💊 ANTIBIÓTICOS POST-DRENAJE<br/>
-
-<strong>Indicados en casos no complicados</strong> (mejora curación, reduce recurrencia)<br/><br/>
-
-<strong>Opciones:</strong><br/>
-
-• TMP-SMX 160/800mg c/12h × 5-7 días (1ª línea)<br/>
-
-• Clindamicina 300-450mg c/8h × 5-7 días (alternativa)<br/>
-
-<em>Nota: TMP-SMX tiene menos efectos GI que clindamicina</em>
-
-</div>
-
-<div class="arrow"/>
-
-<div class="box treatment">
-
-📋 MANEJO DE HERIDA<br/>
-
-• Apósito estéril simple (preferido)<br/>
-
-• Evitar empaquetamiento rutinario<br/>
-
-• Considerar drenaje solo si cavidad muy grande
-
-</div>
-
-<div class="arrow"/>
-
-<div class="box action">
-
-🏠 ALTA Y SEGUIMIENTO<br/>
-
-• Control en 48-72 horas<br/>
-
-• Signos de alarma: fiebre, extensión, dolor severo<br/>
-
-• Higiene local y analgesia<br/>
-
-• Cultivo si disponible (opcional en casos típicos)
-
-</div>
-
-</div>
-
-<div class="key-point">
-
-<h3>📌 PUNTOS CLAVE</h3>
+<strong>Sospechar si:</strong> Fiebre, leucocitosis, bacteremia, deterioro clínico >7 días post-pancreatitis aguda
 
 <ul>
 
-<li><strong>Incisión y drenaje</strong> es el tratamiento definitivo</li>
+<li><strong>TC abdomen con contraste IV:</strong> Gas en colección = INFECCIÓN (hallazgo definitivo)</li>
 
-<li><strong>Antibióticos post-I&D</strong> mejoran curación (NNT=11)</li>
+<li>Colecciones necróticas (ANC <4 sem / WON >4 sem)</li>
 
-<li><strong>NO empaquetar</strong> rutinariamente (más dolor, sin beneficio)</li>
-
-<li><strong>TMP-SMX</strong> es primera línea (cobertura MRSA)</li>
-
-<li><strong>Cultivo</strong> recomendado pero no obligatorio en casos típicos</li>
+<li>Áreas de no realce pancreático</li>
 
 </ul>
+
+</div>
+
+</div>
+
+<div class="arrow">▼</div>
+
+<div class="box treatment">
+
+<div class="treatment-title">💊 TRATAMIENTO INICIAL</div>
+
+<div class="treatment-content">
+
+<strong>Antibióticos IV de amplio espectro con buena penetración pancreática:</strong>
+
+<ul>
+
+<li>Carbapenems (preferidos)</li>
+
+<li>Quinolonas + Metronidazol</li>
+
+<li>Cefalosporinas 3ª-4ª generación</li>
+
+<li>Piperacilina-tazobactam (infusión extendida)</li>
+
+</ul>
+
+<strong>NO usar antibióticos profilácticos</strong> (sin beneficio demostrado)
+
+</div>
+
+</div>
+
+<div class="arrow">▼</div>
+
+<div class="box stepup">
+
+<div class="stepup-title">🎯 ABORDAJE ESCALONADO (STEP-UP) - ESTÁNDAR ACTUAL</div>
+
+<div class="steps">
+
+<div class="step">
+
+<span class="step-number">1️⃣</span>
+
+<strong>DRENAJE</strong><br/>
+
+Percutáneo (TC) o<br/>
+
+Endoscópico transluminal<br/>
+
+(preferido si factible)
+
+</div>
+
+<div class="step">
+
+<span class="step-number">2️⃣</span>
+
+<strong>NECROSECTOMÍA</strong><br/>
+
+Endoscópica<br/>
+
+(si no mejora con drenaje)<br/>
+
+Menos complicaciones
+
+</div>
+
+<div class="step">
+
+<span class="step-number">3️⃣</span>
+
+<strong>CIRUGÍA</strong><br/>
+
+Mínimamente invasiva<br/>
+
+o abierta<br/>
+
+(último recurso)
+
+</div>
+
+</div>
+
+<div style="margin-top: 12px; font-size: 12px; text-align: center;">
+
+✓ Reduce mortalidad 40% vs cirugía abierta inmediata<br/>
+
+✓ Abordaje endoscópico: menos fístulas, menor estancia hospitalaria
+
+</div>
+
+</div>
+
+<div class="arrow">▼</div>
+
+<div class="box warning">
+
+<div class="warning-title">⚡ INDICACIONES DE INTERVENCIÓN</div>
+
+<strong>Absolutas:</strong> Necrosis infectada confirmada<br/>
+
+<strong>Relativas (necrosis estéril):</strong> Dolor persistente, obstrucción GI/biliar, deterioro nutricional, SIRS persistente
+
+</div>
+
+<div class="arrow">▼</div>
+
+<div class="box" style="background: linear-gradient(135deg, #8e44ad, #6c3483); color: white; border-left: 6px solid #512e5f;">
+
+<div style="font-weight: bold; margin-bottom: 8px; font-size: 15px;">🔑 PUNTOS CLAVE</div>
+
+<div style="font-size: 13px; line-height: 1.6;">
+
+• <span class="highlight">Retrasar intervención</span> hasta maduración de colección (>4 semanas ideal)<br/>
+
+• <span class="highlight">Preferir abordaje endoscópico</span> sobre percutáneo/quirúrgico<br/>
+
+• <span class="highlight">Manejo multidisciplinario:</span> GI, Cirugía, Radiología, UCI<br/>
+
+• Mortalidad: 15-35% en necrosis infectada
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Basado en: AGA Clinical Practice Update 2020, ACR Appropriateness Criteria, Ensayos PANTER/TENSION/MISER<br/>
+
+Clasificación Atlanta Revisada 2012 | Para uso educativo en urgencias
 
 </div>
 
@@ -402,18 +506,29 @@ Absceso >5cm • Múltiples abscesos
 
 ----
 
-Este diagrama de flujo está basado en las guías de la Infectious Diseases Society of America (IDSA) para infecciones de piel y tejidos blandos y evidencia reciente sobre el manejo de abscesos cutáneos.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Mersal M, Embaby O, Ayyad M, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/41420370">Beyond the Knife: A Contemporary Review of Subcutaneous Abscesses</a>. ANZ Journal of Surgery. 2025;. doi:10.1111/ans.70442.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
+Este diagrama de flujo HTML está diseñado para ser visualmente atractivo y fácil de seguir en el contexto de urgencias. Los elementos clave incluyen:
 
-<strong>Evidencia clave que respalda el diagrama:</strong>
+<strong>Fundamento en evidencia:</strong>
 
-- <strong>Incisión y drenaje como tratamiento principal</strong>: Las guías IDSA establecen que la incisión y drenaje es el tratamiento recomendado para abscesos cutáneos (recomendación fuerte, evidencia alta). La aspiración con aguja no es efectiva (éxito <25%).[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]]
+- El <strong>abordaje escalonado (step-up)</strong> está respaldado por el ensayo PANTER, que demostró reducción de mortalidad y complicaciones (40% vs 69%) comparado con cirugía abierta inmediata[[[$$$Boxhoorn L, Voermans RP, Bouwense SA, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/32891214">Acute Pancreatitis</a>. Lancet (London, England). 2020;396(10252):726-734. doi:10.1016/S0140-6736(20)31310-6.$$$]]]
 
-- <strong>Antibióticos adyuvantes</strong>: Estudios recientes demuestran que agregar antibióticos activos contra MRSA (TMP-SMX o clindamicina) después de incisión y drenaje mejora las tasas de curación y reduce nuevas lesiones. Un ensayo controlado mostró que TMP-SMX mejoró la curación clínica con NNT=11.[[[$$$Daum RS, Miller LG, Immergluck L, et al. <a target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1607033">A Placebo-Controlled Trial of Antibiotics for Smaller Skin Abscesses</a>. The New England Journal of Medicine. 2017;376(26):2545-2555. doi:10.1056/NEJMoa1607033.$$$]!!![$$$Mersal M, Embaby O, Ayyad M, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/41420370">Beyond the Knife: A Contemporary Review of Subcutaneous Abscesses</a>. ANZ Journal of Surgery. 2025;. doi:10.1111/ans.70442.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
+- La <strong>preferencia por el abordaje endoscópico</strong> se basa en los ensayos TENSION y MISER, que mostraron menor estancia hospitalaria y menos fístulas pancreático-cutáneas (5% vs 32%)[[[$$$Boxhoorn L, Voermans RP, Bouwense SA, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/32891214">Acute Pancreatitis</a>. Lancet (London, England). 2020;396(10252):726-734. doi:10.1016/S0140-6736(20)31310-6.$$$]]]
 
-- <strong>Evitar empaquetamiento rutinario</strong>: La evidencia actual muestra que el empaquetamiento no ofrece ventaja en resultados y claramente aumenta el dolor. Las guías recomiendan apósitos simples o drenajes selectivos.[[[$$$Mersal M, Embaby O, Ayyad M, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/41420370">Beyond the Knife: A Contemporary Review of Subcutaneous Abscesses</a>. ANZ Journal of Surgery. 2025;. doi:10.1111/ans.70442.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Mersal M, Embaby O, Ayyad M, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/41420370">Beyond the Knife: A Contemporary Review of Subcutaneous Abscesses</a>. ANZ Journal of Surgery. 2025;. doi:10.1111/ans.70442.$$$]]]
+- Los <strong>antibióticos recomendados</strong> (carbapenems, quinolonas, cefalosporinas de 3ª-4ª generación) tienen buena penetración pancreática según las guías AGA[[[$$$Baron TH, DiMaio CJ, Wang AY, Morgan KA. <a target="_blank" href="https://doi.org/10.1053/j.gastro.2019.07.064">American Gastroenterological Association Clinical Practice Update: Management of Pancreatic Necrosis</a>. Gastroenterology. 2020;158(1):67-75.e1. doi:10.1053/j.gastro.2019.07.064.$$$]!!![$$$Pauw HS, Schwarz R, Beij A, et al. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/41808660">Antimicrobial Therapy for Infected Necrotizing Pancreatitis: Microbiology, Antimicrobial Resistance and Pharmacokinetics</a>. The Journal of Antimicrobial Chemotherapy. 2026;81(4):dkag092. doi:10.1093/jac/dkag092.$$$]]]
 
-- <strong>Criterios para antibióticos</strong>: Las guías IDSA recomiendan antibióticos basándose en la presencia de SIRS, inmunosupresión, abscesos múltiples o grandes, y falta de respuesta al drenaje solo.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]]
+- La <strong>presencia de gas en TC</strong> es el hallazgo definitivo de infección según ACR[[[$$$Weiss CR, Bailey CR, Hohenwalter EJ, et al. <a target="_blank" href="https://linkinghub.elsevier.com/retrieve/pii/S1546-1440(20)30122-8">ACR Appropriateness Criteria® Radiologic Management of Infected Fluid Collections</a>. Journal of the American College of Radiology : JACR. 2020;17(5S):S265-S280. doi:10.1016/j.jacr.2020.01.034.$$$]!!![$$$Federle MP, Jeffrey RB, Crass RA, Van Dalsem V. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/6784520">Computed Tomography of Pancreatic Abscesses</a>. AJR. American Journal of Roentgenology. 1981;136(5):879-82. doi:10.2214/ajr.136.5.879.$$$]]]
 
-¿Le gustaría explorar protocolos específicos para el manejo del dolor durante la incisión y drenaje, o las indicaciones precisas para hospitalización en abscesos complicados?
+- <strong>No se recomiendan antibióticos profilácticos</strong> ya que múltiples ensayos controlados no demostraron beneficio[[[$$$Baron TH, DiMaio CJ, Wang AY, Morgan KA. <a target="_blank" href="https://doi.org/10.1053/j.gastro.2019.07.064">American Gastroenterological Association Clinical Practice Update: Management of Pancreatic Necrosis</a>. Gastroenterology. 2020;158(1):67-75.e1. doi:10.1053/j.gastro.2019.07.064.$$$]]]
+
+El diseño utiliza colores diferenciados para cada sección (diagnóstico en azul, tratamiento en verde, step-up en naranja) y es responsive para visualización en diferentes dispositivos.
+
+¿Le gustaría que ajuste algún aspecto específico del diagrama, como agregar más detalles sobre criterios de severidad o modificar el esquema de colores?
+
+
+----
+
+Relevant images
+
+REACTCOMPONENT!:!VisualGroup!:!{"figures": [{"name": "Figure 6", "caption": "Infected walled\u2010off necrosis (WON). (a) Presented case has WON on contrast\u2010enhanced CT. (b) Most of the WON on the pancreas body and tail was replaced with gas, due to infection. In the gas cavity of WON, the inner wall (arrowhead) was detected. (c) Percutaneous ultrasound showed high spotty areas due to gas in WON. (d) Surgical treatment was performed and a part of the inner wall (arrowhead) was shown in the cavity. The patient recovered 6 months later.", "url": "https://storage.googleapis.com/wiley-multimedia/cms/9781119875970_c23/asset/7ec4a26b-6e3d-474f-898e-3ad2df69f2ba/assets/images/large/nc23f006.jpg", "rich_citation_data": {"title": "Radiologic Diagnosis and Staging of Severe Acute Pancreatitis", "authors_string": "Yoshihisa Tsuji", "dt_published": "2023-01-01", "repository": "Wiley", "journal_name": "The Pancreas", "journal_short_name": "The Pancreas", "publication_info_string": "Chapter 23", "doi": null, "pmid": null, "href": "https://onlinelibrary.wiley.com/doi/10.1002/9781119876007.ch23", "journal_owner": null, "full_authors_list": [{"family_name": "Tsuji", "given_names": "Yoshihisa"}], "publication_types": null, "resolved_publication_type": null, "short_citation": "Yoshihisa Tsuji. Radiologic Diagnosis and Staging of Severe Acute Pancreatitis. The Pancreas. 2023"}, "citation": "Yoshihisa Tsuji. <a target=\"_blank\" href=\"https://onlinelibrary.wiley.com/doi/10.1002/9781119876007.ch23\">Radiologic Diagnosis and Staging of Severe Acute Pancreatitis</a>. The Pancreas. 2023. Chapter 23 ISBN: 9781119875970.", "media_type": "figure"}, {"name": "Figure 2", "caption": "A 61\u2010year\u2010old male referred from an off\u2010site institution due to abdominal pain for a month. His CT examination suggested acute pancreatitis and portal vein thrombosis. (a) Axial T2\u2010weighted image demonstrates an organized complex collection with fistulization to the portal vein. (b) Coronal MRCP image demonstrates fistulization of the collections and entire portal system filled with pancreatic fluid. (c) Post\u2010contrast T1\u2010weighted image demonstrates the walled\u2010off necrosis that replaced the pancreatic parenchyma. Sources: (a, c) courtesy of J.E. Dom\u00ednguez\u2010Mu\u00f1oz; (b) Morgan . Reproduced with permission of Elsevier.", "url": "https://storage.googleapis.com/wiley-multimedia/cms/9781119570073_c6/asset/97734a3c-b8a2-448b-ab0e-f038c698ea4d/assets/images/large/nc06f002.jpg", "rich_citation_data": {"title": "Role of MRI in Acute Pancreatitis", "authors_string": "Fatih Akisik", "dt_published": "2021-01-01", "repository": "Wiley", "journal_name": "Clinical Pancreatology for Practising Gastroenterologists and Surgeons", "journal_short_name": "Clinical Pancreatology for Practising Gastroenterologists and Surgeons", "publication_info_string": "Chapter 6", "doi": null, "pmid": null, "href": "https://onlinelibrary.wiley.com/doi/10.1002/9781119570097.ch6", "journal_owner": null, "full_authors_list": [{"family_name": "Akisik", "given_names": "Fatih"}], "publication_types": null, "resolved_publication_type": null, "short_citation": "Fatih Akisik. Role of MRI in Acute Pancreatitis. Clinical Pancreatology for Practising Gastroenterologists and Surgeons. 2021"}, "citation": "Fatih Akisik. <a target=\"_blank\" href=\"https://onlinelibrary.wiley.com/doi/10.1002/9781119570097.ch6\">Role of MRI in Acute Pancreatitis</a>. Clinical Pancreatology for Practising Gastroenterologists and Surgeons. 2021. Chapter 6 ISBN: 9781119570073.", "media_type": "figure"}]}[[[$$$Yoshihisa Tsuji. <a target="_blank" href="https://onlinelibrary.wiley.com/doi/10.1002/9781119876007.ch23">Radiologic Diagnosis and Staging of Severe Acute Pancreatitis</a>. The Pancreas. 2023. Chapter 23 ISBN: 9781119875970.$$$]!!![$$$Fatih Akisik. <a target="_blank" href="https://onlinelibrary.wiley.com/doi/10.1002/9781119570097.ch6">Role of MRI in Acute Pancreatitis</a>. Clinical Pancreatology for Practising Gastroenterologists and Surgeons. 2021. Chapter 6 ISBN: 9781119570073.$$$]]]
 </body>
 </html>
