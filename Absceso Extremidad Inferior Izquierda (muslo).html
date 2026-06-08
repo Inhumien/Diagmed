@@ -9,7 +9,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Absceso Extremidad Inferior Izquierda (Muslo)</title>
+<title>Diagrama de Flujo: Absceso Muslo</title>
 
 <style>
 
@@ -55,7 +55,7 @@ h1 {
 
 text-align: center;
 
-color: #2d3748;
+color: #2c3e50;
 
 margin-bottom: 10px;
 
@@ -67,7 +67,7 @@ font-size: 24px;
 
 text-align: center;
 
-color: #718096;
+color: #7f8c8d;
 
 margin-bottom: 30px;
 
@@ -75,15 +75,33 @@ font-size: 14px;
 
 }
 
+.flowchart {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+gap: 15px;
+
+}
+
 .box {
 
 border-radius: 10px;
 
-padding: 15px 20px;
+padding: 20px;
 
-margin: 15px 0;
+text-align: center;
 
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+font-weight: 600;
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+max-width: 700px;
+
+width: 100%;
 
 position: relative;
 
@@ -95,133 +113,131 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
 color: white;
 
-font-weight: bold;
-
-text-align: center;
-
 font-size: 18px;
 
 }
 
 .evaluation {
 
-background: #e6f7ff;
+background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 
-border-left: 5px solid #1890ff;
+color: white;
 
 }
 
 .decision {
 
-background: #fff7e6;
+background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 
-border-left: 5px solid #fa8c16;
+color: white;
 
-font-weight: 600;
+clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+
+padding: 25px 40px;
 
 }
 
 .action {
 
-background: #f6ffed;
+background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 
-border-left: 5px solid #52c41a;
+color: #2c3e50;
 
 }
 
 .warning {
 
-background: #fff1f0;
+background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 
-border-left: 5px solid #f5222d;
+color: #2c3e50;
 
-font-weight: 600;
+border: 3px solid #e74c3c;
+
+}
+
+.treatment {
+
+background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+
+color: white;
 
 }
 
 .arrow {
 
-text-align: center;
+width: 0;
 
-color: #667eea;
+height: 0;
 
-font-size: 24px;
+border-left: 15px solid transparent;
+
+border-right: 15px solid transparent;
+
+border-top: 20px solid #7f8c8d;
 
 margin: 5px 0;
-
-font-weight: bold;
 
 }
 
 .split {
 
-display: grid;
+display: flex;
 
-grid-template-columns: 1fr 1fr;
+gap: 20px;
 
-gap: 15px;
+width: 100%;
 
-margin: 15px 0;
+max-width: 700px;
+
+justify-content: center;
+
+}
+
+.split .box {
+
+flex: 1;
 
 }
 
 .label {
 
-font-weight: bold;
+background: #34495e;
 
-color: #2d3748;
+color: white;
 
-margin-bottom: 8px;
+padding: 5px 15px;
 
-display: block;
+border-radius: 20px;
+
+font-size: 12px;
+
+display: inline-block;
+
+margin: 5px 0;
+
+}
+
+.label.yes {
+
+background: #27ae60;
+
+}
+
+.label.no {
+
+background: #e74c3c;
 
 }
 
 ul {
 
-margin-left: 20px;
+text-align: left;
 
-margin-top: 8px;
+margin-top: 10px;
 
-}
+font-size: 14px;
 
-li {
-
-margin: 5px 0;
-
-line-height: 1.5;
-
-}
-
-.highlight {
-
-background: #ffd700;
-
-padding: 2px 6px;
-
-border-radius: 3px;
-
-font-weight: bold;
-
-}
-
-.badge {
-
-display: inline-block;
-
-background: #667eea;
-
-color: white;
-
-padding: 3px 10px;
-
-border-radius: 12px;
-
-font-size: 12px;
-
-font-weight: bold;
-
-margin-right: 8px;
+line-height: 1.6;
 
 }
 
@@ -231,13 +247,13 @@ margin-top: 30px;
 
 padding-top: 20px;
 
-border-top: 2px solid #e2e8f0;
-
-text-align: center;
-
-color: #718096;
+border-top: 2px solid #ecf0f1;
 
 font-size: 12px;
+
+color: #7f8c8d;
+
+text-align: center;
 
 }
 
@@ -245,197 +261,141 @@ font-size: 12px;
 
 <div class="container">
 
-<h1>🏥 ABSCESO EXTREMIDAD INFERIOR IZQUIERDA (MUSLO)</h1>
+<h1>🏥 ABSCESO MUSLO (EXTREMIDAD INFERIOR IZQUIERDA)</h1>
 
-<div class="subtitle">Algoritmo de Manejo en Urgencias</div>
+<p class="subtitle">Diagrama de Flujo para Urgencias</p>
+
+<div class="flowchart">
 
 <div class="box start">
 
-SOSPECHA DE ABSCESO EN MUSLO
+PACIENTE CON SOSPECHA DE ABSCESO EN MUSLO
 
 </div>
 
-<div class="arrow">↓</div>
+<div class="arrow"/>
 
 <div class="box evaluation">
 
-<span class="label">📋 EVALUACIÓN INICIAL</span>
+<strong>EVALUACIÓN INICIAL</strong><br/>
 
-<ul>
+• Signos locales: fluctuación, eritema, calor, dolor<br/>
 
-<li><strong>Examen físico:</strong> Fluctuación, eritema, calor, dolor</li>
+• Ecografía si duda diagnóstica<br/>
 
-<li><strong>Signos vitales:</strong> Temperatura, FC, FR, PA</li>
-
-<li><strong>Ecografía POCUS:</strong> Confirmar colección vs celulitis</li>
-
-</ul>
+• Evaluar signos de SIRS/sepsis
 
 </div>
 
-<div class="arrow">↓</div>
-
-<div class="box warning">
-
-<span class="label">⚠️ DESCARTAR INFECCIÓN NECROTIZANTE</span>
-
-<strong>NECROSIS Score:</strong> Piel violácea + PA ≤120 + Leucocitos ≥15,000<br/>
-
-<strong>Si sospecha:</strong> Cirugía URGENTE + ATB IV amplio espectro
-
-</div>
-
-<div class="arrow">↓</div>
+<div class="arrow"/>
 
 <div class="box decision">
 
-¿ABSCESO CONFIRMADO?
+¿SIGNOS DE ALARMA?<br/>
+
+<span style="font-size: 13px;">SIRS, inmunosupresión, falla I&D previo,<br/>sospecha infección necrotizante, absceso profundo/grande</span>
 
 </div>
-
-<div class="arrow">↓</div>
 
 <div class="split">
 
-<div class="box action">
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 15px;">
 
-<span class="badge">SÍ</span>
+<span class="label yes">SÍ</span>
 
-<span class="label">TRATAMIENTO PRIMARIO</span>
-
-<div class="highlight">INCISIÓN Y DRENAJE</div>
-
-<ul>
-
-<li>Anestesia local</li>
-
-<li>Incisión amplia</li>
-
-<li>Exploración digital</li>
-
-<li>Irrigación</li>
-
-<li><strong>Cultivo de pus</strong></li>
-
-</ul>
-
-</div>
-
-<div class="box evaluation">
-
-<span class="badge">NO</span>
-
-<span class="label">CELULITIS SIN ABSCESO</span>
-
-<strong>Antibióticos orales:</strong>
-
-<ul>
-
-<li>Cefalexina 500mg c/6h</li>
-
-<li>o Clindamicina 300-450mg c/8h</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="arrow">↓</div>
-
-<div class="box decision">
-
-<span class="label">EVALUAR CRITERIOS PARA ANTIBIÓTICOS POST-DRENAJE</span>
-
-<strong>Indicaciones de ATB:</strong>
-
-<ul>
-
-<li>✓ SIRS presente (T°>38°C o <36°C, FC>90, FR>24, Leucos>12,000 o <4,000)</li>
-
-<li>✓ Absceso >5cm</li>
-
-<li>✓ Múltiples abscesos</li>
-
-<li>✓ Inmunosupresión</li>
-
-<li>✓ Falta de respuesta a drenaje solo</li>
-
-<li>✓ Celulitis extensa circundante</li>
-
-</ul>
-
-</div>
-
-<div class="arrow">↓</div>
-
-<div class="box action">
-
-<span class="label">💊 ANTIBIÓTICOS (si indicado)</span>
-
-<strong>Cobertura anti-MRSA:</strong>
-
-<ul>
-
-<li><span class="highlight">TMP-SMX 160/800mg c/12h</span> (1ª elección)</li>
-
-<li>o Clindamicina 300-450mg c/8h</li>
-
-<li>o Doxiciclina 100mg c/12h</li>
-
-</ul>
-
-<strong>Duración:</strong> 5-7 días (leve), 7-14 días (moderado-severo)
-
-</div>
-
-<div class="arrow">↓</div>
+<div class="arrow"/>
 
 <div class="box warning">
 
-<span class="label">🚨 CRITERIOS DE HOSPITALIZACIÓN</span>
+<strong>⚠️ MANEJO COMPLEJO</strong><br/>
 
-<ul>
+• Hemocultivos + cultivo de pus<br/>
 
-<li>Sepsis o inestabilidad hemodinámica</li>
+• Antibióticos IV empíricos<br/>
 
-<li>Falla a tratamiento ambulatorio</li>
+• Considerar cirugía/hospitalización<br/>
 
-<li>Absceso profundo/extenso que requiere cirugía</li>
-
-<li>Inmunosupresión severa</li>
-
-<li>Incapacidad para seguimiento ambulatorio</li>
-
-</ul>
-
-<strong>→ ATB IV:</strong> Vancomicina + Piperacilina-tazobactam
+• Descartar fascitis necrotizante
 
 </div>
 
-<div class="arrow">↓</div>
+</div>
+
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+
+<span class="label no">NO</span>
+
+<div class="arrow"/>
+
+<div class="box action">
+
+<strong>✓ ABSCESO NO COMPLICADO</strong><br/>
+
+Proceder a I&D
+
+</div>
+
+<div class="arrow"/>
+
+<div class="box treatment">
+
+<strong>INCISIÓN Y DRENAJE (I&D)</strong><br/>
+
+• Anestesia local/sedación<br/>
+
+• Incisión lineal adecuada<br/>
+
+• Romper loculaciones<br/>
+
+• Cultivo opcional (considerar si MRSA prevalente)<br/>
+
+• Empaque NO necesario si <5 cm
+
+</div>
+
+<div class="arrow"/>
+
+<div class="box action">
+
+<strong>ANTIBIÓTICOS POST-I&D</strong><br/>
+
+<span style="font-size: 13px;">Considerar si: múltiples abscesos, extremos de edad,<br/>celulitis extensa, inmunosupresión, SIRS</span><br/><br/>
+
+<strong>Opciones VO (cobertura MRSA):</strong><br/>
+
+• TMP-SMX 1-2 DS c/12h x 5-7 días<br/>
+
+• Clindamicina 300-450 mg c/8h x 5-7 días
+
+</div>
+
+<div class="arrow"/>
 
 <div class="box evaluation">
 
-<span class="label">📅 SEGUIMIENTO</span>
+<strong>SEGUIMIENTO</strong><br/>
 
-<ul>
+• Control en 48-72 horas<br/>
 
-<li><strong>48-72 horas:</strong> Reevaluación clínica</li>
+• Signos de alarma: fiebre persistente, empeoramiento local<br/>
 
-<li><strong>Signos de alarma:</strong> Fiebre persistente, extensión del eritema, dolor creciente</li>
+• Retiro de empaque (si se usó) en 24-48h
 
-<li><strong>Ajustar ATB</strong> según cultivo y evolución</li>
+</div>
 
-</ul>
+</div>
+
+</div>
 
 </div>
 
 <div class="footer">
 
-<strong>Basado en:</strong> IDSA Guidelines 2014 | American Family Physician 2026<br/>
+<strong>Basado en:</strong> Guías IDSA 2014, American Family Physician 2026, revisiones sistemáticas recientes<br/>
 
-Para uso en urgencias con orientación médica
+<strong>SIRS:</strong> Temp >38°C o <36°C, FC >90, FR >24, Leucos >12,000 o <4,000<br/>
+
+<strong>I&D:</strong> Incisión y Drenaje | <strong>TMP-SMX:</strong> Trimetoprim-Sulfametoxazol | <strong>MRSA:</strong> S. aureus resistente a meticilina
 
 </div>
 
@@ -444,16 +404,16 @@ Para uso en urgencias con orientación médica
 
 ----
 
-Este diagrama de flujo está fundamentado en las <strong>guías de la Infectious Diseases Society of America (IDSA) 2014</strong> para infecciones de piel y tejidos blandos y evidencia reciente de American Family Physician.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]] Los puntos clave incluyen:
+Este diagrama de flujo está fundamentado en las guías de práctica clínica de la Infectious Diseases Society of America (IDSA) de 2014 y evidencia actualizada de 2026.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] Los puntos clave incluyen:
 
-<strong>Tratamiento primario:</strong> La incisión y drenaje es el tratamiento de elección para abscesos cutáneos, con recomendación fuerte y evidencia de alta calidad.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] El ultrasonido point-of-care ayuda a distinguir abscesos drenables de celulitis pura.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
+<strong>Tratamiento principal:</strong> La incisión y drenaje (I&D) es el tratamiento de elección para abscesos cutáneos.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Singer AJ, Talan DA. <a target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMra1212788">Management of Skin Abscesses in the Era of Methicillin-Resistant Staphylococcus Aureus</a>. The New England Journal of Medicine. 2014;370(11):1039-47. doi:10.1056/NEJMra1212788.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] El empaque no es necesario para abscesos menores de 5 cm según evidencia reciente.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
 
-<strong>Antibióticos adyuvantes:</strong> La decisión de agregar antibióticos post-drenaje se basa en la presencia de SIRS, tamaño del absceso (>5cm requiere consideración quirúrgica), inmunosupresión, o múltiples abscesos.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] TMP-SMX demostró mejoría en curación clínica (NNT=11) sin aumentar eventos adversos.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
+<strong>Antibióticos adyuvantes:</strong> No son necesarios rutinariamente después de I&D exitoso en abscesos no complicados.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] Sin embargo, se recomienda añadir antibióticos con cobertura para MRSA (TMP-SMX o clindamicina) cuando existen factores de riesgo como SIRS, inmunosupresión, múltiples abscesos, extremos de edad, o celulitis extensa.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]] Estudios recientes muestran que TMP-SMX reduce la falla terapéutica con un NNT de 11.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
 
-<strong>Cobertura anti-MRSA:</strong> Es esencial en abscesos que requieren antibióticos, siendo TMP-SMX o clindamicina las opciones orales preferidas.[[[$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Stevens DL, Bisno AL, Chambers HF, et al. <a target="_blank" href="https://academic.oup.com/cid/article-lookup/doi/10.1093/cid/ciu296">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America</a>. Clinical Infectious Diseases : An Official Publication of the Infectious Diseases Society of America. 2014;59(2):147-59. doi:10.1093/cid/ciu296.$$$]]]
+<strong>Criterios de hospitalización:</strong> Pacientes con signos de SIRS, infección necrotizante sospechada, abscesos profundos o grandes, o falla al tratamiento ambulatorio requieren manejo hospitalario con antibióticos intravenosos y posible intervención quirúrgica.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]!!![$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
 
-<strong>Infecciones necrotizantes:</strong> El score NECROSIS (piel violácea + PA≤120 + leucocitos≥15,000) tiene valor predictivo positivo del 100% cuando los tres factores están presentes, requiriendo evaluación quirúrgica urgente.[[[$$$Chambliss ML, Rumball A, Brown CM. <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/42202366">Skin and Soft Tissue Infections</a>. American Family Physician. 2026;113:440-448.$$$]]]
+El diagrama está diseñado en formato HTML responsivo con código de colores para facilitar la toma de decisiones rápidas en el entorno de urgencias.
 
-¿Le gustaría explorar las técnicas específicas de incisión y drenaje o el manejo de complicaciones post-procedimiento en abscesos de muslo?
+¿Le gustaría que desarrolle una versión específica para abscesos complicados o con factores de riesgo particulares como diabetes o inmunosupresión?
 </body>
 </html>
