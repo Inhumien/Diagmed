@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absceso Periamigdaliano — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #c0392b; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio    { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval      { background: #2980b9; color: #fff; }
+  .dx        { background: #8e44ad; color: #fff; }
+  .alerta    { background: #e74c3c; color: #fff; font-weight: bold; }
+  .tto       { background: #27ae60; color: #fff; }
+  .derivar   { background: #e67e22; color: #fff; font-weight: bold; }
+  .seguim    { background: #16a085; color: #fff; }
+  .arrow     { font-size: 1.4em; color: #7f8c8d; }
+  .diamond   { background: #f39c12; color: #fff; text-align: center; font-weight: bold;
+               clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+               padding: 22px 30px; width: 280px; font-size: 0.85em; }
+  .row       { display: flex; gap: 12px; width: 100%; justify-content: center; }
+  .half      { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  .half-si   { background: #27ae60; color: #fff; }
+  .half-no   { background: #2980b9; color: #fff; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🦷 Absceso Periamigdaliano (J03) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">PRESENTACIÓN CLÍNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Síntomas sugerentes:</strong>
+    <ul>
+      <li>Odinofagia intensa unilateral (>3 días)</li>
+      <li>Voz "empapada en papa" (hot potato voice)</li>
+      <li>Trismus (dificultad para abrir la boca)</li>
+      <li>Fiebre, disfagia, sialorrea</li>
+      <li>Desplazamiento uvular contralateral</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ SIGNOS DE ALARMA — Derivar a pabellón urgente:<br>
+    Dificultad respiratoria · Estridor · Disfagia total · Inflamación del cuello
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Diagnóstico clínico (no requiere imagen en casos típicos)</strong>
+    Examen orofaríngeo: abombamiento del paladar blando, uvula desplazada,<br>
+    fluctuación palpable. TAC cuello c/c si duda diagnóstica o extensión profunda.
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Tratamiento inmediato:</strong>
+    <ul>
+      <li><strong>Drenaje quirúrgico</strong> (aspiración con aguja 18G o incisión y drenaje)</li>
+      <li>ATB IV: Amoxicilina-Clavulánico 2g/200mg c/8h o Penicilina G + Metronidazol</li>
+      <li>Corticoide: Dexametasona 8–10mg IV (reduce edema y dolor)</li>
+      <li>Analgesia: Ketorolaco 30mg IV + Paracetamol</li>
+      <li>Hidratación IV si disfagia severa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 HOSPITALIZAR: Todos los casos requieren observación mínima 24h.<br>
+    ORL de urgencia si trismus severo o falla al drenaje inicial.
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Alta y seguimiento:</strong>
+    ATB oral 10–14 días · Control ORL en 48–72h · Amigdalectomía diferida a evaluar (>2 episodios)
+  </div>
+
+</div>
+</body>
+</html>
