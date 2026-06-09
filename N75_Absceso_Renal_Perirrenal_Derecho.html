@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absceso Renal / Perirrenal — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf2fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #2471a3; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🫘 Absceso Renal / Perirrenal (N75) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">PRESENTACIÓN CLÍNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Síntomas sugerentes:</strong>
+    <ul>
+      <li>Fiebre alta, escalofríos, compromiso del estado general</li>
+      <li>Dolor lumbar o en flanco (uni o bilateral), puño-percusión (+)</li>
+      <li>Síntomas urinarios bajos (disuria, polaquiuria) — pueden estar ausentes</li>
+      <li>Antecedente: ITU reciente, litiasis, diabetes, inmunosupresión</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ SEPSIS DE FOCO URINARIO — Activar protocolo si: FR >22, PAM &lt;70, alteración conciencia
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>Hemograma, PCR, VHS, función renal, hemocultivos x2 (antes ATB)</li>
+      <li>Urocultivo + sedimento urinario</li>
+      <li><strong>TAC abdomen-pelvis con contraste</strong> (gold standard): confirma absceso, tamaño, extensión</li>
+      <li>Ecografía renal si TAC no disponible (menor sensibilidad)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li>ATB IV empírica: Ceftriaxona 2g c/24h ± Metronidazol (ajustar según cultivo)</li>
+      <li><strong>Absceso &lt;3cm:</strong> ATB IV sola, monitoreo estrecho</li>
+      <li><strong>Absceso ≥3cm o sin respuesta 48-72h:</strong> Drenaje percutáneo guiado por imagen</li>
+      <li><strong>Absceso loculado / falla drenaje percutáneo:</strong> Cirugía (nefrectomía parcial o total)</li>
+      <li>Tratar causa subyacente (litiasis obstructiva → urología urgente)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 HOSPITALIZAR SIEMPRE — Urología de urgencia si obstrucción o absceso ≥3cm
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    ATB IV hasta afebril 48–72h → completar 14–21 días oral · TAC control a las 4–6 semanas
+  </div>
+
+</div>
+</body>
+</html>
