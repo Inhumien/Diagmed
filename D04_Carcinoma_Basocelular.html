@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carcinoma Basocelular — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdf2f8; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7b241c; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval { background: #7b241c; color: #fff; }
+  .dx { background: #1f618d; color: #fff; }
+  .alerta { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim { background: #117a65; color: #fff; }
+  .arrow { font-size: 1.4em; color: #7f8c8d; }
+  .row { display: flex; gap: 10px; width: 100%; }
+  .col { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🔬 Carcinoma Basocelular (D04) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">LESIÓN CUTÁNEA SOSPECHOSA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características clínicas (más frecuente en cara):</strong>
+    <ul>
+      <li><strong>Nodular (más común):</strong> pápula perlada traslúcida con telangiectasias, úlcera central (roedor)</li>
+      <li><strong>Superficial:</strong> placa eritematosa con borde brillante, tronco y extremidades</li>
+      <li><strong>Morfeiforme (esclerosante):</strong> placa indurada, blanquecina, bordes mal definidos — más agresivo</li>
+      <li>FR: piel clara, exposición solar crónica, >50 años, inmunosupresión, arsénico</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Rara vez metastatiza pero puede ser localmente destructivo (órbita, cartílago, hueso) si no se trata
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Dermatoscopía: glóbulos azul-gris, vasos arboriformes, áreas ovoides grises</li>
+      <li><strong>Biopsia cutánea</strong> (punch o incisional) confirma diagnóstico histológico</li>
+      <li>No requiere estudio de extensión en la mayoría (metástasis excepcionales)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Bajo riesgo (nodular/superficial, <2cm, área baja):</strong>
+      Cirugía escisional con márgenes 4mm · Curetaje + electrocoagulación · Crioterapia · Imiquimod 5% tópico (superficial) · PDT
+    </div>
+    <div class="col" style="background:#7b241c; color:#fff;">
+      <strong>Alto riesgo (morfeiforme, >2cm, zona H, recidiva, inmunosuprimido):</strong>
+      Cirugía de Mohs (márgenes controlados intraoperatoriamente) · Vismodegib (metastásico/irresecable)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar dermatología: toda lesión sospechosa · Cirugía de Mohs en zonas de alto riesgo (nariz, párpados, orejas)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control dermatológico cada 6–12 meses · Fotoprotección estricta · 30–50% desarrolla nuevo CBC en 5 años
+  </div>
+</div>
+</body>
+</html>
