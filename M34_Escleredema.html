@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escleroderma / Esclerosis Sistémica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Esclerosis Sistémica / Escleroderma (M34)</h1>
+<div class="flow">
+  <div class="box inicio">ENDURECIMIENTO CUTÁNEO + FENÓMENO DE RAYNAUD</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones clínicas:</strong>
+    <ul>
+      <li><strong>Fenómeno de Raynaud</strong> (90%): vasoespasmo desencadenado por frío/estrés</li>
+      <li>Esclerodactilia: engrosamiento y endurecimiento de piel de dedos</li>
+      <li>Calcinosis subcutánea, telangiectasias, úlceras digitales</li>
+      <li><strong>Forma limitada (lcSSc):</strong> CREST (Calcinosis, Raynaud, Esofagitis, Esclerodactilia, Telangiectasias)</li>
+      <li><strong>Forma difusa (dcSSc):</strong> engrosamiento cutáneo extenso, afectación visceral más severa y rápida</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Crisis renal esclerodérmica: HTA severa de aparición brusca + insuficiencia renal aguda → IECA urgente (captopril IV/oral) — NO ARA2
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>ANA + patrón centromérico (lcSSc) o anti-Scl-70/anti-topoisomerasa I (dcSSc)</li>
+      <li>Anti-ARN polimerasa III (crisis renal), anti-fibrilarina</li>
+      <li>Capilaroscopía periungueal (megacapilares, zonas avasculares)</li>
+      <li>TAC tórax AR (EPI) · Ecocardiograma (HAP, disfunción VD) · PFR · Manometría esofágica</li>
+      <li>Función renal · orina completa seriada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Raynaud y úlceras digitales:</strong>
+      Nifedipino 30–60mg/día · Sildenafil 20mg c/8h · Bosentan (prevención úlceras) · Iloprost IV (crisis)
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Afectación pulmonar (EPI):</strong>
+      Micofenolato 2–3g/día (1ª línea) · Nintedanib (antifibrótico) · Ciclofosfamida IV en formas progresivas
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>HAP asociada a ES:</strong>
+    Antagonistas del receptor de endotelina (bosentan, macitentan) · Sildenafil · Prostanoides · Riociguat
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología: diagnóstico y seguimiento · Neumología si EPI o HAP · Nefrología si compromiso renal · Gastroenterología si disfagia severa
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento semestral:</strong>
+    Ecocardiograma · PFR · Función renal · PA · Capilaroscopía · Evaluar afectación de nuevos órganos
+  </div>
+</div>
+</body>
+</html>
