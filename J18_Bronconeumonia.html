@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bronconeumonía — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1a5276; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🫁 Bronconeumonía / NAC (J18) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">SOSPECHA DE NEUMONÍA ADQUIRIDA EN COMUNIDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Fiebre, tos (productiva o seca), disnea, dolor pleurítico</li>
+      <li>Taquicardia, taquipnea, crepitaciones focales a la auscultación</li>
+      <li>SpO₂ reducida, matidez a la percusión en zona afectada</li>
+      <li>En ancianos: puede presentarse como confusión o caída sin fiebre</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SEPSIS RESPIRATORIA: FR >30 · SpO₂ <90% · PA <90/60 · Confusión → Manejo urgente + hemocultivos antes de ATB
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio y estratificación (PSI/CURB-65):</strong>
+    <ul>
+      <li>Rx tórax PA (confirma infiltrado) · SpO₂ · Hemograma · PCR · Función renal</li>
+      <li>Hemocultivos x2 si hospitalización · Antígeno urinario Neumococo/Legionella</li>
+      <li><strong>CURB-65:</strong> Confusión + Urea >7 + FR ≥30 + PA <90/60 + Edad ≥65 (1pt c/u)</li>
+      <li>Score 0–1: ambulatorio · 2: hospitalizar · ≥3: UCI</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Leve (CURB 0–1) — Ambulatorio:</strong>
+      Amoxicilina 1g c/8h x 5–7 días · Alérgico: Azitromicina 500mg/día x 5 días · Control en 48–72h
+    </div>
+    <div class="col" style="background:#1a5276; color:#fff;">
+      <strong>Moderada-Severa (CURB ≥2) — Hospitalizar:</strong>
+      Amoxicilina-clavulánico 2g/200mg IV c/8h + Azitromicina IV · O Ceftriaxona 1–2g/día + macrólido · O₂ si SpO₂ <94%
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>UCI (CURB ≥3 o criterios ATS):</strong>
+    Piperacilina-Tazobactam + Levofloxacino · Considerar cobertura MRSA si factores de riesgo · Ventilación si falla respiratoria
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: CURB-65 ≥2 · SpO₂ <92% · Comorbilidades descompensadas · Falla social · No tolerancia oral
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Rx tórax control a las 6–8 semanas (descartar neoplasia subyacente en adultos >40 años) · Vacuna neumocócica y antigripal
+  </div>
+</div>
+</body>
+</html>
