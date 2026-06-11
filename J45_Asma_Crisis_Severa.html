@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asma Crisis Severa — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1a5276; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🫁 Asma — Crisis Aguda (J45) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">EVALUACIÓN INMEDIATA DE SEVERIDAD</div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ CRISIS CASI FATAL: Cianosis · Silencio respiratorio · Alteración conciencia · SpO₂ &lt;90% → IOT + UCI inmediata
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Clasificación de severidad:</strong>
+    <ul>
+      <li><strong>Leve:</strong> Habla normal, FR &lt;25, pulso &lt;110, SpO₂ &gt;95%, PEF &gt;70%</li>
+      <li><strong>Moderada:</strong> Frases cortas, FR 25–30, pulso 110–120, SpO₂ 91–95%, PEF 40–69%</li>
+      <li><strong>Severa:</strong> Palabras sueltas, uso musculatura accesoria, FR &gt;30, SpO₂ &lt;92%, PEF &lt;40%</li>
+      <li><strong>Casi fatal:</strong> Agotamiento, cianosis, bradipnea, silencio, PEF inaplicable</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Tratamiento según severidad — INICIAR INMEDIATO:</strong>
+    <ul>
+      <li><strong>O₂:</strong> Mascarilla para SpO₂ &gt;94% (92% en embarazo)</li>
+      <li><strong>SABA:</strong> Salbutamol 2,5mg nebulización c/20 min x 3 (o 4–8 puff MDI c/20 min)</li>
+      <li><strong>Ipratropio:</strong> 0,5mg nebulización junto a salbutamol (primeras 3 dosis en severa)</li>
+      <li><strong>Corticoide sistémico:</strong> Prednisona 40–50mg oral o Hidrocortisona 200mg IV (severa)</li>
+      <li><strong>MgSO₄ IV</strong> 2g en 20 min (crisis severa sin respuesta a broncodilatadores)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Buena respuesta (1 hora):</strong>
+      PEF &gt;70% + SpO₂ &gt;94% + síntomas leves → Alta con corticoide oral 5–7 días + SABA SOS + control en 48h
+    </div>
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>Respuesta incompleta / severa:</strong>
+      Hospitalizar · Nebulización continua · Considerar heliox · Preparar IOT si deteriora · UCI si falla
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Hospitalizar: crisis severa · SpO₂ &lt;92% post-tratamiento · PEF &lt;40% post-broncodilatador · Sin respuesta en 1h
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Alta y prevención:</strong>
+    Revisar técnica inhaladora · Corticoide inhalado de mantención · Plan de acción escrito · Control con médico tratante en 48–72h
+  </div>
+
+</div>
+</body>
+</html>
