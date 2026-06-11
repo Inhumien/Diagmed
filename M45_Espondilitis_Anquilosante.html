@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espondilitis Anquilosante — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦴 Espondilitis Anquilosante (M45) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR LUMBAR INFLAMATORIO CRÓNICO EN ADULTO JOVEN</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Dolor lumbar inflamatorio (>3 de 4):</strong>
+    <ul>
+      <li>Inicio antes de los 40 años</li>
+      <li>Inicio insidioso (no súbito)</li>
+      <li>Mejoría con el ejercicio (no con el reposo)</li>
+      <li>Dolor nocturno (despierta en 2ª mitad de la noche)</li>
+      <li>Rigidez matutina >30 min · Entesitis (talones, rodillas)</li>
+      <li>Manifestaciones extraarticulares: uveítis anterior aguda, psoriasis, EII</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico (criterios Nueva York modificados):</strong>
+    <ul>
+      <li><strong>HLA-B27 positivo</strong> (90% de EA vs 8% población general)</li>
+      <li>PCR, VHS (pueden ser normales en 50%)</li>
+      <li>Rx pelvis AP: sacroileítis bilateral ≥grado 2 o unilateral grado 3–4</li>
+      <li><strong>RMN sacroilíacas</strong> (más sensible): edema óseo/osteítis en fases tempranas</li>
+      <li>Escala BASDAI (actividad) y BASFI (funcionalidad)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento 1ª línea:</strong>
+      AINEs a dosis plena continua (naproxeno 1000mg/día o indometacina 150mg/día) · Fisioterapia y ejercicio diario (pilates, natación) · NUNCA reposo
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Falla a AINEs (BASDAI ≥4):</strong>
+      Anti-TNF (adalimumab, etanercept, certolizumab) · Anti-IL-17 (secukinumab — mejor en forma axial) · Sin evidencia para FARME convencionales en forma axial
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Uveítis aguda → Oftalmología urgente (corticoides tópicos + midriáticos) · Riesgo de ceguera si no se trata
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología: diagnóstico · inicio de biológicos · monitoreo actividad · complicaciones (fractura vertebral)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    BASDAI cada 3 meses · Rx columna cada 2 años · Densitometría (osteoporosis frecuente) · Ecografía cardíaca si >10 años de enfermedad (insuficiencia aórtica)
+  </div>
+</div>
+</body>
+</html>
