@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esclerosis Múltiple — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Esclerosis Múltiple (G35) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DÉFICIT NEUROLÓGICO EPISÓDICO EN ADULTO JOVEN</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentaciones clínicas frecuentes:</strong>
+    <ul>
+      <li>Neuritis óptica: pérdida visual monocular + dolor al mover el ojo</li>
+      <li>Síndrome medular: paraparesia, alteración sensitiva, disfunción vesical</li>
+      <li>Síndrome tronco-cerebeloso: diplopía, ataxia, vértigo, INO</li>
+      <li>Signo de Lhermitte: descarga eléctrica a la flexión del cuello</li>
+      <li>Fenómeno de Uhthoff: empeoramiento con calor/ejercicio</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Brote agudo severo (paraplejia, ceguera): Metilprednisolona 1g IV/día x 3–5 días → acelera recuperación (no modifica historia natural)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Criterios de McDonald 2017:</strong>
+    <ul>
+      <li>Diseminación en espacio (DIS): ≥2 áreas del SNC afectadas</li>
+      <li>Diseminación en tiempo (DIT): ≥2 episodios o lesiones activas e inactivas simultáneas</li>
+      <li><strong>RMN cerebro y médula con gadolinio</strong> (gold standard): placas en sustancia blanca, realce con Gd en lesiones activas</li>
+      <li>LCR: bandas oligoclonales IgG (90% de EM), índice IgG elevado</li>
+      <li>Potenciales evocados visuales/somatosensitivos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Baja-moderada actividad (1ª línea):</strong>
+      Interferón beta 1a/1b SC o IM · Acetato de glatiramer SC · Dimetilfumarato oral · Teriflunomida oral
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Alta actividad / 2ª línea:</strong>
+      Natalizumab IV mensual · Ocrelizumab IV 6 meses · Alemtuzumab · Cladribina oral · Siponimod (EMSP)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Síntomas:</strong>
+    Espasticidad: baclofeno, tizanidina · Vejiga: oxibutinina, cateterismo intermitente · Fatiga: amantadina, modafinilo · Dolor neuropático: gabapentina, amitriptilina · Fisioterapia
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurología especialista en EM · Toda sospecha de brote o debut · Rehabilitación multidisciplinaria
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento cada 6 meses:</strong>
+    RMN cerebro anual · EDSS (escala de discapacidad) · Adherencia a tratamiento modificador · Hemograma + hepático según tratamiento · Vacunas (evitar vivas con inmunosupresores)
+  </div>
+</div>
+</body>
+</html>
