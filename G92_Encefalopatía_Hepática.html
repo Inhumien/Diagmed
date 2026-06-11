@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encefalopatía Hepática — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Encefalopatía Hepática (G92) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">ALTERACIÓN MENTAL EN PACIENTE CON HEPATOPATÍA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ GRADO III–IV: Estupor, coma, flapping intenso → UCI hepatológica · Proteger vía aérea · IOT si GCS &lt;8
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación de West-Haven:</strong>
+    <ul>
+      <li><strong>Grado I:</strong> Euforia/ansiedad, lentitud mental, inversión ritmo sueño</li>
+      <li><strong>Grado II:</strong> Desorientación temporo-espacial, asterixis (flapping), comportamiento inapropiado</li>
+      <li><strong>Grado III:</strong> Estupor, desorientación severa, responde a estímulos</li>
+      <li><strong>Grado IV:</strong> Coma, sin respuesta</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Buscar y tratar precipitante (obligatorio):</strong>
+    <ul>
+      <li>Infección (PBE, ITU, neumonía) → hemograma, cultivos, paracentesis diagnóstica</li>
+      <li>Hemorragia digestiva → tacto rectal, endoscopía</li>
+      <li>Constipación · Deshidratación · Hipopotasemia · Alcalosis</li>
+      <li>Sedantes/opioides · Transgresión dietética proteica</li>
+      <li>Amonio plasmático (elevado, confirma diagnóstico)</li>
+      <li>TAC cerebro si primera vez o trauma (descartar hematoma)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Lactulosa</strong> 30–45mL c/1–2h hasta 2–3 deposiciones blandas/día, luego c/8–12h</li>
+      <li><strong>Rifaximina 550mg c/12h</strong> (prevención de recurrencias, 1ª línea en crónico)</li>
+      <li>Hidratación IV · Corrección de electrolitos (K, Mg)</li>
+      <li>Dieta: no restringir proteínas (aumentar vegetales/lácteos, reducir carne roja)</li>
+      <li>ATB si infección identificada · Terlipresina si hemorragia variceal</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: grado II o mayor · primera vez · causa no identificada · Hepatología · UCI si grado III-IV
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Prevención secundaria:</strong>
+    Lactulosa + rifaximina de mantención · Evaluar indicación de trasplante · Control de precipitantes · No sedantes ni opioides
+  </div>
+</div>
+</body>
+</html>
