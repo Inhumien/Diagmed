@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queratosis Seborreica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Queratosis Seborreica (L82) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">LESION PIGMENTADA VERRUCOSA DE ASPECTO PEGADO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Caracteristicas clinicas:</strong>
+    <ul>
+      <li>Papulas o placas marrones, grisaceas o negras, bien delimitadas, aspecto "pegado" a la piel</li>
+      <li>Superficie rugosa, verrucosa, con pseudoquistes foliculares (dermatoscopia: comedones abiertos)</li>
+      <li>Tronco, cara, extremidades · Aumentan en numero con la edad</li>
+      <li>Benignas, sin potencial maligno</li>
+      <li>Signo de Leser-Trelat: aparicion brusca de multiples QS → puede indicar cancer interno (paraneoplasico)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Signo de Leser-Trelat: aparicion subita de multiples QS pruriginosas → descartar neoplasia interna (colon, gastrico, linfoma) · ABCDE si aspecto atipico → biopsia para descartar melanoma
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnostico:</strong>
+    <ul>
+      <li>Clinico y dermatoscopico: patron críptico (comedones abiertos), patrón giriforme</li>
+      <li>Biopsia si: atipica, pigmentacion irregular, crecimiento rapido, ulceracion</li>
+      <li>Diferencial: melanoma, nevo melanocitico, carcinoma basocelular pigmentado</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento (solo si molesta o estetica):</strong>
+    <ul>
+      <li>Crioterapia con N2 liquido (metodo mas usado) · 1-2 ciclos</li>
+      <li>Curetaje + electrocoagulacion</li>
+      <li>Laser CO2 o Er:YAG · Acido tricloroacetico</li>
+      <li>Sin tratamiento necesario si no molesta</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatologia: lesion atipica, Leser-Trelat sospechado, multiple extirpacion estetica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Benignas — no requieren seguimiento especifico · Si Leser-Trelat → buscar neoplasia · Nuevas lesiones frecuentes con la edad
+  </div>
+</div>
+</body>
+</html>
