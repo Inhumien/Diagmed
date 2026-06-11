@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apnea del Sueño — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #154360; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>😴 Apnea Obstructiva del Sueño (G47) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">SOSPECHA CLÍNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Síntomas y factores de riesgo:</strong>
+    <ul>
+      <li>Ronquido intenso, apneas presenciadas por pareja</li>
+      <li>Somnolencia diurna excesiva (Epworth ≥10), fatiga, cefalea matutina</li>
+      <li>Nicturia, irritabilidad, dificultad de concentración</li>
+      <li>FR: obesidad (IMC &gt;30), cuello &gt;40cm mujer / &gt;43cm hombre, sexo masculino, &gt;50 años, HTA refractaria</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ Conductores profesionales o trabajos de riesgo con somnolencia grave → Restricción laboral hasta tratamiento efectivo
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li><strong>Escala de Epworth</strong> (screening): ≥10 = somnolencia significativa</li>
+      <li><strong>Cuestionario STOP-BANG</strong>: ≥3 puntos = riesgo moderado-alto</li>
+      <li><strong>Poligrafía respiratoria ambulatoria</strong> (1ª línea): IAH ≥5 = SAHOS</li>
+      <li><strong>Polisomnografía</strong> (gold standard): IAH + estadios de sueño</li>
+      <li>Severidad: Leve IAH 5–14 · Moderado 15–29 · Severo ≥30</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Leve (IAH 5–14) + sin comorbilidades:</strong>
+      Medidas higiene sueño · Bajar de peso · Evitar alcohol/sedantes · Posición lateral · Dispositivo de avance mandibular (DAM)
+    </div>
+    <div class="col" style="background:#154360; color:#fff;">
+      <strong>Moderado-Severo (IAH ≥15) o sintomático:</strong>
+      <strong>CPAP nasal</strong> (1ª línea, gold standard) · Presión titulada en laboratorio o auto-CPAP · Cirugía ORL en casos seleccionados
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Siempre tratar comorbilidades:</strong>
+    HTA · Arritmias · Depresión · DM2 — el SAHOS agrava todas estas condiciones
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar neumología / medicina del sueño: todo caso con sospecha moderada-alta · Confirmar diagnóstico con poligrafía
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento con CPAP:</strong>
+    Control adherencia al mes (meta &gt;4h/noche en &gt;70% de noches) · Epworth de control · Ajuste presión si necesario
+  </div>
+
+</div>
+</body>
+</html>
