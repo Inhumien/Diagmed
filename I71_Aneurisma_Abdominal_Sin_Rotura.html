@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aneurisma Aórtico Abdominal — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1a5276; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🫀 Aneurisma Aórtico Abdominal Sin Rotura (I71) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">HALLAZGO / CONSULTA POR AAA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ TRIADA DE ROTURA: Dolor abdominal/lumbar súbito + masa pulsátil + hipotensión → CIRUGÍA DE URGENCIA INMEDIATA
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Sin rotura — Evaluación inicial:</strong>
+    <ul>
+      <li>Mayoría asintomático (hallazgo incidental en imágenes)</li>
+      <li>Síntomas: dolor lumbar sordo, sensación pulsátil abdominal</li>
+      <li>FR: hombre &gt;65 años, tabaquismo, HTA, aterosclerosis, historia familiar</li>
+      <li>Examen: masa pulsátil peri-umbilical (sensibilidad baja en obesos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Diagnóstico y estratificación por tamaño:</strong>
+    <ul>
+      <li><strong>Ecografía abdominal</strong> (screening/seguimiento): mide diámetro máximo</li>
+      <li><strong>AngioTAC abdomen-pelvis</strong> (planificación quirúrgica): morfología, cuello, relación con renales</li>
+      <li>&lt;3 cm: normal · 3–5,4 cm: vigilancia · ≥5,5 cm o crecimiento &gt;1 cm/año: indicación quirúrgica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>AAA &lt;5,5 cm (vigilancia):</strong>
+      Control de FRCV · Antiagregación (AAS 100mg) · Estatina · Cese tabáquico obligatorio · Eco cada 6–12 meses según tamaño
+    </div>
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>AAA ≥5,5 cm o sintomático:</strong>
+      Derivación urgente a cirugía vascular · EVAR (endovascular) vs cirugía abierta según anatomía · No demorar
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Control de factores de riesgo (siempre):</strong>
+    PA meta &lt;130/80 · Betabloqueador si cardiopatía · Estatina (reduce progresión) · Suspensión tabaco reduce riesgo rotura 50%
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar cirugía vascular: AAA ≥4,5 cm · Crecimiento &gt;0,5 cm en 6 meses · Sintomático · Mujer con AAA ≥5 cm
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Vigilancia por tamaño:</strong>
+    3–3,9 cm → eco cada 3 años · 4–4,9 cm → eco cada 12 meses · 5–5,4 cm → eco cada 6 meses · ≥5,5 cm → cirugía
+  </div>
+
+</div>
+</body>
+</html>
