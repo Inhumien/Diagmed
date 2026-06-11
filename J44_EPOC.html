@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPOC — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 EPOC (J44) — Diagnóstico y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DISNEA PROGRESIVA + TOS + TABAQUISMO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EXACERBACIÓN GRAVE: SpO₂ &lt;88% · FR >30 · Uso musculatura accesoria · Confusión → VNI o IOT · Hospitalizar
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación clínica:</strong>
+    <ul>
+      <li>Disnea progresiva de esfuerzo (mMRC 0–4) · Tos crónica productiva</li>
+      <li>Tabaquismo IPA >10 paquetes-año (principal FR) · Exposición laboral/biomasa</li>
+      <li>Signos: tórax hiperinsuflado, disminución murmullo vesicular, sibilancias</li>
+      <li>Exacerbaciones: aumento disnea + esputo purulento + tos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico y estadificación GOLD:</strong>
+    <ul>
+      <li><strong>Espirometría post-broncodilatador: VEF1/CVF &lt;0,70</strong> (obstrucción fija)</li>
+      <li>GOLD 1: VEF1 ≥80% · GOLD 2: 50–79% · GOLD 3: 30–49% · GOLD 4: &lt;30%</li>
+      <li>Grupos A/B/E según síntomas (mMRC/CAT) y exacerbaciones</li>
+      <li>Rx tórax · SpO₂ · Hemograma (poliglobulia) · α1-antitripsina si <45 años</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento estable (escalón GOLD A/B/E):</strong>
+      SABA SOS (salbutamol) · LAMA (tiotropio) 1ª línea · LAMA + LABA si persiste disnea · Triple (LAMA + LABA + ICS) si exacerbaciones frecuentes y eos >300
+    </div>
+    <div class="col" style="background:#cb4335;color:#fff;">
+      <strong>Exacerbación (ambulatorio/hospital):</strong>
+      SABA nebulizado + ipratropio · Prednisona 40mg/día x 5 días · ATB si esputo purulento (amoxicilina, azitromicina, doxiciclina) · O₂ meta SpO₂ 88–92%
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Siempre:</strong>
+    Cese tabáquico (intervención más efectiva) · Vacunas (influenza anual, neumocócica) · Rehabilitación pulmonar · O₂ domiciliario si PaO₂ &lt;55mmHg
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neumología: GOLD 3–4 · exacerbaciones frecuentes · O₂ domiciliario · candidato a LVRS o trasplante
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Espirometría anual · Evaluar técnica inhalatoria · CAT/mMRC · Prevenir exacerbaciones (vacunas, adherencia) · Rehabilitación pulmonar
+  </div>
+</div>
+</body>
+</html>
