@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sifilis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Sifilis (A50/A51/A52) — Evaluacion y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ULCERA GENITAL INDOLORA / EXANTEMA PALMOPLANTAR / SEROLOGIAS +</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ NOTIFICACION OBLIGATORIA · Sifilis en embarazo → tratamiento inmediato para prevenir sifilis congenita · Sifilis + VIH: mayor riesgo de neurosifilis
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Fases clinicas:</strong>
+    <ul>
+      <li>Primaria (A51): chancro indurado indoloro en genitales, adenopatia inguinal → desaparece solo</li>
+      <li>Secundaria (A51): exantema maculopapular palmoplantar, condilomas planos, alopecia en parches, linfadenopatia generalizada, fiebre</li>
+      <li>Latente: sin sintomas, VDRL/RPR positivo (precoz menor de 1 ano, tardia mayor de 1 ano)</li>
+      <li>Terciaria (A52): gomas, aortitis, neurosifilis (tabes dorsal, demencia)</li>
+      <li>Congenita (A50): nariz en silla de montar, dientes de Hutchinson, sordera</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnostico serologico:</strong>
+    <ul>
+      <li>VDRL o RPR (no treponemico): screening y seguimiento. Falsos positivos posibles.</li>
+      <li>TPHA o FTA-ABS (treponemico): confirma. Permanece positivo de por vida.</li>
+      <li>Puncion lumbar si: sifilis terciaria, VIH, falla a tratamiento, sintomas neurologicos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Penicilina G benzatinica (tratamiento de eleccion):</strong>
+    <ul>
+      <li>Primaria/secundaria/latente precoz: 2.400.000 UI IM dosis unica</li>
+      <li>Latente tardia/terciaria: 2.400.000 UI IM semanal x 3 semanas</li>
+      <li>Neurosifilis: Penicilina G sodica 18-24 MUI/dia IV x 10-14 dias</li>
+      <li>Alergia a penicilina: doxiciclina 100mg c/12h x 14-28 dias (excepto embarazo → desensibilizar)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Notificacion SEREMI. Tratamiento de pareja(s) sexual(es). Infectologia si neurosifilis o VIH asociado.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    VDRL de control a los 6 y 12 meses (esperar caida de 4 diluciones = exito). Screening de otras ETS: VIH, gonorrea, Chlamydia, hepatitis B.
+  </div>
+</div>
+</body>
+</html>
