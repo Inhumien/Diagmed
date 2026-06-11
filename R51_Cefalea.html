@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cefalea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval { background: #922b21; color: #fff; }
+  .dx { background: #1f618d; color: #fff; }
+  .alerta { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim { background: #117a65; color: #fff; }
+  .arrow { font-size: 1.4em; color: #7f8c8d; }
+  .row { display: flex; gap: 10px; width: 100%; }
+  .col { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🧠 Cefalea (R51) — Evaluación en Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">EVALUAR SEÑALES DE ALARMA PRIMERO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SEÑALES DE ALARMA (SNNOOP10): Thunderclap · Fiebre + rigidez de nuca · Déficit neurológico · Papilledema · Inicio >50 años · VIH/inmunodepresión · Postural · Cambio de patrón → Neuroimagen urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación por tipo (si sin alarma):</strong>
+    <ul>
+      <li><strong>Tensional:</strong> opresiva bilateral, intensidad leve-moderada, no náuseas, no agrava con actividad</li>
+      <li><strong>Migraña:</strong> pulsátil unilateral, moderada-severa, náuseas/vómitos, foto/fonofobia, 4–72h</li>
+      <li><strong>En racimos:</strong> unilateral periorbitaria, muy intensa, autonómica ipsilateral, duración 15–180 min</li>
+      <li><strong>Por abuso de analgésicos:</strong> cefalea diaria >15 días/mes con analgésicos >10 días/mes</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Crisis migraña:</strong>
+      Triptanes (sumatriptán 50–100mg) · AINEs (ibuprofeno 600mg) · Metoclopramida 10mg · Ambiente oscuro y silencioso · Evitar luz
+    </div>
+    <div class="col" style="background:#922b21; color:#fff;">
+      <strong>Cefalea tensional:</strong>
+      Paracetamol 1g o ibuprofeno 400–600mg · Técnicas de relajación · Evitar analgésicos >10 días/mes
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Profilaxis migraña (≥4 crisis/mes):</strong>
+    Propranolol 40–160mg/día · Topiramato 25–100mg/día · Amitriptilina 10–50mg · Anticuerpos anti-CGRP (erenumab) en refractarios
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 TAC/RMN urgente si señales de alarma · Derivar neurología: migraña refractaria, >15 días/mes, cambio de patrón
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Diario de cefalea:</strong>
+    Frecuencia, duración, intensidad, factores desencadenantes · Evaluar abuso de analgésicos · Ajustar profilaxis cada 3 meses
+  </div>
+</div>
+</body>
+</html>
