@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastritis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Gastritis / Dispepsia Aguda (K29) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR EPIGÁSTRICO + NÁUSEAS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ HEMORRAGIA DIGESTIVA ALTA: Hematemesis · Melena · Hipotensión · Hematocrito bajo → Endoscopía urgente + resucitación
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación clínica:</strong>
+    <ul>
+      <li>Dolor epigástrico, ardor, náuseas, vómitos, distensión</li>
+      <li>Factores precipitantes: AINEs, alcohol, ayuno, estrés, H. pylori</li>
+      <li>Señales de alarma: pérdida de peso, disfagia, vómitos persistentes, anemia, sangrado, >45 años con síntomas nuevos</li>
+      <li>Medicamentos concomitantes: AINEs, corticoides, anticoagulantes</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Sin señales de alarma y &lt;45 años → Diagnóstico clínico, tratamiento empírico</li>
+      <li>Test H. pylori: test de aliento con urea-13C o antígeno en deposiciones (1ª línea)</li>
+      <li>Con señales de alarma → Endoscopía digestiva alta urgente</li>
+      <li>Hemograma si sospecha de sangrado</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Sin H. pylori — Tratamiento sintomático:</strong>
+      IBP (omeprazol 20mg antes del desayuno) x 4–8 semanas · Antiácidos SOS · Suspender AINEs · Dieta fraccionada · Evitar alcohol y tabaco
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>H. pylori positivo — Erradicación:</strong>
+      Triple terapia 14 días: Omeprazol 20mg c/12h + Amoxicilina 1g c/12h + Claritromicina 500mg c/12h · Cuádruple si resistencia a claritromicina (+ bismuto o metronidazol)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Confirmación de erradicación (obligatoria):</strong>
+    Test de aliento o antígeno en deposiciones ≥4 semanas post-ATB · Si negativo: éxito · Si positivo: segunda línea
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endoscopía urgente: señales de alarma · sangrado · >45 años con síntomas nuevos · Gastroenterología si falla a tratamiento
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control síntomas a las 4–8 semanas · Verificar erradicación H. pylori · Endoscopía de control solo en úlcera gástrica (descartar malignidad) · Gastroprotección si AINEs crónicos necesarios
+  </div>
+</div>
+</body>
+</html>
