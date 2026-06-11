@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artritis Reactiva — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1a5276; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🦠 Artritis Reactiva / Síndrome de Reiter (M02) — Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">ARTRITIS AGUDA POST-INFECCIÓN</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Presentación clínica (tríada clásica):</strong>
+    <ul>
+      <li><strong>Artritis</strong> asimétrica oligoarticular (rodillas, tobillos, IFP), inicio 1–4 semanas post-infección</li>
+      <li><strong>Uretritis/cervicitis</strong> (infección urogenital por Chlamydia) o diarrea (Salmonella, Shigella, Campylobacter, Yersinia)</li>
+      <li><strong>Conjuntivitis/uveítis</strong> (no siempre presente)</li>
+      <li>Lesiones cutáneas: queratodermia blenorrágica, balanitis circinada, úlceras orales</li>
+      <li>HLA-B27 positivo en 60–80%</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Hemograma, PCR, VHS · HLA-B27</li>
+      <li>PCR/NAAT Chlamydia trachomatis (uretral/cervical) · Coprocultivo si diarrea reciente</li>
+      <li>FR, Anti-CCP (negativos) · VDRL, VIH</li>
+      <li>Líquido sinovial: inflamatorio, cultivo negativo</li>
+      <li>Rx articulaciones afectadas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>AINEs</strong> (1ª línea): naproxeno 500mg c/12h o indometacina 25–50mg c/8h</li>
+      <li><strong>ATB si infección activa:</strong> Doxiciclina 100mg c/12h x 3 meses (Chlamydia) — no acorta artritis pero previene recurrencia</li>
+      <li>Corticoides intralesionales en articulaciones muy inflamadas</li>
+      <li>Sulfasalazina 2g/día si artritis persistente &gt;3 meses</li>
+      <li>Fisioterapia y rehabilitación</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ Uveítis aguda → Oftalmología urgente (corticoides tópicos + midriáticos)
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar reumatología: artritis persistente &gt;3 meses · Formas severas o recurrentes · Iniciar FARME
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Pronóstico:</strong>
+    60–70% resuelve en 3–6 meses · 30% evoluciona a crónico · Recurrencias posibles con nuevas infecciones
+  </div>
+
+</div>
+</body>
+</html>
