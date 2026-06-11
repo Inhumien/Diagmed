@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faringitis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦷 Faringitis Aguda (J02) — Manejo en APS</h1>
+<div class="flow">
+  <div class="box inicio">ODINOFAGIA AGUDA — SCORE DE CENTOR/MCISAAC</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Score de Centor modificado (McIsaac):</strong>
+    <ul>
+      <li>Exudado amigdalino (+1) · Adenopatía cervical anterior dolorosa (+1)</li>
+      <li>Ausencia de tos (+1) · Fiebre >38°C (+1)</li>
+      <li>Edad 3–14 años (+1) · 15–44 años (0) · ≥45 años (-1)</li>
+      <li>Score 0–1: viral, NO ATB · Score 2–3: test rápido · Score 4–5: ATB directo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Sospecha de MONONUCLEOSIS INFECCIOSA: odinofagia + adenopatías generalizadas + esplenomegalia + linfocitos atípicos → Hemograma + Paul-Bunnell · NO dar amoxicilina (exantema)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Test rápido estreptocócico (TSFA): alta especificidad · Si negativo y score ≥3 → cultivo faríngeo</li>
+      <li>Etiología viral (70–80%): rinorrea, tos, conjuntivitis → NO ATB</li>
+      <li>Streptococcus pyogenes (grupo A): exudado, ausencia tos, fiebre alta, adenopatías</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Viral (la mayoría) — Solo sintomático:</strong>
+      Paracetamol o ibuprofeno · Analgésicos tópicos (spray, pastillas) · Hidratación · NO ATB · Autolimitada 3–7 días
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Estreptocócica confirmada (TSFA+/cultivo+):</strong>
+      Amoxicilina 500mg c/8h x 10 días (1ª línea) · Alérgico penicilina: Azitromicina 500mg/día x 5 días · Objetivo: prevenir fiebre reumática
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Urgencia: absceso periamigdaliano · epiglotitis · trismus · dificultad respiratoria · Ludwig's angina
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Faringitis estreptocócica: no requiere cultivo de control si asintomático · Recurrentes ≥5/año → derivar ORL (amigdalectomía)
+  </div>
+</div>
+</body>
+</html>
