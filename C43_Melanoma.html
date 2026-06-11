@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melanoma — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #2c3e50; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⚫ Melanoma (C43) — Diagnóstico y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">LESIÓN PIGMENTADA CON CAMBIO RECIENTE — ABCDE</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ NO biopsiar parcialmente (shave o punch parcial) → distorsiona la estadificación · ESCISIÓN EXCISIONAL COMPLETA con margen 1–2mm
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Regla ABCDE:</strong>
+    <ul>
+      <li><strong>A</strong>simetría · <strong>B</strong>ordes irregulares · <strong>C</strong>olor no homogéneo (múltiples tonos) · <strong>D</strong>iámetro &gt;6mm · <strong>E</strong>volución (cambio en tamaño, color, forma)</li>
+      <li>Tipos: extensión superficial (70%) · nodular (agresivo) · lentiginoso acral (palmas/plantas/subungueal) · léntigo maligno (cara anciano)</li>
+      <li>FR: fototipo bajo, quemaduras solares, nevos atípicos múltiples, antecedente familiar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico y estadificación:</strong>
+    <ul>
+      <li>Dermatoscopía · Biopsia excisional (no parcial)</li>
+      <li>Histología: índice de Breslow (espesor en mm) + ulceración + índice mitótico → estadio T</li>
+      <li>Ganglio centinela si Breslow ≥0,8mm o ulcerado</li>
+      <li>PET-TAC si estadio III–IV · LDH (marcador de progresión)</li>
+      <li>Mutación BRAF V600E (terapia dirigida si positivo)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Estadio I–II (localizado):</strong>
+      Ampliación de márgenes: Breslow &lt;1mm → 1cm · 1–2mm → 1–2cm · &gt;2mm → 2cm · Ganglio centinela · Seguimiento estricto
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Estadio III–IV (metastásico):</strong>
+      Anti-PD1 (pembrolizumab, nivolumab) · BRAF+: dabrafenib + trametinib · Ipilimumab (anti-CTLA4) · Cirugía de metástasis accesibles
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología urgente · Comité oncológico · Cirugía oncológica · Oncología médica si estadio avanzado
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Estadio I: cada 6 meses x 5 años · Estadio II–III: cada 3–4 meses x 2 años → anual · Examen piel completa + adenopatías · Fotoprotección de por vida
+  </div>
+</div>
+</body>
+</html>
