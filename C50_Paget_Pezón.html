@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cáncer de Mama / Paget del Pezón — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdf2f8; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7d3c98; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7d3c98;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Enfermedad de Paget del Pezón / Cáncer de Mama (C50)</h1>
+<div class="flow">
+  <div class="box inicio">LESIÓN ECCEMATOSA DEL PEZÓN O MASA MAMARIA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SIGNOS DE ALARMA: Pezón eccematoso que no responde a tratamiento tópico · Retracción del pezón · Descarga hemática · Masa palpable · Piel de naranja → DERIVAR URGENTE
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Paget del pezón — características:</strong>
+    <ul>
+      <li>Lesión eritematosa, descamativa, costrosa del pezón y aréola</li>
+      <li>Prurito, ardor, sangrado del pezón · Simula eccema o dermatitis</li>
+      <li>Asociada a carcinoma ductal subyacente en 90% de casos</li>
+      <li>Diagnóstico tardío frecuente por confusión con dermatitis</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Mamografía bilateral (detección de tumor subyacente, microcalcificaciones)</li>
+      <li>Ecografía mamaria si lesión palpable o mama densa</li>
+      <li>RMN mamaria (alta sensibilidad para detectar tumor oculto asociado)</li>
+      <li><strong>Biopsia del pezón</strong> (punción o biopsia en sacabocado): células de Paget (células grandes con halo claro)</li>
+      <li>Receptores hormonales (RE, RP), HER2, Ki67 en biopsia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento (solo en centro especializado):</strong>
+    <ul>
+      <li>Paget sin tumor subyacente palpable: cirugía conservadora (escisión central) + radioterapia · o mastectomía total</li>
+      <li>Paget con carcinoma subyacente: según estadio del carcinoma asociado (quimioterapia neoadyuvante si indicada, cirugía, radioterapia, hormonoterapia, anti-HER2)</li>
+      <li>Ganglio centinela siempre</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Mastología/oncología urgente · Comité multidisciplinario de mama
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Mamografía anual · Examen clínico cada 6 meses · Hormonoterapia 5–10 años si RE+ · Screening familiar si mutación BRCA
+  </div>
+</div>
+</body>
+</html>
