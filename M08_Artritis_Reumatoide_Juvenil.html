@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artritis Idiopática Juvenil — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1e8449; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #117a65; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #6c3483; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>👦 Artritis Idiopática Juvenil (M08) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">ARTRITIS EN MENOR DE 16 AÑOS POR &gt;6 SEMANAS</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Categorías principales (ILAR):</strong>
+    <ul>
+      <li><strong>Oligoarticular</strong> (más frecuente, &lt;5 articulaciones): niñas pequeñas, ANA (+), riesgo uveítis</li>
+      <li><strong>Poliarticular FR(-):</strong> &gt;5 articulaciones, similar a AR adulto</li>
+      <li><strong>Poliarticular FR(+):</strong> adolescentes, comportamiento de AR erosiva</li>
+      <li><strong>Sistémica (enfermedad de Still):</strong> fiebre en picos, rash salmón, artritis, hepatoesplenomegalia</li>
+      <li><strong>Entesitis relacionada:</strong> HLA-B27, afectación axial, niños varones</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ SÍNDROME DE ACTIVACIÓN MACROFÁGICA (SAM): Fiebre persistente + citopenias + ferritina muy elevada (&gt;10.000) + hepatoesplenomegalia → Urgencia hematológica
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Estudio (descartar otras causas primero):</strong>
+    <ul>
+      <li>Hemograma, PCR, VHS, ferritina, función hepática y renal</li>
+      <li>ANA, FR, Anti-CCP, HLA-B27 según subtipo</li>
+      <li>Rx articulaciones · Ecografía articular</li>
+      <li>Hemocultivos si fiebre (descartar artritis séptica)</li>
+      <li>Líquido sinovial si derrame importante</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#117a65; color:#fff;">
+      <strong>Oligoarticular / leve:</strong>
+      AINEs · Corticoides intralesionales · Metotrexato si no responde · Revisión oftalmológica cada 3–6 meses (uveítis silente)
+    </div>
+    <div class="col" style="background:#1f618d; color:#fff;">
+      <strong>Poliarticular / sistémica:</strong>
+      Metotrexato 10–15mg/m²/semana · Anti-IL-1 (anakinra/canakinumab) en sistémica · Anti-TNF si falla FARME
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar reumatología pediátrica: todo caso confirmado o sospechoso · Urgente si fiebre + artritis + compromiso sistémico
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Oftalmología regular (uveítis asintomática) · Talla y desarrollo · Densitometría · Vacunación al día antes de biológicos
+  </div>
+
+</div>
+</body>
+</html>
