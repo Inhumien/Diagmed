@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toxoplasmosis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🐱 Toxoplasmosis (B58) — Manejo Segun Contexto</h1>
+<div class="flow">
+  <div class="box inicio">LINFADENOPATIA BENIGNA / LESION CEREBRAL EN INMUNOSUPRIMIDO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Toxoplasmosis cerebral en VIH: lesiones multiples anulares en TAC/RMN → tratamiento empirico sin esperar biopsia (si CD4 menor de 200 y IgG anti-Toxoplasma +). Sin respuesta en 2 semanas → biopsia cerebral.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentaciones clinicas:</strong>
+    <ul>
+      <li>Inmunocompetente: asintomatica (90%) o adenopatias cervicales no dolorosas, autolimitada.</li>
+      <li>Toxoplasmosis ocular: coriorretinitis (lesion blanco-amarilla en fondo de ojo), episodios recurrentes. Puede afectar a inmunocompetentes.</li>
+      <li>Toxoplasmosis cerebral (VIH, CD4 menor de 100): cefalea, fiebre, deficit focal, convulsiones. Lesiones multiples en anillo con realce en TAC.</li>
+      <li>Toxoplasmosis congenita: prematurez, hidrocefalia, calcificaciones cerebrales, coriorretinitis, hepatoesplenomegalia.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento:</strong>
+    Inmunocompetente sintomatico: pirimetamina 25-50mg/dia + sulfadiazina 4g/dia + acido folinico x 4-6 semanas. Cerebral/VIH: misma combinacion x 6 semanas → supresion indefinida (cotrimoxazol). Ocular: pirimetamina + sulfadiazina + corticoide si amenaza la macula. Congenita: tratamiento desde el nacimiento por 1 año.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Infectologia: cerebral o VIH. Oftalmologia: toxoplasmosis ocular activa. Neonatologia si congenita.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Prevencion en embarazo: cocinar carne bien cocida, lavar frutas/verduras, evitar manipular excrementos de gato, guantes al jardinear. IgG antes del embarazo (si negativa → mayor riesgo de primo infeccion).
+  </div>
+</div>
+</body>
+</html>
