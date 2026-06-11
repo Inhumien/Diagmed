@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trombosis Venosa Profunda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦵 Trombosis Venosa Profunda / TVP (I80/I82) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">EDEMA + DOLOR + EMPASTAMIENTO EN EXTREMIDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ TEP: disnea brusca + taquicardia + hipoxemia en paciente con TVP → Angioтac pulmonar urgente + anticoagulacion inmediata. Flegmasia cerulea dolens (TVP masiva con isquemia): trombectomia urgente.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Score de Wells (pretest probability):</strong>
+    <ul>
+      <li>Cancer activo (+1), paralisis/inmovilizacion (+1), reposo en cama mayor de 3 dias o cirugia mayor en 12 semanas (+1)</li>
+      <li>Dolor a lo largo del sistema venoso profundo (+1), edema de toda la pierna (+1), edema de pantorrilla mayor de 3cm (+1)</li>
+      <li>Edema con fóvea solo en pierna sintomatica (+1), venas superficiales colaterales (+1)</li>
+      <li>Diagnostico alternativo tan probable o mas probable (-2)</li>
+      <li>Mayor o igual a 2: alta probabilidad → Eco-Doppler. Menor de 2: Dímero D</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    Dimero D (alta sensibilidad, baja especificidad): si negativo en baja probabilidad descarta TVP. Eco-Doppler venoso (gold standard): ausencia de compresibilidad. TAC si TVP iliocava sospechada.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Anticoagulacion (iniciar inmediato):</strong>
+      ACOD (rivaroxaban 15mg c/12h x 21d → 20mg/dia) o apixaban como 1ª linea. HBPM puente a acenocumarol (INR 2-3) si ACOD no disponible. Duracion: 3 meses minimo (provocada) o 6-12 meses (no provocada).
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>TVP superficial (tromboflebitis I82):</strong>
+      HBPM profilactica x 45 dias si mayor de 5cm. AINEs topicos + compresion. Anticoagulacion terapeutica si cerca de union safenofemoral o factores de riesgo.
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizacion si TVP iliofemoral extensa, riesgo de TEP alto, embarazo, cancer activo. Estudio de trombofilia si: primer episodio menor de 50 anos, no provocada, recurrente, localizacion inusual.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Medias de compresion gradual (30-40 mmHg) por 2 anos (reduce sindrome postrombótico). Control INR si acenocumarol. Ecografia de control a los 3-6 meses. Investigar cancer en TVP no provocada mayor de 50 anos.
+  </div>
+</div>
+</body>
+</html>
