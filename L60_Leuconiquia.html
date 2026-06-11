@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leuconiquia / Alteraciones Ungueales — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💅 Leuconiquia / Alteraciones Ungueales (L60)</h1>
+<div class="flow">
+  <div class="box inicio">UÑAS BLANCAS O CON CAMBIOS DE COLOR/FORMA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos de leuconiquia y significado:</strong>
+    <ul>
+      <li><strong>Leuconiquia verdadera:</strong> opacidad en placa ungueal (trauma, hereditaria) — benigna</li>
+      <li><strong>Leuconiquia aparente:</strong> patrón en la lúnula o lecho ungueal que desaparece con presión</li>
+      <li><strong>Líneas de Muehrcke:</strong> bandas blancas paralelas transversas — hipoalbuminemia</li>
+      <li><strong>Uñas de Terry:</strong> blanqueamiento proximal con banda distal oscura — cirrosis, IC, DM</li>
+      <li><strong>Líneas de Mees:</strong> bandas transversas únicas — arsénico, enfermedad sistémica</li>
+      <li><strong>Líneas de Beau:</strong> surcos transversales — estrés sistémico previo (enfermedad grave, quimioterapia)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Melanoniquia longitudinal (banda oscura unilateral) → Descartar melanoma subungueal (biopsia si: adulto, un solo dedo, banda &gt;3mm, color irregular)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico y estudio sistémico si leuconiquia aparente:</strong>
+    <ul>
+      <li>Albúmina (Muehrcke), función hepática/renal (Terry), hemograma</li>
+      <li>Arsénico en orina/sangre si Mees en adulto</li>
+      <li>Dermatoscopía ungueal (melanoniquia)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento — siempre tratar la causa subyacente:</strong>
+    <ul>
+      <li>Leuconiquia verdadera traumática: protección, crece sola</li>
+      <li>Hipoalbuminemia: tratar causa (cirrosis, síndrome nefrótico, desnutrición)</li>
+      <li>Onicomicosis (causa más frecuente de uña blanca/opaca): antifúngico oral (terbinafina o itraconazol)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología: melanoniquia sospechosa · diagnóstico incierto · onicomicosis severa · lesión subungueal
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Las uñas crecen 3mm/mes (mano) y 1mm/mes (pie) · Seguimiento de causa sistémica identificada
+  </div>
+</div>
+</body>
+</html>
