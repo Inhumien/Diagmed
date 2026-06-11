@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemorroides — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Hemorroides (I84) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SANGRADO RECTAL + DOLOR O PROLAPSO ANAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ TROMBOSIS HEMORROIDAL EXTERNA: Nódulo azul-violáceo muy doloroso, inicio &lt;72h → Trombectomía bajo anestesia local (alivio inmediato)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación (hemorroides internas):</strong>
+    <ul>
+      <li><strong>Grado I:</strong> Solo sangrado, sin prolapso</li>
+      <li><strong>Grado II:</strong> Prolapso con la defecación, reducción espontánea</li>
+      <li><strong>Grado III:</strong> Prolapso que requiere reducción manual</li>
+      <li><strong>Grado IV:</strong> Prolapso irreducible</li>
+      <li>Síntomas: sangrado rojo brillante, prurito, sensación de cuerpo extraño, dolor (trombosis)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Inspección anal y tacto rectal · Anoscopia (hemorroides internas)</li>
+      <li>Rectosigmoidoscopía o colonoscopía si: >40 años · sangrado sin hemorroides visibles · síntomas de alarma</li>
+      <li>Siempre descartar causa de sangrado proximal antes de atribuir a hemorroides</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Grado I–II — Médico:</strong>
+      Fibra dietética 25–35g/día + hidratación · Baños de asiento tibios · Flavonoides (diosmina 500mg c/12h) · Corticoide tópico en brotes · Evitar esfuerzo al defecar
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Grado II–III — Procedimientos:</strong>
+      Ligadura elástica (rubber band) — 1ª línea ambulatoria · Escleroterapia · Fotocoagulación infrarroja
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Grado III–IV refractario / Grado IV — Cirugía:</strong>
+    Hemorroidectomía (Milligan-Morgan o Ferguson) · Hemorroidopexia con grapadora (PPH) · Hemorroidopexia con Doppler (THD)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cirugía colorrectal: grado III–IV · falla a ligadura · trombosis hemorroidal · sangrado severo
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Medidas dietéticas permanentes (evita recurrencia) · Control a las 4–6 semanas · Colonoscopía si sangrado persiste post-tratamiento
+  </div>
+</div>
+</body>
+</html>
