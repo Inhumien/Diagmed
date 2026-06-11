@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intoxicación por Organofosforados — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>☠️ Intoxicación por Organofosforados (T60) — Emergencia</h1>
+<div class="flow">
+  <div class="box inicio">EXPOSICIÓN A PESTICIDA + SÍNTOMAS COLINÉRGICOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA: Broncospasmo + hipersecreción + miosis + bradicardia → Atropina IV inmediata + protección del personal (riesgo de contaminación secundaria)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síndrome SLUDE/DUMBELS (muscarínico + nicotínico):</strong>
+    <ul>
+      <li><strong>Muscarínico:</strong> Salivación · Lagrimeo · Urgencia urinaria/defecación · miosis · Emesis · Bradipnea/Broncospasmo</li>
+      <li><strong>Nicotínico:</strong> fasciculaciones musculares · debilidad → parálisis · taquicardia inicial</li>
+      <li><strong>SNC:</strong> agitación → convulsiones → coma</li>
+      <li>Fuentes: plaguicidas agrícolas (paratión, malatión, clorpirifos) · armas químicas (agentes nerviosos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico (síndrome colinérgico + exposición)</li>
+      <li>Colinesterasa eritrocitaria (actividad &lt;50% confirma intoxicación) · colinesterasa plasmática (menos específica)</li>
+      <li>Gasometría · ECG (QT prolongado, arritmias)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento — Atropina es la clave:</strong>
+    <ul>
+      <li><strong>Descontaminación:</strong> retirar ropa, lavar con agua y jabón · Personal con EPP</li>
+      <li><strong>Atropina:</strong> 2–4mg IV cada 5–10 min hasta secar secreciones bronquiales · Dosis total puede ser 100–200mg en casos severos · Meta: pulmones secos (no midriaisis)</li>
+      <li><strong>Pralidoxima (PAM):</strong> 1–2g IV en 15–30 min → infusión 250–500mg/h · Administrar precozmente (&lt;24–48h) para reactivar colinesterasa</li>
+      <li><strong>Benzodiazepinas:</strong> diazepam 5–10mg IV para convulsiones</li>
+      <li>Intubación si insuficiencia respiratoria · NO succinilcolina</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI urgente · Centro de toxicología (CITUC en Chile: 2-2635-3800) · Monitorización continua mínimo 24h
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Síndrome intermedio (24–96h post-exposición): debilidad muscular proximal + parálisis respiratoria → monitorear · Neuropatía tardía (semanas): si carbamatos/organofosforados específicos
+  </div>
+</div>
+</body>
+</html>
