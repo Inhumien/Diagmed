@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epiglotitis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🚨 Epiglotitis (J05) — Emergencia de Vía Aérea</h1>
+<div class="flow">
+  <div class="box inicio">ODINOFAGIA SEVERA + FIEBRE + DIFICULTAD RESPIRATORIA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA DE VÍA AÉREA: No examinar garganta con bajalengua · No acostar al paciente · Mantener en posición de trípode · Llamar a ORL y anestesia INMEDIATAMENTE
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica — tríada "4D":</strong>
+    <ul>
+      <li><strong>Dysphagia</strong> (disfagia severa, sialorrea, no puede tragar)</li>
+      <li><strong>Dysphonia</strong> (voz apagada, "empapada")</li>
+      <li><strong>Distress</strong> respiratorio (estridor inspiratorio, posición de trípode)</li>
+      <li><strong>Drooling</strong> (sialorrea por incapacidad de tragar)</li>
+      <li>Fiebre alta, toxicidad sistémica · Más frecuente en adultos hoy (vacunación HiB)</li>
+      <li>Agentes: H. influenzae tipo b, S. aureus, estreptococos, Candida (inmunosuprimidos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>CLÍNICO — no retrasar manejo por imágenes si inestabilidad respiratoria</li>
+      <li>Rx cuello lateral (si estable): signo del pulgar (epiglotis aumentada de tamaño)</li>
+      <li>Laringoscopía flexible (solo con equipo de vía aérea disponible): epiglotis roja e inflamada</li>
+      <li>Hemocultivos antes de ATB · Hemograma, PCR</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Manejo inmediato:</strong>
+    <ul>
+      <li>Posición cómoda del paciente (sentado, trípode) · O₂ suave sin agitar</li>
+      <li><strong>Asegurar vía aérea</strong>: intubación orotraqueal o nasotraqueal (anestesista + ORL) · Traqueotomía si intubación imposible</li>
+      <li>ATB IV: Ceftriaxona 2g c/24h o Cefotaxima 2g c/8h x 7–10 días</li>
+      <li>Dexametasona 0,15mg/kg IV (reduce edema)</li>
+      <li>UCI para monitoreo de vía aérea</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI + ORL + Anestesia INMEDIATO · No trasladar sin vía aérea asegurada
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-intubación:</strong>
+    Extubar cuando fiebre cede y edema reduce (24–48h) · Completar ATB IV 7–10 días · Vacunación HiB en no vacunados · Alta cuando tolera vía oral
+  </div>
+</div>
+</body>
+</html>
