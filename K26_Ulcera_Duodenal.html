@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulcera Peptica / Duodenal — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Ulcera Peptica Duodenal (K26) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR EPIGASTRICO + RELACION CON AYUNO / COMIDA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ COMPLICACIONES: Hemorragia digestiva alta (hematemesis/melena) → endoscopia urgente + IBP IV. Perforacion (abdomen en tabla) → cirugia urgente.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentacion clinica:</strong>
+    <ul>
+      <li>Ulcera duodenal: dolor epigastrico que MEJORA con la comida y empeora 2-3h despues o en ayunas nocturno. Calidad ardorosa o tipo hambre.</li>
+      <li>Ulcera gastrica: dolor que EMPEORA con la comida. Mayor riesgo de malignidad.</li>
+      <li>Causas: H. pylori (70-80%), AINEs/aspirina, raramente Zollinger-Ellison.</li>
+      <li>Complicaciones: HDA, perforacion, estenosis pilorica, penetracion.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Diagnostico y tratamiento:</strong>
+    Endoscopia (confirma, biopsia si gastrica, terapeutica en HDA). Test de H. pylori: urea en aliento o antígeno fecal (NO serologico en control). Biopsia (test rapido de ureasa o histologia).
+
+    Erradicacion H. pylori (triple terapia 14 dias): Omeprazol 20mg c/12h + Claritromicina 500mg c/12h + Amoxicilina 1g c/12h. O cuadrupla con bismuto si resistencia. IBP continuado 4-8 semanas post-triple terapia.
+
+    Suspension de AINEs si posible. Misoprostol o IBP si AINE indispensable.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endoscopia urgente: HDA, dolor severo, vomitos, signos de perforacion. Cirugia: perforacion, estenosis pilorica.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Test de erradicacion a las 4-8 semanas post-tratamiento (urea en aliento o antigeno fecal). Endoscopia de control en ulcera gastrica (biopsia de seguimiento para descartar malignidad).
+  </div>
+</div>
+</body>
+</html>
