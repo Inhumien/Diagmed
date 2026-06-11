@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome Nefritico y Nefrotico — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫘 Sindrome Nefritico / Nefrotico (N00/N04) — Evaluacion</h1>
+<div class="flow">
+  <div class="box inicio">HEMATURIA + PROTEINURIA + EDEMA + HTA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Distincion clinica:</strong>
+    <ul>
+      <li><strong>Nefritico (N00):</strong> Hematuria macroscopica (orina color coca-cola), HTA, edema moderado, oliguria, proteinuria NO masiva. GN postinfecciosa (post-estreptococo), nefropatia IgA, GNRP.</li>
+      <li><strong>Nefrotico (N04):</strong> Proteinuria masiva mayor de 3,5g/dia, hipoalbuminemia, edema severo (anasarca), hiperlipidemia, lipiduria. Causa: nefropatia membranosa (adultos), cambios minimos (ninos), GESF, amiloidosis.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ GNRP (glomerulonefritis rapidamente progresiva): perdida rapida de funcion renal en dias-semanas. Semilunas en biopsia → tratamiento inmunosupresor urgente (bolus de metilprednisolona + ciclofosfamida o rituximab segun etiologia).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    Sedimento urinario (cilindros hemáticos = nefritico). Proteinuria 24h o cociente prot/creat en orina aislada. Funcion renal (creatinina). C3, C4, CH50 (complemento bajo en GN postinfecciosa, lupus, crioglobulinemia). ANA, anti-dsDNA, ANCA, anti-GBM, IgA. ASLO (post-estreptococo). Biopsia renal (diagnostico definitivo).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Nefritico / GN postinfecciosa:</strong>
+      Reposo. Diureticos si edema o HTA. Control de PA. Restriccion de sal y agua. Tratar infeccion subyacente. GN post-estreptococica: autolimitada. IECA/ARA2 largo plazo.
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Nefrotico:</strong>
+      Albumina IV + furosemida IV (edema severo). Anticoagulacion (riesgo de TVP/TEP si albumina menor de 2,5). IECA/ARA2 (reduce proteinuria). Estatina (hiperlipidemia). Inmunosupresion segun causa (corticoides en cambios minimos, rituximab en membranosa).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Nefrologia urgente. Biopsia renal si diagnostico incierto o GNRP. UCI si GNRP o insuficiencia renal grave.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Funcion renal y proteinuria periodica. IECA/ARA2 de por vida en proteinuria persistente. Vigilancia de HTA. Progresion a ERC posible segun etiologia.
+  </div>
+</div>
+</body>
+</html>
