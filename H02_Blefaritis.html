@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blefaritis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #154360; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>👁️ Blefaritis (H02) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">INFLAMACIÓN CRÓNICA DEL BORDE PALPEBRAL</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síntomas y tipos:</strong>
+    <ul>
+      <li>Prurito, ardor, lagrimeo, sensación de cuerpo extraño, fotofobia leve</li>
+      <li>Costras en base de pestañas (especialmente matutinas), eritema del borde palpebral</li>
+      <li><strong>Anterior:</strong> afecta base de pestañas (estafilocócica o seborreica)</li>
+      <li><strong>Posterior (meibomiana):</strong> disfunción glándulas de Meibomio, asociada a rosácea</li>
+      <li>Frecuentemente bilateral y crónica recurrente</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Diferenciar de ORZUELO (nódulo agudo doloroso) y CHALAZIÓN (nódulo crónico no doloroso) — manejo diferente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Higiene palpebral (SIEMPRE, base del tratamiento):</strong>
+      Compresas tibias 5–10 min · Masaje palpebral suave · Limpieza del borde con gasa húmeda o toallita específica · 2 veces/día indefinido
+    </div>
+    <div class="col" style="background:#154360; color:#fff;">
+      <strong>Tratamiento farmacológico:</strong>
+      ATB tópico (tobramicina o eritromicina ungüento) si componente bacteriano · Lágrimas artificiales frecuentes · Azitromicina tópica 1% (disfunción meibomiana)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Blefaritis posterior severa / rosácea:</strong>
+    Doxiciclina 50–100mg/día oral x 6–12 semanas (antiinflamatorio + antibacteriano) · Suplementos omega-3
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar oftalmología: no responde a higiene + ATB tópico · Afectación corneal · Cicatrización palpebral · Diagnóstico incierto
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Condición crónica — control mensual al inicio, luego cada 3–6 meses · La higiene palpebral debe mantenerse de por vida
+  </div>
+</div>
+</body>
+</html>
