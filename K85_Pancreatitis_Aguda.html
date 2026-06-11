@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancreatitis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Pancreatitis Aguda (K85) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR EPIGASTRICO EN FAJA + LIPASA ELEVADA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ PANCREATITIS NECROTIZANTE / SEVERA: fallo organico (Marshalls), necrosis mayor de 30% → UCI + soporte intensivo. Infeccion de necrosis → drenaje quirurgico o percutaneo.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Diagnostico (2 de 3 criterios):</strong>
+    <ul>
+      <li>Dolor abdominal tipico: epigastrico, continuo, irradiado en faja a espalda</li>
+      <li>Lipasa o amilasa mayor de 3x el LSN</li>
+      <li>Hallazgos en TAC compatibles (edema pancreatico, necrosis)</li>
+      <li>Causas: litiasis biliar (40%), alcohol (30%), hipertrigliceridemia, medicamentos, idiopatica</li>
+      <li>Gravedad: leve (sin fallo organico), moderada (fallo transitorio o complicaciones locales), grave (fallo persistente)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Manejo inicial (primeras 24-48h):</strong>
+    Hidratacion IV agresiva: Ringer Lactato 250-500 mL/h en primeras 12-24h (reduce necrosis). Analgesia: metamizol IV, morfina si insuficiente. NPO → reintroducir dieta oral precoz (24-48h) si tolera. Soporte respiratorio si hipoxemia. TAC contraste solo si hay deterioro o incertidumbre diagnostica (no rutina en primeras 48h). CPRE si litiasis coledociana con ictericia o colangitis.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI si fallo organico. Gastroenterologia + Cirugia. CPRE si coledocolitiasis. Ecografia abdominal urgente para buscar litiasis.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Pancreatitis biliar: colecistectomia en la misma hospitalizacion (reduce recurrencia). Lipasa de control. Abstinencia alcoholica total si causa etilica. Triglicer idos si hipertrigliceridemia causal. TAC a las 4-6 semanas si necrosis.
+  </div>
+</div>
+</body>
+</html>
