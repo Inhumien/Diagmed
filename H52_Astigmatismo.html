@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astigmatismo — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #154360; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>👁️ Astigmatismo (H52) — Evaluación y Corrección</h1>
+<div class="flow">
+
+  <div class="box inicio">CONSULTA POR VISIÓN BORROSA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Síntomas sugerentes:</strong>
+    <ul>
+      <li>Visión borrosa a todas las distancias (cerca y lejos)</li>
+      <li>Distorsión de imágenes, líneas rectas se ven curvas o inclinadas</li>
+      <li>Cefalea frontal, fatiga visual, entrecerrar los ojos para ver mejor</li>
+      <li>En niños: dificultad en lectura, bajo rendimiento escolar</li>
+      <li>Puede asociarse a miopía o hipermetropía</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ AMBLIOPÍA: Astigmatismo no corregido en menores de 7 años → Derivación oftalmológica URGENTE para evitar pérdida visual permanente
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Diagnóstico oftalmológico:</strong>
+    <ul>
+      <li>Refracción objetiva: autorrefractómetro, retinoscopia</li>
+      <li>Refracción subjetiva: agudeza visual con corrección cilíndrica</li>
+      <li>Topografía corneal si astigmatismo irregular (queratocono)</li>
+      <li>Queratometría: mide curvatura de la córnea en los meridianos principales</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Astigmatismo regular (más común):</strong>
+      Lentes oftálmicos con cilindro · Lentes de contacto tóricas · Cirugía refractiva (LASIK/PRK) en mayores de 18 años con refracción estable
+    </div>
+    <div class="col" style="background:#6c3483; color:#fff;">
+      <strong>Astigmatismo irregular (queratocono):</strong>
+      Lentes de contacto rígidas gas-permeable · Cross-linking corneal (detiene progresión) · Anillos intracorneales · Trasplante corneal en casos avanzados
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ En niños — prioridad:</strong>
+    Corrección óptica completa inmediata · Oclusión del ojo sano si ambliopía · Control cada 6 meses hasta los 10 años
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar oftalmología: niños con cualquier grado · Adultos con astigmatismo irregular · Solicitud de cirugía refractiva · Sospecha de queratocono
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control refractivo anual en adultos · Cada 6 meses en niños y adolescentes · Topografía anual si queratocono
+  </div>
+
+</div>
+</body>
+</html>
