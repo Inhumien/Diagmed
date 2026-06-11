@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escabiosis / Sarna — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🪲 Escabiosis / Sarna (B86) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">PRURITO NOCTURNO INTENSO + LESIONES LINEALES</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características clínicas:</strong>
+    <ul>
+      <li>Prurito intenso de predominio nocturno (signo cardinal)</li>
+      <li>Surcos acarinos: líneas sinuosas de 5–15mm en espacios interdigitales, muñecas, ombligo, genitales</li>
+      <li>Pápulas y vesículas, excoriaciones por rascado</li>
+      <li>Distribución: respeta cara (salvo lactantes)</li>
+      <li>Transmisión: contacto directo prolongado piel a piel · brotes familiares/institucionales</li>
+      <li>Sarna noruega (costrosa): inmunosuprimidos, miles de ácaros, muy contagiosa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SARNA COSTROSA: extremadamente contagiosa · Inmunosuprimidos · Aislamiento de contacto · Tratamiento oral obligatorio
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico: surco acarino + prurito nocturno + contacto infectado</li>
+      <li>Dermatoscopía: "jet con estela" (ácaro + surco)</li>
+      <li>Microscopía directa: raspado de surco → ácaro, huevos, heces</li>
+      <li>Biopsia si diagnóstico incierto</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento — tratar TODOS los contactos simultáneamente:</strong>
+    <ul>
+      <li><strong>1ª línea:</strong> Permetrina crema 5% — aplicar de cuello a pies, dejar 8–12h, repetir a los 7 días</li>
+      <li><strong>Alternativa oral:</strong> Ivermectina 200mcg/kg dosis única, repetir a los 7–14 días</li>
+      <li>Sarna noruega: ivermectina oral + permetrina tópica simultáneas (múltiples dosis)</li>
+      <li>Lavar ropa y ropa de cama a 60°C o bolsa plástica 72h</li>
+      <li>Antihistamínico para el prurito (persiste 2–4 semanas post-tratamiento — no indica falla)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Sarna costrosa → hospitalizar + aislamiento · Brotes institucionales → salud pública · Tratar convivientes aunque asintomáticos
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Prurito puede persistir 2–4 semanas (reacción inmune, no reinfección) · Retreatar solo si nuevos surcos activos · Control a las 4 semanas
+  </div>
+</div>
+</body>
+</html>
