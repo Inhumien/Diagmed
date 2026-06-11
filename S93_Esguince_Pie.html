@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esguince de Tobillo / Pie — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦶 Esguince de Tobillo / Pie (S93) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">TRAUMA DE TOBILLO — EVALUAR FRACTURA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Aplicar Reglas de Ottawa: Rx si dolor en maléolo + incapacidad de cargar peso 4 pasos O dolor en base del 5° metatarsiano O dolor en escafoides
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación de esguince:</strong>
+    <ul>
+      <li><strong>Grado I:</strong> Distensión ligamentaria sin rotura · dolor leve · sin inestabilidad</li>
+      <li><strong>Grado II:</strong> Rotura parcial · dolor moderado · equimosis · leve inestabilidad</li>
+      <li><strong>Grado III:</strong> Rotura completa · dolor severo · equimosis extensa · inestabilidad articular</li>
+      <li>Mecanismo más frecuente: inversión forzada → ligamento peroneo astragalino anterior (LPAA)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Rx tobillo AP, lateral y mortaja si criterios Ottawa</li>
+      <li>Ecografía (detecta rotura ligamentaria, derrame) si grado III sospechado</li>
+      <li>RMN si no mejora en 6 semanas (lesión condral, rotura tendínea)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Grado I–II — Tratamiento PRICE:</strong>
+      Protección · Reposo relativo · Ice (hielo 20 min c/2h) · Compresión (vendaje elástico) · Elevación · AINEs x 5–7 días · Carga progresiva con tolerancia al dolor
+    </div>
+    <div class="col" style="background:#b7770d;color:#fff;">
+      <strong>Grado III:</strong>
+      Inmovilización funcional (bota de yeso o férula) 2–4 semanas · Fisioterapia precoz · Cirugía rara vez indicada · Propiocepción en rehabilitación
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Traumatología: fractura confirmada · grado III con inestabilidad severa · luxación · lesión sindesmótica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Rehabilitación:</strong>
+    Kinesiología: fortalecimiento peroneos + propiocepción (reduce recurrencia 50%) · Retorno al deporte: grado I 1–2 sem · grado II 3–6 sem · grado III 6–12 sem
+  </div>
+</div>
+</body>
+</html>
