@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernia Umbilical — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Hernia Periumbilical / Umbilical (K42) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">MASA EN OMBLIGO O REGIÓN PERIUMBILICAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ESTRANGULACIÓN: Masa fija + dolor intenso + eritema + vómitos → Cirugía urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Protrusión en ombligo o zona periumbilical, reductible con la presión</li>
+      <li>Aumenta con Valsalva, tos, bipedestación</li>
+      <li>Generalmente asintomática o con molestia leve</li>
+      <li>FR: obesidad, embarazo previo, ascitis, cirugías abdominales previas</li>
+      <li>Niños: hernia umbilical congénita — resolución espontánea en 80% antes de los 4–5 años</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico clínico:</strong>
+    <ul>
+      <li>Inspección y palpación (masa reductible en ombligo)</li>
+      <li>Ecografía si duda diagnóstica o para determinar contenido</li>
+      <li>TAC si complicación sospechada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Adulto — Cirugía electiva:</strong>
+      Herniorrafia umbilical con malla (si defecto >1cm) · Sin malla si defecto pequeño · Laparoscópica o abierta · Tratar ascitis antes de cirugía (recurrencia alta)
+    </div>
+    <div class="col" style="background:#1f618d;color:#fff;">
+      <strong>Niño &lt;4 años — Observar:</strong>
+      Alta resolución espontánea · Cirugía si persiste a los 4–5 años, defecto >1.5cm o complicación
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cirugía general: adulto con hernia sintomática · defecto >1cm · cirrosis con ascitis (manejo complejo) · complicación
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-operatorio:</strong>
+    Alta ambulatoria o en 24h · Evitar esfuerzos 4–6 semanas · Tratar obesidad (previene recurrencia) · Recurrencia mayor en cirrosis con ascitis no controlada
+  </div>
+</div>
+</body>
+</html>
