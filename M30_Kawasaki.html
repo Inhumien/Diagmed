@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enfermedad de Kawasaki — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🌡️ Enfermedad de Kawasaki (M30) — Urgencia Pediátrica</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE >5 DÍAS EN NIÑO CON SIGNOS INFLAMATORIOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Sin tratamiento precoz: aneurismas coronarios en 25% → Riesgo de IAM · TRATAR dentro de los 10 primeros días de fiebre
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios diagnósticos (fiebre + ≥4 de 5):</strong>
+    <ul>
+      <li>Conjuntivitis bilateral no purulenta</li>
+      <li>Cambios en labios/boca: labios eritematosos/agrietados, lengua de fresa, eritema orofaríngeo</li>
+      <li>Exantema polimorfo (no vesicular)</li>
+      <li>Cambios en extremidades: eritema palmoplantar, edema manos/pies, descamación periungueal (fase subaguda)</li>
+      <li>Adenopatía cervical unilateral >1,5cm</li>
+      <li>Kawasaki incompleto: fiebre + 2–3 criterios (considerar ecocardiograma)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Hemograma: leucocitosis, trombocitosis (fase subaguda) · PCR y VHS muy elevadas</li>
+      <li>Función hepática, orina (piuria estéril), albúmina</li>
+      <li><strong>Ecocardiograma</strong> (al diagnóstico, 2 semanas y 6–8 semanas): aneurismas coronarios</li>
+      <li>ECG · Descartar otras causas infecciosas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento dentro de 10 días de fiebre:</strong>
+    <ul>
+      <li><strong>IGIV 2g/kg IV en dosis única</strong> (infundir en 10–12h) — reduce aneurismas del 25% al &lt;5%</li>
+      <li><strong>AAS 80–100mg/kg/día</strong> durante la fase febril → reducir a 3–5mg/kg/día una vez afebril x 6–8 semanas</li>
+      <li>Sin respuesta a IGIV (fiebre persiste 36h): segunda dosis de IGIV o infliximab</li>
+      <li>Corticoides: en casos refractarios o alto riesgo de aneurisma</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalización pediátrica urgente · Cardiología pediátrica · Reumatología pediátrica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento ecocardiográfico:</strong>
+    Sin aneurisma: normal a las 6–8 semanas · Aneurisma pequeño: AAS indefinido · Aneurisma gigante: anticoagulación + cardiología de por vida
+  </div>
+</div>
+</body>
+</html>
