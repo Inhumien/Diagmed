@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rinitis Alergica y Vasomotora — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>👃 Rinitis Alergica / Vasomotora (J30) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">RINORREA + ESTORNUDOS + CONGESTION NASAL CRONICA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos:</strong>
+    <ul>
+      <li>Rinitis alergica: IgE mediada · estacional (polinosis) o perenne (acaro, polvo, mascotas) · prurito nasal + estornudos en salva + rinorrea hialina + obstruccion</li>
+      <li>Rinitis vasomotora (no alergica): desencadenada por cambios de temperatura, olores fuertes, aire frio, sin componente IgE · Predomina congestion y rinorrea</li>
+      <li>Clasificacion ARIA: intermitente vs persistente · leve vs moderado-severo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    IgE especifica (RAST) o prick test cutaneo (alergica). Eosinofilia nasal. Nasofibroscopia si sospecha de poliposis. Descarta: desviacion septal, poliposis, rinitis medicamentosa (uso prolongado descongestionantes).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>1ª linea:</strong>
+      Corticoide nasal (mometasona, fluticasona, budesonida) 2 puffs c/12-24h · Antihistaminico oral 2G (cetirizina, loratadina) · Lavados nasales con suero
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>Refractario:</strong>
+      Inmunoterapia alergeno-especifica (rinitis alergica confirmada) · Montelukast · Ipratropio nasal (vasomotora) · Cirugia si poliposis o desviacion septal
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Alergologia: rinitis moderada-severa persistente · candidato a inmunoterapia · ORL: poliposis nasal · desviacion septal significativa
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Control cada 3-6 meses. Evitar alergenos identificados. Comorbilidades: asma (step-up si rinitis y asma no controladas), conjuntivitis alergica. Vacuna antialergica: 3-5 años de tratamiento.
+  </div>
+</div>
+</body>
+</html>
