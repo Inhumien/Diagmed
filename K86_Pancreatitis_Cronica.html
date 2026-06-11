@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancreatitis Crónica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 Pancreatitis Crónica (K86) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR EPIGÁSTRICO CRÓNICO + ESTEATORREA + DIABETES</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Riesgo de adenocarcinoma pancreático 5–15× mayor → Screening con TAC/RMN anual en pacientes con larga evolución
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica (tríada):</strong>
+    <ul>
+      <li>Dolor epigástrico crónico recurrente irradiado a espalda, peor postprandial</li>
+      <li>Insuficiencia exocrina: esteatorrea, pérdida de peso, déficit vitaminas liposolubles</li>
+      <li>Insuficiencia endocrina: diabetes (diabetes pancreatogénica, tipo 3c)</li>
+      <li>Causas: alcohol (70%), tabaco, obstrucción ductal, genética (PRSS1, SPINK1), autoinmune, idiopática</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>TAC abdomen: calcificaciones pancreáticas, dilatación ductal (criterios de Cambridge)</li>
+      <li>RMN/CRMN (mejor que TAC para ducto): ducto irregular, calcificaciones, seudoquistes</li>
+      <li>Elastasa fecal-1 &lt;200 mcg/g (insuficiencia exocrina)</li>
+      <li>Glicemia/HbA1c (diabetes) · CA 19-9 (si sospecha neoplasia)</li>
+      <li>IgG4 (pancreatitis autoinmune tipo 1)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Manejo del dolor:</strong>
+      Cese absoluto del alcohol y tabaco (reduce progresión y dolor) · AINEs · Paracetamol · Enzimas pancreáticas orales (reducen dolor estimulando retroinhibición) · Pregabalina · Opioides en dolor refractario
+    </div>
+    <div class="col" style="background:#7e5109;color:#fff;">
+      <strong>Insuficiencia exocrina:</strong>
+      Enzimas pancreáticas (lipasa ≥40.000 UI/comida principal) · Con las comidas · Vitaminas A, D, E, K · Nutrición oral fraccionada · Baja en grasa
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Intervención endoscópica/quirúrgica:</strong>
+    Litotricia extracorpórea + CPRE (cálculos ductales) · Drenaje endoscópico (seudoquistes) · Cirugía de Frey o Whipple (dolor refractario con ducto dilatado)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Gastroenterología/endoscopía terapéutica · Cirugía pancreática · Nutricionista · Endocrinología (diabetes pancreatogénica)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Abstinencia alcohólica y tabáquica total · Control anual con imágenes · HbA1c · Vitaminas liposolubles · Screening de cáncer pancreático
+  </div>
+</div>
+</body>
+</html>
