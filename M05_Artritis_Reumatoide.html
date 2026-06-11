@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artritis Reumatoide — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #6c3483; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🦴 Artritis Reumatoide (M05) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">ARTRITIS INFLAMATORIA CRÓNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Artritis simétrica de pequeñas articulaciones (MCF, IFP, muñecas)</li>
+      <li>Rigidez matutina &gt;1 hora</li>
+      <li>Tumefacción articular, dolor, calor — sin eritema marcado</li>
+      <li>Manifestaciones extraarticulares: nódulos reumatoides, epiescleritis, pleuritis, vasculitis</li>
+      <li>FR: mujer 30–60 años, tabaquismo, historia familiar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Criterios ACR/EULAR 2010 (score ≥6 = AR definida):</strong>
+    <ul>
+      <li>Articulaciones afectadas (1–10 grandes=1pt, 1–3 pequeñas=2pt, ≥10 pequeñas=5pt)</li>
+      <li><strong>FR o Anti-CCP positivo</strong> (bajo título=2pt, alto título=3pt)</li>
+      <li>PCR o VHS elevada (1pt) · Duración ≥6 semanas (1pt)</li>
+      <li>Radiografía: erosiones periarticulares, osteopenia yuxtaarticular</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ INICIO PRECOZ DE FARME (dentro de 3 meses del diagnóstico) — reduce daño articular irreversible
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>1ª línea — FARME convencional:</strong>
+      Metotrexato 15–25mg/semana (gold standard) + folato 5mg/semana · Alternativa: Leflunomida 20mg/día o Sulfasalazina
+    </div>
+    <div class="col" style="background:#6c3483; color:#fff;">
+      <strong>Falla FARME o actividad alta:</strong>
+      Biológicos: Anti-TNF (adalimumab, etanercept) · Anti-IL-6 (tocilizumab) · Anti-CD20 (rituximab) · JAK inhibidores (baricitinib, tofacitinib)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Puente hasta efecto de FARME:</strong>
+    Corticoides a dosis bajas (prednisona ≤10mg/día) por el menor tiempo posible · AINEs para síntomas
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar reumatología: todo caso sospechoso · Urgente si artritis activa severa o manifestaciones sistémicas
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Monitoreo con Metotrexato:</strong>
+    Hemograma + función hepática y renal cada 1–3 meses · Meta: remisión o actividad baja (DAS28 &lt;2,6) · Rx anual
+  </div>
+
+</div>
+</body>
+</html>
