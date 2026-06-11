@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fractura / Trauma Óseo — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦴 Fractura / Trauma Óseo — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">TRAUMA CON SOSPECHA DE FRACTURA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ FRACTURA EXPUESTA: Hueso visible / herida comunicante → EMERGENCIA · ATB IV inmediato (cefazolina 1g IV) · Cobertura estéril · Cirugía urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación primaria (ABCDE):</strong>
+    <ul>
+      <li>Vía aérea, ventilación, circulación (hemorragia) — prioridad en politrauma</li>
+      <li>Deformidad, acortamiento, crepitación, hematoma</li>
+      <li>Evaluación neurovascular distal: pulso, sensibilidad, movilidad activa/pasiva</li>
+      <li>Mecanismo de lesión (alta/baja energía) · Tiempo desde el trauma</li>
+      <li>Fractura de fémur: puede perder 1–2L de sangre → monitorizar PA, FC</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico por imágenes:</strong>
+    <ul>
+      <li>Rx AP + lateral del segmento afectado (incluir articulaciones proximal y distal)</li>
+      <li>TAC si: fractura articular, lesión de columna, sospecha de fractura oculta</li>
+      <li>Clasificación: cerrada vs expuesta · desplazada vs no desplazada · estable vs inestable</li>
+      <li>Clasificación Gustilo-Anderson en fracturas expuestas (I, II, IIIA/B/C)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Fractura cerrada no desplazada:</strong>
+      Inmovilización: férula/yeso · Elevación · Analgesia (AINEs + paracetamol ± opioides) · Control Rx en 7–10 días · Kinesiología post-inmovilización
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Fractura desplazada / expuesta / articular:</strong>
+      Reducción + fijación (quirúrgica o percutánea) · ATB profiláctico · Profilaxis TVP en fracturas de cadera/fémur · UCI si inestabilidad hemodinámica
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Fractura expuesta — Protocolo ATB:</strong>
+    Gustilo I–II: cefazolina 1g c/8h · Gustilo III: cefazolina + gentamicina + metronidazol · Duración: 24–72h post-cierre quirúrgico · Profilaxis antitetánica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Traumatología urgente: fractura desplazada · expuesta · articular · neurovascular comprometida · politrauma
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Rx control a las 2–4 semanas (consolidación) · Kinesiología para recuperar función · Evaluar complicaciones: síndrome compartimental, necrosis avascular, mal unión
+  </div>
+</div>
+</body>
+</html>
