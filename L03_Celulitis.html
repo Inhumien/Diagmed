@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celulitis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval { background: #922b21; color: #fff; }
+  .dx { background: #1f618d; color: #fff; }
+  .alerta { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim { background: #117a65; color: #fff; }
+  .arrow { font-size: 1.4em; color: #7f8c8d; }
+  .row { display: flex; gap: 10px; width: 100%; }
+  .col { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🔴 Celulitis (L03) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">ERITEMA, CALOR, EDEMA Y DOLOR CUTÁNEO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ FASCITIS NECROTIZANTE: dolor desproporcionado + piel grisácea/azul + crepitación + gas en TAC + sepsis → Cirugía urgente (desbridamiento)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación típica:</strong>
+    <ul>
+      <li>Eritema mal delimitado, calor, edema, dolor — bordes no elevados (diferencia de erisipela)</li>
+      <li>Localización: miembros inferiores (80%), cara, periorbita</li>
+      <li>Puede haber fiebre, linfangitis, adenopatías regionales</li>
+      <li>Puerta de entrada: herida, úlcera, tiña pedis, picadura de insecto</li>
+      <li>Agente más frecuente: Streptococcus pyogenes y Staphylococcus aureus</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico clínico — Clasificar severidad (CREST):</strong>
+    <ul>
+      <li>Hemograma + PCR + creatinina (evaluar hospitalización)</li>
+      <li>Marcar el borde del eritema con lapicero para monitorear progresión</li>
+      <li>Hemocultivos si fiebre alta o inmunodepresión (rendimiento bajo ~4%)</li>
+      <li>TAC si sospecha de fascitis necrotizante o absceso profundo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Leve (sin fiebre, sistémica estable):</strong>
+      Amoxicilina-clavulánico 875/125mg c/8h oral x 5–7 días · Cefalexina 500mg c/6h · Elevación del miembro · Control en 48h
+    </div>
+    <div class="col" style="background:#922b21; color:#fff;">
+      <strong>Moderada-Severa (fiebre, progresión, comorbilidades):</strong>
+      Hospitalizar · Cloxacilina 2g IV c/4-6h o Ceftriaxona 1–2g IV · Agregar vancomicina si MRSA sospechado · Reposo + elevación
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: celulitis facial/periorbital · compromiso sistémico · progresión en 24h · inmunodeprimido · diabetes descompensada
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 48h (verificar borde marcado) · Tratar tiña pedis (puerta de entrada frecuente) · Profilaxis con penicilina benzatínica si ≥2 episodios/año
+  </div>
+</div>
+</body>
+</html>
