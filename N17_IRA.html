@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insuficiencia Renal Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫘 Insuficiencia Renal Aguda / IRA (N17) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">ELEVACIÓN AGUDA DE CREATININA O CAÍDA DE DIURESIS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA: K &gt;6.5 + cambios ECG · sobrecarga de volumen + edema pulmonar · acidosis severa pH &lt;7.1 → DIÁLISIS URGENTE
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación KDIGO (IRA si cualquiera):</strong>
+    <ul>
+      <li>Creatinina ×1.5 respecto al basal en 7 días · o aumento ≥0.3 mg/dL en 48h · o diuresis &lt;0.5 mL/kg/h por ≥6h</li>
+      <li><strong>Prerrenal (50–60%):</strong> deshidratación, IC, sepsis, AINEs · FeNa &lt;1%</li>
+      <li><strong>Renal (30–40%):</strong> NTA (isquemia, nefrotóxicos), glomerulonefritis, nefritis intersticial</li>
+      <li><strong>Posrenal (10%):</strong> obstrucción · FeNa variable</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>Creatinina, BUN, electrolitos (K, Na, HCO3) · Hemograma · orina completa</li>
+      <li>FeNa = (NaU × CrP)/(NaP × CrU) × 100 (&lt;1% prerrenal, &gt;2% renal)</li>
+      <li>Ecografía renal (tamaño, hidronefrosis, obstrucción)</li>
+      <li>Complemento, ANCA, anti-GBM, crioglobulinas si GN sospechada</li>
+      <li>Biopsia renal si causa renal parenquimatosa no aclarada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>IRA prerrenal:</strong>
+      Reposición de volumen: SF 0.9% 500mL en 30 min → evaluar respuesta · Tratar causa (IC, sepsis) · Suspender AINEs, IECA/ARA2 en fase aguda · Monitoreo de diuresis horaria
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>IRA establecida:</strong>
+      Balance hídrico estricto · Restricción de K (alimentos) · Bicarbonato si acidosis · Ajuste de fármacos a función renal · Evitar nefrotóxicos · Diálisis según indicaciones
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Indicaciones de diálisis urgente (A-E-I-O-U):</strong>
+    Acidosis (pH &lt;7.1) · Electrolíticos (K &gt;6.5) · Intoxicación dializable · Sobrecarga (Overload) · Uremia sintomática (encefalopatía, pericarditis)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Nefrología urgente: IRA severa · indicación de diálisis · GN sospechada · IRA sin causa clara · no mejoría en 24–48h
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-IRA:</strong>
+    Función renal a las 3 meses (30% queda con ERC) · Evitar nefrotóxicos de por vida · Nefrología si no recupera función basal
+  </div>
+</div>
+</body>
+</html>
