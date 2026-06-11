@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eritema Nodoso — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Eritema Nodoso (L52) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">NÓDULOS ERITEMATOSOS DOLOROSOS EN ESPINILLAS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características clínicas:</strong>
+    <ul>
+      <li>Nódulos subcutáneos eritematosos, dolorosos, bilaterales en caras anteriores de piernas</li>
+      <li>No ulceran · Evolucionan como equimosis ("contusión") al resolverse</li>
+      <li>Fiebre, artralgias, malestar general</li>
+      <li>Duración: 3–6 semanas · Expresión de hipersensibilidad retardada a distintas causas</li>
+      <li>Predomina en mujeres 20–40 años</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Buscar causa subyacente (obligatorio):</strong>
+    <ul>
+      <li><strong>Infecciones (más frecuente):</strong> Estreptococo (ASLO) · TBC · Yersinia · Salmonella · Coccidioides</li>
+      <li><strong>EII:</strong> Crohn, CU (calprotectina fecal, colonoscopía si sospecha)</li>
+      <li><strong>Sarcoidosis:</strong> Rx tórax (adenopatías hiliares) · ECA sérica</li>
+      <li><strong>Fármacos:</strong> ACO, sulfonamidas, penicilinas, yoduros</li>
+      <li><strong>Embarazo:</strong> test β-hCG</li>
+      <li>Hemograma, PCR, VHS, ASLO, Rx tórax, Mantoux/IGRA</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li>Tratar causa subyacente identificada (fundamental)</li>
+      <li>Reposo · Elevación de extremidades inferiores</li>
+      <li>AINEs (naproxeno 500mg c/12h o indometacina 25–50mg c/8h) — 1ª línea sintomático</li>
+      <li>Yoduro de potasio 400–900mg/día (alternativa efectiva, mecanismo desconocido)</li>
+      <li>Corticoides sistémicos solo si causa infecciosa descartada y curso prolongado severo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología si biopsia necesaria · Medicina interna/gastroenterología si EII · Neumología si sarcoidosis
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Autolimitado en 3–6 semanas en la mayoría · Recurrencias si causa persistente (EII activa, infección recurrente) · Control al mes
+  </div>
+</div>
+</body>
+</html>
