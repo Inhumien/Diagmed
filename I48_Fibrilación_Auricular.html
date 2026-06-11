@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibrilación Auricular — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💓 Fibrilación Auricular (I48) — Urgencia y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">PALPITACIONES + PULSO IRREGULARMENTE IRREGULAR</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ FA CON INESTABILIDAD HEMODINÁMICA: Hipotensión + síncope + IC aguda + isquemia → CARDIOVERSIÓN ELÉCTRICA SINCRONIZADA URGENTE (200J bifásico)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación inicial:</strong>
+    <ul>
+      <li>ECG (diagnóstico): ausencia de onda P, línea basal irregular, QRS irregularmente irregular</li>
+      <li>FC ventricular, PA, SpO₂ · Síntomas: disnea, angina, palpitaciones, mareos</li>
+      <li>Clasificación: paroxística (&lt;7 días) · persistente (>7 días) · permanente</li>
+      <li>Causas desencadenantes: HTA, valvulopatía, hipertiroidismo, alcohol, infección, cirugía</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Hemograma · electrolitos · función renal · TSH · troponinas</li>
+      <li>Ecocardiograma (función VI, valvulopatía, trombo en OI)</li>
+      <li>Score CHA₂DS₂-VASc (riesgo tromboembólico)</li>
+      <li>Score HAS-BLED (riesgo de sangrado)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Control de FC (1ª estrategia en crónica/estable):</strong>
+      Betabloqueador: metoprolol 25–100mg/día · Verapamilo o diltiazem (si no IC) · Digoxina (IC con FE reducida) · Meta FC: &lt;110 lpm en reposo
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Control del ritmo (cardioversión):</strong>
+      Amiodarona 200mg/día · Flecainida (sin cardiopatía estructural) · Cardioversión eléctrica electiva · Ablación con catéter (FA paroxística refractaria)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Anticoagulación (según CHA₂DS₂-VASc):</strong>
+    Score ≥2 hombres / ≥3 mujeres → DOAC (apixabán, rivaroxabán, dabigatrán) · FA valvular (EM reumática o prótesis mecánica) → warfarina · Score 0-1: individualizar
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cardiología: primer episodio · FA con cardiopatía estructural · candidato a ablación · control del ritmo refractario
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    INR mensual si warfarina (meta 2–3) · ECG periódico · Holter si paroxística · Evaluar FC en cada control · Monitoreo anticoagulación
+  </div>
+</div>
+</body>
+</html>
