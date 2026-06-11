@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estenosis Mitral — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Estenosis Mitral (I34) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SOPLO DIASTÓLICO EN ÁPEX + DISNEA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Soplo diastólico en rodillo + chasquido de apertura + R1 intenso</li>
+      <li>Disnea de esfuerzo progresiva, ortopnea, disnea paroxística nocturna</li>
+      <li>Hemoptisis (congestión pulmonar) · Fibrilación auricular (muy frecuente)</li>
+      <li>Facies mitral: rubor malares por bajo gasto</li>
+      <li>Causa: fiebre reumática (principal), congénita, degenerativa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EM + FA → Alto riesgo de ACV tromboembólico → Anticoagulación obligatoria (warfarina, NO DOACs en FA valvular)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Ecocardiograma (diagnóstico y severidad):</strong>
+    <ul>
+      <li>AVMi (área valvular mitral): leve &gt;1,5cm² · moderada 1–1,5cm² · severa &lt;1cm²</li>
+      <li>Gradiente medio transmitral · Presión sistólica de arteria pulmonar</li>
+      <li>Morfología valvular (score de Wilkins: movilidad, engrosamiento, calcio, fusión)</li>
+      <li>ETE si sospecha de trombo en orejuela izquierda antes de intervención</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento médico:</strong>
+      Betabloqueadores o verapamilo (control FC en FA) · Diuréticos (síntomas congestivos) · Warfarina (FA o trombo en OI) · Profilaxis fiebre reumática (penicilina benzatínica mensual)
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Intervención (EM severa sintomática):</strong>
+      Valvuloplastia percutánea con balón (VPMB) si score Wilkins &lt;8 · Comisurotomía quirúrgica o reemplazo valvular mitral si VPMB no indicada
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cardiología: EM moderada-severa · FA asociada · síntomas en clase NYHA II o mayor · planificación de intervención
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento ecocardiográfico:</strong>
+    EM leve: cada 3–5 años · EM moderada: anual · EM severa asintomática: cada 6–12 meses · INR si anticoagulada (meta 2,5–3,5 en FA valvular)
+  </div>
+</div>
+</body>
+</html>
