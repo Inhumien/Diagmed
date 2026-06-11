@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tumores Malignos — Diagrama de Flujo Oncologico</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Neoplasia Maligna — Abordaje Oncologico General</h1>
+<div class="flow">
+  <div class="box inicio">MASA / SINTOMAS / HALLAZGO INCIDENTAL — SOSPECHA DE NEOPLASIA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Señales de alarma: baja de peso inexplicada mayor de 10%, fatiga inexplicable, masa palpable de crecimiento progresivo, sangrado anormal, disfagia progresiva, ictericia obstructiva → Derivacion oncologica urgente.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Principios generales del manejo oncologico:</strong>
+    <ul>
+      <li>Confirmacion histologica SIEMPRE antes de iniciar tratamiento (biopsia)</li>
+      <li>Estadificacion completa: imagenes (TAC, PET, RMN), laboratorio, marcadores tumorales</li>
+      <li>Comite oncologico multidisciplinario: oncologia medica + cirugia + radioterapia + patologia</li>
+      <li>Evaluacion del estado funcional (ECOG/Karnofsky) para tolerancia al tratamiento</li>
+      <li>Cuidados paliativos desde el diagnostico (no solo al final de la vida)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Modalidades de tratamiento segun tumor:</strong>
+    <ul>
+      <li>Cirugia: reseccion con intencion curativa en tumores localizados</li>
+      <li>Quimioterapia: sistemica o neoadyuvante/adyuvante segun estadio</li>
+      <li>Radioterapia: local, paliativa o con intencion curativa segun caso</li>
+      <li>Terapias dirigidas: inhibidores de tirosina kinasa, anti-VEGF, anti-HER2 (segun biomarcadores)</li>
+      <li>Inmunoterapia: anti-PD1/PDL1 (pembrolizumab, nivolumab), anti-CTLA4 en tumores seleccionados</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Oncologia medica + Cirugia oncologica + Radioterapia + Cuidados paliativos. Derivacion urgente si obstruccion, compresion medular, hipercalcemia maligna o hemoptisis/sangrado.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Seguimiento segun protocolo especifico del tumor. Marcadores tumorales + imagenes periodicas. Apoyo psicologico y social. Consejeria genetica si sindrome hereditario sospechado.
+  </div>
+</div>
+</body>
+</html>
