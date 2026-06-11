@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infarto Agudo al Miocardio — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Infarto Agudo al Miocardio (I21) — Código IAM</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR TORÁCICO AGUDO — ACTIVAR CÓDIGO IAM</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ IAMCEST: Elevación ST ≥1mm en ≥2 derivadas contiguas o BRI nuevo → Cateterismo urgente &lt;90 min (ICP primaria) o trombolisis &lt;30 min si no disponible
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación (típica y atípica):</strong>
+    <ul>
+      <li>Típica: dolor opresivo retroesternal, irradiación a brazo izquierdo/mandíbula, sudoración, náuseas</li>
+      <li>Atípica (mujeres, diabéticos, ancianos): epigastralgia, disnea, fatiga, síncope, sin dolor torácico</li>
+      <li>ECG de 12 derivadas en &lt;10 min del ingreso (obligatorio)</li>
+      <li>Marcadores: troponina ultrasensible (elevación a las 1–3h)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Clasificación por ECG:</strong>
+    <ul>
+      <li><strong>IAMCEST:</strong> elevación de ST → reperfusión urgente (ICP o trombolisis)</li>
+      <li><strong>IAMSEST:</strong> depresión de ST, inversión de T o ECG normal + troponina (+) → estratificación de riesgo + ICP electiva/urgente según riesgo</li>
+      <li><strong>Angina inestable:</strong> síntomas + cambios ECG, troponina negativa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Manejo inmediato (todos los SCA):</strong>
+      O₂ si SpO₂ &lt;90% · AAS 300mg masticado · Ticagrelor 180mg o Clopidogrel 600mg · Heparina no fraccionada IV · Nitroglicerina SL si PA >90 · Morfina 2–4mg IV si dolor severo
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>IAMCEST — Reperfusión:</strong>
+      ICP primaria &lt;90 min: sala de hemodinamia urgente · Trombolisis si ICP no disponible en &lt;120 min: tenecteplasa o alteplasa · Transferir a centro con ICP post-trombolisis
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Post-IAM (alta y seguimiento):</strong>
+    AAS indefinido + Ticagrelor/Clopidogrel 12 meses · Betabloqueador · IECA · Estatina alta intensidad · Rehabilitación cardíaca
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI coronaria + Cardiología + Hemodinamia urgente · Toda sospecha de SCA → URGENCIAS inmediata
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Ecocardiograma a las 4–6 semanas · Control lipídico (LDL &lt;55 mg/dL) · HbA1c si diabético · Rehabilitación cardíaca 8–12 semanas · Retorno al trabajo según función
+  </div>
+</div>
+</body>
+</html>
