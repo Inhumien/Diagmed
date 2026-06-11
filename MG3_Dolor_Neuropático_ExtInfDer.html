@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dolor Neuropático — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⚡ Dolor Neuropático (G56) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR CON CARACTERÍSTICAS NEUROPÁTICAS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características del dolor neuropático:</strong>
+    <ul>
+      <li>Ardor, quemadura, descarga eléctrica, "pinchazos de agujas"</li>
+      <li>Alodinia (dolor ante estímulo no doloroso: ropa, brisa)</li>
+      <li>Hiperalgesia (respuesta exagerada a estímulo doloroso)</li>
+      <li>Distribución en territorio nervioso (no difuso)</li>
+      <li>Causas frecuentes: neuropatía diabética, neuralgia postherpética, síndrome del túnel carpiano, radiculopatía, compresión cubital</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico — Escala DN4 (≥4/10 = neuropático):</strong>
+    <ul>
+      <li>Quemadura, frío doloroso, descarga eléctrica (3 pts)</li>
+      <li>Hormigueo, alfileres, entumecimiento, picazón (4 pts)</li>
+      <li>Hipoestesia al tacto, a la punción (2 pts), alodinia al roce (1 pt)</li>
+      <li>EMG/velocidad de conducción nerviosa (confirma y localiza)</li>
+      <li>Estudio de causa: glicemia/HbA1c, B12, TSH, Rx columna, RMN</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>1ª línea:</strong>
+      Amitriptilina 10–75mg/noche · Duloxetina 60mg/día · Gabapentina 300–3600mg/día · Pregabalina 150–600mg/día
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>2ª línea / tópico:</strong>
+      Lidocaína tópica 5% (parches) · Capsaicina 8% (parches, procedimiento) · Tramadol (opioides débiles) · Combinaciones
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Tratar siempre la causa subyacente: control glicémico en DPN · descompresión quirúrgica en atrapamiento · antiviral precoz en herpes zóster
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurología/unidad de dolor: diagnóstico incierto · falla a 2 fármacos · considerar procedimientos (bloqueos, neuroestimulación)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Reducción del 30–50% del dolor es respuesta aceptable · Evaluar efectos adversos (sedación, caídas con gabapentinoides en ancianos) · Fisioterapia complementaria
+  </div>
+</div>
+</body>
+</html>
