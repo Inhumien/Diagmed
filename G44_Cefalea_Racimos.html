@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cefalea en Racimos — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval { background: #922b21; color: #fff; }
+  .dx { background: #1f618d; color: #fff; }
+  .alerta { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim { background: #117a65; color: #fff; }
+  .arrow { font-size: 1.4em; color: #7f8c8d; }
+  .row { display: flex; gap: 10px; width: 100%; }
+  .col { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🧠 Cefalea en Racimos / Horton (G44) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR PERIORBITARIO UNILATERAL INTENSO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características diagnósticas:</strong>
+    <ul>
+      <li>Dolor unilateral periorbitario o temporal, <strong>intensidad 10/10</strong>, "el peor dolor imaginable"</li>
+      <li>Duración 15–180 minutos, 1–8 episodios/día, horario nocturno típico</li>
+      <li>Síntomas autonómicos ipsilaterales: lagrimeo, inyección conjuntival, ptosis, miosis, rinorrea, sudoración frontal</li>
+      <li>Agitación durante la crisis (diferencia de migraña donde prefieren quietud)</li>
+      <li>Predomina en hombres (3:1), fumadores, 20–40 años · Alcohol desencadena durante el racimo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ RMN cerebral obligatoria al diagnóstico inicial: descartar lesión estructural (aneurisma, tumor pituitario)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Tratamiento agudo de la crisis:</strong>
+      O₂ 100% 12–15 L/min x 15–20 min (mascarilla sin rebreather) — 1ª línea · Sumatriptán SC 6mg (más rápido) o intranasal 20mg · Zolmitriptán intranasal 5mg
+    </div>
+    <div class="col" style="background:#1f618d; color:#fff;">
+      <strong>Tratamiento preventivo (durante el racimo):</strong>
+      Verapamilo 240–960mg/día (1ª línea) · Carbonato de litio 300mg c/8h · Corticoides oral (ciclo corto para romper racimo) · Topiramato
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Medidas adicionales:</strong>
+    Cese tabáquico absoluto · Abstinencia alcohólica durante el racimo · Evitar vasodilatadores · Melatonina 10mg nocturna (preventivo leve)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar neurología: diagnóstico inicial · refractario a verapamilo · considerar neuroestimulación (ONS, DBS)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    ECG con verapamilo (bloqueo AV) · Duración racimo: 6–12 semanas · Forma crónica (sin períodos libres >1 año): 10–15%
+  </div>
+</div>
+</body>
+</html>
