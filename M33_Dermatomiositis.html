@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dermatomiositis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Dermatomiositis (M33) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DEBILIDAD MUSCULAR PROXIMAL + LESIONES CUTÁNEAS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones clínicas:</strong>
+    <ul>
+      <li><strong>Musculares:</strong> debilidad proximal simétrica (dificultad para subir escaleras, peinar, levantarse)</li>
+      <li><strong>Cutáneas patognomónicas:</strong> eritema en heliotropo (párpados violáceos) · Pápulas de Gottron (nudillos) · Signo del chal (cuello/hombros) · Manos de mecánico</li>
+      <li>Disfagia (músculos faríngeos) · Disnea (afectación pulmonar intersticial)</li>
+      <li>Calcinosis subcutánea (más en niños)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Riesgo aumentado de neoplasia (pulmón, ovario, colon, linfoma) — tamizaje oncológico obligatorio en adultos al diagnóstico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>CK, aldolasa, LDH elevadas · ANA, Anti-Jo-1 (síndrome antisintetasa), Anti-Mi-2, Anti-MDA5</li>
+      <li>EMG: patrón miopático · Biopsia muscular (infiltrado inflamatorio perivascular)</li>
+      <li>RMN muscular (localiza zona activa para biopsia)</li>
+      <li>TAC tórax (neumonitis intersticial) · PFR</li>
+      <li>Tamizaje neoplásico: TAC tórax-abdomen-pelvis, mamografía, PAP, PSA</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Prednisona 1mg/kg/día</strong> (hasta 60mg) — 1ª línea, reducción gradual en meses</li>
+      <li>Metotrexato 15–25mg/semana (ahorrador de corticoides, mantenimiento)</li>
+      <li>Azatioprina 2mg/kg/día (alternativa o combinación)</li>
+      <li>IGIV 2g/kg/mes (refractarios o enfermedad severa)</li>
+      <li>Fotoprotección estricta (lesiones cutáneas UV-sensibles)</li>
+      <li>Rehabilitación física (fisioterapia)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología + dermatología · Neumología si compromiso pulmonar · Oncología si neoplasia asociada
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    CK mensual · Hemograma + hepático con inmunosupresores · Tamizaje oncológico anual x 3–5 años · Densitometría por corticoides
+  </div>
+</div>
+</body>
+</html>
