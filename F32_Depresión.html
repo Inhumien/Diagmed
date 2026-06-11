@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depresión — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Depresión (F32) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SCREENING: PHQ-2 → PHQ-9 SI POSITIVO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EVALUAR RIESGO SUICIDA EN TODA CONSULTA: "¿Ha tenido pensamientos de hacerse daño o de que estaría mejor muerto?" · Si plan activo → Derivación psiquiátrica urgente / hospitalización
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios diagnósticos DSM-5 (≥5 síntomas por ≥2 semanas):</strong>
+    <ul>
+      <li>Ánimo depresivo o anhedonia (al menos 1 de estos)</li>
+      <li>Cambios en peso/apetito · Insomnio o hipersomnia</li>
+      <li>Agitación o enlentecimiento psicomotor · Fatiga</li>
+      <li>Sentimientos de inutilidad o culpa excesiva</li>
+      <li>Dificultad de concentración · Pensamientos de muerte o suicidio</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Clasificar severidad (PHQ-9):</strong>
+    <ul>
+      <li>5–9: leve · 10–14: moderada · 15–19: moderadamente severa · ≥20: severa</li>
+      <li>Descartar causa orgánica: TSH, hemograma, glicemia, vitamina B12, D</li>
+      <li>Descartar bipolaridad (preguntar episodios de manía/hipomanía)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Leve-moderada (PHQ 5–14):</strong>
+      Psicoterapia (TCC — 1ª línea) · ISRS: sertralina 50mg/día o escitalopram 10mg/día · Combinación farmacoterapia + psicoterapia superior a monoterapia
+    </div>
+    <div class="col" style="background:#4a235a;color:#fff;">
+      <strong>Moderada-severa (PHQ ≥15):</strong>
+      ISRS a dosis plena · Venlafaxina 75–225mg/día · Mirtazapina 15–45mg/día · Derivar psiquiatría · Considerar hospitalización si riesgo suicida
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Puntos clave del tratamiento:</strong>
+    Inicio de efecto antidepresivo: 2–4 semanas · Duración mínima: 6 meses post-remisión · Actividad física: evidencia comparable a antidepresivos en depresión leve
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar psiquiatría: riesgo suicida · episodio severo · sospecha de bipolaridad · falla a 2 antidepresivos · psicosis
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    PHQ-9 cada 4 semanas las primeras 12 semanas · Control a las 2 semanas al inicio de ISRS (efecto paradójico) · No suspender abruptamente
+  </div>
+</div>
+</body>
+</html>
