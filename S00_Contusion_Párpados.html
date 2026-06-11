@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contusión / Trauma Musculoesquelético — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💥 Contusión / Trauma Musculoesquelético (S80) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">TRAUMA CERRADO — EVALUAR GRAVEDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ DESCARTAR FRACTURA: Incapacidad funcional total · Deformidad · Crepitación · Dolor a la palpación ósea · Mecanismo de alta energía → Rx urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación inicial:</strong>
+    <ul>
+      <li>Mecanismo de lesión (caída, golpe directo, torsión)</li>
+      <li>Localización exacta del dolor · Rango de movimiento</li>
+      <li>Signos PRICE: equimosis, edema, dolor a la palpación</li>
+      <li>Evaluar neurovascular distal: pulso, sensibilidad, movilidad</li>
+      <li>En cadera en adulto mayor: siempre descartar fractura de cadera</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Criterios para Rx (Ottawa Rules):</strong>
+    <ul>
+      <li><strong>Tobillo:</strong> dolor en maléolo + incapacidad de cargar peso 4 pasos</li>
+      <li><strong>Rodilla:</strong> >55 años + incapacidad de flexionar 90° + dolor en cabeza peroné o rótula</li>
+      <li><strong>Cadera adulto mayor:</strong> SIEMPRE Rx (alta prevalencia de fractura subcapital oculta)</li>
+      <li>TAC o RMN si Rx normal pero alta sospecha de fractura oculta (estrés, cadera)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento contusión sin fractura (PRICE):</strong>
+    <ul>
+      <li><strong>P</strong>rotección · <strong>R</strong>eposo relativo · <strong>I</strong>ce (hielo 20 min c/2h las primeras 48h) · <strong>C</strong>ompresión · <strong>E</strong>levación</li>
+      <li>AINEs: ibuprofeno 400–600mg c/8h x 5–7 días</li>
+      <li>Kinesiología si limitación funcional persistente</li>
+      <li>Retorno progresivo a actividad en 48–72h según evolución</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Traumatología: fractura confirmada · luxación · lesión ligamentosa severa (inestabilidad articular) · compromiso neurovascular
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control en 5–7 días si no mejora · Kinesiología para recuperación funcional · Prevenir recidiva con fortalecimiento muscular
+  </div>
+</div>
+</body>
+</html>
