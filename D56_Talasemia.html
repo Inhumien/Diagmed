@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talasemia y Anemia Falciforme — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Talasemia / Anemia Falciforme (D56) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ANEMIA HEMOLITICA CRONICA + HISTORIA FAMILIAR</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ CRISIS VASO-OCLUSIVA (falciforme): dolor oseo severo agudo → Hidratacion IV agresiva + analgesicos (opioides si necesario) + O2 si hipoxemia + transfusion si hematocrito muy bajo.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Talasemia:</strong>
+    <ul>
+      <li>Beta-talasemia mayor: anemia severa desde los 6 meses, esplenomegalia, facies mediterránea, requiere transfusiones regulares</li>
+      <li>Beta-talasemia menor (rasgo): microcitica hipocromica leve, asintomático, diagnostico diferencial con ferropenia</li>
+      <li>Alpha-talasemia: espectro variable, hidrops fetal (forma homocigota letal)</li>
+    </ul>
+    <strong>Anemia Falciforme (HbSS):</strong>
+    Crisis vaso-oclusivas, ACV, sindrome toracico agudo, secuestro esplenico, infecciones (asplenia funcional).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    Hemograma con VCM bajo (microcítica). Frotis: celulas diana (talasemia), drepanocitos/celulas falciformes. Electroforesis de hemoglobina (diagnostico definitivo). Ferritina (diferenciar de ferropenia). Test de falciformacion.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Talasemia mayor:</strong>
+      Transfusiones regulares cada 2-4 semanas (meta Hb mayor de 9,5 g/dL). Quelacion del hierro (deferoxamina SC o deferasirox oral). Trasplante de medula osea (curativo en ninos).
+    </div>
+    <div class="col" style="background:#4a235a;color:#fff;">
+      <strong>Anemia falciforme:</strong>
+      Hidroxiurea (aumenta HbF, reduce crisis 50%). Profilaxis ATB (penicilina diaria hasta los 5 anos). Vacunas (asplenia funcional). Transfusion de intercambio en ACV. Trasplante de medula osea (curativo). Luspatercept (betatalasemia).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematologia pediatrica/adultos. Consejeria genetica. Diagnostico prenatal.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Hemograma mensual. Ferritina y funcion cardiaca/hepatica (sobrecarga de hierro). Ecocardiograma anual. Screening de complicaciones organicas. Apoyo psicologico y social.
+  </div>
+</div>
+</body>
+</html>
