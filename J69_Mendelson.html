@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome de Mendelson / Neumonia Aspirativa — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 Neumonia Aspirativa / Mendelson (J69) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">ASPIRACION + DISNEA + INFILTRADO EN LOBULO INFERIOR DERECHO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Sindrome de Mendelson (quimico puro): aspiracion masiva de acido gastrico → neumonitis quimica fulminante → SDRA. Soporte respiratorio urgente, NO ATB inicialmente.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Distincion clinica:</strong>
+    <ul>
+      <li>Neumonitis quimica (Mendelson): aspiracion de contenido gastrico acido. Inicio rapido (1-2h), broncoespasmo, hipoxemia severa. Sin fiebre inicialmente. Lobulo inferior derecho.</li>
+      <li>Neumonia bacteriana aspirativa: aspiracion de flora orofaringea. Inicio subagudo (dias). Fiebre, esputo purulento. Lobulo superior derecho o inferior. Frecuente en: disfagia, alteracion de conciencia, ERGE severo.</li>
+      <li>FR: anestesia general, ACV, epilepsia, alcohol, sedantes, demencia, sonda nasogastrica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento:</strong>
+    <ul>
+      <li>Neumonitis quimica: O2, broncodilatadores, soporte ventilatorio. ATB solo si evidencia de sobreinfeccion bacteriana posterior (fiebre persistente mayor de 48h, esputo purulento)</li>
+      <li>Neumonia aspirativa bacteriana: Amoxicilina-clavulanico 875/125mg c/8h x 7 dias. O Clindamicina 300-450mg c/8h. Cobertura de anaerobios importante.</li>
+      <li>Hospitalizar si: hipoxemia, aspiracion masiva, inmunosuprimido</li>
+      <li>Tratar disfagia subyacente: logopedia, cambio de textura alimentaria</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI si SDRA. Neumologia. Logopedia (evaluacion de deglucion). Gastroenterologia si ERGE severo.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Evaluacion de deglucion post-episodio. Posicion semi-incorporada en pacientes con riesgo. Revision de medicamentos (sedantes, anticolinergicos). Nutricion enteral distal al piloro si aspiracion repetida.
+  </div>
+</div>
+</body>
+</html>
