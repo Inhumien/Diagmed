@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetes Insípida — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💧 Diabetes Insípida (E23) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">POLIURIA + POLIDIPSIA INTENSA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Diuresis >3L/día de orina muy diluida (osmolaridad urinaria &lt;300 mOsm/kg)</li>
+      <li>Sed intensa, polidipsia, nicturia</li>
+      <li>DI Central: déficit de ADH — causas: tumor hipofisario, trauma craneal, cirugía, idiopática</li>
+      <li>DI Nefrogénica: riñón resistente a ADH — causas: litio, hipercalcemia, hipopotasemia, hereditaria</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Si paciente no puede beber libremente (inconsciente, neonato) → deshidratación hipernatrémica grave → urgencia
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>Sodio plasmático (hipernatremia frecuente), osmolaridad plasmática y urinaria</li>
+      <li>Glicemia (descartar DM), función renal</li>
+      <li><strong>Test de deprivación hídrica</strong> (bajo supervisión): confirma DI y diferencia central de nefrogénica</li>
+      <li>Si DI central confirmada: niveles de ADH, RMN cerebro/hipófisis</li>
+      <li>Calcemia, potasemia, litemia si DI nefrogénica sospechada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>DI Central:</strong>
+      Desmopresina (DDAVP) intranasal 10–20mcg c/12–24h · o Desmopresina oral 0,1–0,2mg c/8h · Tratar causa subyacente
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>DI Nefrogénica:</strong>
+      Suspender fármaco causal (litio) · Dieta baja en sodio y proteínas · Tiazidas (paradójicamente reducen diuresis) · AINEs (indometacina)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endocrinología: diagnóstico diferencial · DI central (estudio hipofisario) · Nefrología si DI nefrogénica severa
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Sodio plasmático periódico · Ajuste de dosis de desmopresina · Riesgo de hiponatremia por sobredosis · Identificar y tratar causa
+  </div>
+</div>
+</body>
+</html>
