@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuso de Sustancias — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eafaf1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1a5276; color: #fff; }
+  .dx      { background: #6c3483; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🧠 Abuso / Intoxicación por Sustancias (F10) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">EVALUACIÓN INICIAL — ABC + Glasgow</div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ PRIORIDAD INMEDIATA si: Glasgow &lt;13 · Apnea · Convulsiones · Hipotensión · Hipertermia &gt;40°C · Agitación extrema
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Historia y presentación:</strong>
+    <ul>
+      <li>Sustancia(s) involucrada(s), cantidad, vía, hora de consumo</li>
+      <li>Mezcla de sustancias (especialmente alcohol + opioides + BZD)</li>
+      <li>Patología psiquiátrica de base, intentos previos</li>
+      <li>Signos vitales completos + temperatura + glucemia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Síndromes tóxicos orientadores:</strong>
+    <ul>
+      <li><strong>Opioides:</strong> Miosis, depresión respiratoria, coma → Naloxona 0,4–2mg IV/IM</li>
+      <li><strong>Estimulantes (cocaína/anfetaminas):</strong> Taquicardia, HTA, agitación, hipertermia → BZD</li>
+      <li><strong>Alcohol:</strong> Ataxia, disartria, vómitos → posición lateral, hidratación, tiamina</li>
+      <li><strong>BZD:</strong> Sedación, ataxia → soporte, Flumazenil solo si diagnóstico seguro</li>
+      <li><strong>Abstinencia OH:</strong> Temblor, sudoración, convulsiones → Diazepam IV</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Estabilizado — Manejo:</strong>
+      Monitorización continua · Hidratación IV · Thiamina 100mg IV (alcohol) · Glucosa si hipoglicemia · Posición de seguridad
+    </div>
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>Inestable — Actuar:</strong>
+      Vía aérea definitiva si GCS &lt;8 · Antídoto específico · UCI toxicológica · Carbón activado (1h post ingesta oral)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Hospitalizar si: Glasgow alterado · Inestabilidad hemodinámica · Convulsiones · Síndrome de abstinencia severo
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Alta con plan:</strong>
+    Evaluación psiquiátrica antes del alta · Derivar a programa de adicciones · Consejería breve · Red de apoyo familiar
+  </div>
+
+</div>
+</body>
+</html>
