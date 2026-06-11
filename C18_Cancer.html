@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cáncer de Colon — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7d3c98; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval   { background: #7d3c98; color: #fff; }
+  .dx     { background: #1f618d; color: #fff; }
+  .alerta { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto    { background: #1e8449; color: #fff; }
+  .derivar{ background: #d35400; color: #fff; font-weight: bold; }
+  .seguim { background: #117a65; color: #fff; }
+  .arrow  { font-size: 1.4em; color: #7f8c8d; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🔬 Cáncer de Colon (C18) — Sospecha y Derivación</h1>
+<div class="flow">
+  <div class="box inicio">SOSPECHA CLÍNICA / SCREENING</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SIGNOS DE ALARMA: Sangrado rectal · Cambio del hábito intestinal >4 semanas · Anemia ferropénica sin causa · Masa abdominal palpable · Baja de peso inexplicada · >50 años
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Factores de riesgo:</strong>
+    <ul>
+      <li>Edad >50 años, historia familiar de CCR o pólipos adenomatosos</li>
+      <li>Síndromes hereditarios: Lynch (HNPCC), FAP</li>
+      <li>EII (Crohn, CU) de larga data · Dieta rica en carnes rojas, baja en fibra</li>
+      <li>Obesidad, sedentarismo, alcohol, tabaquismo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li><strong>Colonoscopía total con biopsia</strong> (gold standard) — confirma diagnóstico</li>
+      <li>SOH (test de sangre oculta en heces) — screening población general</li>
+      <li>TAC abdomen-pelvis con contraste (estadificación, metástasis hepáticas)</li>
+      <li>CEA basal (marcador para seguimiento, no diagnóstico)</li>
+      <li>PET-TAC si estadificación dudosa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento según estadio:</strong>
+    <ul>
+      <li><strong>Estadio I–II:</strong> Cirugía (hemicolectomía) · Quimioterapia adyuvante en II de alto riesgo</li>
+      <li><strong>Estadio III:</strong> Cirugía + quimioterapia adyuvante (FOLFOX 6 meses)</li>
+      <li><strong>Estadio IV:</strong> Quimioterapia paliativa (FOLFOX/FOLFIRI + bevacizumab o cetuximab) · Metastasectomía hepática si resecable</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivación urgente gastroenterología/oncología · Comité oncológico multidisciplinario
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Screening población general:</strong>
+    SOH anual desde los 50 años · Colonoscopía cada 10 años · Cada 5 años si historia familiar de 1° grado con CCR
+  </div>
+</div>
+</body>
+</html>
