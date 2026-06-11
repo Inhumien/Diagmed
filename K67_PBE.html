@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peritonitis Bacteriana Espontánea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Peritonitis Bacteriana Espontánea / PBE (K67)</h1>
+<div class="flow">
+  <div class="box inicio">ASCITIS + FIEBRE + DOLOR ABDOMINAL EN CIRRÓTICO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ PBE = URGENCIA: Mortalidad 20–40% sin tratamiento precoz · ATB ANTES de esperar cultivo · Albúmina IV para prevenir síndrome hepatorrenal
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Fiebre, dolor abdominal difuso, empeoramiento de la encefalopatía hepática</li>
+      <li>Puede ser asintomática — paracentesis diagnóstica en todo cirrótico hospitalizado</li>
+      <li>Deterioro de función renal (síndrome hepatorrenal tipo 1 en 30%)</li>
+      <li>Agentes: E. coli, Klebsiella, S. pneumoniae (bacteriemia translacional)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico — Paracentesis diagnóstica:</strong>
+    <ul>
+      <li><strong>PMN en líquido ascítico ≥250/mm³</strong> → diagnóstico de PBE (no esperar cultivo)</li>
+      <li>Cultivo de líquido ascítico en frascos de hemocultivo (aumenta rendimiento)</li>
+      <li>Proteínas totales en LA (si &lt;15 g/L → mayor riesgo de PBE)</li>
+      <li>Hemocultivos × 2 antes de ATB</li>
+      <li>Función renal (creatinina), bilirrubina (pronóstico)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Cefotaxima 2g IV c/8h × 5 días</strong> (1ª línea) · o Ceftriaxona 2g/día IV</li>
+      <li><strong>Albúmina IV 1,5g/kg al diagnóstico + 1g/kg al día 3</strong> (previene SHR — reduce mortalidad)</li>
+      <li>Profilaxis 2ª: norfloxacino 400mg/día indefinido o cotrimoxazol · Toda PBE requiere profilaxis</li>
+      <li>Evaluar trasplante hepático (PBE = indicación)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalización urgente · UCI si sepsis severa · Hepatología · Trasplante
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Paracentesis de control a las 48h (respuesta: PMN &lt;25% del inicial) · Profilaxis primaria: norfloxacino si proteínas LA &lt;15 g/L o Child-Pugh C · Considerar trasplante
+  </div>
+</div>
+</body>
+</html>
