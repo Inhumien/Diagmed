@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enfermedad de Crohn — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Enfermedad de Crohn (K50) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR ABDOMINAL + DIARREA CRÓNICA + SÍNTOMAS SISTÉMICOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ COMPLICACIONES AGUDAS: Obstrucción intestinal · Absceso intraabdominal · Fístula enterocutánea · Perforación → Cirugía urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características diferenciadoras de CU:</strong>
+    <ul>
+      <li>Afecta todo el tubo digestivo (boca a ano), especialmente íleon terminal</li>
+      <li>Inflamación transmural (todas las capas) → fístulas, estenosis, abscesos</li>
+      <li>Patrón discontinuo ("skip lesions") · Granulomas histológicos</li>
+      <li>Dolor en FID (ileítis), diarrea sin sangre (o poca), fiebre, baja de peso, fatiga</li>
+      <li>Enfermedad perianal (fístulas, fisuras, abscesos) en 30%</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio diagnóstico:</strong>
+    <ul>
+      <li>Hemograma, PCR, albúmina, calprotectina fecal · Coprocultivo + C. difficile</li>
+      <li><strong>Ileocolonoscopía + biopsia</strong> (gold standard): ileítis, úlceras aftosas, empedrado</li>
+      <li>RMN enterografía (afectación intestino delgado, fístulas) · TAC si urgencia</li>
+      <li>RMN pelvis si enfermedad perianal</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Brote leve-moderado (ileítis):</strong>
+      Budesonida oral 9mg/día x 8–12 semanas · Mesalazina (menos eficaz que en CU) · Corticoides sistémicos si no responde
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Moderado-severo / mantenimiento:</strong>
+      Azatioprina 2–2,5mg/kg/día · Anti-TNF (adalimumab, infliximab) · Anti-IL-12/23 (ustekinumab) · Vedolizumab · Cirugía electiva en estenosis/fístulas refractarias
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Gastroenterología: diagnóstico · brotes moderados-severos · inicio de biológicos · enfermedad perianal compleja
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Calprotectina fecal como marcador de actividad · Vacunas antes de inmunosupresores · Densitometría · Cese tabáquico (tabaco empeora Crohn significativamente)
+  </div>
+</div>
+</body>
+</html>
