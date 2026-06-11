@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colitis Ulcerosa — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;}
+  .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;}
+  li{margin-bottom:2px;}
+  strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Colitis Ulcerosa (K51) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DIARREA CON SANGRE + SÍNTOMAS CRÓNICOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ COLITIS GRAVE (Truelove-Witts): >6 deposiciones/día con sangre + fiebre/taquicardia/anemia/VSH >30 → HOSPITALIZAR + Corticoides IV urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Diarrea con sangre y moco, urgencia defecatoria, tenesmo</li>
+      <li>Dolor abdominal tipo cólico en FII, alivio post-defecación</li>
+      <li>Afecta recto (siempre) con extensión proximal variable (proctitis → pancolitis)</li>
+      <li>Manifestaciones extraintestinales: artralgias, epiescleritis, eritema nodoso, colangitis esclerosante</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Hemograma (anemia, leucocitosis), PCR, albúmina, calprotectina fecal</li>
+      <li>Coprocultivo + Clostridium difficile (descartar infección)</li>
+      <li><strong>Colonoscopía con biopsia</strong> (gold standard): mucosa granular, friable, úlceras, pseudopólipos — patrón continuo desde recto</li>
+      <li>Rx abdomen simple en brote grave (descartar megacolon tóxico)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Brote leve-moderado:</strong>
+      5-ASA oral (mesalazina 2,4–4,8g/día) ± 5-ASA rectal · Corticoides orales si no responde (prednisona 40mg/día) · Mantención con 5-ASA
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Brote grave / refractario:</strong>
+      Hospitalizar · Hidrocortisona 300mg/día IV o Metilprednisolona 60mg/día · Sin respuesta 3–5 días → Ciclosporina o Anti-TNF (infliximab) o Colectomía
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Gastroenterología: diagnóstico, seguimiento y ajuste terapéutico · Colonoscopía de vigilancia cada 1–3 años (riesgo CCR)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Calprotectina fecal como marcador de actividad · Vacunas (inmunosupresión) · Densitometría si corticoides crónicos · Screening CCR según extensión y duración
+  </div>
+</div>
+</body>
+</html>
