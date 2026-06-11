@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterocolitis por Yersinia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦠 Enterocolitis por Yersinia (A04) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DIARREA + DOLOR FID + FIEBRE</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Gastroenteritis aguda: diarrea (puede ser sanguinolenta), dolor abdominal, fiebre</li>
+      <li><strong>Pseudoapendicitis:</strong> dolor FID severo + fiebre → simula apendicitis aguda (linfadenitis mesentérica)</li>
+      <li>Complicaciones extraintestinales: artritis reactiva, eritema nodoso, uveítis (semanas post-infección)</li>
+      <li>Transmisión: carne de cerdo cruda, leche no pasteurizada, agua contaminada</li>
+      <li>Mayor gravedad en inmunosuprimidos y con sobrecarga de hierro</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Septicemia por Yersinia en inmunosuprimidos/cirrosis: alta mortalidad → hemocultivos + ATB IV urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Coprocultivo en medio específico (CIN agar) — avisar al laboratorio la sospecha</li>
+      <li>Serología (IgA, IgG anti-Yersinia) — útil en artritis reactiva post-infecciosa</li>
+      <li>Hemograma, PCR · Ecografía abdominal (linfadenitis mesentérica, excluye apendicitis)</li>
+      <li>TAC abdomen si duda con apendicitis</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li>Gastroenteritis no complicada: autolimitada (1–3 semanas) → solo hidratación + sintomático</li>
+      <li>ATB si: enfermedad severa, inmunosuprimido, bacteriemia · Doxiciclina 100mg c/12h x 5 días o Ciprofloxacino 500mg c/12h x 5 días · o Cotrimoxazol</li>
+      <li>Artritis reactiva post-infecciosa: AINEs · Sulfasalazina si >3 meses</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cirugía si no puede descartarse apendicitis · Infectología si septicemia · Reumatología si artritis reactiva
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Vigilar complicaciones reactivas (artritis, eritema nodoso) 2–4 semanas post-infección · Notificación epidemiológica en brotes
+  </div>
+</div>
+</body>
+</html>
