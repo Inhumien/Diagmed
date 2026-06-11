@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porfiria Cutánea Tarda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Porfiria Cutánea Tarda (E80) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">FRAGILIDAD CUTÁNEA + AMPOLLAS EN ZONAS FOTOEXPUESTAS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características clínicas:</strong>
+    <ul>
+      <li>Fragilidad cutánea extrema en dorso de manos y antebrazos (trauma menor forma ampollas)</li>
+      <li>Vesículas y ampollas serosas o hemorrágicas en zonas fotoexpuestas</li>
+      <li>Hiperpigmentación · Hipertricosis (mejillas) · Cicatrices y milia</li>
+      <li>Orina de color vino (porfirinas) — fluorescencia roja con luz UV</li>
+      <li>Factores desencadenantes: alcohol, estrógenos (ACO), hepatitis C, VIH, sobrecarga de hierro, hemodiálisis</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Descartar PORFIRIA AGUDA INTERMITENTE en dolor abdominal agudo + neurológico + orina oscura → No dar barbitúricos, sulfonamidas, alcohol (desencadenantes)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Porfirinas totales en orina (elevadas, fluorescencia naranja-roja con Wood) · Uroporfirinas &gt; coproporfirinas (patrón PCT)</li>
+      <li>Hierro sérico y ferritina (sobrecarga frecuente) · Transferrina</li>
+      <li>Serología VHC, VIH · Función hepática</li>
+      <li>Biopsia cutánea: ampollas subepidérmicas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li>Eliminar factores desencadenantes (alcohol absoluto, suspender ACO, tratar VHC)</li>
+      <li><strong>Flebotomías</strong> 500mL cada 2 semanas hasta ferritina &lt;20 ng/mL (1ª línea en no anémicos)</li>
+      <li>Hidroxicloroquina 100–200mg 2 veces/semana (en anémicos o falla a flebotomías) · Fija y mobiliza porfirinas hepáticas</li>
+      <li>Fotoprotección estricta · Ropa cubriente · FPS 50+</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología + Hepatología · Control de VHC si positivo (tratamiento antiviral cura la PCT en muchos casos)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Porfirinas en orina hasta normalización · Ferritina mensual durante flebotomías · Función hepática · Recurrencia si se reinician factores desencadenantes
+  </div>
+</div>
+</body>
+</html>
