@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amigdalitis Crónica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #922b21; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🦷 Amigdalitis Crónica (J35) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">CONSULTA POR ODINOFAGIA / INFECCIONES RECURRENTES</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Síntomas sugerentes:</strong>
+    <ul>
+      <li>≥7 episodios de amigdalitis en 1 año, o ≥5/año por 2 años, o ≥3/año por 3 años (criterios Paradise)</li>
+      <li>Halitosis crónica, sensación de cuerpo extraño faríngeo</li>
+      <li>Amígdalas hipertrofiadas con criptas marcadas o caseum visible</li>
+      <li>Adenopatías cervicales persistentes</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ Amigdalitis aguda en contexto crónico: Score de Centor ≥3 → Tratar con ATB · Descartar absceso periamigdaliano
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Evaluación:</strong>
+    <ul>
+      <li>Examen físico: tamaño amígdalas (escala 0–4), criptas, caseum, adenopatías</li>
+      <li>Cultivo faríngeo en episodio agudo</li>
+      <li>Hemograma, PCR en episodios febriles</li>
+      <li>Test rápido Streptococo (TSFA) en episodio agudo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Manejo episodio agudo:</strong>
+      Amoxicilina 500mg c/8h x 10 días · Alérgico penicilina: Azitromicina 500mg/día x 5 días · Analgesia: paracetamol/ibuprofeno · Hidratación
+    </div>
+    <div class="col" style="background:#1f618d; color:#fff;">
+      <strong>Amigdalitis crónica establecida:</strong>
+      Indicar amigdalectomía si cumple criterios Paradise · Profilaxis con Penicilina benzatina 1,2M UI/mes (mientras espera cirugía)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar ORL: amigdalitis recurrente que cumple criterios · Hipertrofia con apnea del sueño · Asimetría amigdalina (descartar neoplasia)
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Registro de episodios con fecha y documentación · Control post-amigdalectomía a los 30 días
+  </div>
+
+</div>
+</body>
+</html>
