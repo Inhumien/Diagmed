@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megacolon Tóxico — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⚠️ Megacolon Tóxico (K52) — Emergencia Quirúrgica</h1>
+<div class="flow">
+  <div class="box inicio">COLITIS GRAVE + DETERIORO SISTÉMICO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA: Dilatación colon >6cm (transverso) + toxicidad sistémica → Riesgo de perforación (mortalidad 40–50%) → UCI + cirugía disponible
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios diagnósticos (Jalan):</strong>
+    <ul>
+      <li>Rx abdomen: dilatación colon >6cm (transverso) o >9cm (ciego)</li>
+      <li>Más ≥3 de: fiebre >38°C · FC >120 · leucocitosis >10.500 · anemia</li>
+      <li>Más ≥1 de: deshidratación · hipotensión · alteración mental · electrolitos alterados</li>
+      <li>Causas: CU grave, C. difficile, Crohn, isquemia, infecciones entéricas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Rx abdomen simple seriado (cada 12h) · TAC abdomen si perforación sospechada</li>
+      <li>Hemograma, electrolitos, lactato, coagulación, hemocultivos x2</li>
+      <li>Toxina C. difficile en deposiciones · Coprocultivo</li>
+      <li>NO colonoscopía (riesgo de perforación)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento inmediato:</strong>
+    <ul>
+      <li>Ayuno absoluto · Sonda nasogástrica descompresiva</li>
+      <li>Posición prono y decúbito lateral (redistribuye gas)</li>
+      <li>Hidratación IV agresiva · Corrección electrolítica (K, Mg)</li>
+      <li>ATB IV: metronidazol + ciprofloxacino · Si C. difficile: vancomicina oral 125mg c/6h</li>
+      <li>Corticoides IV: metilprednisolona 60mg/día (CU) — suspender si no mejora en 48–72h</li>
+      <li>Suspender opioides, anticolinérgicos, AINEs, antidiarreicos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI + Cirugía de urgencia: perforación · hemorragia masiva · no mejoría en 24–72h → Colectomía subtotal con ileostomía
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Monitoreo:</strong>
+    Rx abdomen c/12h · Signos vitales horarios · Lactato seriado · Decidir cirugía precozmente si deterioro
+  </div>
+</div>
+</body>
+</html>
