@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psoriasis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Psoriasis (L40) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">PLACAS ERITEMATOSAS CON ESCAMA PLATEADA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ERITRODERMIA PSORIÁTICA o PSORIASIS PUSTULOSA GENERALIZADA: piel roja + sistémico → hospitalización urgente + tratamiento sistémico inmediato
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Formas clínicas:</strong>
+    <ul>
+      <li><strong>En placas (vulgar, 80%):</strong> placas eritematosas bien delimitadas, escama plateada gruesa, codos, rodillas, cuero cabelludo, región lumbosacra</li>
+      <li><strong>Guttata:</strong> pequeñas pápulas diseminadas post-estreptocócica en jóvenes</li>
+      <li><strong>Inversa:</strong> pliegues (axilas, ingle) sin descamación</li>
+      <li><strong>Pustulosa:</strong> pústulas estériles · generalizada (Von Zumbusch) = urgencia</li>
+      <li>Artritis psoriásica (30%): oligo o poliartritis + entesitis + dactilitis + sacroileítis</li>
+      <li>Koebner: aparece en zonas de trauma</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico clínico · Biopsia si duda:</strong>
+    <ul>
+      <li>Escala PASI (gravedad): leve &lt;10, moderado 10–20, severo &gt;20</li>
+      <li>BSA (superficie corporal afectada) · DLQI (calidad de vida)</li>
+      <li>Indice NAPSI (uñas) · Screening artritis psoriásica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Leve (PASI &lt;10, BSA &lt;10%):</strong>
+      Emolientes · Corticoide tópico potente · Calcipotriol + betametasona (Daivobet) · Alquitrán · Cuero cabelludo: champú ketoconazol + loción corticoide
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Moderado-severo o artritis:</strong>
+      Fototerapia NBUVB · Metotrexato 15–25mg/semana · Ciclosporina (episódico) · Acitretina · Biológicos: anti-TNF (adalimumab), anti-IL-17 (secukinumab), anti-IL-23 (guselkumab)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología: moderado-severo · artritis · falla a tópicos · candidato a biológicos · eritrodermia
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    PASI, BSA y DLQI en cada control · Función hepática + hemograma con metotrexato · PA + creatinina con ciclosporina · Screening TBC antes de biológicos · Vacunas antes de inmunosupresores
+  </div>
+</div>
+</body>
+</html>
