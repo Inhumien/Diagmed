@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDRA — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 SDRA / Distress Respiratorio del Adulto (J80) — UCI</h1>
+<div class="flow">
+  <div class="box inicio">HIPOXEMIA SEVERA + INFILTRADOS BILATERALES + CAUSA PRECIPITANTE</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ MORTALIDAD 30-40%. UCI urgente. Evitar fluidos en exceso. Ventilacion mecanica protectora es la piedra angular del tratamiento.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios de Berlin (todos necesarios):</strong>
+    <ul>
+      <li>Inicio agudo (dentro de 1 semana de factor precipitante)</li>
+      <li>Infiltrados bilaterales en Rx/TAC no explicados por derrame, colapso o nodulos</li>
+      <li>Origen no cardiaco del edema (BNP, ecocardiograma)</li>
+      <li>PaFi menor de 300 con PEEP mayor o igual a 5: leve 200-300, moderado 100-200, severo menor de 100</li>
+      <li>Causas: neumonia, sepsis, aspiracion, trauma toracico, pancreatitis, transfusion (TRALI)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Ventilacion mecanica protectora (ARMA trial):</strong>
+    <ul>
+      <li>Volumen corriente 6 mL/kg de peso predicho (no real)</li>
+      <li>Presion plateau menor de 30 cmH2O · Driving pressure menor de 15 cmH2O</li>
+      <li>PEEP optimo segun tabla FiO2/PEEP (ARDSNet) · Meta SpO2 92-96%</li>
+      <li>Posicion prono 16h/dia si PaFi menor de 150 (reduce mortalidad 16%)</li>
+      <li>Corticoides (dexametasona 20mg/dia x 5d → 10mg/dia x 5d) en SDRA moderado-severo</li>
+      <li>Relajantes musculares: solo si assincronia severa (primeras 48h)</li>
+      <li>Manejo conservador de fluidos una vez resucitado (balance negativo)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI · Tratar causa precipitante · ECMO si PaFi menor de 80 refractario en centro especializado
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Destete ventilatorio gradual. Prueba de ventilacion espontanea diaria. Secuelas: fibrosis pulmonar, PTSD, debilidad muscular adquirida en UCI. Rehabilitacion pulmonar post-UCI.
+  </div>
+</div>
+</body>
+</html>
