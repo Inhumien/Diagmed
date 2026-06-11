@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fenómeno de Raynaud — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🤚 Fenómeno de Raynaud (I73) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">CAMBIOS DE COLOR EN DEDOS CON FRÍO/ESTRÉS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Trifásico clásico (no siempre completo):</strong>
+    <ul>
+      <li><strong>Blanco (palidez):</strong> vasoespasmo → isquemia digital</li>
+      <li><strong>Azul (cianosis):</strong> desoxigenación de la sangre estancada</li>
+      <li><strong>Rojo (eritema):</strong> reperfusión reactiva</li>
+      <li>Desencadenantes: frío, estrés emocional, vibración</li>
+      <li>Localización: dedos de manos (principalmente), pies, nariz, orejas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Primario vs Secundario (clave clínica):</strong>
+    <ul>
+      <li><strong>Primario (Raynaud idiopático):</strong> joven, mujer, bilateral simétrico, sin necrosis, capilaroscopía normal, ANA negativo</li>
+      <li><strong>Secundario:</strong> inicio tardío, asimétrico, úlceras digitales, ANA+, capilaroscopía anormal (esclerodermia, LES, AR, dermatomiositis)</li>
+      <li>Estudio: ANA, anti-Scl70, anti-centrómero, anti-dsDNA · Capilaroscopía periungueal · Hemograma, VSH, PCR</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Medidas generales (siempre):</strong>
+      Evitar frío (guantes, calcetines, ropa abrigada) · No fumar · Evitar betabloqueadores, vasoconstrictores nasales · Manejo del estrés · Calentamiento gradual durante crisis
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>Farmacológico (si medidas insuficientes):</strong>
+      Nifedipino LP 30–60mg/día (1ª línea) · Amlodipino 5–10mg/día · Losartán 50mg/día · Sildenafil en secundario severo · Iloprost IV en crisis isquémicas graves
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Úlceras digitales o gangrena → Hospitalizar · Iloprost IV · Anticoagulación · Bosentan (prevención úlceras en esclerodermia)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología si secundario o sospecha de ETC · Cirugía vascular si isquemia digital severa (simpatectomía digital)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Capilaroscopía anual en primario (puede evolucionar a secundario) · ANA seriados · Primario: buen pronóstico · Secundario: según enfermedad subyacente
+  </div>
+</div>
+</body>
+</html>
