@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esquizofrenia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Esquizofrenia (F20) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">PSICOSIS — EVALUAR SEGURIDAD Y CAUSA ORGÁNICA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ RIESGO INMEDIATO: Heteroagresividad · Suicidio · Incapacidad de autocuidado → Hospitalización involuntaria si necesario · Contención verbal o farmacológica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síntomas — Criterios DSM-5 (≥2 por ≥1 mes):</strong>
+    <ul>
+      <li><strong>Positivos:</strong> Delirios (ideas fijas irrefutables) · Alucinaciones (auditivas más frecuentes) · Desorganización del pensamiento/conducta</li>
+      <li><strong>Negativos:</strong> Alogia · Abulia · Anhedonia · Aplanamiento afectivo · Aislamientos social</li>
+      <li><strong>Cognitivos:</strong> Déficit de memoria de trabajo, atención, funciones ejecutivas</li>
+      <li>Disfunción significativa laboral/social · Duración ≥6 meses</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Descartar causas orgánicas:</strong>
+    <ul>
+      <li>Hemograma, función renal/hepática, TSH, glucemia, calcemia</li>
+      <li>Toxicología en orina (cannabis, anfetaminas, cocaína)</li>
+      <li>TAC/RMN cerebro (descartar tumor, encefalitis autoinmune, ACV)</li>
+      <li>Anticuerpos anti-NMDA, anti-LGI1 (encefalitis autoinmune si debut atípico)</li>
+      <li>VIH, VDRL si factores de riesgo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Agitación aguda:</strong>
+      Lorazepam 1–2mg IM o IV · Haloperidol 5mg IM + Prometazina 50mg IM (combinación segura) · Olanzapina 10mg IM (no combinar con BZD IM)
+    </div>
+    <div class="col" style="background:#4a235a;color:#fff;">
+      <strong>Tratamiento crónico (antipsicóticos):</strong>
+      1ª generación: haloperidol 5–20mg/día · 2ª generación: risperidona 4–8mg/día, olanzapina 10–20mg/día, quetiapina 300–600mg/día · Depot si baja adherencia
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Intervención psicosocial (siempre junto a farmacoterapia):</strong>
+    Terapia cognitivo-conductual para psicosis · Psicoeducación familiar · Rehabilitación vocacional · Apoyo para vivienda y trabajo
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Psiquiatría urgente: primer episodio psicótico · riesgo de daño · falla a tratamiento ambulatorio · hospitalización si necesario
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control mensual al inicio · Monitoreo metabólico (peso, glicemia, lípidos) · Evaluar efectos extrapiramidales · Escala PANSS · Integración comunitaria
+  </div>
+</div>
+</body>
+</html>
