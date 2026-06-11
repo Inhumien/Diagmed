@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiste Ovarico — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdf2f8; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7d3c98; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7d3c98;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Quiste Ovarico (N83) — Evaluacion y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">MASA ANEXIAL EN ECOGRAFIA — EVALUAR MALIGNIDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ TORSION OVARICA: Dolor pelvico agudo intenso + nauseas + quiste mayor de 5cm → Urgencia quirurgica (laparoscopia en horas para preservar ovario)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos frecuentes:</strong>
+    <ul>
+      <li>Funcional: foliculo persistente o cuerpo luteo · Premenopausia · Resolucion espontanea en 6-8 semanas</li>
+      <li>Endometrioma: quiste con contenido en "vidrio esmerilado" · Asociado a endometriosis</li>
+      <li>Teratoma maduro (quiste dermoide): contenido graso, calcificaciones · Benigno · FR: torsion</li>
+      <li>Cistoadenoma seroso/mucinoso: benigno pero requiere cirugia si mayor de 5-7 cm</li>
+      <li>Criterios de sospecha de malignidad: componente solido, tabiques gruesos, flujo en Doppler, CA-125 alto, postmenopausia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Ecografia TV: morfologia, tamano, Doppler</li>
+      <li>Score IOTA o RMI (risk of malignancy index): orienta necesidad de cirugia urgente vs electiva</li>
+      <li>CA-125 (en mayores de 40 anos o posmenopausia) · AFP, HCG, LDH si teratoma inmaduro sospechado</li>
+      <li>RMN pelvis si ecografia no concluyente</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Quiste simple menor de 5cm en premenopausia:</strong>
+      Observacion + ecografia de control en 6-8 semanas. Mayoria resuelven espontaneamente. ACO no acelera la resolucion pero previene nuevos quistes.
+    </div>
+    <div class="col" style="background:#7d3c98;color:#fff;">
+      <strong>Cirugia (laparoscopia):</strong>
+      Mayor de 5-7cm · Persistente mas de 3 ciclos · Sospecha de malignidad · Torsion · Posmenopausia con quiste no simple · Endometrioma mayor de 4cm
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Ginecologia urgente: torsion · rotura con hemoperitoneo · Ginecologia electronica: quiste persistente · sospecha malignidad
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Quiste funcional: ecografia a las 6-8 semanas. Posmenopausia: cualquier quiste nuevo requiere evaluacion ginecologica. CA-125 anual si endometrioma.
+  </div>
+</div>
+</body>
+</html>
