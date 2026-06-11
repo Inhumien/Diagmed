@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linfoma de Hodgkin — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Linfoma de Hodgkin (C81) — Sospecha y Derivación</h1>
+<div class="flow">
+  <div class="box inicio">ADENOPATÍAS + SÍNTOMAS SISTÉMICOS EN ADULTO JOVEN</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Adenopatías cervicales/supraclaviculares indoloras, firmes, progresivas</li>
+      <li>Síntomas B: fiebre >38°C · sudoración nocturna empapante · baja de peso >10% en 6 meses</li>
+      <li>Prurito generalizado · Fatiga · Dolor ganglionar al alcohol (clásico)</li>
+      <li>Masa mediastínica (puede causar tos, disnea, síndrome VCS)</li>
+      <li>Pico bimodal de incidencia: 20–30 años y >60 años</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Síndrome de vena cava superior (edema facial, ingurgitación yugular, disnea) → Urgencia oncológica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Hemograma + VHS + LDH + β2-microglobulina + albúmina</li>
+      <li>TAC tórax-abdomen-pelvis con contraste (estadificación)</li>
+      <li>PET-TAC con 18FDG (gold standard para estadificación y respuesta)</li>
+      <li><strong>Biopsia ganglionar excisional</strong> (gold standard diagnóstico): células de Reed-Sternberg</li>
+      <li>Biopsia de médula ósea · Ecocardiograma y PFR (pre-tratamiento)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento (excelente pronóstico — curación en 80–90%):</strong>
+    <ul>
+      <li><strong>Estadio I–II favorable:</strong> ABVD x 2–4 ciclos + radioterapia de campo involucrado</li>
+      <li><strong>Estadio II desfavorable / III–IV:</strong> ABVD x 6 ciclos ± radioterapia de consolidación</li>
+      <li>Refractario/recaída: quimioterapia de salvataje + trasplante autólogo</li>
+      <li>Brentuximab vedotin + AVD (anti-CD30) en estadio avanzado de alto riesgo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematología/Oncología urgente · Comité oncológico multidisciplinario
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    PET-TAC post-tratamiento · Vigilancia de recaída · Efectos tardíos: cardiotoxicidad, fibrosis pulmonar, segundas neoplasias · Fertilidad (criopreservación previa a quimioterapia)
+  </div>
+</div>
+</body>
+</html>
