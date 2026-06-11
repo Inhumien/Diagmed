@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linfoma No Hodgkin — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Linfoma No Hodgkin (C82–C85) — Sospecha y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ADENOPATÍAS INDOLORAS + SÍNTOMAS B</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ LINFOMA AGRESIVO: Síntomas B + adenopatías de crecimiento rápido + compromiso SNC/médula → Biopsia + inicio de tratamiento urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Adenopatías indoloras (cervicales, axilares, inguinales) de crecimiento lento o rápido</li>
+      <li>Síntomas B: fiebre, sudoración nocturna, pérdida de peso &gt;10%</li>
+      <li>Esplenomegalia · Síntomas de compresión (SVC, obstrucción urinaria)</li>
+      <li>Manifestación extranodal: GI, SNC, piel, médula ósea</li>
+      <li>LNH indolentes (folicular, MALT): curso lento · LNH agresivos (DLBCL): crecimiento rápido, curable</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Hemograma, LDH, beta2-microglobulina, ácido úrico, función renal/hepática</li>
+      <li><strong>Biopsia excisional ganglionar</strong> (gold standard): histología + inmunohistoquímica + citogenética</li>
+      <li>PET-TAC (estadificación) · Biopsia de médula ósea · Punción lumbar si SNC afectado</li>
+      <li>Índice pronóstico Internacional (IPI para DLBCL)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>LNH agresivo (DLBCL — más frecuente):</strong>
+      R-CHOP × 6 ciclos (rituximab + ciclofosfamida + doxorrubicina + vincristina + prednisona) · Curación en 60–70% · CAR-T en recaída
+    </div>
+    <div class="col" style="background:#4a235a;color:#fff;">
+      <strong>LNH indolente (folicular, estadio avanzado):</strong>
+      Observación si asintomático · R-bendamustina o R-CHOP si síntomas · Anti-CD20 mantenimiento (rituximab) · No curable, pero altamente controlable
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematología/oncología urgente · Comité oncológico · Centro con CAR-T si recaída refractaria
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    PET-TAC post-tratamiento (respuesta) · LDH como marcador de actividad · Vigilancia de recaída · Vacunación previa a rituximab
+  </div>
+</div>
+</body>
+</html>
