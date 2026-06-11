@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trastorno Bipolar — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Trastorno Bipolar (F31) — Evaluacion y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">EPISODIOS DE MANIA + DEPRESION + CURSO RECURRENTE</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ MANIA AGUDA CON PSICOSIS O RIESGO: hospitalizar. DEPRESION BIPOLAR: NO antidepresivos en monoterapia (riesgo de virage a mania o ciclacion rapida).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentacion clinica:</strong>
+    <ul>
+      <li>Tipo I: al menos 1 episodio maniaco (mayor de 7 dias, euforia/irritabilidad, disminucion de sueno, grandiosidad, hipersexualidad, fuga de ideas, impulsividad) ± depresion.</li>
+      <li>Tipo II: hipomanias (menor de 7 dias, sin hospitalizacion) + depresion mayor.</li>
+      <li>Ciclotimia: fluctuaciones hipomaniaca/depresivas menos severas. Cronicas.</li>
+      <li>Inicio tipico 15-25 anos. Alta carga genetica. Comorbilidad: abuso de sustancias, ansiedad.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Estabilizadores del animo (base del tratamiento):</strong>
+      Litio (mas eficaz en prevencion de mania y suicidio, requiere monitoreo nivel en sangre y funcion renal/tiroidea). Valproato (eficaz en ciclacion rapida, teratogeno). Lamotrigina (mejor para prevencion depresiva).
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Mania aguda:</strong>
+      Antipsicoptico (olanzapina, quetiapina, aripiprazol) ± litio/valproato. Benzodiazepin si agitacion. Depresion bipolar: quetiapina (1ª linea) o litio + lamotrigina. Lurasidona. NO antidepresivos solos.
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Psiquiatria. Hospitalizacion: mania con psicosis, riesgo autolitico, debut o diagnostico incierto.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Niveliemia de litio (0,6-1,0 mEq/L). Funcion renal y tiroidea anual con litio. Psicoterapia (TCC, psicoeducacion, ritmos sociales). Adherencia al tratamiento critica — recaida en 80% al suspender.
+  </div>
+</div>
+</body>
+</html>
