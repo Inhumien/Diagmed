@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome de Cola de Caballo — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🚨 Sindrome de Cola de Caballo (G83) — EMERGENCIA</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR LUMBAR + DEFICIT NEUROLOGICO PERINE / ESFINTERES</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA NEUROQUIRURGICA: Cualquier demora en la descompresion empeora el pronostico funcional. RMN URGENTE y cirugia dentro de 24-48h del inicio de los sintomas neurologicos.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Sintomas cardinales (sospechar ante cualquiera):</strong>
+    <ul>
+      <li>Retencion o incontinencia urinaria (signo mas sensible)</li>
+      <li>Incontinencia o retencion fecal</li>
+      <li>Anestesia en silla de montar (perineogenital)</li>
+      <li>Debilidad bilateral de extremidades inferiores</li>
+      <li>Dolor lumbar irradiado a ambas piernas (bilateral)</li>
+      <li>Causas: hernia discal L4-L5 o L5-S1 masiva (mas frecuente), estenosis severa, tumor, hematoma, absceso epidural</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Manejo:</strong>
+    RMN lumbar urgente (confirma compresion). Neurocirugía o cirugia de columna urgente (laminectomia descompresiva o microdiscectomia). Corticoides IV controvertidos (algunos centros los usan). Cateter urinario si retencion. Pronostico mejor si cirugia dentro de 24h.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurocirugía / Cirugia de columna URGENTE. Trasladar a centro con capacidad quirurgica inmediata.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Rehabilitacion intensiva post-cirugia. Recuperacion de funcion vesical e intestinal puede ser incompleta. Fisioterapia de piso pelvico. Pronostico directamente relacionado con tiempo hasta la cirugia.
+  </div>
+</div>
+</body>
+</html>
