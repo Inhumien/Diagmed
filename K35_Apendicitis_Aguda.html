@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apendicitis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #922b21; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🔪 Apendicitis Aguda (K35) — Urgencia Quirúrgica</h1>
+<div class="flow">
+
+  <div class="box inicio">DOLOR ABDOMINAL AGUDO</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Presentación clásica:</strong>
+    <ul>
+      <li>Dolor periumbilical que migra a FID (punto de McBurney) en horas</li>
+      <li>Náuseas, vómitos, anorexia, febrícula</li>
+      <li>Signo de Blumberg (+): rebote en FID · Signo de Rovsing (+)</li>
+      <li>Posición antiálgica: flexión cadera derecha</li>
+      <li>OJO: presentación atípica en embarazo, ancianos, obesos, inmunodeprimidos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ PERFORACIÓN: Dolor difuso + defensa generalizada + fiebre alta + leucocitosis marcada → Cirugía urgente sin demora
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Score de Alvarado y estudio:</strong>
+    <ul>
+      <li>Hemograma: leucocitosis con desviación izquierda, PCR elevada</li>
+      <li>β-hCG en mujeres en edad fértil (descartar embarazo ectópico)</li>
+      <li><strong>Score Alvarado ≥7:</strong> alta probabilidad → cirugía directa</li>
+      <li><strong>Score 5–6:</strong> Ecografía abdominal (sensibilidad 75–90%) o TAC abdomen-pelvis (gold standard, sens. 94–98%)</li>
+      <li><strong>Score &lt;5:</strong> baja probabilidad → observar y reevaluar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>Apendicitis no complicada:</strong>
+      Apendicectomía laparoscópica (estándar de oro) · ATB profiláctico preoperatorio (cefazolina) · Ayuno · Hidratación IV
+    </div>
+    <div class="col" style="background:#922b21; color:#fff;">
+      <strong>Apendicitis complicada (perforada/plastronada):</strong>
+      ATB IV: piperacilina-tazobactam o carbapenémico · Cirugía urgente o diferida según plastron · Drenaje si absceso &gt;3cm
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Manejo preoperatorio:</strong>
+    Ayuno · Hidratación IV · Analgesia (no contraindicada) · ATB preoperatorio · Monitorización
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 CIRUGÍA URGENTE: todo caso con alta probabilidad o confirmado · No demorar por miedo a "enmascarar" diagnóstico
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Post-operatorio:</strong>
+    Alta a las 24–48h en no complicada · ATB oral si perforada (5–7 días) · Control herida a los 7 días
+  </div>
+
+</div>
+</body>
+</html>
