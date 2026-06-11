@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dermatitis de Contacto — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Dermatitis de Contacto (L25) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ECCEMA LOCALIZADO TRAS CONTACTO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y presentación:</strong>
+    <ul>
+      <li><strong>Irritativa (más frecuente):</strong> daño directo por irritante (detergentes, ácidos, cemento) · sin sensibilización previa · aparece en horas</li>
+      <li><strong>Alérgica:</strong> hipersensibilidad retardada tipo IV · requiere sensibilización previa · aparece 24–72h · puede generalizarse</li>
+      <li>Patrón de distribución = zona de contacto (manos, muñecas, cuello, lóbulos)</li>
+      <li>Eritema, vesículas, descamación, prurito, costras</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico: patrón de distribución + historia de exposición</li>
+      <li><strong>Prueba de parche (Patch test)</strong>: gold standard para dermatitis alérgica de contacto · Identifica el alérgeno específico</li>
+      <li>Alérgenos más frecuentes: níquel, fragancias, conservantes, látex, cromo, formaldehído</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Fase aguda:</strong>
+      Retirar el agente causal (fundamental) · Compresas húmedas frías · Corticoide tópico potente (betametasona 0,05%) x 1–2 semanas · Antihistamínico oral para el prurito
+    </div>
+    <div class="col" style="background:#b7770d;color:#fff;">
+      <strong>Brote severo / generalizado:</strong>
+      Prednisona oral 0,5mg/kg/día x 5–7 días con reducción gradual · Hospitalizar si eritrodermia · Emolientes abundantes post-brote
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Prevención — lo más importante:</strong>
+    Identificar y evitar el alérgeno/irritante · Guantes protectores · Cremas barrera · Cambio de trabajo si exposición laboral inevitable
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar dermatología: diagnóstico incierto · Patch test (no disponible en APS) · Dermatitis ocupacional (implicancias legales) · Brote severo
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 2–4 semanas · Si se identifica alérgeno: evitación de por vida · Dermatitis de manos: emolientes diarios, guantes de algodón bajo látex
+  </div>
+</div>
+</body>
+</html>
