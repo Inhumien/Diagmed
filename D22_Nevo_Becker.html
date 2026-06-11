@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nevo de Becker / Nevos Melanocíticos — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Nevos Melanocíticos / Nevo de Becker (D22) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">LESIÓN PIGMENTADA EN PIEL — EVALUAR RIESGO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ REGLA ABCDE: Asimetría · Bordes irregulares · Color irregular · Diámetro &gt;6mm · Evolución → Dermatoscopía + biopsia excisional urgente (descartar melanoma)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos de nevos:</strong>
+    <ul>
+      <li><strong>Nevo adquirido común:</strong> mácula o pápula marrón uniforme &lt;6mm, bordes regulares, simétrico · Bajo riesgo</li>
+      <li><strong>Nevo atípico (displásico):</strong> &gt;5mm, bordes irregulares, color variable · Mayor riesgo de melanoma si múltiples</li>
+      <li><strong>Nevo de Becker:</strong> mácula hiperpigmentada grande (hombro/tórax), con hipertricosis, en adolescentes masculinos · Benigno, no degenera</li>
+      <li><strong>Nevo congénito gigante:</strong> &gt;20cm · Riesgo de melanoma 5–10%</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Evaluación:</strong>
+    <ul>
+      <li>Dermatoscopía (gold standard no invasivo): patrones de nevo benigno vs sospechoso</li>
+      <li>Fotografía de mapeo corporal (nevos múltiples)</li>
+      <li>Biopsia excisional: si ABCDE positivo · cambio reciente · sospecha clínica o dermatoscópica</li>
+      <li>Regla del patito feo: el nevo diferente de los demás del paciente → estudiar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Manejo según tipo:</strong>
+    <ul>
+      <li>Nevo común benigno: observación · No extirpar sin indicación</li>
+      <li>Nevo atípico: extirpación con márgenes de 2mm + histología</li>
+      <li>Nevo de Becker: no tratamiento necesario (benigno) · Láser si molestia estética</li>
+      <li>Nevo congénito gigante: extirpación gradual, seguimiento estrecho</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología: nevos atípicos múltiples · cambio reciente · ABCDE sospechoso · nevo congénito · dermatoscopía
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Fotoprotección diaria · Autoexamen mensual · Control dermatológico anual si nevos atípicos múltiples · Antecedente familiar de melanoma → vigilancia semestral
+  </div>
+</div>
+</body>
+</html>
