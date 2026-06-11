@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lupus Eritematoso Sistémico — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Lupus Eritematoso Sistémico / LES (M32)</h1>
+<div class="flow">
+  <div class="box inicio">ENFERMEDAD MULTISISTÉMICA EN MUJER JOVEN</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ BROTE GRAVE: Nefritis lúpica (proteinuria + hematuria) · Compromiso SNC · Citopenias severas · Vasculitis → Hospitalizar + inmunosupresión intensiva
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones clínicas (criterios SLICC/EULAR 2019):</strong>
+    <ul>
+      <li>Rash malar ("alas de mariposa") · Lupus discoide · Fotosensibilidad · Úlceras orales</li>
+      <li>Artritis no erosiva · Serositis (pericarditis, pleuritis)</li>
+      <li>Nefritis (proteinuria &gt;500mg/24h, cilindruria) · Neuropsiquiátrico (convulsiones, psicosis)</li>
+      <li>Hemólisis · Trombocitopenia · Leucopenia · Linfopenia</li>
+      <li>ANA+ y al menos 1 criterio clínico o inmunológico</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico serológico:</strong>
+    <ul>
+      <li><strong>ANA</strong> (sensibilidad 95%, screening) · Anti-dsDNA (específico, marcador de actividad) · Anti-Sm (específico)</li>
+      <li>Complemento C3, C4 (bajos en actividad) · Anti-Ro/La · Anti-fosfolípidos (anticuerpos antifosfolipídicos)</li>
+      <li>Hemograma completo · Función renal · Proteínas 24h · Sedimento orina</li>
+      <li>Biopsia renal si proteinuria &gt;0,5g/día (clasifica nefritis lúpica ISN/RPS)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento de base (todos los pacientes):</strong>
+      Hidroxicloroquina 200–400mg/día (reducir brotes, daño orgánico, mortalidad) · Fotoprotección · Vitamina D · AAS si síndrome antifosfolipídico
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Brote leve-moderado:</strong>
+      Prednisona 0,5mg/kg/día + metotrexato o azatioprina · Belimumab (anti-BLyS) en LES activo persistente
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Nefritis lúpica (clases III–IV):</strong>
+    Metilprednisolona IV pulsos → prednisona oral + micofenolato 2–3g/día (1ª línea) o ciclofosfamida IV · Belimumab o voclosporina como add-on
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología · Nefrología si nefritis · Embarazo de alto riesgo (obstetricia + reumatología)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Monitoreo:</strong>
+    SLEDAI (actividad) · Anti-dsDNA + C3/C4 cada 3 meses · Proteinuria · Hemograma · MAPA por riesgo cardiovascular elevado · Densitometría por corticoides · Vacunas (antes de inmunosupresores)
+  </div>
+</div>
+</body>
+</html>
