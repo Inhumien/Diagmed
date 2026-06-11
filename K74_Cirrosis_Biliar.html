@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cirrosis Hepática — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;}
+  .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;}
+  li{margin-bottom:2px;}
+  strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Cirrosis Hepática (K74) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SOSPECHA O DIAGNÓSTICO DE CIRROSIS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ COMPLICACIONES AGUDAS → URGENCIA: Hemorragia variceal · Peritonitis bacteriana espontánea · Encefalopatía hepática · Síndrome hepatorrenal
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li><strong>Compensada:</strong> asintomática o fatiga, hepatoesplenomegalia, arañas vasculares, eritema palmar</li>
+      <li><strong>Descompensada:</strong> ascitis, ictericia, encefalopatía, hemorragia digestiva variceal</li>
+      <li>Causas: alcohol (K70), VHB/VHC, NASH/MAFLD, CBP, hepatitis autoinmune</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio y estadificación:</strong>
+    <ul>
+      <li>Hemograma (trombocitopenia), coagulación (TP prolongado), bilirrubina, albúmina, transaminasas</li>
+      <li>Ecografía abdominal (nódulos, ascitis, esplenomegalia, flujo portal)</li>
+      <li><strong>Score Child-Pugh y MELD</strong> (pronóstico y lista de trasplante)</li>
+      <li>FEVI/elastografía hepática (FibroScan) para estadificar fibrosis</li>
+      <li>AFP + eco cada 6 meses (screening CHC)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Compensada — prevenir descompensación:</strong>
+      Tratar causa (abstinencia OH, antiviral VHB/VHC) · Propranolol (profilaxis varices) · Dieta hiposódica · Evitar AINES, sedantes, contraste IV
+    </div>
+    <div class="col" style="background:#7e5109;color:#fff;">
+      <strong>Ascitis:</strong>
+      Espironolactona 100mg/día ± furosemida 40mg/día · Restricción sodio <2g/día · Paracentesis evacuadora si a tensión · Albúmina IV post-paracentesis >5L
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Encefalopatía hepática:</strong>
+    Lactulosa 30mL c/8h (meta 2–3 deposiciones/día) · Rifaximina 550mg c/12h (prevención recurrencia) · Identificar y tratar factor precipitante
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar hepatología: toda cirrosis diagnosticada · MELD >15 → evaluar trasplante · Hemorragia variceal → UCI + endoscopía urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Eco + AFP c/6 meses · Endoscopía digestiva al diagnóstico (varices) · Densitometría · Vacunas VHA, VHB, neumocócica, influenza
+  </div>
+</div>
+</body>
+</html>
