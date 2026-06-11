@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leucemia Linfoblástica Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Leucemia Linfoblástica Aguda (C91) — Sospecha y Derivación</h1>
+<div class="flow">
+  <div class="box inicio">SÍNTOMAS DE FALLO MEDULAR EN NIÑO/ADULTO JOVEN</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIAS ONCOLÓGICAS: Síndrome de lisis tumoral · Neutropenia febril · Leucostasis (blastos >100.000) · Síndrome mediastínico → UCI hematológica urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Palidez, astenia, disnea (anemia)</li>
+      <li>Petequias, equimosis, sangrado mucoso (trombocitopenia)</li>
+      <li>Fiebre, infecciones recurrentes (neutropenia)</li>
+      <li>Dolor óseo y articular (infiltración medular) — frecuente en niños</li>
+      <li>Linfadenopatías, hepatoesplenomegalia</li>
+      <li>Masa mediastínica (LLA T) · Compromiso del SNC</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico urgente:</strong>
+    <ul>
+      <li>Hemograma con fórmula diferencial: anemia + trombocitopenia + blastos circulantes</li>
+      <li><strong>Aspirado de médula ósea</strong> (gold standard): ≥20% blastos linfoides</li>
+      <li>Inmunofenotipo por citometría (B vs T, marcadores de superficie)</li>
+      <li>Citogenética y FISH: Philadelphia t(9;22) → LLA-Ph+ (peor pronóstico, requiere imatinib)</li>
+      <li>Punción lumbar (compromiso SNC) · LDH · ácido úrico · función renal</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento (solo en centro especializado):</strong>
+    <ul>
+      <li>Protocolo de poliquimioterapia: inducción → consolidación → mantenimiento (2–3 años total)</li>
+      <li>Esquema BFM (niños) o HCVAD/Hyper-CVAD (adultos)</li>
+      <li>LLA-Ph+: agregar imatinib o dasatinib al esquema</li>
+      <li>Profilaxis/tratamiento SNC: quimioterapia intratecal · radioterapia craneal (casos seleccionados)</li>
+      <li>Trasplante de médula ósea: LLA de alto riesgo en 1ª remisión o recaída</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematología/oncología pediátrica o adultos urgente · Comité oncológico · Centro de trasplante si indicado
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Enfermedad mínima residual (EMR) por citometría o PCR · Hemograma semanal durante quimioterapia · Pronóstico niños: curación 80–90% · Adultos: 40–50%
+  </div>
+</div>
+</body>
+</html>
