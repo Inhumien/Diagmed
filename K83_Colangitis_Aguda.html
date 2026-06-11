@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colangitis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;}
+  .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;}
+  li{margin-bottom:2px;}
+  strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🟡 Colangitis Aguda (K83) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">TRÍADA DE CHARCOT: FIEBRE + ICTERICIA + DOLOR CSD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ PENTADA DE REYNOLDS (colangitis grave): Tríada de Charcot + Hipotensión + Confusión → Sepsis biliar → UCI + drenaje biliar URGENTE
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación inicial:</strong>
+    <ul>
+      <li>Tríada de Charcot (66%): dolor CSD + fiebre con escalofríos + ictericia</li>
+      <li>Antecedente de coledocolitiasis, CPRE previa, estenosis biliar, prótesis biliar</li>
+      <li>Signos vitales: buscar criterios de sepsis (FR, FC, PA, lactato)</li>
+      <li>Causa más frecuente: coledocolitiasis obstructiva + sobreinfección bacteriana</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Hemograma (leucocitosis), bilirrubina directa, FA, GGT, transaminasas, coagulación</li>
+      <li>Hemocultivos x2 antes de ATB · Función renal · Lactato</li>
+      <li><strong>Ecografía abdominal</strong> (1ª línea): dilatación vía biliar, cálculo en colédoco</li>
+      <li>TAC abdomen si ecografía no concluyente · Colangio-RMN para anatomía biliar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento inmediato:</strong>
+    <ul>
+      <li>ATB IV empírica: Piperacilina-Tazobactam 4,5g c/8h o Ceftriaxona 2g + Metronidazol</li>
+      <li>Hidratación IV agresiva · Analgesia (metamizol, ketorolaco)</li>
+      <li><strong>Drenaje biliar urgente:</strong> CPRE + esfinterotomía + extracción de cálculo (dentro de 24–48h en moderada, <12h en grave)</li>
+      <li>Drenaje percutáneo transhepático si CPRE no disponible o falla</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 HOSPITALIZAR SIEMPRE · Cirugía/endoscopía digestiva urgente · UCI si pentada de Reynolds o sepsis
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-drenaje:</strong>
+    ATB IV hasta afebril 48h → completar 5–7 días oral · Colecistectomía electiva diferida (si coledocolitiasis secundaria a litiasis vesicular)
+  </div>
+</div>
+</body>
+</html>
