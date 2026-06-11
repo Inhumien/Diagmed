@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome de Ovario Poliquistico — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdf2f8; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7d3c98; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7d3c98;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Sindrome de Ovario Poliquistico / SOPK (E28)</h1>
+<div class="flow">
+  <div class="box inicio">OLIGO/AMENORREA + HIPERANDROGENISMO + MORFOLOGIA POLIQUISTICO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios de Rotterdam (2 de 3):</strong>
+    <ul>
+      <li>Oligo o anovulacion: ciclos menores de 21 o mayores de 35 dias, o menos de 8 ciclos/ano</li>
+      <li>Hiperandrogenismo clinico (hirsutismo, acne, alopecia androgenica) o bioquimico (testosterona elevada)</li>
+      <li>Morfologia poliquistico en ecografia TV: 12 o mas foliculos de 2-9mm en un ovario o volumen ovarico mayor de 10 mL</li>
+      <li>Tras excluir: hiperprolactinemia, HSC no clasica, disfuncion tiroidea, sindrome de Cushing</li>
+      <li>Resistencia insulinica y DM2 (riesgo elevado), sindrome metabolico, DM gestacional</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    Testosterona total, SHBG, indice de androgenos libres. TSH, prolactina, 17-OH-progesterona. Glicemia + insulina (HOMA-IR). Perfil lipidico. Ecografia TV.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Regularizacion menstrual + hiperandrogenismo:</strong>
+      ACO con progestina antiandrogénica (drospirenona, dienogest, acetato de clormadinona). Espironolactona 100-200mg/dia para hirsutismo/acne refractario.
+    </div>
+    <div class="col" style="background:#7d3c98;color:#fff;">
+      <strong>Fertilidad + resistencia insulinica:</strong>
+      Metformina 850-1700mg/dia (mejora ovulacion y reduce resistencia insulinica). Citrato de clomifeno o letrozol para induccion de ovulacion. Cambio de estilo de vida: dieta + ejercicio (reduccion de 5-10% del peso → recupera ovulacion).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Ginecologia/endocrinologia. Reproduccion asistida si falla de induccion. Nutricionista.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    HbA1c anual (riesgo DM2). PA y perfil lipidico. Evaluacion de SMet. Seguimiento psicologico (impacto en calidad de vida). Depresion y ansiedad frecuentes.
+  </div>
+</div>
+</body>
+</html>
