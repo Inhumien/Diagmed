@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosacea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Rosacea (L71) — Evaluacion y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ERITEMA FACIAL CENTRAL CRONICO + PAPULOPUSTULAS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Subtipos:</strong>
+    <ul>
+      <li>Eritematotelangiectasica (I): eritema, rubor, telangiectasias, piel sensible</li>
+      <li>Papulopustulosa (II): papulas y pustulas sobre eritema persistente (simula acne adulto)</li>
+      <li>Fimatosa (III): engrosamiento de la piel, rinofima (nariz en bulbo)</li>
+      <li>Ocular (IV): blefaritis, conjuntivitis, sensacion de arenilla, fotofobia</li>
+      <li>Desencadenantes: sol, calor, alcohol, comidas picantes, frio, estres, cosmeticos</li>
+      <li>No hay comedones (diferencia con acne)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Rosacea ocular: puede causar queratitis y ulceras corneales → Oftalmologia si sintomas oculares
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Topico (subtipos I-II):</strong>
+      Metronidazol gel 0,75% o crema 1% c/12h (1ª linea) · o Acido azelaico 15% gel · Brimonidina gel 0,33% (eritema, efecto rapido) · Ivermectina crema 1% (papulopustulosa, muy eficaz)
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Sistemico (moderado-severo):</strong>
+      Doxiciclina 100mg/dia x 6-12 semanas (o 40mg/dia subantibiotico) · Isotretinoina dosis bajas (0,1-0,3 mg/kg) si refractario · Carvedilol o propranolol para flushing severo
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Fototerapia y procedimientos:</strong>
+    Laser IPL o Nd:YAG (telangiectasias y eritema) · Laser CO2 para rinofima · Siempre fotoproteccion FPS 50+
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatologia: rosacea moderada-severa, rinofima, falla a topicos. Oftalmologia: sintomas oculares.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Condicion cronica con brotes. Identificar y evitar desencadenantes. Fotoproteccion permanente. Cosmeticos no comedogenicos. Control cada 3-6 meses.
+  </div>
+</div>
+</body>
+</html>
