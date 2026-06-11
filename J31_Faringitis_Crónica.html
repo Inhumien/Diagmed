@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faringitis Crónica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦷 Faringitis Crónica (J31) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">MOLESTIA FARÍNGEA PERSISTENTE >3 SEMANAS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SEÑALES DE ALARMA: Disfagia progresiva · Odinofagia unilateral · Masa cervical · Disfonía · Adelgazamiento → Laringoscopía + imágenes urgentes (descartar neoplasia)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Causas más frecuentes:</strong>
+    <ul>
+      <li>Goteo postnasal (rinitis alérgica/crónica) — causa más común</li>
+      <li>Reflujo gastroesofágico / laringofaríngeo (RLF)</li>
+      <li>Tabaquismo · Alcohol · Ambiente seco o contaminado</li>
+      <li>Respiración bucal · Disfonía funcional · Uso excesivo de la voz</li>
+      <li>Hipotiroidismo · Fármacos (IECA → tos/irritación) · Ansiedad (globo faríngeo)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Evaluación:</strong>
+    <ul>
+      <li>Nasofaringoscopía flexible (descartar lesión orgánica)</li>
+      <li>TSH (hipotiroidismo) · Hemograma · Glicemia</li>
+      <li>Valorar síntomas de RLF: tos crónica, disfonía matutina, aclaramiento frecuente</li>
+      <li>Cultivo faríngeo si sospecha de portador crónico de estreptococo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento según causa:</strong>
+    <ul>
+      <li>Goteo postnasal: lavados nasales con suero · corticoide nasal · antihistamínico</li>
+      <li>RLF: IBP 20–40mg antes del desayuno x 8–12 semanas · Cambios de estilo de vida</li>
+      <li>Tabaquismo: consejería + terapia de cese</li>
+      <li>Hidratación adecuada · Humidificador ambiental · Gárgaras con agua tibia con sal</li>
+      <li>IECA: cambiar a ARA-2</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 ORL: síntomas persistentes >4 semanas pese a tratamiento · señales de alarma · nasofaringoscopía alterada
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 4–8 semanas · Evaluar respuesta al tratamiento de la causa · Globo faríngeo sin lesión orgánica: manejo de ansiedad
+  </div>
+</div>
+</body>
+</html>
