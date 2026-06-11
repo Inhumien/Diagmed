@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiperaldosteronismo Primario — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Hiperaldosteronismo Primario / Conn (E26)</h1>
+<div class="flow">
+  <div class="box inicio">HTA RESISTENTE O HIPOPOTASEMIA ESPONTÁNEA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Cuándo sospechar:</strong>
+    <ul>
+      <li>HTA resistente (PA alta con 3 fármacos incluyendo diurético)</li>
+      <li>Hipopotasemia espontánea (K &lt;3.5 sin diuréticos) o severa con diuréticos</li>
+      <li>HTA con masa suprarrenal incidental</li>
+      <li>HTA de inicio antes de los 40 años · HTA familiar de inicio temprano</li>
+      <li>Síntomas de hipopotasemia: debilidad muscular, calambres, poliuria</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Algoritmo diagnóstico:</strong>
+    <ul>
+      <li><strong>Screening:</strong> Relación aldosterona/renina (RAR) en plasma · RAR >30 con aldosterona >15 ng/dL = positivo</li>
+      <li>Suspender espironolactona, eplerenona, amilorida 4 semanas antes · Suspender BB e IECAs 2 semanas antes</li>
+      <li><strong>Test de confirmación:</strong> carga salina IV (supresión de aldosterona en hiperaldosteronismo = no se suprime)</li>
+      <li><strong>TAC suprarrenal:</strong> adenoma (unilateral) vs hiperplasia bilateral</li>
+      <li><strong>Cateterismo venoso suprarrenal (CVS):</strong> gold standard para lateralizar (necesario antes de cirugía)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Adenoma unilateral — Cirugía:</strong>
+      Adrenalectomía laparoscópica (curación de HTA en 30–60%, mejoría en 90%) · Corrección de hipopotasemia preoperatoria
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>Hiperplasia bilateral o no candidato a cirugía:</strong>
+      Espironolactona 25–400mg/día (antagonista aldosterona) · Eplerenona (menos efectos androgénicos) · Amilorida como alternativa
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endocrinología: diagnóstico y manejo · Cirugía laparoscópica si adenoma confirmado · CVS en centro especializado
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    PA y K post-cirugía o post-inicio de espironolactona · Ajustar antihipertensivos · Monitoreo de ginecomastia con espironolactona
+  </div>
+</div>
+</body>
+</html>
