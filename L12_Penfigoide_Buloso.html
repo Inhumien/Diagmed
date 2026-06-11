@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pénfigo Vulgar — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Pénfigo Vulgar / Eritematoso (L10) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">AMPOLLAS FLÁCCIDAS + EROSIONES MUCOSAS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Pénfigo vulgar extenso: pérdida de barrera cutánea → sepsis, deshidratación, desnutrición → hospitalizar con manejo similar a quemado
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Pénfigo vulgar — características:</strong>
+    <ul>
+      <li>Ampollas fláccidas sobre piel normal o eritematosa → erosiones dolorosas</li>
+      <li>Signo de Nikolsky (+): deslizamiento de piel perilesional con presión lateral</li>
+      <li>Afectación mucosa (90%): oral (erosiones), genital, nasal, conjuntival</li>
+      <li>Autoanticuerpos anti-desmogleína 1 y 3 (IgG)</li>
+      <li><strong>Pénfigo eritematoso:</strong> forma localizada, lesiones en cara/cuello/tronco, menos grave</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Biopsia perilesional: acantólisis intraepidérmica (células de Tzanck)</li>
+      <li>IFD biopsia: IgG intercelular en epidermis (patrón en "panal de abejas")</li>
+      <li>ELISA anti-desmogleína 1 y 3 (títulos correlacionan con actividad)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li>Prednisona 1mg/kg/día (hasta 80mg) — inducción · Reducir según respuesta</li>
+      <li>Rituximab 1000mg IV × 2 (días 1 y 15) — ahora 1ª línea en pénfigo moderado-severo · Alta eficacia, reduce dosis de corticoides</li>
+      <li>Azatioprina 2–2,5mg/kg/día o micofenolato como ahorradores de corticoides</li>
+      <li>Cuidado local de lesiones: compresas húmedas, antisépticos, analgesia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología urgente · Hospitalizar si extenso o mucosas comprometidas severamente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Anti-desmogleína como marcador de actividad · Densitometría por corticoides · Rituximab ha mejorado el pronóstico notoriamente
+  </div>
+</div>
+</body>
+</html>
