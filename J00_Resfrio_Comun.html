@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resfrio Comun — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🤧 Resfrio Comun (J00) — Manejo en APS</h1>
+<div class="flow">
+  <div class="box inicio">CONGESTION NASAL + RINORREA + ESTORNUDOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Signos de alarma (no es resfrio comun): fiebre mayor de 39°C persistente mayor de 3 dias, odinofagia severa con exudado, dificultad respiratoria, rigidez de nuca → evaluar causa bacteriana o complicacion
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentacion clinica:</strong>
+    <ul>
+      <li>Rinorrea (hialina → mucosa, NO indica sinusitis bacteriana), congestion nasal, estornudos</li>
+      <li>Odinofagia leve, tos, malestar general, fiebre baja o ausente</li>
+      <li>Inicio en 1-3 dias, duracion 7-10 dias · Autolimitado</li>
+      <li>Agentes: rinovirus (50%), coronavirus, VRS, adenovirus, parainfluenza</li>
+      <li>Transmision: gotas y contacto con superficies contaminadas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento sintomarico (NO ATB):</strong>
+    <ul>
+      <li>Paracetamol 1g c/8h o ibuprofeno 400mg c/8h para fiebre y dolor</li>
+      <li>Descongestionante nasal: oximetazolina nasal (maximo 3 dias, evitar en HTA)</li>
+      <li>Lavados nasales con suero salino (muy utiles, sin efectos adversos)</li>
+      <li>Antihistamínicos de 1ª generacion (clorfeniramina) para rinorrea abundante</li>
+      <li>Hidratacion adecuada · Reposo relativo</li>
+      <li>Vitamina C, zinc, echinacea: evidencia limitada, no recomendados de rutina</li>
+      <li>NO antibioticos (viral en el 100% de los casos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Consultar si: fiebre mayor de 39°C persistente mayor de 3 dias, empeoramiento progresivo, disnea, confusion, inmunosuprimido, nino menor de 3 meses
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Autolimitado en 7-10 dias. Educacion: lavado de manos, no compartir utensilios. Complicaciones: otitis media (ninos), sinusitis bacteriana (secundaria).
+  </div>
+</div>
+</body>
+</html>
