@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onicomicosis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💅 Onicomicosis (B35) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">UÑA ENGROSADA + DECOLORADA + FRIABLE</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y presentación:</strong>
+    <ul>
+      <li><strong>DLSO (distal-lateral subungueal, 90%):</strong> decoloración amarilla/blanca desde el borde libre, engrosamiento, onicolisis</li>
+      <li><strong>SSO (superficial blanca):</strong> manchas blancas en la superficie de la uña</li>
+      <li><strong>PSO (proximal subungueal):</strong> afecta la base de la uña · Asociado a inmunosupresión</li>
+      <li>Agentes: Trichophyton rubrum (80%), T. mentagrophytes, Candida (manos, inmunosuprimidos)</li>
+      <li>FR: hiperhidrosis, diabetes, inmunosupresión, traumatismos, pies planos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Tratar siempre con CONFIRMACIÓN MICOLÓGICA antes de antifúngico sistémico — muchas distrofias ungueales no son fúngicas y el tratamiento sistémico tiene efectos adversos
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Confirmación diagnóstica (obligatoria antes de oral):</strong>
+    <ul>
+      <li>KOH: hifas en el material subungueal (sensibilidad 80%)</li>
+      <li>Cultivo en Sabouraud (identifica especie, orienta tratamiento)</li>
+      <li>PAS en histología (mayor sensibilidad)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Oral (1ª línea, superior):</strong>
+      Terbinafina 250mg/día × 6 sem (manos) o 12 sem (pies) · o Itraconazol 400mg/día × 1 sem/mes × 3 meses (pulso) · Curación micológica 75–80%
+    </div>
+    <div class="col" style="background:#7e5109;color:#fff;">
+      <strong>Tópico (uña no matricular, leve):</strong>
+      Amorolfina laca 5% 1–2 vez/sem × 6–12 meses · Ciclopirox laca 8% diario × 6 meses · Menor eficacia que oral
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología: diagnóstico incierto · diabetes con onicomicosis extensa · falla a tratamiento · candidosis ungueal (requiere diferente esquema)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Controlar función hepática con terbinafina si tratamiento prolongado · Alta recurrencia (30% a 3 años) · Tratar tinea pedis concomitante · Calzado adecuado
+  </div>
+</div>
+</body>
+</html>
