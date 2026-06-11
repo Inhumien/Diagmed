@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitiligo — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;} .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⬜ Vitiligo (L80) — Evaluacion y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">MANCHAS BLANCAS BIEN DELIMITADAS EN PIEL</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Caracteristicas clinicas:</strong>
+    <ul>
+      <li>Maculas y parches acromicos (totalmente blancos), bien delimitados, en zonas de trauma o fotoexpuestas (koebner)</li>
+      <li>Localizacion: dorso de manos, cara periocular y perioral, genitales, axilas, rodillas, tobillos</li>
+      <li>Cabello blanco en la zona (leucotriquia)</li>
+      <li>Fluorescencia blanca brillante con lampara de Wood</li>
+      <li>Vitiligo segmentario: distribucion unilateral, rapida estabilizacion, peor respuesta al tratamiento</li>
+      <li>Asociado a: tiroiditis de Hashimoto, DM1, anemia perniciosa, Addison, alopecia areata</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Repigmentacion activa (vitiligo generalizado):</strong>
+      Tacrolimus 0,1% tópico (cara, zonas sensibles) 2 veces/dia. Corticoide topico potente (clobetasol, ciclos mensuales). Fototerapia NBUVB 3 veces/semana x 6-12 meses (mejor respuesta). Ruxolitinib crema 1,5% (inhibidor JAK1/2, aprobado 2022) · Muy eficaz.
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>Vitiligo estable o refractario:</strong>
+      Micropigmentacion (camuflaje permanente). Trasplante de melanocitos/piel (vitiligo estable segmentario). Camuflaje cosmetico. Autobronceador (dihidroxiacetona).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatologia: vitiligo extenso, fototerapia, ruxolitinib. Endocrinologia si autoinmunidad asociada (TSH, glicemia).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Fotoproteccion permanente en lesiones (quemaduras solares frecuentes). Impacto psicologico importante → apoyo psicologico. Screening de enfermedades autoinmunes asociadas. TSH anual.
+  </div>
+</div>
+</body>
+</html>
