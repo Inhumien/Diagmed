@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laberintitis / Neuronitis Vestibular — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🌀 Laberintitis / Neuronitis Vestibular (H83)</h1>
+<div class="flow">
+  <div class="box inicio">VÉRTIGO INTENSO SÚBITO + NÁUSEAS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ DESCARTAR ACV: Vértigo + signos neurológicos focales (diplopía, disartria, disfagia, ataxia, déficit motor) → RMN urgente · HINTS positivo = central
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características de vértigo periférico (laberintitis/neuronitis):</strong>
+    <ul>
+      <li>Vértigo rotatorio intenso de inicio súbito, empeora con movimientos de cabeza</li>
+      <li>Náuseas y vómitos importantes · Nistagmo horizontal unidireccional</li>
+      <li><strong>Sin</strong> síntomas neurológicos centrales</li>
+      <li>Laberintitis: compromete también la cóclea → hipoacusia + tinnitus asociados</li>
+      <li>Neuronitis vestibular: solo vértigo, sin pérdida auditiva · Causa viral probable</li>
+      <li>Resolución espontánea en días a semanas</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Examen HINTS (Head Impulse, Nystagmus, Test of Skew):</strong>
+    <ul>
+      <li>Head impulse test (+) → periférico (tranquilizador)</li>
+      <li>Nistagmo unidireccional horizontal → periférico</li>
+      <li>Sin skew deviation → periférico</li>
+      <li>HINTS central (cualquiera): head impulse (-), nistagmo multidireccional, skew (+) → RMN urgente</li>
+      <li>Audiometría si sospecha de laberintitis (hipoacusia)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Fase aguda (primeros 3 días):</strong> Dimenhidrinato 50mg VO/IM c/6–8h · Ondansetrón 4–8mg si vómitos · Diazepam 5mg c/8h (máximo 2–3 días)</li>
+      <li><strong>Evitar sedantes vestibulares &gt;72h</strong> (retardan compensación central)</li>
+      <li>Metilprednisolona 100mg/día con reducción gradual × 3 semanas (reduce duración de la neuronitis)</li>
+      <li><strong>Rehabilitación vestibular:</strong> ejercicios de Cawthorne-Cooksey desde el día 3 (clave para compensación)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 ORL: laberintitis con hipoacusia severa · Neurología/urgencias: HINTS central · RMN si sospecha central
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Mayoría resuelve en 4–6 semanas · Rehabilitación vestibular acelera recuperación · Si persiste &gt;3 meses → descartar Ménière · 15% recurrencia
+  </div>
+</div>
+</body>
+</html>
