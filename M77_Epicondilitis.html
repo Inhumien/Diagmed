@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epicondilitis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💪 Epicondilitis Lateral / Medial (M77) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR EN EPICÓNDILO DEL CODO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y presentación:</strong>
+    <ul>
+      <li><strong>Lateral ("codo de tenista"):</strong> dolor epicóndilo lateral, irradiación al antebrazo, agravado por extensión de muñeca y prensión</li>
+      <li><strong>Medial ("codo de golfista"):</strong> dolor epicóndilo medial, agravado por flexión de muñeca</li>
+      <li>Test de Thomson (+) en lateral: dolor al extender la muñeca contra resistencia</li>
+      <li>FR: movimientos repetitivos de muñeca/antebrazo, trabajo manual, deportes de raqueta</li>
+      <li>Tendinopatía (degeneración del tendón), no inflamación verdadera</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico clínico:</strong>
+    <ul>
+      <li>Rx codo (descartar calcificaciones, artropatía) — generalmente normal</li>
+      <li>Ecografía: engrosamiento tendinoso, neovascularización (confirma tendinopatía)</li>
+      <li>RMN si diagnóstico incierto o refractario (rotura parcial del tendón)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Fase aguda (1ª línea):</strong>
+      Reposo relativo · Hielo local · AINEs tópicos (diclofenaco gel) o AINEs orales x 2 semanas · Codera/órtesis de descarga · Fisioterapia (excéntrico, ultrasonido)
+    </div>
+    <div class="col" style="background:#b7770d;color:#fff;">
+      <strong>Sin respuesta en 6–8 semanas:</strong>
+      Infiltración corticoide (metilprednisolona 40mg + lidocaína) — alivio rápido pero recurrencia mayor · PRP (plasma rico en plaquetas) — mejor pronóstico a largo plazo
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Rehabilitación (clave para recuperación duradera):</strong>
+    Ejercicios excéntricos de muñeca · Fortalecimiento del manguito rotador · Corrección de técnica deportiva o ergonomía laboral
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Traumatología/fisioterapia: falla a 3–6 meses de tratamiento conservador · rotura tendinosa · cirugía (desbridamiento) en refractarios
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 6–8 semanas · 80–90% resuelve con tratamiento conservador en 6–12 meses · Modificar actividades causales
+  </div>
+</div>
+</body>
+</html>
