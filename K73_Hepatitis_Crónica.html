@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hepatitis Crónica — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Hepatitis Crónica (K73) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ELEVACIÓN PERSISTENTE DE TRANSAMINASAS >6 MESES</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Causas más frecuentes:</strong>
+    <ul>
+      <li>VHC crónica · VHB crónica · MAFLD/NASH (esteatohepatitis no alcohólica)</li>
+      <li>Hepatitis autoinmune · Hemocromatosis · Wilson · Déficit de alfa-1-antitripsina</li>
+      <li>Fármacos (metotrexato, isoniazida, estatinas, amiodarona)</li>
+      <li>Alcohol</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Signos de cirrosis descompensada: ascitis, encefalopatía, hemorragia variceal → Manejo de complicaciones + derivación urgente hepatología
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio etiológico:</strong>
+    <ul>
+      <li>HBsAg, Anti-HBc, Anti-HCV (con carga viral si positivo)</li>
+      <li>ANA, ASMA, Anti-LKM1 (hepatitis autoinmune) · IgG total</li>
+      <li>Ferritina + saturación transferrina (hemocromatosis) · Ceruloplasmina (Wilson &lt;40 años)</li>
+      <li>Alfa-1-antitripsina · TSH · Perfil lipídico · Glicemia/HbA1c (MAFLD)</li>
+      <li>Ecografía abdominal · FibroScan o biopsia (estadificación de fibrosis)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>VHC crónica:</strong>
+      Antivirales de acción directa (DAA): sofosbuvir/ledipasvir o glecaprevir/pibrentasvir · 8–12 semanas · Tasa de curación >95%
+    </div>
+    <div class="col" style="background:#7e5109;color:#fff;">
+      <strong>VHB crónica (indicación de tratamiento):</strong>
+      Tenofovir o Entecavir (análogos de nucleósidos) indefinidos · Evaluar con hepatólogo
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Hepatitis autoinmune:</strong>
+    Prednisona 1mg/kg/día + Azatioprina 50mg/día → reducción gradual hasta dosis mínima efectiva
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hepatología: toda hepatitis crónica confirmada · Fibrosis avanzada (F3–F4) · Candidato a tratamiento antiviral · Screening CHC
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Transaminasas + carga viral cada 3–6 meses · Eco + AFP cada 6 meses (screening CHC si F3–F4 o cirrosis) · Densitometría si corticoides
+  </div>
+</div>
+</body>
+</html>
