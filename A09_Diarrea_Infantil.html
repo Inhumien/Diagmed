@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome Diarreico Agudo Infantil — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>👶 Diarrea Aguda Infantil (A09) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DIARREA AGUDA EN NINO — EVALUAR DESHIDRATACION</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ DESHIDRATACION SEVERA: letargia, ojos hundidos, pliegue muy lento, llanto sin lagrimas, oliguria → Bolo SF 20 mL/kg IV en 30 min urgente.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Escala de deshidratacion (OMS):</strong>
+    <ul>
+      <li>Sin deshidratacion: alerta, ojos normales, bebe normal</li>
+      <li>Moderada (plan B): 2 de → inquieto/irritable, ojos hundidos, bebe ansiosamente</li>
+      <li>Severa (plan C): 2 de → letargico, ojos muy hundidos, no puede beber</li>
+      <li>Causas: Rotavirus (mas frecuente en menores de 5 años), norovirus, E. coli, Salmonella</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#117a65;color:#fff;">
+      <strong>Plan A (sin deshidratacion):</strong>
+      Continuar lactancia materna. SRO 10 mL/kg por cada deposicion liquida. Alimentacion normal. Zinc 20mg/dia x 10 dias (mayores de 6 meses, reduce duracion y severidad).
+    </div>
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Plan B (deshidratacion moderada):</strong>
+      SRO 75 mL/kg en 4h (supervisado en centro de salud). Reevaluar cada hora. Pasar a plan A al rehidratar. Si vomitos: SRO en sorbos frecuentes o por SNG.
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    Plan C (severa): SF 0,9% 100 mL/kg IV (menores de 12 meses en 3h, mayores en 3h). Reevaluar cada 30 min. NO antidiarreicos (loperamida contraindicada en menores de 2 años). ATB solo si bacteria invasora o colera.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizacion: deshidratacion severa, menor de 3 meses, vomitos incoercibles, sangre en deposiciones + fiebre alta, falla a hidratacion oral.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Vacuna rotavirus previene el 85% de los casos graves. Lactancia materna protectora. Lavado de manos. Agua segura. Control nutricional post-episodio.
+  </div>
+</div>
+</body>
+</html>
