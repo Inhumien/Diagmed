@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mononeuritis Múltiple — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⚡ Mononeuritis Múltiple (G58) — Evaluación</h1>
+<div class="flow">
+  <div class="box inicio">AFECTACIÓN SIMULTÁNEA DE NERVIOS PERIFÉRICOS NO CONTIGUOS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Definición y presentación:</strong>
+    <ul>
+      <li>Afectación de ≥2 nervios periféricos individuales, no contiguos, en momentos distintos o simultáneos</li>
+      <li>Déficit motor y/o sensitivo en distribución de nervios específicos (cubital + ciático, etc.)</li>
+      <li>Inicio agudo o subagudo, asimétrico · Puede progresar a polineuropatía</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ La mononeuritis múltiple es SIEMPRE secundaria — buscar causa sistémica activamente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Causas y estudio:</strong>
+    <ul>
+      <li>Vasculitis: PAN, GPA, crioglobulinemia, vasculitis reumatoide → ANCA, crioglobulinas, anti-dsDNA, FR</li>
+      <li>Diabetes mellitus (amiotrofia diabética) · Lepra · VIH · Lyme · CMV</li>
+      <li>Sarcoidosis · Linfoma · Amiloidosis</li>
+      <li>EMG/velocidad de conducción: localiza y caracteriza los nervios afectados</li>
+      <li>Biopsia de nervio sural (vasculitis) + biopsia de músculo</li>
+      <li>Hemograma, VSH, PCR, ANA, ANCA, crioglobulinas, VHC, VHB, VIH, glicemia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratar la causa subyacente:</strong>
+    <ul>
+      <li>Vasculitis: corticoides + ciclofosfamida o rituximab</li>
+      <li>Diabetes: optimizar control glicémico</li>
+      <li>Lepra: esquema multidroga (rifampicina + dapsona + clofazimina)</li>
+      <li>Analgesia neuropática: gabapentina, pregabalina, duloxetina</li>
+      <li>Fisioterapia + rehabilitación</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurología urgente · Reumatología si vasculitis · Infectología si causa infecciosa
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Pronóstico según causa · Vasculitis tratada: buena respuesta · EMG de control para evaluar recuperación · Rehabilitación precoz
+  </div>
+</div>
+</body>
+</html>
