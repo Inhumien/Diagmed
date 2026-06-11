@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neumonía — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 Neumonía Adquirida en la Comunidad (J15/J12) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE + TOS + INFILTRADO PULMONAR</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ NEUMONÍA GRAVE (criterios ATS/IDSA): FR ≥30 · PA ≤90/60 · BUN ≥20 · Confusión · SpO₂ &lt;90% · Afectación multilobar → UCI
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación y score CURB-65:</strong>
+    <ul>
+      <li>Confusión · Urea &gt;19mg/dL · Respiración &gt;30/min · PA baja · 65 años o más</li>
+      <li>0–1: ambulatorio · 2: hospitalizar · 3–5: UCI</li>
+      <li>Agentes: S. pneumoniae (más frecuente), atípicos (Mycoplasma, Chlamydia), virus, H. influenzae</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Rx tórax AP y lateral (confirma infiltrado)</li>
+      <li>Hemograma, PCR, función renal, oximetría</li>
+      <li>Cultivos si hospitalización: hemocultivos ×2, esputo (si expectoración)</li>
+      <li>Antígenos urinarios: neumococo y Legionella</li>
+      <li>TAC si: duda diagnóstica, evolución atípica, sospecha de absceso</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Ambulatorio (CURB-65 0–1):</strong>
+      Amoxicilina 1g c/8h x 5–7 días (1ª línea) · o Azitromicina 500mg/día x 5 días (atípicos) · Amoxicilina-clavulánico si comorbilidades
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Hospitalizado (CURB-65 ≥2):</strong>
+      Ceftriaxona 2g/día IV + Azitromicina 500mg/día IV (cobertura de atípicos) · o Levofloxacino 750mg/día · UCI: ampicilina-sulbactam + azitromicina
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Duración:</strong>
+    5–7 días si buena respuesta · Legionella o bacteriémica: 10–14 días · Paso a oral a las 48–72h si mejora clínica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: CURB-65 ≥2 · SpO₂ &lt;90% · Comorbilidades descompensadas · Sin respuesta en 48h · Derrame paraneumónico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Rx tórax de control a las 6–8 semanas (resolución) · Especialmente en &gt;50 años o fumadores (descartar neoplasia subyacente) · Vacunación: neumocócica + influenza
+  </div>
+</div>
+</body>
+</html>
