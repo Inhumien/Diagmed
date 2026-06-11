@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preeclampsia / Eclampsia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🤰 Preeclampsia / Eclampsia (O13/O14/O15) — Urgencia Obstétrica</h1>
+<div class="flow">
+  <div class="box inicio">HTA EN EMBARAZO ≥20 SEMANAS + PROTEINURIA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ECLAMPSIA: Convulsiones en contexto de preeclampsia → MgSO₄ IV inmediato + interrupción del embarazo urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación:</strong>
+    <ul>
+      <li><strong>HTA gestacional:</strong> PAS ≥140 o PAD ≥90 después de semana 20, sin proteinuria</li>
+      <li><strong>Preeclampsia:</strong> HTA + proteinuria ≥300mg/24h (o ratio albúmina/creatinina ≥30mg/g)</li>
+      <li><strong>Preeclampsia severa:</strong> PAS ≥160 o PAD ≥110 · Trombocitopenia &lt;100.000 · Creatinina &gt;1.1 · Transaminasas >2x normal · Cefalea severa · Edema pulmonar</li>
+      <li><strong>Eclampsia:</strong> Preeclampsia + convulsiones</li>
+      <li><strong>HELLP:</strong> Hemólisis + Enzimas hepáticas elevadas + Plaquetopenia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>PA cada 15 min · Hemograma + plaquetas · Función renal y hepática · LDH · Proteinuria</li>
+      <li>Monitoreo fetal: NST, ecografía biofísica, Doppler umbilical</li>
+      <li>Fondo de ojo si cefalea severa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Preeclampsia no severa (&lt;37 sem):</strong>
+      Hospitalizar · PA objetivo &lt;155/105 · Labetalol 200mg c/8h o Nifedipino LP 30–60mg/día · MgSO₄ profiláctico · Maduración pulmonar fetal si &lt;34 sem · Interrupción a las 37 sem
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Preeclampsia severa / Eclampsia:</strong>
+      MgSO₄ 4g IV en 20 min → 1g/h infusión (anticonvulsivante) · Labetalol IV o Nifedipino IV (crisis hipertensiva) · Interrupción del embarazo sin demora (independiente de EG)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Criterios de MgSO₄ (anticonvulsivo, NO antihipertensivo):</strong>
+    Continuar 24–48h post-parto · Toxicidad: arreflexia → hipoapnea → paro respiratorio · Antídoto: gluconato de calcio 1g IV
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar toda preeclampsia · UCI obstétrica si severa · Obstetricia + Neonatología · Interrupción del embarazo es el único tratamiento definitivo
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-parto:</strong>
+    PA puede aumentar en las primeras 48h · Continuar antihipertensivos · Control a los 7 días · Mayor riesgo cardiovascular a largo plazo · AAS 100mg desde semana 12–16 en próximo embarazo (profilaxis)
+  </div>
+</div>
+</body>
+</html>
