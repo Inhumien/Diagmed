@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erisipela — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Erisipela (A46) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">PLACA ERITEMATOSA CON BORDES BIEN DEFINIDOS + FIEBRE</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ FASCITIS NECROTIZANTE: Dolor desproporcionado · Piel violácea/necrótica · Crepitación · Gas en TAC → CIRUGÍA URGENTE
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características diferenciadoras de celulitis:</strong>
+    <ul>
+      <li>Placa eritematosa con <strong>bordes bien delimitados y elevados</strong> (signo cardinal)</li>
+      <li>Piel tensa, brillante, caliente, muy dolorosa</li>
+      <li>Fiebre alta con escalofríos, toxicidad sistémica</li>
+      <li>Localización: cara (eritema facial bilateral, "alas de mariposa") y piernas</li>
+      <li>Agente: Streptococcus pyogenes (grupo A) — casi exclusivo</li>
+      <li>Puerta de entrada: tinea pedis, herida, úlcera, onicomicosis</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico clínico:</strong>
+    <ul>
+      <li>Marcar el borde de la lesión con lapicero (monitorear progresión)</li>
+      <li>Hemograma (leucocitosis), PCR, función renal</li>
+      <li>Hemocultivos si sepsis · ASO elevado (confirma estreptococo)</li>
+      <li>Erisipela ampollar/hemorrágica: más severa, siempre hospitalizar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Leve — Ambulatorio:</strong>
+      Penicilina VK 500mg c/6h x 10–14 días (1ª línea) · Amoxicilina 500mg c/8h · Alérgico: Clindamicina 300mg c/8h · Reposo + elevación del miembro
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Severa / ampollar / hemorrágica — Hospitalizar:</strong>
+      Penicilina G sódica 2–4 millones UI IV c/4–6h · Agregar cloxacilina si S. aureus sospechado · Curaciones locales · Control en 24–48h
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: erisipela facial · ampollar o hemorrágica · sepsis · inmunosuprimido · diabetes · no mejoría en 48–72h ambulatorio
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 48–72h · Tratar puerta de entrada (tiña pedis) · Profilaxis con penicilina benzatínica 1,2M UI/mes si ≥2 episodios/año
+  </div>
+</div>
+</body>
+</html>
