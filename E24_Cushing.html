@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindrome de Cushing — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Sindrome de Cushing (E24) — Evaluacion</h1>
+<div class="flow">
+  <div class="box inicio">OBESIDAD CENTRAL + HIRSUTISMO + HTA + DM</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones clinicas:</strong>
+    <ul>
+      <li>Obesidad central con extremidades delgadas, cara de luna llena, joroba de bufalo</li>
+      <li>Estrias purpureas anchas (mayor de 1 cm) en abdomen, mamas, muslos</li>
+      <li>Hirsutismo, acne, amenorrea · HTA · DM2 de reciente diagnostico</li>
+      <li>Debilidad muscular proximal · Osteoporosis · Ecchimosis facil · Cicatrizacion lenta</li>
+      <li>Causa mas frecuente: corticoides exogenos (Cushing iatrogeno) · Adenoma hipofisario (Enfermedad de Cushing, 70%) · Adenoma suprarrenal · Tumor ectopico productor de ACTH</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnostico en 3 pasos:</strong>
+    Paso 1 (screening): cortisol libre urinario 24h (mayor de 3x LSN) o test de supresion con 1mg dexametasona nocturno (cortisol mayor de 1,8 mcg/dL = anormal) o cortisol salival nocturno. Paso 2: confirmar con 2 pruebas alteradas. Paso 3 (etiologia): ACTH plasmatica → si alta: Cushing ACTH-dependiente (hipofisario vs ectopico) · Si baja: suprarrenal. RMN hipofisis · TAC suprarrenales · cateterizacion senos petrosos.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Enfermedad de Cushing (adenoma hipofisario):</strong>
+      Cirugia transesfenoidal (curacion 70-80%). Radioterapia si falla. Pasireotida (analogo somatostatina) o cabergolina si no operable.
+    </div>
+    <div class="col" style="background:#7e5109;color:#fff;">
+      <strong>Suprarrenal / Ectopico:</strong>
+      Adrenalectomia unilateral (adenoma). Buscar tumor ectopico (TAC/PET). Ketoconazol, metirapona o mifepristona si espera quirurgica.
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endocrinologia. Neurocirugia si adenoma hipofisario. Cirugia si adenoma suprarrenal.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Post-cirugia: insuficiencia suprarrenal (hidrocortisona de reemplazo hasta recuperacion del eje). Cortisol a los 3-6 meses. Densitometria (osteoporosis). Control de HTA y DM.
+  </div>
+</div>
+</body>
+</html>
