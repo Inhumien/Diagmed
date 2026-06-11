@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leptospirosis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🐀 Leptospirosis (A27) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE + MIALGIAS + EXPOSICIÓN A AGUA/ROEDORES</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SÍNDROME DE WEIL: Ictericia + IRA + hemorragia (hemoptisis, HDA) + uveítis → Hospitalización + penicilina IV · Mortalidad 5–15%
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Fases clínicas:</strong>
+    <ul>
+      <li><strong>Fase leptospirémica (días 1–7):</strong> fiebre alta de inicio brusco, mialgias intensas (pantorrillas), cefalea, sufusión conjuntival, rash</li>
+      <li><strong>Fase inmune (días 7–14):</strong> puede mejorar transitoriamente o progresar a Weil</li>
+      <li>Factores de riesgo: contacto con agua inundada, agricultores, veterinarios, trabajadores de alcantarilla, natación en ríos</li>
+      <li>Transmisión: orina de roedores/animales infectados en agua o suelo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>MAT (microaglutinación) título ≥1/800 o aumento 4x entre muestras (gold standard, tardío)</li>
+      <li>PCR en sangre/orina (primera semana, alta sensibilidad)</li>
+      <li>ELISA IgM (disponible, positivo desde semana 1–2)</li>
+      <li>Hemograma: leucocitosis · CPK elevada · Bilirrubina elevada · Creatinina elevada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#117a65;color:#fff;">
+      <strong>Leve (ambulatorio):</strong>
+      Doxiciclina 100mg c/12h x 7 días · o Amoxicilina 500mg c/8h x 7 días · Iniciar sin esperar confirmación diagnóstica
+    </div>
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Moderada-severa (hospitalizar):</strong>
+      Penicilina G sódica 1,5 millones UI IV c/6h x 7 días · o Ceftriaxona 1g/día IV · Soporte renal (diálisis si IRA severa) · Soporte respiratorio
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: ictericia · IRA · trombocitopenia · hemorragia · Síndrome de Weil · NOTIFICACIÓN OBLIGATORIA
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Prevención:</strong>
+    Doxiciclina 200mg/semana (profilaxis en exposición laboral o post-desastre) · Botas de goma en zonas inundadas · Control de roedores · No vacuna para humanos disponible en Chile
+  </div>
+</div>
+</body>
+</html>
