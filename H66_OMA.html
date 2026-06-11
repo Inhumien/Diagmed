@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otitis Media Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>👂 Otitis Media Aguda (H66) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">OTALGIA + FIEBRE + TÍMPANO ERITEMATOSO/ABOMBADO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ COMPLICACIONES: Mastoiditis · Meningitis · Parálisis facial · Absceso cerebral → ATB IV + ORL urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios diagnósticos (todos):</strong>
+    <ul>
+      <li>Inicio agudo de síntomas · Evidencia de efusión en oído medio (abombamiento MT)</li>
+      <li>Signos de inflamación: eritema MT + otalgia</li>
+      <li>Agentes: S. pneumoniae, H. influenzae, M. catarrhalis</li>
+      <li>Más frecuente en niños &lt;2 años · Factor de riesgo: guardería, lactancia artificial, tabaquismo pasivo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Observación (sin ATB inmediato):</strong>
+      &gt;2 años con síntomas leves-moderados · Amoxicilina de rescate si no mejora en 48–72h · Analgesia · Evaluación a las 48–72h
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>ATB inmediato:</strong>
+      &lt;2 años · Bilateral · Otalgia severa · Fiebre &gt;39°C · Otorrea · Amoxicilina 80–90mg/kg/día c/8h × 10 días (niños &lt;2a) o 5 días (>2a)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Falla a amoxicilina (persiste 48–72h):</strong>
+    Amoxicilina-clavulánico 90mg/kg/día · Ceftriaxona 50mg/kg/día IM × 3 días · Timpanocentesis si tóxico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 ORL: OMA recurrente (≥3 en 6 meses) → tubos de ventilación · Mastoiditis · Colesteatoma · Hipoacusia persistente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Otoscopía de control a las 4 semanas · Hipoacusia conductiva puede persistir 3 meses · Vacunación neumocócica previene OMA
+  </div>
+</div>
+</body>
+</html>
