@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Influenza — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🤧 Influenza / Influenza H1N1 (J10) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SÍNDROME GRIPAL AGUDO — EVALUAR GRAVEDAD Y RIESGO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ INFLUENZA GRAVE: SpO₂ &lt;94% · FR >30 · Hipotensión · Alteración conciencia · Embarazo + disnea → Oseltamivir IV + hospitalización urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Inicio súbito: fiebre alta (38.5–40°C), escalofríos, cefalea intensa</li>
+      <li>Mialgias y artralgias severas · Postración · Tos seca</li>
+      <li>Rinorrea leve · Odinofagia · Fatiga marcada</li>
+      <li>H1N1: mayor afectación en jóvenes, embarazadas, obesos, inmunosuprimidos</li>
+      <li>Complicaciones: neumonía (viral o bacteriana secundaria), miocarditis, encefalitis</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico en contexto epidémico (temporada de influenza)</li>
+      <li>Test rápido de antígeno (nasofaríngeo): sensibilidad 50–70%, especificidad alta</li>
+      <li>PCR para influenza (gold standard, mayor sensibilidad) — para casos graves o dudosos</li>
+      <li>Rx tórax si sospecha de neumonía · SpO₂</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Grupo de alto riesgo o enfermedad grave:</strong>
+      Oseltamivir 75mg c/12h x 5 días · Iniciar dentro de 48h del inicio síntomas (mayor beneficio) · Iniciar igualmente si >48h en caso grave · Zanamivir inhalado alternativa
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Paciente sano sin factores de riesgo:</strong>
+      Tratamiento sintomático: paracetamol 1g c/8h · Ibuprofeno · Hidratación · Reposo · NO aspirina en menores (síndrome de Reye)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Grupos de alto riesgo (antiviral siempre):</strong>
+    Embarazadas · Mayores de 65 años · Niños &lt;5 años · Inmunosuprimidos · Obesos mórbidos · Cardiopatía/neumopatía crónica · Diabéticos
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: SpO₂ &lt;94% · neumonía · embarazada con disnea · inmunosuprimido · falla clínica en 48h
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Prevención:</strong>
+    Vacuna anual (campaña invernal) · Lavado de manos · Mascarilla · Aislamiento domiciliario 5–7 días · Profilaxis: oseltamivir 75mg/día x 10 días en contactos de alto riesgo
+  </div>
+</div>
+</body>
+</html>
