@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enfermedad de Von Willebrand — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🩸 Enfermedad de Von Willebrand (D68) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SANGRADO MUCOCUTÁNEO RECURRENTE</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síntomas sugerentes:</strong>
+    <ul>
+      <li>Epistaxis frecuentes y prolongadas · Menorragia severa</li>
+      <li>Sangrado excesivo tras extracciones dentales o cirugías menores</li>
+      <li>Equimosis fáciles · Sangrado gingival</li>
+      <li>Trastorno autosómico dominante más frecuente (1% de la población)</li>
+      <li>Historia familiar positiva (padres afectados)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Sangrado activo grave (GI, SNC, quirúrgico) → Desmopresina IV o concentrado FvW/FVIII urgente + hematología
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Tipos y diagnóstico:</strong>
+    <ul>
+      <li><strong>Tipo 1 (80%):</strong> déficit cuantitativo parcial · TTPA normal o ligeramente prolongado</li>
+      <li><strong>Tipo 2:</strong> déficit cualitativo (multímeros anormales) · Varios subtipos</li>
+      <li><strong>Tipo 3 (raro):</strong> déficit grave, similar a hemofilia</li>
+      <li>Laboratorio: VWF:Ag · VWF:RCo (actividad) · FVIII · TTPA · Grupo sanguíneo (O tiene niveles más bajos)</li>
+      <li>Puede requerir múltiples determinaciones (niveles fluctúan)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tipo 1 — procedimientos menores/menorragia:</strong>
+      Desmopresina (DDAVP) 0,3mcg/kg IV o intranasal · Ácido tranexámico 1g c/8h · ACO (menorragia) · Antifibrinolíticos
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Tipo 2–3 / cirugía mayor / sangrado severo:</strong>
+      Concentrado FvW/FVIII (Haemate P, Wilate) · Dosis según tipo y situación clínica · Plan preoperatorio con hematología
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematología: diagnóstico · tipos 2 y 3 · cirugía programada · sangrado severo · menorragia refractaria
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Evitar AINEs y aspirina · Carnet de coagulopatía · Plan perioperatorio individualizado · Screening familiar
+  </div>
+</div>
+</body>
+</html>
