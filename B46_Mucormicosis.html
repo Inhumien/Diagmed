@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mucormicosis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🍄 Mucormicosis Rinocerebral (B46) — Emergencia</h1>
+<div class="flow">
+  <div class="box inicio">NECROSIS NASAL/PALATINA + INMUNOSUPRESIÓN</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ MORTALIDAD 50–80% — Tratamiento médico-quirúrgico urgente e inmediato · Cada hora sin tratamiento empeora el pronóstico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Dolor facial, cefalea intensa, fiebre, obstrucción nasal</li>
+      <li>Secreción nasal negruzca o sangrado · Necrosis de cornetes, paladar, órbita</li>
+      <li>Proptosis, oftalmoplejia, pérdida visual (extensión orbitaria)</li>
+      <li>Escar negra en paladar o cornetes (signo tardío pero característico)</li>
+      <li>FR: DM descompensada (más frecuente) · neutropenia prolongada · trasplante · corticoides · COVID-19 severo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico urgente:</strong>
+    <ul>
+      <li>TAC senos paranasales + órbitas + cerebro: opacificación + erosión ósea + extensión orbital/cerebral</li>
+      <li>RMN (mejor para compromiso SNC y vascular)</li>
+      <li>Biopsia de tejido necrótico (urgente): hifas anchas no septadas en ángulo recto (Mucor)</li>
+      <li>Tinción KOH y cultivo · Glucemia · hemograma</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Triple estrategia simultánea:</strong>
+    <ul>
+      <li><strong>1. Antifúngico:</strong> Anfotericina B liposomal 5–10mg/kg/día IV (1ª línea, nefrotóxico) · Posaconazol como alternativa/mantenimiento</li>
+      <li><strong>2. Cirugía agresiva:</strong> desbridamiento quirúrgico amplio de tejido necrótico (puede requerir exenteración orbitaria)</li>
+      <li><strong>3. Control de la inmunosupresión:</strong> corregir hiperglicemia urgente · reducir corticoides si posible · estimular recuperación de neutrófilos (G-CSF)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI · Infectología + Cirugía maxilofacial + ORL · Oftalmología · Hematología si neutropenia
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Anfotericina hasta estabilización → paso a posaconazol oral (mantenimiento 6–12 meses) · Cirugías reconstructivas diferidas · Monitoreo de función renal con anfotericina
+  </div>
+</div>
+</body>
+</html>
