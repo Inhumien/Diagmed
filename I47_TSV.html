@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taquicardia Supraventricular — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>💓 Taquicardia Supraventricular (I47) — Manejo Urgente</h1>
+<div class="flow">
+  <div class="box inicio">PALPITACIONES BRUSCAS + FC 150-250 LPM + QRS ESTRECHO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ TSV INESTABLE: hipotension, sincope, angina, edema pulmonar → Cardioversion electrica sincronizada 50-100J INMEDIATA. No perder tiempo con farmaco.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y presentacion:</strong>
+    <ul>
+      <li>TSVP (paroxistica): inicio y fin brusco. Mecanismo reentrada AV o intranodal (AVNRT la mas frecuente). Adultos jovenes, sin cardiopatia.</li>
+      <li>Flutter auricular: FC tipica 150 lpm (2:1), ondas de sierra en II, III, aVF.</li>
+      <li>Fibrilacion auricular: QRS irregular, ausencia de onda P. (ver I48)</li>
+      <li>Sintomas: palpitaciones, mareos, presion torácica, sincope, poliuria post-TSV.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>TSV estable — Maniobras vagales (1ª linea):</strong>
+      Maniobra de Valsalva modificada (supino, piernas en alto 45°, soplido 40 mmHg x 15s → decubito) · Masaje del seno carotideo (auscultar primero). Conversion hasta 50%.
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Si falla vagal — Adenosina:</strong>
+      6mg IV en bolo rapido (vena antecubital) + flush SF 20 mL · Si no convierte: 12mg · Si no: 12mg nuevamente · Advertir al paciente: sensacion de muerte, rubor, broncoespasmo (segundos).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Profilaxis (TSV recurrente):</strong>
+    Betabloqueadores (metoprolol) o verapamilo. Ablacion con cateter (curativa, >95% eficacia) — tratamiento definitivo preferido.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cardiologia / Electrofisiologia: TSV recurrente o sintomatica → ablacion. ECG en ritmo sinusal (buscar WPW: delta wave).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Holter si episodios frecuentes. Ecocardiograma (cardiopatia subyacente). Evitar cafeina, alcohol, privacion de sueno (desencadenantes). Ensenار maniobra de Valsalva al paciente.
+  </div>
+</div>
+</body>
+</html>
