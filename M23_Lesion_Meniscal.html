@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesión Meniscal — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #b7770d; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#b7770d;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦴 Lesión Meniscal de Rodilla (M23) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR DE RODILLA + BLOQUEO O CHASQUIDO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Dolor en línea articular medial (menisco medial, más frecuente) o lateral</li>
+      <li>Chasquido al movilizar · Bloqueo (desgarro en asa de cubo)</li>
+      <li>Derrame articular · Limitación de flexión completa</li>
+      <li>Test de McMurray (+): dolor/chasquido con rotación + flexoextensión</li>
+      <li>Trauma agudo (jóvenes deportistas) vs degenerativo crónico (>40 años, con gonartrosis)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ BLOQUEO AGUDO COMPLETO (rodilla bloqueada en flexión, no extiende): Desgarro en asa de cubo → artroscopía urgente (necrosis meniscal en horas)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Rx rodilla AP en carga (descartar artrosis, fractura)</li>
+      <li><strong>RMN rodilla</strong> (gold standard): tipo de desgarro, extensión, otros ligamentos</li>
+      <li>Clasificación de desgarro: horizontal, radial, longitudinal, asa de cubo, complejo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento conservador (degenerativo, adulto mayor):</strong>
+      Reposo relativo · Hielo · AINEs · Fisioterapia (cuádriceps) · Infiltración si derrame · Muchos resuelven sin cirugía
+    </div>
+    <div class="col" style="background:#b7770d;color:#fff;">
+      <strong>Artroscopía (indicaciones):</strong>
+      Bloqueo mecánico · Desgarro traumático en joven (meniscectomía parcial o reparación) · Síntomas persistentes &gt;3 meses pese a conservador
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Traumatología: bloqueo agudo (urgente) · joven con desgarro traumático · falla a tratamiento conservador · reparación meniscal en jóvenes
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-artroscopía:</strong>
+    Fisioterapia 6–12 semanas · Retorno deportivo según tipo de cirugía (meniscectomía: 4–6 semanas · reparación: 4–6 meses) · Riesgo de gonartrosis si meniscectomía
+  </div>
+</div>
+</body>
+</html>
