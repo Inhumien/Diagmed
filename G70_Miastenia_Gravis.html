@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miastenia Gravis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Miastenia Gravis (G70) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DEBILIDAD MUSCULAR FLUCTUANTE + FATIGABILIDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ CRISIS MIASTÉNICA: Debilidad respiratoria aguda · CV &lt;15 mL/kg · SpO₂ &lt;90% → UCI + ventilación mecánica + plasmaféresis o IGIV urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Características clínicas:</strong>
+    <ul>
+      <li>Ptosis palpebral y diplopia (90% — inicio frecuente)</li>
+      <li>Debilidad de músculos oculares, faciales, bulbares (disartria, disfagia)</li>
+      <li>Debilidad de extremidades de predominio proximal</li>
+      <li>Síntomas empeoran con el esfuerzo y al final del día, mejoran con el reposo</li>
+      <li>Anticuerpos anti-receptor de acetilcolina (AChR) en 85% · Anti-MuSK en 5%</li>
+      <li>Asociación con timoma (15%) → TAC tórax obligatorio</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Test del hielo (ptosis): mejora con frío en 2 min (sensibilidad 80%)</li>
+      <li>Test de edrofonio (Tensilon): reversión transitoria de ptosis/diplopia</li>
+      <li>Anti-AChR y anti-MuSK séricos</li>
+      <li>EMG con estimulación repetitiva: decremento &gt;10% (patognomónico)</li>
+      <li>SFEMG (fibra única): alta sensibilidad · TAC tórax (timoma)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento sintomático + inmunosupresor:</strong>
+      Piridostigmina 30–60mg c/4–6h (anticolinesterásico) · Prednisona 0,5–1mg/kg/día + azatioprina 2mg/kg/día (mantenimiento) · Micofenolato alternativa
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Crisis miasténica:</strong>
+      Plasmaféresis (5 sesiones en 10 días) · o IGIV 2g/kg en 5 días · Suspender piridostigmina en fase aguda · Timectomía si timoma o generalizada &lt;60 años
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Fármacos que empeoran MG (evitar):</strong>
+    Aminoglucósidos · fluoroquinolonas · betabloqueadores · bloqueadores neuromusculares · cloroquina · penicilamina · estatinas (con precaución)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurología especialista · UCI si crisis · Cirugía torácica si timoma · Timectomía en generalizada &lt;60 años
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Función respiratoria (CV) · Ajuste de piridostigmina · PFP con inmunosupresores · Anti-AChR como marcador de actividad · Evitar precipitantes de crisis (infecciones, calor, estrés, cirugía)
+  </div>
+</div>
+</body>
+</html>
