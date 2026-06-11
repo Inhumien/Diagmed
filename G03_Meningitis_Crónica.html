@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meningitis Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Meningitis Bacteriana Aguda (G00) — Emergencia</h1>
+<div class="flow">
+  <div class="box inicio">TRÍADA: FIEBRE + CEFALEA + RIGIDEZ DE NUCA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA: No demorar ATB por esperar PL · Si hay signos de HIC o focos neurológicos → TAC PRIMERO → luego PL · ATB dentro de los primeros 30–60 min del ingreso
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación clínica:</strong>
+    <ul>
+      <li>Fiebre + cefalea intensa + rigidez de nuca (tríada clásica, solo en 44%)</li>
+      <li>Kerning (+): dolor al extender rodilla con cadera flexionada</li>
+      <li>Brudzinski (+): flexión involuntaria de rodillas al flexionar el cuello</li>
+      <li>Petequias/púrpura → Meningococo hasta demostrar lo contrario</li>
+      <li>Alteración de conciencia · Fotofobia · Vómitos en proyectil</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Hemocultivos x2 ANTES de ATB (no retrasar ATB por esto)</li>
+      <li>TAC cerebro si: focalidad neurológica, inmunosuprimido, papiledema, GCS &lt;14</li>
+      <li><strong>Punción lumbar:</strong> LCR turbio, leucocitos &gt;1000 (PMN), proteínas &gt;100, glucosa &lt;40 o ratio &lt;0.5</li>
+      <li>Gram y cultivo de LCR · PCR meningococo/neumococo</li>
+      <li>Antígeno látex en LCR (rápido)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>ATB empírico inmediato:</strong>
+      Ceftriaxona 2g IV c/12h + Ampicilina 2g c/4h (cubre Listeria en &gt;50 años) + Dexametasona 0,15mg/kg c/6h x 4 días (antes o simultáneo al ATB — reduce mortalidad y secuelas)
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Ajuste según germen:</strong>
+      Neumococo: ceftriaxona ± vancomicina (si resistencia) · Meningococo: penicilina G o ceftriaxona · Listeria: ampicilina + gentamicina · Gram(-): ceftazidima o meropenem
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI urgente · Infectología · Profilaxis contactos íntimos (meningococo): rifampicina o ciprofloxacino dosis única
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Secuelas: sordera (audiometría a las 4–6 semanas), déficit neurológico, hidrocefalia · Duración ATB: neumococo 10–14d · meningococo 5–7d · Gram(-) 21d
+  </div>
+</div>
+</body>
+</html>
