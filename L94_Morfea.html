@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morfea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Morfea / Esclerodermia Localizada (L94) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">PLACA ENDURECIDA CIRCUNSCRITA EN PIEL</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y características:</strong>
+    <ul>
+      <li><strong>Morfea en placa:</strong> placa oval indurada con centro blanquecino y halo violáceo (lilac ring) activo · Tronco/extremidades</li>
+      <li><strong>Morfea lineal:</strong> banda lineal esclerótica · Puede afectar músculos y hueso · Más grave en niños</li>
+      <li><strong>En golpe de sable:</strong> morfea lineal en frente/cuero cabelludo · puede comprometer SNC</li>
+      <li>No progresa a esclerodermia sistémica (diferencia fundamental)</li>
+      <li>Etiología desconocida, posible desencadenante infeccioso (Borrelia en algunos casos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico · Biopsia si duda (fibrosis dérmica con infiltrado linfocítico)</li>
+      <li>ANA (positivo en 30–40%, no indica LES) · Anti-histona · Anti-Scl-70 (generalmente negativos)</li>
+      <li>Serología Borrelia en zonas endémicas</li>
+      <li>RMN en morfea lineal craneal (compromiso SNC)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento según extensión y actividad:</strong>
+    <ul>
+      <li>Morfea en placa localizada activa: tacalcitol tópico · corticoide tópico potente · imiquimod 5% tópico</li>
+      <li>Fototerapia NBUVB o UVA1 (buena respuesta en morfea activa)</li>
+      <li>Morfea lineal/extensa: metotrexato 15mg/semana + prednisona (reduce progresión)</li>
+      <li>Fisioterapia en morfea lineal con contractura</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Dermatología · Reumatología si lineal/extensa · Neurología si compromiso SNC · Fisioterapia
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Morfea en placa: suele inactivarse en 3–5 años · Morfea lineal: mayor impacto funcional · Cicatriz hipopigmentada permanente · Control semestral en fase activa
+  </div>
+</div>
+</body>
+</html>
