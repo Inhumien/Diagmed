@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anorexia Nerviosa — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #6c3483; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🧠 Anorexia Nerviosa (F50) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">SOSPECHA CLÍNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Criterios diagnósticos (DSM-5):</strong>
+    <ul>
+      <li>Restricción significativa de ingesta calórica → peso muy bajo para edad/talla (IMC &lt;17,5)</li>
+      <li>Miedo intenso a ganar peso, incluso con bajo peso</li>
+      <li>Distorsión de imagen corporal o negación de la gravedad del bajo peso</li>
+      <li>Tipos: <strong>restrictivo</strong> (dieta/ejercicio) vs <strong>purgativo</strong> (vómitos/laxantes)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ HOSPITALIZACIÓN URGENTE si: FC &lt;50 · PA &lt;90/60 · Síncope · K &lt;3 mEq/L · IMC &lt;13 · Rechazo absoluto de alimentación · Riesgo suicida
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Evaluación médica inicial:</strong>
+    <ul>
+      <li>Peso, IMC, signos vitales ortostáticos</li>
+      <li>Hemograma, electrolitos (K, Mg, P — síndrome de realimentación), función renal y hepática</li>
+      <li>ECG (QTc prolongado, bradicardia)</li>
+      <li>Densitometría ósea si amenorrea &gt;6 meses</li>
+      <li>Descartar causa orgánica (enfermedad inflamatoria intestinal, hipertiroidismo)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Manejo ambulatorio (IMC &gt;15):</strong>
+      Equipo multidisciplinario · Psicoterapia (TCC o terapia familiar) · Nutricionista · Objetivo: recuperación ponderal gradual (0,5 kg/semana)
+    </div>
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>Hospitalización (IMC &lt;15 o inestabilidad):</strong>
+      Realimentación supervisada · Monitoreo síndrome de realimentación (P, K, Mg) · Soporte nutricional enteral si necesario · Psiquiatría
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Sin fármaco de primera línea aprobado:</strong>
+    Olanzapina (evidencia moderada para ganancia ponderal) · Tratar complicaciones (suplementos Ca/D3, osteoporosis)
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar psiquiatría/psicología + nutricionista: todo caso confirmado · Urgente si criterios de hospitalización
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Peso semanal al inicio · ECG y electrolitos periódicos · Mortalidad más alta de todos los TCA (5–10%) — seguimiento estricto
+  </div>
+
+</div>
+</body>
+</html>
