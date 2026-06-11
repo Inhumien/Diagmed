@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiebre Tifoidea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦠 Fiebre Tifoidea (A01) — Urgencia / Notificación Obligatoria</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE PROLONGADA + CONTEXTO EPIDEMIOLÓGICO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica por semanas:</strong>
+    <ul>
+      <li><strong>Semana 1:</strong> Fiebre escalonada (sube progresivamente), cefalea, malestar, bradicardia relativa</li>
+      <li><strong>Semana 2:</strong> Fiebre en plateau (39–40°C), hepatoesplenomegalia, "roséola tifoidea" (máculas rosadas en abdomen), disociación pulso-temperatura</li>
+      <li><strong>Semana 3–4:</strong> Complicaciones: perforación intestinal, hemorragia GI, encefalopatía</li>
+      <li>Transmisión feco-oral · Agua o alimentos contaminados con Salmonella typhi</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ PERFORACIÓN INTESTINAL: Dolor abdominal súbito + defensa + hipotensión → Cirugía urgente + ATB IV + UCI
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li><strong>Hemocultivos x2</strong> (gold standard, positivos en 60–80% semana 1) — antes de ATB</li>
+      <li>Coprocultivo (positivo semana 2–3) · Urocultivo</li>
+      <li>Hemograma: leucopenia (paradójico), trombocitopenia, anemia</li>
+      <li>Widal: título anti-O ≥1/160 (menos específico) · PCR/VHS elevadas</li>
+      <li>Función hepática (hepatitis tifoidea frecuente)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento ATB:</strong>
+    <ul>
+      <li><strong>Ceftriaxona 2g IV/día x 10–14 días</strong> (1ª línea, cepas resistentes)</li>
+      <li>Ciprofloxacino 500mg c/12h x 10–14 días (si sensible, zonas sin fluoroquinolona-R)</li>
+      <li>Azitromicina 1g/día x 5–7 días (alternativa oral)</li>
+      <li>Dexametasona 3mg/kg IV + 1mg/kg c/6h x 48h (encefalopatía severa)</li>
+      <li>Hidratación IV · Dieta blanda · Reposo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar siempre · NOTIFICACIÓN OBLIGATORIA inmediata · Infectología · Cirugía si perforación
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Coprocultivos negativos x2 antes del alta (portador crónico) · Vacunación (Ty21a oral o Vi parenteral) en viajeros a zonas endémicas · Investigar fuente de contagio
+  </div>
+</div>
+</body>
+</html>
