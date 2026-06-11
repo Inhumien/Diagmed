@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aneurisma Cerebral — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #922b21; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🧠 Aneurisma Cerebral (I67) — Urgencia</h1>
+<div class="flow">
+
+  <div class="box inicio">SOSPECHA CLÍNICA</div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ ROTURA — HEMORRAGIA SUBARACNOIDEA: Cefalea "thunderclap" (peor de la vida, inicio súbito) · Náuseas · Pérdida de conciencia · Rigidez de nuca → EMERGENCIA NEUROLÓGICA
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Presentación según estado:</strong>
+    <ul>
+      <li><strong>No roto (incidental):</strong> Asintomático, hallazgo en imagen; o cefalea crónica, déficit de pares craneanos (III par: ptosis + midriasis)</li>
+      <li><strong>Roto (HSA):</strong> Cefalea súbita máxima, meningismo, escala Hunt-Hess I–V</li>
+      <li><strong>Sangrado centinela:</strong> Cefalea intensa previa que cedió espontáneamente (no ignorar)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li><strong>TAC cerebro sin contraste</strong> (1ª línea): hiperdensidad cisternas basales en HSA</li>
+      <li>Si TAC negativo y alta sospecha: <strong>punción lumbar</strong> (xantocromía &gt;12h del inicio)</li>
+      <li><strong>AngioTAC o angiografía cerebral</strong>: localiza y caracteriza el aneurisma</li>
+      <li>Laboratorio: hemograma, coagulación, grupo y Rh, electrolitos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#cb4335; color:#fff;">
+      <strong>Aneurisma roto (HSA):</strong>
+      UCI neuroquirúrgica · Nimodipino 60mg c/4h (previene vasoespasmo) · Control PA estricto · Clipaje o coiling &lt;24–72h · Monitoreo ICP
+    </div>
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Aneurisma no roto:</strong>
+      Decisión terapéutica según tamaño, localización, edad · &lt;7mm bajo riesgo: vigilancia · ≥7mm o sintomático: clipaje/coiling electivo
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Medidas generales en HSA:</strong>
+    Reposo absoluto · Analgesia (evitar AINEs) · Laxantes (evitar Valsalva) · Euvolemia · Normoglicemia · Anticonvulsivantes si convulsión
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 NEUROCIRUGÍA URGENTE ante toda HSA confirmada · Neurorradiología intervencionista si disponible
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento post-tratamiento:</strong>
+    Angio-RMN o AngioTAC al año · Rehabilitación neurológica · Screening familiar (1° grado) con AngioRMN
+  </div>
+
+</div>
+</body>
+</html>
