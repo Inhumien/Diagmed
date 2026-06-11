@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gota — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦶 Gota / Artritis por Urato (M10) — Urgencia y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ARTRITIS AGUDA MONOARTICULAR INTENSA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Dolor articular súbito e intenso (máximo en 6–12h), calor, eritema, edema</li>
+      <li>Localización clásica: 1ª articulación metatarsofalángica (podagra) · tobillo · rodilla</li>
+      <li>Fiebre baja posible · Inicia frecuentemente de noche</li>
+      <li>Desencadenantes: alcohol, mariscos, carnes rojas, deshidratación, diuréticos, cambio brusco de uricemia</li>
+      <li>Tofos (depósitos de urato) en orejas, tendón de Aquiles, codos en gota crónica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Ácido úrico sérico (puede estar normal durante el ataque)</li>
+      <li>Hemograma, PCR (leucocitosis, inflamación)</li>
+      <li><strong>Artrocentesis + microscopía con luz polarizada</strong>: cristales de urato monosódico (birefringentes negativos, en aguja)</li>
+      <li>Rx articulación: erosiones con overhanging edge (gota crónica)</li>
+      <li>Ecografía: signo del "doble contorno" en cartílago (depósito de urato)</li>
+      <li>Función renal · orina completa (nefrolitiasis por urato)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Ataque agudo (1ª línea, iniciar precoz):</strong>
+      Colchicina 1mg + 0,5mg a la hora (pauta corta) · o AINEs (indometacina 150mg/día o naproxeno 1000mg/día) · o Prednisona 30–40mg/día x 5 días · Reposo + hielo local
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Tratamiento hipouricemiante (entre ataques):</strong>
+      Iniciar solo cuando ataque resuelto · Alopurinol 100mg/día → titular hasta uricemia &lt;6 mg/dL · Febuxostat si alopurinol no tolera · Colchicina profiláctica 0,5mg/día los primeros 6 meses
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ NO iniciar ni suspender alopurinol durante el ataque agudo (prolonga o desencadena nuevo ataque)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Reumatología: gota tofácea · falla a alopurinol · función renal alterada · diagnóstico incierto · gota poliarticular
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Uricemia cada 3 meses hasta meta (&lt;6 mg/dL) · Función renal anual · Dieta: evitar alcohol, mariscos, carnes rojas, bebidas azucaradas · Hidratación 2L/día
+  </div>
+</div>
+</body>
+</html>
