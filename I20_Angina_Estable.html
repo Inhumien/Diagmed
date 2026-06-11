@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angina Estable — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #922b21; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #1e8449; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #117a65; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🫀 Angina Estable (I20) — Evaluación y Manejo</h1>
+<div class="flow">
+
+  <div class="box inicio">DOLOR TORÁCICO DE ESFUERZO</div>
+  <div class="arrow">↓</div>
+
+  <div class="box alerta">
+    ⚠️ DESCARTAR SCA PRIMERO: Dolor en reposo · Dolor >20 min · Cambios ECG · Elevación troponinas → Protocolo SCA urgente
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box eval">
+    <strong>Características de angina estable:</strong>
+    <ul>
+      <li>Dolor/presión retroesternal con esfuerzo predecible, cede con reposo o nitroglicerina en &lt;5 min</li>
+      <li>Patrón estable &gt;2 meses, sin cambio en frecuencia ni intensidad</li>
+      <li>Clasificación CCS: I (esfuerzo intenso) → IV (cualquier actividad o reposo)</li>
+      <li>FR: HTA, DM, dislipidemia, tabaquismo, historia familiar, obesidad</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>ECG reposo (puede ser normal), perfil lipídico, glicemia, función renal</li>
+      <li><strong>Test de esfuerzo</strong> (ergometría): 1ª línea para confirmar isquemia</li>
+      <li>Ecocardiograma: función sistólica, valvulopatías</li>
+      <li>AngioTAC coronaria o coronariografía si test funcional (+) o síntomas refractarios</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box tto">
+    <strong>✅ Tratamiento médico (siempre):</strong>
+    <ul>
+      <li><strong>Antiagregación:</strong> AAS 100mg/día indefinido</li>
+      <li><strong>Betabloqueador</strong> (1ª línea antianginoso): metoprolol 25–100mg/día o atenolol</li>
+      <li><strong>Estatina:</strong> atorvastatina 40–80mg (meta LDL &lt;70 mg/dL)</li>
+      <li><strong>IECA:</strong> si DM, HTA o FE reducida</li>
+      <li><strong>Nitroglicerina sublingual</strong> SOS: 0,5mg, repetir cada 5 min hasta 3 veces</li>
+      <li>Calcioantagonistas o nitratos de acción prolongada si betabloqueador contraindicado</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col" style="background:#1e8449; color:#fff;">
+      <strong>Modificación estilo de vida:</strong>
+      Cese tabáquico · Ejercicio aeróbico regular · Dieta cardioprotectora · Control peso · HbA1c &lt;7% si diabético
+    </div>
+    <div class="col" style="background:#d35400; color:#fff;">
+      <strong>Revascularización (CCS III–IV o isquemia extensa):</strong>
+      Angioplastia (PCI) o bypass coronario (CABG) según anatomía coronaria
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box derivar">
+    🏥 Derivar cardiología: diagnóstico nuevo · síntomas refractarios · CCS ≥III · test esfuerzo positivo precoz
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control cada 3–6 meses · ECG anual · Perfil lipídico · Ajuste terapia según síntomas · Educación en reconocimiento SCA
+  </div>
+
+</div>
+</body>
+</html>
