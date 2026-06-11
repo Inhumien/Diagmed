@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insuficiencia Respiratoria Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 Insuficiencia Respiratoria Aguda (J96) — Emergencia</h1>
+<div class="flow">
+  <div class="box inicio">SpO₂ &lt;90% O FR &gt;30 — EVALUAR TIPO</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA: Uso de musculatura accesoria · Cianosis · Confusión · Incapacidad de hablar → Vía aérea y soporte inmediato · Llamar a UCI
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación por gasometría arterial:</strong>
+    <ul>
+      <li><strong>Tipo I (hipoxémica):</strong> PaO₂ &lt;60 mmHg + PaCO₂ normal o baja · Causas: neumonía, TEP, EPA, SDRA</li>
+      <li><strong>Tipo II (hipercápnica):</strong> PaCO₂ &gt;45 mmHg + PaO₂ baja · Causas: EPOC, asma severa, fatiga muscular, depresión SNC</li>
+      <li>Evaluar: FR, trabajo respiratorio, SpO₂, nivel de consciencia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Gasometría arterial (diagnóstico y monitoreo) · SpO₂ continua</li>
+      <li>Rx tórax · ECG · BNP (IC) · Dímero D (TEP)</li>
+      <li>Hemograma · Función renal · Electrolitos</li>
+      <li>AngioTAC si TEP sospechado</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>IRA tipo I — O₂ y tratar causa:</strong>
+      O₂ alto flujo (mascarilla Venturi o reservorio) meta SpO₂ 94–98% · VNI si EPA o neumonía grave · IOT si falla VNI · Tratar causa: diuréticos, ATB, anticoagulación
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>IRA tipo II (hipercápnica):</strong>
+      O₂ controlado meta SpO₂ 88–92% (riesgo de depresión respiratoria) · VNI (BiPAP) de elección en EPOC agudizado · Broncodilatadores · IOT si deterioro o fatiga
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>SDRA (Berlin criteria: PaFi &lt;300 + infiltrados bilaterales):</strong>
+    VM protectora: VT 6mL/kg, Pplat &lt;30 cmH₂O · PEEP optimizada · Prono 16h/día si PaFi &lt;150 · Corticoides en SDRA moderado-severo
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI: IOT · VNI sin mejoría · SDRA · Inestabilidad hemodinámica · Monitorización continua
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Extubación:</strong>
+    Test de ventilación espontánea (TVE) diario · Extubación si tolera TVE 30 min sin deterioro · VNI post-extubación en EPOC/inmunosuprimidos
+  </div>
+</div>
+</body>
+</html>
