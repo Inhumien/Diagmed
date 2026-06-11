@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarampion — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦠 Sarampion (B05) — Urgencia / Notificacion Obligatoria</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE ALTA + TOS + CORIZA + EXANTEMA MACULOPAPULAR</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ NOTIFICACION OBLIGATORIA INMEDIATA · Alta contagiosidad (R0 = 12-18). Aislar inmediatamente. Mortalidad significativa en desnutridos e inmunosuprimidos.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Fases y presentacion:</strong>
+    <ul>
+      <li>Prodromica (3-4 dias): fiebre alta progresiva, tos intensa, coriza, conjuntivitis</li>
+      <li>Manchas de Koplik: puntitos blancos en mucosa bucal (patognomonico, desaparecen al aparecer el exantema)</li>
+      <li>Fase exantematica: exantema maculopapular confluente que comienza en cara/cuello y desciende, fiebre muy alta</li>
+      <li>Contagioso desde 4 dias antes hasta 4 dias despues del exantema</li>
+      <li>Complicaciones: neumonia (causa principal de muerte), encefalitis, diarrea, otitis, malnutricion</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento de soporte + Vitamina A:</strong>
+    <ul>
+      <li>Vitamina A: reduce mortalidad y complicaciones (especialmente en ninos y paises en desarrollo)</li>
+      <li>Menores de 6 meses: 50.000 UI/dia x 2 dias · 6-11 meses: 100.000 UI x 2 dias · Mayores de 1 ano: 200.000 UI x 2 dias</li>
+      <li>Antipireticos, hidratacion, soporte nutricional</li>
+      <li>ATB solo si sobreinfeccion bacteriana confirmada</li>
+      <li>Profilaxis post-exposicion: vacuna SRP en primeras 72h o IGIV en primeras 6 dias (inmunosuprimidos, embarazadas)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizacion si: neumonia, encefalitis, inmunosuprimido, nino menor de 1 ano, desnutricion. Notificacion SEREMI inmediata.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Investigacion de contactos y vacunacion de susceptibles. Aislamiento respiratorio 4 dias post-exantema. Encefalopatia subaguda esclerosante (PEES): complicacion tardia (anos despues), fatal.
+  </div>
+</div>
+</body>
+</html>
