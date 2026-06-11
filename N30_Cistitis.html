@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cistitis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;}
+  .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;}
+  li{margin-bottom:2px;}
+  strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫘 Cistitis / ITU Baja (N30) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">SÍNTOMAS URINARIOS BAJOS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síntomas clásicos:</strong>
+    <ul>
+      <li>Disuria, polaquiuria, urgencia miccional, tenesmo vesical</li>
+      <li>Orina turbia, maloliente, hematuria terminal</li>
+      <li><strong>SIN fiebre ni dolor lumbar</strong> (si hay → descartar pielonefritis)</li>
+      <li>Más frecuente en mujeres jóvenes (anatomía uretral corta)</li>
+      <li>Agente más frecuente: E. coli (80%), Klebsiella, Staphylococcus saprophyticus</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ITU COMPLICADA (tratar diferente): Embarazo · Hombre · Niño · Inmunodeprimido · Sonda vesical · Anomalía urológica · Síntomas >7 días
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico en mujer joven no embarazada con síntomas típicos (no requiere urocultivo de rutina)</li>
+      <li>Tira reactiva: nitritos (+) y leucocitos (+) — alta especificidad</li>
+      <li>Urocultivo: indicado en embarazo, hombre, recurrente, falla terapéutica, ITU complicada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>No complicada (mujer, no embarazada):</strong>
+      Nitrofurantoína 100mg c/12h x 5 días (1ª línea) · Fosfomicina 3g oral dosis única · Cotrimoxazol 160/800mg c/12h x 3 días (si resistencia local <20%)
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>Complicada / Embarazo:</strong>
+      Según urocultivo · Cefalexina 500mg c/6h x 7 días en embarazo · Amoxicilina-clavulánico · Duración 7 días · Urocultivo control post-tratamiento
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar urología: hombre con ITU (descartar prostatitis/obstrucción) · ITU recurrente ≥3/año · Anomalía estructural
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Prevención en recurrentes:</strong>
+    Micción post-coital · Hidratación abundante · Jugo de arándano (evidencia débil) · Profilaxis antibiótica (nitrofurantoína 50mg/noche) en ≥3 episodios/año
+  </div>
+</div>
+</body>
+</html>
