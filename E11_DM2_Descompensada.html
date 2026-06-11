@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DM2 Descompensada — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🩸 Diabetes Mellitus Tipo 2 Descompensada (E11) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">GLICEMIA MUY ELEVADA — EVALUAR TIPO DE DESCOMPENSACIÓN</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ESTADO HIPEROSMOLAR HIPERGLICÉMICO (EHH): Glicemia >600 + osmolaridad >320 + sin cetosis importante + alteración conciencia → UCI urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación y evaluación:</strong>
+    <ul>
+      <li>Poliuria, polidipsia, astenia, baja de peso</li>
+      <li>Glicemia >400mg/dL sin acidosis (diferencia de CAD)</li>
+      <li>Deshidratación severa, alteración de conciencia (EHH)</li>
+      <li>Precipitantes: infección, omisión de medicamentos, dieta inadecuada, estrés agudo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>Glicemia, HbA1c · electrolitos, función renal · GSA (descartar acidosis)</li>
+      <li>Osmolaridad plasmática calculada: 2×Na + glucosa/18 + BUN/2,8</li>
+      <li>Hemograma, orina completa, Rx tórax (buscar precipitante)</li>
+      <li>ECG (cambios electrolíticos, IAM como precipitante)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Descompensación leve (sin síntomas graves):</strong>
+      Hidratación oral · Ajuste de dosis de hipoglicemiantes · Insulina NPH si glicemia >300 persistente · Identificar y tratar precipitante · Control en 24–48h
+    </div>
+    <div class="col" style="background:#1a5276;color:#fff;">
+      <strong>EHH / descompensación severa:</strong>
+      Hospitalizar · SF 0,9% 1L/h primeras 2h · Insulina regular IV 0,05–0,1 U/kg/h · Reponer K · Descenso gradual de osmolaridad (no mayor 3–4 mOsm/h)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: glicemia >500 · EHH · alteración de conciencia · comorbilidades descompensadas · sin soporte domiciliario
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-descompensación:</strong>
+    HbA1c · Ajuste de tratamiento antidiabético · Educación sobre adherencia y automonitoreo · Control de FRCV · Nefropatía, retinopatía, neuropatía
+  </div>
+</div>
+</body>
+</html>
