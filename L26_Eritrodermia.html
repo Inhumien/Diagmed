@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eritrodermia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Eritrodermia / Dermatitis Exfoliativa (L26) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">ERITEMA Y DESCAMACIÓN >90% SUPERFICIE CORPORAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ EMERGENCIA DERMATOLÓGICA: Riesgo de hipotermia, falla cardíaca de alto gasto, infección sistémica, desequilibrio electrolítico → HOSPITALIZAR
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Causas más frecuentes:</strong>
+    <ul>
+      <li>Psoriasis eritrodérmica (25%)</li>
+      <li>Dermatitis atópica severa / eccema (25%)</li>
+      <li>Reacción medicamentosa (15%): alopurinol, carbamazepina, penicilinas, sulfonamidas</li>
+      <li>Linfoma cutáneo T (síndrome de Sézary) (5%)</li>
+      <li>Idiopática (25%)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Hemograma (eosinofilia, linfocitos atípicos), electrolitos, albumina, función renal/hepática</li>
+      <li>Hemocultivos si fiebre · Temperatura central</li>
+      <li><strong>Biopsia cutánea</strong> (confirma etiología — puede requerir múltiples biopsias)</li>
+      <li>Inmunofenotipo en sangre periférica si sospecha de linfoma (células de Sézary)</li>
+      <li>LDH, β2-microglobulina si linfoma</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Manejo inicial (soporte):</strong>
+    <ul>
+      <li>Hospitalización · Ambiente cálido (prevenir hipotermia)</li>
+      <li>Emolientes abundantes cada 4–6h · Baños tibios cortos</li>
+      <li>Hidratación IV · Corrección electrolítica · Albumina si <3g/dL</li>
+      <li>Suspender fármaco sospechoso</li>
+      <li>ATB si sobreinfección bacteriana (S. aureus frecuente)</li>
+      <li>Tratamiento específico según etiología (corticoides sistémicos en eccema/DA, ciclosporina en psoriasis)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalización urgente · Dermatología · Hematología si linfoma · UCI si compromiso hemodinámico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Monitoreo diario de temperatura, balance hídrico, albumina · Tratamiento de la causa subyacente · Alta mortalidad (10–20%) en adultos mayores
+  </div>
+</div>
+</body>
+</html>
