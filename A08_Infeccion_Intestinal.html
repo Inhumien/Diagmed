@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infección Intestinal / Gastroenteritis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦠 Gastroenteritis / Infección Intestinal (A08) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DIARREA AGUDA + NÁUSEAS + DOLOR ABDOMINAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ DESHIDRATACIÓN SEVERA: Signo del pliegue (+) · Ojos hundidos · Taquicardia · Hipotensión · Oliguria → Hidratación IV urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación inicial — grado de deshidratación:</strong>
+    <ul>
+      <li>Leve (&lt;5%): sed, levemente irritable, mucosas algo secas</li>
+      <li>Moderada (5–10%): ojos hundidos, pliegue cutáneo lento, taquicardia, oliguria</li>
+      <li>Severa (>10%): letargia, pliegue muy lento, extremidades frías, hipotensión, anuria</li>
+      <li>Señales de alarma: sangre en deposiciones, fiebre >39°C, más de 6 deposiciones/día, duración >3 días</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>¿Cuándo estudiar?:</strong>
+    <ul>
+      <li>Mayoría viral → diagnóstico clínico, sin laboratorio</li>
+      <li>Coprocultivo si: sangre en deposiciones · fiebre alta · inmunosuprimido · brote comunitario · viajero · diarrea >7 días</li>
+      <li>Toxina C. difficile si: ATB recientes o hospitalización</li>
+      <li>Electrolitos si deshidratación moderada-severa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#117a65;color:#fff;">
+      <strong>Deshidratación leve-moderada — Rehidratación oral:</strong>
+      SRO (Sales de Rehidratación Oral) 50–100 mL/kg en 4h · Continuar alimentación normal (no ayunar) · Reponer pérdidas: 10 mL/kg por cada deposición líquida
+    </div>
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Deshidratación severa — IV:</strong>
+      SF 0.9% 20 mL/kg en 30–60 min (bolo) · Ringer lactato alternativa · Luego SRO oral al recuperar estado de consciencia
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>ATB solo si indicado:</strong>
+    Shigella: ciprofloxacino 500mg c/12h x 3 días · C. difficile: metronidazol o vancomicina oral · Salmonella: solo si bacteriemia, inmunosuprimidos o &lt;6 meses
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: deshidratación severa · inmunosuprimido · &lt;3 meses de edad · fiebre alta + sangre + sepsis
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Educación:</strong>
+    Lavado de manos · Agua segura · Cocción adecuada · Lactancia materna protege · Vacuna rotavirus en niños
+  </div>
+</div>
+</body>
+</html>
