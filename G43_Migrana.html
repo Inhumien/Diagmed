@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Migraña — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Migraña (G43) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">CEFALEA EPISÓDICA + NÁUSEAS + FOTOFOBIA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SEÑALES DE ALARMA: Cefalea thunderclap · Fiebre + rigidez de nuca · Primera cefalea severa · Déficit neurológico persistente · Cambio en patrón habitual → TAC/RMN urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Criterios diagnósticos (ICHD-3):</strong>
+    <ul>
+      <li>≥5 episodios de cefalea de 4–72h</li>
+      <li>≥2 de: unilateral, pulsátil, intensidad moderada-severa, agravada por actividad física</li>
+      <li>≥1 de: náuseas/vómitos, fotofobia y fonofobia</li>
+      <li>Con aura (30%): síntomas neurológicos reversibles antes/durante la cefalea (visual, sensitivo, motor)</li>
+      <li>Desencadenantes: menstruación, estrés, falta de sueño, alcohol, queso, ayuno</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Tratamiento del ataque:</strong>
+      Leve: ibuprofeno 400–600mg o paracetamol 1g (inicio precoz) · Moderado-severo: triptanes (sumatriptán 50–100mg oral o 6mg SC) + metoclopramida 10mg · Ergotamina si no triptanes
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Profilaxis (≥4 episodios/mes o severos):</strong>
+      Propranolol 40–160mg/día · Topiramato 25–100mg/día · Amitriptilina 25–75mg/noche · Anti-CGRP (erenumab, fremanezumab) si falla convencional
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Migraña crónica (&gt;15 días/mes):</strong>
+    Toxina botulínica tipo A (Botox) pericraneana cada 3 meses · Anti-CGRP · Evitar analgésicos &gt;10–15 días/mes (cefalea por sobreuso)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neurología: migraña crónica refractaria · aura atípica · hemipléjica · consideración de CGRP o Botox
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Diario de cefaleas (frecuencia, duración, desencadenantes) · Evaluar profilaxis a los 3 meses · Anticonceptivos + aura + tabaco = riesgo de ACV → contraindicación de ACO con estrógenos
+  </div>
+</div>
+</body>
+</html>
