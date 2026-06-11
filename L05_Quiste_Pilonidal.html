@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiste Pilonidal — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Quiste / Absceso Pilonidal (L05) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR + FLUCTUACION EN REGION SACROCOCCIGEA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ABSCESO AGUDO: Fluctuante + dolor intenso + fiebre → Drenaje urgente bajo anestesia local. NO ATB solos sin drenaje.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentacion clinica:</strong>
+    <ul>
+      <li>Quiste asintomatico: nodulo en surco intergluteo posterior, sin dolor</li>
+      <li>Absceso agudo: dolor intenso, fluctuacion, eritema, fiebre</li>
+      <li>Enfermedad cronica: secrecion intermitente, orificio externo con pelos</li>
+      <li>FR: hombres jovenes, obesos, pilosos, sedentarios, trabajo sentado, higiene deficiente</li>
+      <li>Mecanismo: pelos penetran la piel y forman sinus en el tejido subcutaneo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Absceso agudo:</strong>
+      Drenaje incisional bajo anestesia local (lateral a la linea media). ATB solo si celulitis extensiva o inmunosuprimido. Curacion por segunda intencion. Cirugia definitiva diferida 4-6 semanas post-resolucion del absceso.
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Enfermedad cronica / electiva:</strong>
+      Escision amplia con cierre primario (Karydakis o Bascom) o cierre por segunda intencion. Depilacion laser del area (previene recurrencia). Colgajos de rotacion en enfermedad extensa.
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cirugia general: toda enfermedad pilonidal activa. Urgencias si absceso agudo.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Cuidado local post-operatorio · Depilacion permanente reduce recurrencia · Cirugia Karydakis: recurrencia 1-5% (la mas baja). Higiene rigurosa.
+  </div>
+</div>
+</body>
+</html>
