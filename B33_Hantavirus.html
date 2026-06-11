@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hantavirus — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🐭 Hantavirus (B33) — Urgencia / Notificación Obligatoria</h1>
+<div class="flow">
+  <div class="box inicio">FIEBRE + MIALGIAS + ANTECEDENTE DE EXPOSICIÓN A ROEDORES</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SÍNDROME CARDIOPULMONAR: Disnea súbita + hipotensión → Mortalidad 30–50% → UCI inmediato · ECMO si shock refractario · NOTIFICACIÓN OBLIGATORIA
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Fases clínicas (Chile/Argentina — Andes virus):</strong>
+    <ul>
+      <li><strong>Prodrómica (3–5 días):</strong> fiebre alta, mialgias intensas, cefalea, náuseas — puede confundirse con influenza</li>
+      <li><strong>Cardiopulmonar (días 5–8):</strong> tos seca, disnea rápidamente progresiva, edema pulmonar no cardiogénico, shock</li>
+      <li><strong>Convalecencia:</strong> mejoría gradual en sobrevivientes (semanas a meses)</li>
+      <li>Transmisión: inhalación de aerosoles de orina/heces de ratón colilargo (Oligoryzomys)</li>
+      <li>Zona endémica: Chile centro-sur, Argentina, región andina</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Hemograma: trombocitopenia + leucocitosis + inmunoblastos (linfocitos atípicos grandes) = tríada característica</li>
+      <li>LDH elevada · Hematocrito elevado (hemoconcentración)</li>
+      <li>Rx tórax: infiltrados bilaterales (edema pulmonar)</li>
+      <li>PCR para Hantavirus (ISP/laboratorio de referencia) + IgM/IgG</li>
+      <li>Gasometría arterial · Función renal · BNP</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento de soporte (no existe antiviral específico aprobado):</strong>
+    <ul>
+      <li>UCI + monitorización continua · Oxígeno suplementario</li>
+      <li>Ventilación mecánica si insuficiencia respiratoria (protectora: VT 6mL/kg)</li>
+      <li>Manejo cauteloso de fluidos (riesgo de empeorar edema pulmonar)</li>
+      <li>Vasopresores si shock (noradrenalina) · ECMO en shock refractario</li>
+      <li>Ribavirina IV (evidencia limitada, usar en fase prodrómica temprana si disponible)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI urgente al menor signo de deterioro respiratorio · Notificación al SEREMI · Traslado en ambulancia medicalizada
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Prevención:</strong>
+    No ingresar a lugares cerrados con presencia de roedores sin protección · Ventilar y humedecer antes de limpiar · Evitar leña/escombros en zonas endémicas · No transmisión persona a persona (excepto Andes virus: casos raros)
+  </div>
+</div>
+</body>
+</html>
