@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hipotermia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #154360; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#154360;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🥶 Hipotermia (T68) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">TEMPERATURA CORPORAL CENTRAL &lt;35°C</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ "No está muerto hasta que está tibio y muerto" — No suspender reanimación hasta T° &gt;32°C o ROSC · FV refractaria en hipotermia → RCP continua + recalentamiento
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Clasificación por temperatura central:</strong>
+    <ul>
+      <li><strong>Leve (32–35°C):</strong> tiritona intensa, taquicardia, confusión leve, ataxia</li>
+      <li><strong>Moderada (28–32°C):</strong> cese del tiritón, bradicardia, letargia, ondas J en ECG (Osborn)</li>
+      <li><strong>Severa (&lt;28°C):</strong> coma, hipotensión, fibrilación ventricular, apnea</li>
+      <li>Medir temperatura central (rectal, esofágica o vesical) — no axilar</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>ECG (ondas J de Osborn, arritmias) · Gasometría (corregida por temperatura)</li>
+      <li>Glucemia (hipoglicemia frecuente) · Electrolitos · Función renal · Hemograma</li>
+      <li>Alcohol sérico · Toxicología · Cortisol (hipoadrenalismo)</li>
+      <li>TAC cerebro si trauma o ACV sospechado</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Hipotermia leve — Recalentamiento pasivo:</strong>
+      Retirar ropa húmeda · Ambiente cálido · Mantas · Bebidas calientes si consciente · Monitorización continua · Evitar movimientos bruscos (riesgo FV)
+    </div>
+    <div class="col" style="background:#154360;color:#fff;">
+      <strong>Hipotermia moderada-severa — Recalentamiento activo:</strong>
+      SF tibio IV 40–42°C · O₂ calentado y humidificado (40–45°C) · Lavado vesical/gástrico con SF tibio · ECMO/bypass cardiopulmonar en PCR refractaria
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Arritmias en hipotermia:</strong>
+    Bradicardia: solo recalentar (no marcapasos hasta T° >30°C) · FV: desfibrilar hasta 3 veces → si no ROSC → RCP + recalentamiento → desfibrilar cada 30°C subidos
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI si T° &lt;32°C · Centro con ECMO si PCR · Monitorización hasta T° normal y estabilidad hemodinámica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-recalentamiento:</strong>
+    Monitorizar arritmias tardías · Corregir electrolitos · Tratar hipoglicemia · Investigar causa (exposición, intoxicación, hipotiroidismo, sepsis)
+  </div>
+</div>
+</body>
+</html>
