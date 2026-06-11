@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernia Inguinal / Femoral — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔴 Hernia Inguinal / Femoral (K40/K41) — Urgencia y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">MASA INGUINAL O FEMORAL — EVALUAR COMPLICACIÓN</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ HERNIA COMPLICADA — CIRUGÍA URGENTE: Irreductible + dolor intenso + eritema + vómitos + fiebre = ESTRANGULACIÓN → Isquemia intestinal → No demorar
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos y presentación:</strong>
+    <ul>
+      <li><strong>Reductible:</strong> masa que aparece con Valsalva/bipedestación, reduce con reposo</li>
+      <li><strong>Irreductible (atascada):</strong> masa fija, dolor, sin reducción</li>
+      <li><strong>Estrangulada:</strong> compromiso vascular del contenido → isquemia, necrosis</li>
+      <li>Hernia inguinal: más frecuente en hombres · Hernia femoral: más frecuente en mujeres, mayor riesgo de estrangulación</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Clínico en la mayoría (masa en región inguinal o femoral)</li>
+      <li>Ecografía si duda diagnóstica (diferencia de adenopatía, quiste, varicocele)</li>
+      <li>TAC abdomen si complicación sospechada (estrangulación, obstrucción)</li>
+      <li>Hemograma + lactato si estrangulación sospechada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Hernia reductible — Electiva:</strong>
+      Hernioplastia inguinal con malla (Lichtenstein o laparoscópica TEP/TAPP) · No existe tratamiento conservador definitivo · Operar antes de complicación
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Hernia complicada — Urgente:</strong>
+      Ayuno + hidratación IV + SNG si obstrucción · Cirugía urgente: reducción + hernioplastia · Resección intestinal si necrosis · ATB si isquemia
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Cirugía general urgente si complicada · Electiva si reductible asintomática o con molestias leves
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Post-operatorio:</strong>
+    Alta en 24h (laparoscópica) o 48h (abierta) · Reposo 2 semanas · Evitar esfuerzo 4–6 semanas · Recurrencia 1–3% con malla
+  </div>
+</div>
+</body>
+</html>
