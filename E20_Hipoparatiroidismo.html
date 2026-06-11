@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hipoparatiroidismo Agudo / Hipocalcemia — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦴 Hipoparatiroidismo / Hipocalcemia Aguda (E20)</h1>
+<div class="flow">
+  <div class="box inicio">CALCEMIA BAJA + SÍNTOMAS NEUROMUSCULARES</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ HIPOCALCEMIA SEVERA: Ca &lt;7 mg/dL + tetania + laringoespasmo + convulsiones → Gluconato de calcio 10% 10–20mL IV en 10 min → infusión continua
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Síntomas de hipocalcemia (por excitabilidad neuromuscular):</strong>
+    <ul>
+      <li>Parestesias periorales y acras (dedos de manos y pies)</li>
+      <li>Calambres musculares, tetania, espasmo carpopedal</li>
+      <li>Signos de Chvostek (contracción facial al percutir nervio facial) y Trousseau (espasmo carpal al inflar manguito)</li>
+      <li>Laringoespasmo, broncoespasmo · Convulsiones · Arritmias (QTc prolongado)</li>
+      <li>Causa más frecuente: post-quirúrgica (tiroidectomía/paratiroidectomía)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Calcemia total + albumina (calcio corregido = Ca + 0.8 × [4 - albumina])</li>
+      <li>Calcio ionizado (más preciso)</li>
+      <li>PTH baja + calcemia baja = hipoparatiroidismo</li>
+      <li>Magnesemia (hipomagnesemia causa hipoparatiroidismo funcional)</li>
+      <li>Fosfatemia · Vitamina D · ECG (QTc)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Hipocalcemia leve-moderada (Ca 7–8 mg/dL):</strong>
+      Carbonato de calcio 1–3g/día oral · Calcitriol 0.25–0.5 mcg/día (vitamina D activa) · Corregir hipomagnesemia si presente
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>Hipocalcemia severa / sintomática:</strong>
+      Gluconato de calcio 10% 10–20mL IV lento (10 min) · Luego infusión 0.5–1 mg/kg/h de calcio elemental · Monitoreo ECG · Calcio oral al tolerar
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Endocrinología: hipoparatiroidismo crónico · Urgencias si hipocalcemia severa · Monitoreo de Ca y P periódico en crónico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Hipoparatiroidismo crónico:</strong>
+    Meta Ca 8–9 mg/dL (evitar hipercalciuria) · Calcitriol + calcio oral de por vida · Nefrolitiasis como complicación (monitorizar Ca urinario 24h) · PTH recombinante (opciones emergentes)
+  </div>
+</div>
+</body>
+</html>
