@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mieloma Múltiple — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #4a235a; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#4a235a;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Mieloma Múltiple (C90) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DOLOR ÓSEO + ANEMIA + PROTEÍNA M EN INMUNOELECTROFORESIS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ CRAB: Hipercalcemia · IRA · Anemia severa · lesiones Bone (óseas) → hospitalizar · Hipercalcemia: hidratación + bisfosfonatos · Compresión medular: dexametasona + radioterapia urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones CRAB:</strong>
+    <ul>
+      <li><strong>C</strong>alcio &gt;11 mg/dL (hipercalcemia)</li>
+      <li><strong>R</strong>enal: creatinina &gt;2 mg/dL (daño tubular por cadenas ligeras)</li>
+      <li><strong>A</strong>nemia: Hb &lt;10 g/dL (infiltración medular)</li>
+      <li><strong>B</strong>one: lesiones osteolíticas, fracturas patológicas, dolor óseo</li>
+      <li>Infecciones recurrentes (déficit de inmunoglobulinas normales)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico (criterios IMWG 2014):</strong>
+    <ul>
+      <li>Proteína M en suero y/u orina (electroforesis + inmunofijación)</li>
+      <li>Plasmocitosis medular ≥10% (biopsia de médula ósea)</li>
+      <li>1 criterio CRAB o 1 biomarcador de malignidad (&gt;60% plasmocitos, ratio cadenas ligeras &gt;100, &gt;1 lesión focal en RMN)</li>
+      <li>Rx esqueleto óseo / PET-TAC / RMN columna · Beta2-microglobulina · LDH · Citogenética (del 17p, t(4;14) → alto riesgo)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento (excelente respuesta actual):</strong>
+    <ul>
+      <li>Tripletes de inducción: VRd (bortezomib + lenalidomida + dexametasona) · o DaraVRd (+ daratumumab)</li>
+      <li>Candidatos a trasplante autólogo (&lt;70 años, buen estado): trasplante tras inducción</li>
+      <li>Mantenimiento: lenalidomida indefinida post-trasplante</li>
+      <li>Bisfosfonatos (zoledrónico): todo mieloma con lesiones óseas</li>
+      <li>Daratumumab (anti-CD38): estándar en recaída y de primera línea</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hematología urgente · Centro con trasplante · Comité oncológico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Proteína M cada 1–3 meses · Función renal · Calcemia · RMN/PET si sospecha de progresión · Profilaxis antiinfecciosa (aciclovir, cotrimoxazol) · Supervivencia media &gt;5 años con tratamiento actual
+  </div>
+</div>
+</body>
+</html>
