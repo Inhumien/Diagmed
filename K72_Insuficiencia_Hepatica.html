@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insuficiencia Hepática Aguda — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Insuficiencia Hepática Aguda (K72) — Emergencia</h1>
+<div class="flow">
+  <div class="box inicio">ICTERICIA + COAGULOPATÍA + ENCEFALOPATÍA</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ FALLO HEPÁTICO FULMINANTE: INR >1.5 + encefalopatía en &lt;26 semanas → UCI hepatológica + evaluación urgente para trasplante
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Definición y causas:</strong>
+    <ul>
+      <li>Disfunción hepática aguda severa en paciente sin hepatopatía previa: ictericia + coagulopatía (INR >1.5) ± encefalopatía</li>
+      <li>Paracetamol (sobredosis) — causa más frecuente en países occidentales</li>
+      <li>Hepatitis viral aguda (VHA, VHB, VHE) · Fármacos (isoniazida, valproato, rifampicina) · Autoinmune · Wilson · Budd-Chiari · Isquémica</li>
+      <li>Hígado graso agudo del embarazo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio urgente:</strong>
+    <ul>
+      <li>Transaminasas, bilirrubina, FA, GGT · TP/INR (pronóstico) · Albúmina</li>
+      <li>Glucemia (hipoglucemia frecuente) · Función renal · Electrolitos · Amonio</li>
+      <li>Serología viral: VHA IgM, HBsAg, Anti-HBc IgM, Anti-VHE, CMV, VEB</li>
+      <li>Paracetamol sérico · Tóxicos · Ceruloplasmina (Wilson)</li>
+      <li>Ecografía abdominal · TAC si Budd-Chiari sospechado</li>
+      <li>Criterios de King's College (indica trasplante urgente)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento de soporte (UCI):</strong>
+    <ul>
+      <li><strong>Paracetamol:</strong> N-acetilcisteína IV 150mg/kg en 1h → 50mg/kg/4h → 100mg/kg/16h (iniciar siempre, incluso tardío)</li>
+      <li>Glucosa IV para euglucemia · Lactulosa para encefalopatía</li>
+      <li>Vitamina K 10mg IV · PFC solo si procedimiento invasivo (no profiláctico)</li>
+      <li>Nutrición enteral precoz · Evitar sedantes · Protección gástrica</li>
+      <li>Monitoreo PIC si encefalopatía grado III–IV</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI hepatológica + trasplante urgente según criterios King's College · Contactar centro de trasplante al diagnóstico
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Pronóstico:</strong>
+    Mortalidad 60–80% sin trasplante en fallo fulminante · Con trasplante: supervivencia 70–80% · Evaluación neurológica post-trasplante
+  </div>
+</div>
+</body>
+</html>
