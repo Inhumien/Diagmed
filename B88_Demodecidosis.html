@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demodecidosis — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fef9e7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #7e5109; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#7e5109;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Demodecidosis (B88) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">DERMATOSIS FACIAL / BLEFARITIS ATÍPICA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Eritema facial difuso, descamación perifolicular, pústulas, prurito</li>
+      <li>Patrón similar a rosácea o acné que no responde a tratamientos habituales</li>
+      <li>Blefaritis por Demodex: costras cilíndricas en base de pestañas, prurito ocular</li>
+      <li>Ácaros Demodex folliculorum y D. brevis (comensales normales en adultos)</li>
+      <li>Patológico cuando hay sobrepoblación: inmunosupresión, rosácea, VIH, vejez</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Dermatoscopía: patrón "Demodex tails" (estructuras blancas foliculares)</li>
+      <li>Examen directo: epilation de pestañas o raspado de escamas → microscopía (>5 ácaros/cm²)</li>
+      <li>Biopsia cutánea si duda diagnóstica (ácaros en folículo)</li>
+      <li>Descartar causa secundaria: inmunosupresión, corticoides tópicos crónicos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Ivermectina tópica 1%</strong> crema, 1 vez/día x 3 meses (1ª línea cutánea)</li>
+      <li>Ivermectina oral 200mcg/kg dosis única (casos severos o resistentes)</li>
+      <li>Metronidazol tópico 1% gel, 2 veces/día x 8 semanas</li>
+      <li><strong>Blefaritis por Demodex:</strong> Tea tree oil 50% (limpieza palpebral) · Ivermectina tópica palpebral</li>
+      <li>Higiene facial con productos sin aceites · Evitar corticoides tópicos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar dermatología: diagnóstico incierto · falla a tratamiento · blefaritis grave → oftalmología
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Control a las 4–6 semanas · Recurrencia frecuente en inmunosuprimidos · Tratar rosácea subyacente si presente
+  </div>
+</div>
+</body>
+</html>
