@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bocio Multinodular — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio  { background: #2c3e50; color: #fff; text-align: center; font-weight: bold; border-radius: 30px; }
+  .eval    { background: #1e8449; color: #fff; }
+  .dx      { background: #1f618d; color: #fff; }
+  .alerta  { background: #cb4335; color: #fff; font-weight: bold; }
+  .tto     { background: #117a65; color: #fff; }
+  .derivar { background: #d35400; color: #fff; font-weight: bold; }
+  .seguim  { background: #6c3483; color: #fff; }
+  .arrow   { font-size: 1.4em; color: #7f8c8d; }
+  .row     { display: flex; gap: 10px; width: 100%; }
+  .col     { flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.85em; line-height: 1.5; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  li { margin-bottom: 2px; }
+  strong { display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>🦋 Bocio Multinodular (E01) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">NÓDULO / MASA TIROIDEA</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Presentación clínica:</strong>
+    <ul>
+      <li>Aumento de volumen cervical anterior, generalmente asintomático</li>
+      <li>Síntomas compresivos: disfagia, disfonía, disnea (bocio grande)</li>
+      <li>Puede ser eutiroideo, hipotiroideo o hipertiroideo (bocio tóxico)</li>
+      <li>FR: déficit de yodo, mujer, historia familiar, radiación cervical previa</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ SIGNOS DE MALIGNIDAD: nódulo duro, fijo, crecimiento rápido, disfonía, adenopatías, historia de RT cervical → PAAF urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Estudio:</strong>
+    <ul>
+      <li>TSH (función tiroidea) + T4 libre si TSH alterada</li>
+      <li><strong>Ecografía tiroidea</strong> (1ra línea): número, tamaño, características nodulares (sistema TIRADS)</li>
+      <li><strong>PAAF ecoguiada</strong> si: nódulo >1cm con características sospechosas (TIRADS 4–5) o >1,5cm en TIRADS 3</li>
+      <li>Cintigrafía tiroidea si TSH baja (detecta nódulos autónomos)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#117a65; color:#fff;">
+      <strong>Bocio eutiroideo benigno:</strong>
+      Observación con eco anual · Levotiroxina solo si hipotiroidismo · No suprimir TSH de rutina · Aporte de yodo si déficit
+    </div>
+    <div class="col" style="background:#d35400; color:#fff;">
+      <strong>Bocio tóxico o compresivo:</strong>
+      Metimazol (hipertiroidismo) · Radioyodo I-131 · Cirugía (tiroidectomía) si compresión o malignidad
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Derivar endocrinología: PAAF sospechosa · hipertiroidismo · bocio compresivo · nódulo en crecimiento · planificación de cirugía
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Ecografía anual los primeros 2 años, luego cada 2–3 años si estable · TSH anual · PAAF si cambios en características
+  </div>
+</div>
+</body>
+</html>
