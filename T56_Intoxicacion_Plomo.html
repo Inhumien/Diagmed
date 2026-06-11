@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intoxicación por Plomo — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>⚗️ Intoxicación por Plomo (T56) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">EXPOSICIÓN A PLOMO + SÍNTOMAS SISTÉMICOS</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ ENCEFALOPATÍA POR PLOMO (Pb &gt;70 mcg/dL en niños): convulsiones + edema cerebral → Quelación IV urgente (dimercaprol + EDTA) · UCI pediátrica
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Fuentes de exposición y manifestaciones:</strong>
+    <ul>
+      <li>Pintura antigua (casas pre-1980) · Gasolina con plomo · Tuberías de plomo · Fundiciones · Cerámica vidriada artesanal</li>
+      <li><strong>Niños:</strong> irritabilidad, déficit cognitivo, hiperactividad, anemia, dolor abdominal</li>
+      <li><strong>Adultos:</strong> dolor abdominal (cólico saturnino), estreñimiento, cefalea, neuropatía periférica, HTA</li>
+      <li>Línea de Burton: ribete gris-azulado en encías (intoxicación crónica)</li>
+      <li>Anemia hemolítica con punteado basófilo en eritrocitos</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>Plombemia (plomo en sangre): nivel de acción según edad y contexto</li>
+      <li>Niños: &gt;5 mcg/dL = investigar fuente · &gt;45 mcg/dL = quelación</li>
+      <li>Adultos ocupacionales: &gt;25 mcg/dL = investigar · &gt;70 mcg/dL = quelación</li>
+      <li>Hemograma (anemia + punteado basófilo) · función renal · radiografía (líneas densas en metáfisis en niños)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>✅ Tratamiento:</strong>
+    <ul>
+      <li><strong>Medida fundamental: eliminar la fuente de exposición</strong></li>
+      <li>Niños Pb 45–69 mcg/dL: DMSA (succímero) oral 10mg/kg c/8h x 5 días → c/12h x 14 días</li>
+      <li>Pb ≥70 mcg/dL o encefalopatía: Dimercaprol (BAL) 4mg/kg IM c/4h + EDTA cálcico IV simultáneamente</li>
+      <li>Adultos Pb ≥70 mcg/dL o sintomático: DMSA oral o EDTA IV · Retirar de la exposición laboral</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Toxicología · Pediatría si niño · Neurología si encefalopatía · Notificación a salud ocupacional/SEREMI · Investigar entorno familiar
+  </div>
+  <parameter name="description">Post-quelación:  <div class="box seguim">
+    <strong>Post-quelación:</strong>
+    Plombemia rebote (redistribución de plomo óseo) → control a las 2 semanas · Evaluación neuropsicológica en niños · Seguimiento de desarrollo cognitivo · Investigar y sanear la fuente
+  </div>
+</div>
+</body>
+</html>
