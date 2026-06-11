@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trastorno de Ansiedad — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4ecf7; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #6c3483; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#6c3483;color:#fff;} .tto{background:#1e8449;color:#fff;}
+  .derivar{background:#d35400;color:#fff;font-weight:bold;} .seguim{background:#117a65;color:#fff;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🧠 Trastorno de Ansiedad / Agorafobia (F40) — Manejo</h1>
+<div class="flow">
+  <div class="box inicio">ANSIEDAD EXCESIVA PERSISTENTE + EVITACION FUNCIONAL</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Tipos frecuentes:</strong>
+    <ul>
+      <li>TAG (trastorno de ansiedad generalizada): preocupacion excesiva e incontrolable mayor de 6 meses sobre multiples areas (trabajo, salud, familia). Tension muscular, insomnio, irritabilidad, fatiga.</li>
+      <li>Trastorno de panico: crisis de panico recurrentes (minutos de miedo intenso + sintomas somaticos: palpitaciones, disnea, mareos, despersonalizacion). Miedo anticipatorio.</li>
+      <li>Agorafobia (F40): miedo a lugares donde escapar seria dificil (transporte publico, espacios abiertos, multitudes). Con o sin trastorno de panico.</li>
+      <li>Fobia social, fobia especifica.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Psicoterapia (1ª linea):</strong>
+      TCC (terapia cognitivo-conductual): exposicion gradual, reestructuracion cognitiva, tecnicas de relajacion. 12-16 sesiones. Mayor eficacia a largo plazo que farmacos.
+    </div>
+    <div class="col" style="background:#6c3483;color:#fff;">
+      <strong>Farmacoterapia:</strong>
+      ISRS (sertralina, escitalopram, paroxetina) o IRSN (venlafaxina, duloxetina): eficacia demostrada en TAG y panico. Inicio con dosis bajas (pueden exacerbar ansiedad inicialmente). Efecto en 4-6 semanas. Duracion minima 12 meses. Benzodiazepin: solo uso puntual (crisis), evitar cronico (dependencia).
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Medidas complementarias:</strong>
+    Ejercicio aerobico (eficacia similar a ISRS en TAG leve-moderado). Higiene del sueno. Reducir cafeina y alcohol. Mindfulness. Psicoeducacion.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Psiquiatria: refractario a 2 tratamientos, comorbilidad severa (depresion, abuso de sustancias), riesgo suicida, diagnostico incierto.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Escala GAD-7 (TAG) o PHQ-A de seguimiento. Control mensual al inicio. Recaida frecuente al suspender ISRS si no se consolida la TCC.
+  </div>
+</div>
+</body>
+</html>
