@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embolia Pulmonar — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫀 Embolia Pulmonar (I26) — Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">SOSPECHA DE TEP — PROBABILIDAD CLÍNICA (Wells)</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ TEP DE ALTO RIESGO: Hipotensión + shock + disfunción VD → TROMBÓLISIS SISTÉMICA O EMBOLECTOMÍA urgente
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Score de Wells:</strong>
+    <ul>
+      <li>Signos/síntomas de TVP (3 pts) · TEP más probable que otro diagnóstico (3 pts)</li>
+      <li>FC >100 (1,5) · Inmovilización >3 días o cirugía reciente (1,5)</li>
+      <li>TEP o TVP previos (1,5) · Hemoptisis (1) · Neoplasia (1)</li>
+      <li>Baja probabilidad: ≤4 → Dímero D · Alta probabilidad: >4 → AngioTAC directo</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Algoritmo diagnóstico:</strong>
+    <ul>
+      <li><strong>Dímero D</strong> (alta sensibilidad): negativo descarta TEP si probabilidad baja/intermedia</li>
+      <li><strong>AngioTAC pulmonar</strong> (gold standard): confirma defecto de llenado arterial</li>
+      <li>ECG: S1Q3T3, taquicardia sinusal, bloqueo de rama derecha</li>
+      <li>Ecocardiograma: disfunción VD (estratificación de gravedad)</li>
+      <li>Troponina y BNP (pronóstico)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>TEP no masivo (estable hemodinámicamente):</strong>
+      Anticoagulación inmediata: HBPM (enoxaparina 1mg/kg c/12h) o HNF IV · Transición a DOAC oral (rivaroxabán, apixabán) · Considerar alta precoz si bajo riesgo (PESI bajo)
+    </div>
+    <div class="col" style="background:#922b21;color:#fff;">
+      <strong>TEP masivo (inestable):</strong>
+      Alteplasa 100mg IV en 2h (trombólisis) · Si contraindicación → embolectomía quirúrgica o catéter-dirigida · HNF durante y post-trombólisis
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar siempre · UCI si inestabilidad · Investigar causa: trombofilia, neoplasia oculta · Cardiología/hematología según contexto
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Anticoagulación:</strong>
+    Mínimo 3 meses · 6 meses si factores reversibles · Indefinida si idiopática recurrente o trombofilia · Ecografía MMII · Investigar neoplasia oculta
+  </div>
+</div>
+</body>
+</html>
