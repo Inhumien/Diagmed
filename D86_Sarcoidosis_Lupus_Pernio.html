@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarcoidosis / Lupus Pernio — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf4fb; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1a5276; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1a5276;color:#fff;} .dx{background:#6c3483;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🔬 Sarcoidosis / Lupus Pernio (D86) — Evaluación</h1>
+<div class="flow">
+  <div class="box inicio">GRANULOMAS SISTÉMICOS — COMPROMISO MULTIÓRGANO</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manifestaciones clínicas:</strong>
+    <ul>
+      <li><strong>Pulmón (90%):</strong> adenopatías hiliares bilaterales, infiltrados, disnea, tos seca</li>
+      <li><strong>Piel:</strong> lupus pernio (placas violáceas induradas en nariz/mejillas/orejas), eritema nodoso, pápulas</li>
+      <li><strong>Ojos:</strong> uveítis anterior (urgencia), coriorretinitis</li>
+      <li><strong>Síndrome de Löfgren:</strong> eritema nodoso + adenopatías hiliares + artritis → buen pronóstico</li>
+      <li>Hipercalcemia · Afectación cardíaca (arritmias) · Neurológica (parálisis facial)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Uveítis → Oftalmología urgente · Sarcoidosis cardíaca (arritmias/bloqueos) → Holter + Cardiología
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico:</strong>
+    <ul>
+      <li>ECA (enzima convertidora de angiotensina) elevada · Calcemia · Calciuria 24h</li>
+      <li>Rx tórax (estadificación I–IV) + TAC tórax AR</li>
+      <li>PFR · LBA (linfocitosis con predominio CD4)</li>
+      <li><strong>Biopsia</strong> (gold standard): granulomas no caseificantes en tejido afectado</li>
+      <li>ECG · Ecocardiograma · PET-TAC en sarcoidosis sistémica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Tratamiento:</strong>
+    <ul>
+      <li>Estadio I–II asintomático: observación (50% resolución espontánea)</li>
+      <li>Síntomas o compromiso orgánico: <strong>prednisona 0,5mg/kg/día x 6–12 meses</strong> con reducción gradual</li>
+      <li>Metotrexato o azatioprina (ahorradores de corticoides) · Hidroxicloroquina para lesiones cutáneas</li>
+      <li>Infliximab en sarcoidosis refractaria</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Neumología · Reumatología · Dermatología · Oftalmología (uveítis) · Cardiología (compromiso cardíaco)
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    ECA + Rx tórax + PFR semestral · Calcemia y calciuria · Evaluación oftalmológica anual · 2/3 resuelven, 1/3 progresa a fibrosis pulmonar
+  </div>
+</div>
+</body>
+</html>
