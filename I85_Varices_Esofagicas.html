@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varices Esofagicas Sangrantes — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🚨 Varices Esofagicas Sangrantes (I85) — EMERGENCIA</h1>
+<div class="flow">
+  <div class="box inicio">HEMATEMESIS + CIRROSIS / HIPERTENSION PORTAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ MORTALIDAD 15-30% por episodio. ABC + 2 vias gruesas + UCI + endoscopia en primeras 12h (ideal menos de 6h). Iniciar vasoconstrictor vasopresor ANTES de endoscopia.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Manejo inicial urgente (primeros 30 min):</strong>
+    <ul>
+      <li>Via aerea: IOT si encefalopatia o riesgo de aspiracion</li>
+      <li>Reposicion volimica: SF (no albumina en agudo). Meta Hb 7-8 g/dL (no sobretrasfundir — aumenta presion portal)</li>
+      <li>Terlipresina 2mg IV c/4-6h o Somatostatina 250mcg bolo + 250mcg/h (reducen presion portal)</li>
+      <li>Cefotaxima o norfloxacino (profilaxis ATB obligatoria — reduce mortalidad 30%)</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>Endoscopia terapeutica (pillar del tratamiento):</strong>
+    Ligadura con bandas elasticas (tratamiento de eleccion para varices esofagicas). Escleroterapia si ligadura no disponible. Balón de Sengstaken-Blakemore: puente si falla endoscopia (max 24h).
+
+    TIPS (derivacion portosistémica transyugular intrahepatica): si sangrado refractario o Child-Pugh B/C con alto riesgo de resangrado → colocar TIPS precoz (menor de 72h).
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 UCI + Endoscopia urgente + Gastroenterologia/Hepatologia. Centro con capacidad de TIPS.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    Profilaxis secundaria: propranolol no selectivo + ligadura con bandas cada 2-4 semanas hasta erradicacion. Profilaxis primaria: propranolol si varices grandes. Evaluar trasplante hepatico.
+  </div>
+</div>
+</body>
+</html>
