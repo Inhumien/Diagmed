@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uropatia Obstructiva — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#7f8c8d;}
+  .arrow{font-size:1.4em;color:#7f8c8d;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫘 Uropatia Obstructiva Baja (N13) — Evaluacion</h1>
+<div class="flow">
+  <div class="box inicio">DISURIA + CHORRO DEBIL + RETENCION / GOTEO POSTMICCIONAL</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ RETENCION URINARIA AGUDA: globo vesical doloroso, imposibilidad de orinar → Sondaje vesical urgente (Foley 14-16 Fr). IRA postobstructiva → monitoreo de funcion renal.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Causas y presentacion:</strong>
+    <ul>
+      <li>Hiperplasia prostatica benigna (HPB): la mas frecuente en hombres mayores de 50 anos. Sintomas obstructivos (chorro debil, hesitancia, goteo) y irritativos (urgencia, frecuencia, nocturia).</li>
+      <li>Cancer de prostata avanzado, estenosis uretral, vejiga neurologica.</li>
+      <li>Mujeres: prolapse, cancer cervical, cistocele.</li>
+      <li>Score IPSS (International Prostate Symptom Score): clasifica severidad.</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box tto">
+    <strong>HPB — tratamiento medico:</strong>
+    IPSS leve (0-7): observacion y vigilancia. IPSS moderado-severo (8-35): alfa-bloqueadores (tamsulosina, silodosina) + inhibidores de 5-alfa-reductasa (finasterida, dutasterida) si prostata mayor de 40g. Inhibidores de PDE5 (tadalafil) si LUTS + disfuncion erectil. Cirugia (RTUP, HOLEP, prostatectomia abierta) si: RAO recurrente, IRA, litiasis vesical, hematuria recurrente, falla a tratamiento medico.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Urologia: RAO, IRA postobstructiva, hematuria, sospecha de cancer, falla a tratamiento medico.
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim" style="color:#000;">
+    PSA + tacto rectal anual. Flujometria y residuo postmiccional. IPSS cada 6-12 meses. Funcion renal si hidronefrosis.
+  </div>
+</div>
+</body>
+</html>
