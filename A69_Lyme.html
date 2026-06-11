@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enfermedad de Lyme — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #eaf9f1; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #1e8449; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#1e8449;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#117a65;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#6c3483;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🦟 Enfermedad de Lyme (A69) — Evaluación y Manejo</h1>
+<div class="flow">
+  <div class="box inicio">EXPOSICIÓN A GARRAPATA + SÍNTOMAS SISTÉMICOS</div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Etapas clínicas:</strong>
+    <ul>
+      <li><strong>Etapa 1 (localizada, días-semanas):</strong> Eritema migratorio (EM) — lesión anular eritematosa >5cm con aclaramiento central ("ojo de buey")</li>
+      <li><strong>Etapa 2 (diseminada, semanas-meses):</strong> EM múltiple, parálisis facial (VII par), bloqueo AV, artritis migratoria</li>
+      <li><strong>Etapa 3 (tardía, meses-años):</strong> Artritis crónica (rodilla), neuropatía periférica, encefalopatía</li>
+      <li>Agente: Borrelia burgdorferi · Vector: garrapata Ixodes · Zonas endémicas: Europa, Norteamérica</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ Bloqueo AV completo o arritmia severa → Hospitalizar + ceftriaxona IV + monitoreo cardíaco
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico (algoritmo de 2 pasos):</strong>
+    <ul>
+      <li>EM típico: diagnóstico clínico — no necesita serología</li>
+      <li>Otras manifestaciones: ELISA anti-Borrelia → si (+) → Western blot confirmatorio</li>
+      <li>Falsos negativos en etapa 1 (serología no detectable en primeras semanas)</li>
+      <li>LCR si neuroborreliosis sospechada</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#117a65;color:#fff;">
+      <strong>Etapa 1 y 2 no complicada:</strong>
+      Doxiciclina 100mg c/12h x 14–21 días (1ª línea) · Amoxicilina 500mg c/8h x 14–21 días (embarazo/niños &lt;8 años) · Cefuroxima 500mg c/12h
+    </div>
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Etapa 2–3 grave (neurológica, cardíaca, artritis severa):</strong>
+      Ceftriaxona 2g IV/día x 14–28 días · Artritis: doxiciclina oral 28 días (puede repetirse)
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Infectología: diagnóstico incierto · etapas diseminadas · neuroborreliosis · síntomas post-Lyme
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Síntomas post-tratamiento pueden persistir semanas (no indican persistencia bacteriana) · No repetir ATB si serología sigue (+) sin síntomas activos · Prevención: ropa protectora, repelentes, revisión de garrapatas
+  </div>
+</div>
+</body>
+</html>
