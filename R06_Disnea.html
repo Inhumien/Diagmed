@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disnea — Diagrama de Flujo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdedec; padding: 20px; }
+  h1 { text-align: center; color: #fff; background: #922b21; padding: 14px 20px; border-radius: 10px; font-size: 1.3em; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 700px; margin: 0 auto; }
+  .box { width: 100%; padding: 10px 16px; border-radius: 8px; font-size: 0.9em; line-height: 1.5; }
+  .inicio{background:#2c3e50;color:#fff;text-align:center;font-weight:bold;border-radius:30px;}
+  .eval{background:#922b21;color:#fff;} .dx{background:#1f618d;color:#fff;}
+  .alerta{background:#cb4335;color:#fff;font-weight:bold;}
+  .tto{background:#1e8449;color:#fff;} .derivar{background:#d35400;color:#fff;font-weight:bold;}
+  .seguim{background:#117a65;color:#fff;} .arrow{font-size:1.4em;color:#7f8c8d;}
+  .row{display:flex;gap:10px;width:100%;}
+  .col{flex:1;padding:10px 14px;border-radius:8px;font-size:0.85em;line-height:1.5;}
+  ul{padding-left:16px;margin-top:4px;} li{margin-bottom:2px;} strong{display:block;margin-bottom:4px;}
+</style>
+</head>
+<body>
+<h1>🫁 Disnea (R06) — Evaluación en Urgencia</h1>
+<div class="flow">
+  <div class="box inicio">SENSACIÓN DE FALTA DE AIRE — EVALUAR GRAVEDAD</div>
+  <div class="arrow">↓</div>
+  <div class="box alerta">
+    ⚠️ DISNEA GRAVE: SpO₂ &lt;90% · FR >30 · Uso de musculatura accesoria · Cianosis · Alteración de conciencia · Incapacidad de hablar → Manejo inmediato, O₂, vía aérea
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box eval">
+    <strong>Evaluación inicial:</strong>
+    <ul>
+      <li>SpO₂, FR, FC, PA, temperatura · Auscultación pulmonar y cardíaca</li>
+      <li>Tiempo de inicio: aguda (minutos-horas) vs subaguda (días) vs crónica (semanas-meses)</li>
+      <li>Factores asociados: fiebre, tos, dolor torácico, edema, palpitaciones, exposición</li>
+      <li>Antecedentes: cardiopatía, EPOC, asma, TEP previo, neoplasia</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box dx">
+    <strong>Diagnóstico diferencial por patrón:</strong>
+    <ul>
+      <li><strong>Disnea aguda con sibilancias:</strong> asma, EPOC exacerbado, anafilaxia</li>
+      <li><strong>Disnea aguda con dolor torácico pleurítico:</strong> TEP, neumotórax, pleuritis</li>
+      <li><strong>Disnea aguda con crepitaciones bilaterales:</strong> EPA, neumonía bilateral</li>
+      <li><strong>Disnea crónica progresiva:</strong> IC, EPOC, fibrosis pulmonar, anemia</li>
+      <li>ECG · Rx tórax · Hemograma · BNP/NT-proBNP · Dímero D · Gases arteriales</li>
+    </ul>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="col" style="background:#1e8449;color:#fff;">
+      <strong>Medidas inmediatas:</strong>
+      O₂ para SpO₂ >94% · Posición semisentado · Acceso venoso · Monitorización continua · Tratar causa específica identificada
+    </div>
+    <div class="col" style="background:#1f618d;color:#fff;">
+      <strong>Según etiología:</strong>
+      Asma/EPOC → broncodilatadores · IC aguda → furosemida IV + VNI · TEP → anticoagulación · Neumotórax → drenaje · Neumonía → ATB
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box derivar">
+    🏥 Hospitalizar: SpO₂ &lt;94% · Causa grave identificada · Disnea en reposo · Sin respuesta al tratamiento inicial
+  </div>
+  <div class="arrow">↓</div>
+  <div class="box seguim">
+    <strong>Seguimiento:</strong>
+    Según causa subyacente · Rehabilitación pulmonar si EPOC o fibrosis · Control de IC con BNP · Escala mMRC para disnea crónica
+  </div>
+</div>
+</body>
+</html>
